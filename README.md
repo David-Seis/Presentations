@@ -5,5 +5,5 @@
 
 ## Presentations:
 
-- [Shut the Front Door - Basic Security (WIP - live link when completed)](https://github.com/David-Seis/Presentations/new/main?readme=1)
+- [Shut the Front Door - Basic Security (WIP - live link when completed)](https://github.com/David-Seis/Presentations)
 
