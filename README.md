@@ -1,5 +1,3 @@
-# Presentations  
-
 #### David Seis, Security Professional
 
 
