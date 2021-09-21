@@ -1,4 +1,4 @@
-# Workshop: On Becoming a DBA
+# On Becoming a DBA
 
 #### <i>A resource list from David Seis</i>
 
