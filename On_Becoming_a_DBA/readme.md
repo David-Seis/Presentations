@@ -6,7 +6,7 @@
 
 <img style="float: left; margin: 0px 15px 15px 0px;" src="https://raw.githubusercontent.com/microsoft/sqlworkshops/master/graphics/textbubble.png"> <h2>About this list:</h2>
 
-In this list you will find resources i've found, been pointed to, and found useful in my journey so far.
+In this list you will find resources I've found, been pointed to, and found useful in my journey so far.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
