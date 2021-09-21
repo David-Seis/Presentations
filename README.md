@@ -15,4 +15,4 @@
 
 - [How I Studied for the CompTIA Security+ Exam](https://www.linkedin.com/pulse/how-i-studied-comptia-security-exam-david-seis/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B8pROAZLSQSaDnJab6q8Gjw%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_profile_view_base-featured_item_detail_view)
 
-- On Becoming a DBA
+- On Becoming a DBA - Will be published soon!
