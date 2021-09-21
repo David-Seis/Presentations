@@ -1,6 +1,6 @@
 # Presentations and courses 
 
-#### Buck Woody, Applied Data Scientist, Microsoft
+#### David Seis, Remote Support DBA, Straight Path
 
 ## Presentations:
 
