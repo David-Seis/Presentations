@@ -3,7 +3,7 @@
 - [Twitter](https://twitter.com/TBSSUG)
 - [Facebook](https://www.facebook.com/tbssug)
 - [Linkedin](https://www.linkedin.com/groups/1893703/)
-- [Meetup](https://www.meetup.com/Tampa-SQL-User-Groups/)
+- [Meetup - Register for meetings here!](https://www.meetup.com/Tampa-SQL-User-Groups/)
 
 # Leadership
 
