@@ -1,17 +1,19 @@
-# Social Media Connections for the Tampa Bay SQL User Group 
+# Tampa Bay SQL User Group HUB
+
+## Social Media
 
 - [Twitter](https://twitter.com/TBSSUG)
 - [Facebook](https://www.facebook.com/tbssug)
 - [Linkedin](https://www.linkedin.com/groups/1893703/)
 - [Meetup - Register for meetings here!](https://www.meetup.com/Tampa-SQL-User-Groups/)
 
-# Leadership
+## Leadership
 
 David Seis | David.Seis@msftcommunity.com | [@MrDavidSeis](https://twitter.com/MrDavidSeis) | [Linkedin](https://www.linkedin.com/in/davidseis/) 
 Travis Page | Travis.Page@msftcommunity.com | [@pagerwho](https://twitter.com/pagerwho) | [Linkedin](https://www.linkedin.com/in/travispage/) 
 Buck Woody | Buck.Woody@msftcommunity.com | [@BuckWoodyMSFT](https://twitter.com/BuckWoodyMSFT) | [Linkedin](https://www.linkedin.com/in/buckwoody/) 
 
-# TBSSUG Speakers
+## TBSSUG Speakers
 
 We want to enrich our professional community with many voices. Please pick something you know and love in the SQL and data field [and teach us about it!](https://forms.office.com/r/6PjaybWnNn)
 
