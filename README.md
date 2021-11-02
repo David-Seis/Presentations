@@ -1,6 +1,6 @@
 # Presentations and courses 
 
-#### David Seis, Remote Support DBA, Straight Path
+#### David Seis -  Remote Support DBA:  Straight Path IT Solutions, LLC.
 
 ## Tampa Bay SQL User Group:
 
