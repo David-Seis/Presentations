@@ -4,7 +4,7 @@
 
 ## Tampa Bay SQL User Group:
 
-- [Social Hub and Info](https://github.com/David-Seis/Presentations/blob/main/TBSSSUG_Resources/Resources.md)
+- [Social Hub and Info](https://david-seis.github.io/Presentations/)
 
 ## Presentations:
 
