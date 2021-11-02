@@ -13,10 +13,10 @@ Buck Woody | Buck.Woody@msftcommunity.com | [@BuckWoodyMSFT](https://twitter.com
 
 # TBSSUG Speakers
 
-- 8/17/21 - Buck Woody - "Data Literacy for the Data Professional"
-- 9/21/21 - David Seis - "On Becoming a DBA"
-- 10/19/21 - Ken Muse - "Introduction to Azure Databricks"
-- 11/16/21 - Meredith Olson - "R: How and Why?"
-- 12/21/21 - TBD
-- 1/18/22 - Pete Bishop - "Introduction to Azure and Power Platform"
-- ... TBD
+8/17/21 | Buck Woody | "Data Literacy for the Data Professional"
+9/21/21 | David Seis | "On Becoming a DBA"
+10/19/21 | Ken Muse | "Introduction to Azure Databricks"
+11/16/21 | Meredith Olson | "R: How and Why?"
+12/21/21 | TBD | ...
+1/18/22 | Pete Bishop | "Introduction to Azure and Power Platform"
+... TBD | ... | ...
