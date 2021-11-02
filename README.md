@@ -8,7 +8,7 @@
 
 ## Presentations:
 
-- [On Becoming a DBA](https://github.com/David-Seis/Presentations/tree/main/On_Becoming_a_DBA)
+- [On Becoming a DBA (Resources)](https://github.com/David-Seis/Presentations/tree/main/On_Becoming_a_DBA)
 
 
 ## Notebooks and Courses
