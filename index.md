@@ -7,9 +7,9 @@
 
 # Leadership
 
-- David Seis | David.Seis@msftcommunity.com | [@MrDavidSeis](https://twitter.com/MrDavidSeis) | [Linkedin](https://www.linkedin.com/in/davidseis/) 
-- Travis Page | Travis.Page@msftcommunity.com | [@pagerwho](https://twitter.com/pagerwho) | [Linkedin](https://www.linkedin.com/in/travispage/) 
-- Buck Woody | Buck.Woody@msftcommunity.com | [@BuckWoodyMSFT](https://twitter.com/BuckWoodyMSFT) | [Linkedin](https://www.linkedin.com/in/buckwoody/) 
+David Seis | David.Seis@msftcommunity.com | [@MrDavidSeis](https://twitter.com/MrDavidSeis) | [Linkedin](https://www.linkedin.com/in/davidseis/) 
+Travis Page | Travis.Page@msftcommunity.com | [@pagerwho](https://twitter.com/pagerwho) | [Linkedin](https://www.linkedin.com/in/travispage/) 
+Buck Woody | Buck.Woody@msftcommunity.com | [@BuckWoodyMSFT](https://twitter.com/BuckWoodyMSFT) | [Linkedin](https://www.linkedin.com/in/buckwoody/) 
 
 # TBSSUG Speakers
 
