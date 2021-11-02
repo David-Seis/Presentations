@@ -1,37 +1,23 @@
-## Welcome to GitHub Pages
+# Presentations and courses 
 
-You can use the [editor on GitHub](https://github.com/David-Seis/Presentations/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+#### David Seis -  Remote Support DBA:  Straight Path IT Solutions, LLC.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Tampa Bay SQL User Group:
 
-### Markdown
+- [Social Hub and Info](https://github.com/David-Seis/Presentations/blob/main/TBSSSUG_Resources/Resources.md)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Presentations:
 
-```markdown
-Syntax highlighted code block
+- [On Becoming a DBA (Resources)](https://github.com/David-Seis/Presentations/tree/main/On_Becoming_a_DBA)
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+## Notebooks and Courses
 
-1. Numbered
-2. List
+- [Shut the Front Door - A guide for organization security audits (Co-Authored with Buck Woody)](https://github.com/BuckWoody/presentations/tree/master/shut_the_front_door)
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
+## Blog Posts
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+- [How I Studied for the CompTIA Security+ Exam](https://www.linkedin.com/pulse/how-i-studied-comptia-security-exam-david-seis/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B8pROAZLSQSaDnJab6q8Gjw%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_profile_view_base-featured_item_detail_view)
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/David-Seis/Presentations/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+- [On Becoming a DBA](https://www.linkedin.com/pulse/becoming-dba-david-seis/)
