@@ -2,7 +2,7 @@
 
 #### David Seis, Remote Support DBA, Straight Path
 
-##Tampa Bay SQL User Group
+## Tampa Bay SQL User Group:
 
 - [Social Hub and Info](https://github.com/David-Seis/Presentations/blob/main/TBSSSUG_Resources/Resources.md)
 
