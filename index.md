@@ -1,23 +1,22 @@
-# Presentations and courses 
+# Social Media Connections for the Tampa Bay SQL User Group 
 
-#### David Seis -  Remote Support DBA:  Straight Path IT Solutions, LLC.
+- [Twitter](https://twitter.com/TBSSUG)
+- [Facebook](https://www.facebook.com/tbssug)
+- [Linkedin](https://www.linkedin.com/groups/1893703/)
+- [Meetup - Register for meetings here!](https://www.meetup.com/Tampa-SQL-User-Groups/)
 
-## Tampa Bay SQL User Group:
+# Leadership
 
-- [Social Hub and Info](https://github.com/David-Seis/Presentations/blob/main/TBSSSUG_Resources/Resources.md)
+- David Seis | David.Seis@msftcommunity.com | [@MrDavidSeis](https://twitter.com/MrDavidSeis) | [Linkedin](https://www.linkedin.com/in/davidseis/) 
+- Travis Page | Travis.Page@msftcommunity.com | [@pagerwho](https://twitter.com/pagerwho) | [Linkedin](https://www.linkedin.com/in/travispage/) 
+- Buck Woody | Buck.Woody@msftcommunity.com | [@BuckWoodyMSFT](https://twitter.com/BuckWoodyMSFT) | [Linkedin](https://www.linkedin.com/in/buckwoody/) 
 
-## Presentations:
+# TBSSUG Speakers
 
-- [On Becoming a DBA (Resources)](https://github.com/David-Seis/Presentations/tree/main/On_Becoming_a_DBA)
-
-
-## Notebooks and Courses
-
-- [Shut the Front Door - A guide for organization security audits (Co-Authored with Buck Woody)](https://github.com/BuckWoody/presentations/tree/master/shut_the_front_door)
-
-
-## Blog Posts
-
-- [How I Studied for the CompTIA Security+ Exam](https://www.linkedin.com/pulse/how-i-studied-comptia-security-exam-david-seis/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B8pROAZLSQSaDnJab6q8Gjw%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_profile_view_base-featured_item_detail_view)
-
-- [On Becoming a DBA](https://www.linkedin.com/pulse/becoming-dba-david-seis/)
+- 8/17/21 - Buck Woody - "Data Literacy for the Data Professional"
+- 9/21/21 - David Seis - "On Becoming a DBA"
+- 10/19/21 - Ken Muse - "Introduction to Azure Databricks"
+- 11/16/21 - Meredith Olson - "Introduction to Programming in R"
+- 12/21/21 - TBD
+- 1/18/22 - Pete Bishop - "Introduction to Azure and Power Platform"
+- ... TBD
