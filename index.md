@@ -24,3 +24,7 @@ We want to enrich our professional community with many voices. Please pick somet
 12/21/21 | TBD | ...
 1/18/22 | Pete Bishop | "Introduction to Azure and Power Platform"
 ... | ... | ...
+
+## Other:
+
+- If you know someone who would like to support our group through providing food or space for our in-person events, funding for gifts to speakers, or any other way of support, [send them here!](https://forms.office.com/r/isZ2nfTcva)
