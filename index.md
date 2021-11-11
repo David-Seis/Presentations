@@ -21,8 +21,9 @@ We want to enrich our professional community with many voices. Please pick somet
 9/21/21 | David Seis | "On Becoming a DBA"
 10/19/21 | Ken Muse | "Introduction to Azure Databricks"
 11/16/21 | Meredith Olson | "R: How and Why?"
-12/21/21 | TBD | ...
+12/21/21 | Buck Woody | "Introduction to SQL Machine Learning Services"
 1/18/22 | Pete Bishop | "Introduction to Azure and Power Platform"
+... | Jonathan Bloom | "Intro to Data Governance"
 ... | ... | ...
 
 ## Other:
