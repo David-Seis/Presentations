@@ -2,7 +2,6 @@
 
 ## Social Media
 
-
 [TBSSUG Twitter](https://twitter.com/TBSSUG) | [TBSSUG Facebook](https://www.facebook.com/tbssug) | [TBSSUG Linkedin](https://www.linkedin.com/groups/1893703/) | 
 [Meetup - Register and get the meeting link here!](https://www.meetup.com/Tampa-SQL-User-Groups/) 
 
