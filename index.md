@@ -1,11 +1,15 @@
 # Tampa Bay SQL User Group HUB
 
+## Announcements
+- Vote on where and when the February in-person meeting will be on this [StrawPoll](https://strawpoll.com/rvddggzhf) 
+- SQL Bits is coming up, there are group discounts and a 5% off code for members of the group, message David to get the code!
+
 ## Social Media
 
 - [TBSSUG Twitter](https://twitter.com/TBSSUG) 
 - [TBSSUG Facebook](https://www.facebook.com/tbssug)
 - [TBSSUG Linkedin](https://www.linkedin.com/groups/1893703/)  
-- [Meetup - Register and get the meeting link here!](https://www.meetup.com/Tampa-SQL-User-Groups/) 
+- [TBSSUG Meetup - Register and get the meeting link here!](https://www.meetup.com/Tampa-SQL-User-Groups/) 
 
 ## Leadership
 
@@ -23,6 +27,8 @@ We want to enrich our professional community with many voices. Please pick somet
 11/16/21 | Meredith Olson | "R: How and Why?"
 12/21/21 | Buck Woody | "Introduction to SQL Machine Learning Services"
 1/18/22 | Pete Bishop | "Introduction to SQL in Azure and Power Platform"
+2/??/22 | In-Person | Social gathering for the group
+3/15/22 | Niko Neugebauer | "Introduciton to SQl Managed Instance"
 ... | Jonathan Bloom | "Intro to Data Governance"
 ... | ... | ...
 
