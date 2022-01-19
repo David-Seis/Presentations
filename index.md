@@ -28,7 +28,7 @@ We want to enrich our professional community with many voices. Please pick somet
 12/21/21 | Buck Woody | "Introduction to SQL Machine Learning Services"
 1/18/22 | Pete Bishop | "Introduction to SQL in Azure and Power Platform"
 2/??/22 | In-Person | Social gathering for the group
-3/15/22 | Niko Neugebauer | "Introduciton to SQl Managed Instance"
+3/15/22 | Niko Neugebauer | "Introduction to SQL Managed Instance"
 ... | Jonathan Bloom | "Intro to Data Governance"
 ... | ... | ...
 
