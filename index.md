@@ -2,7 +2,7 @@
 
 ## Announcements
 - Vote on where and when the February in-person meeting will be on this [StrawPoll](https://strawpoll.com/rvddggzhf) 
-- SQL Bits is coming up, there are group discounts and a 5% off code for members of the group, message David to get the code!
+- SQL Bits is coming up, there are group discounts and a 5% off code for members of the TBSSUG group, ping David to get the code!
 
 ## Social Media
 
