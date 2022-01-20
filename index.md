@@ -29,7 +29,7 @@ We want to enrich our professional community with many voices. Please pick somet
 1/18/22 | Pete Bishop | "Intro to SQL in Azure and Power Platform"
 2/??/22 | In-Person | Social gathering for the group
 3/15/22 | Niko Neugebauer | "Introduction to SQL Managed Instance"
-... | Jonathan Bloom | "Intro to Data Governance"
+4/19/22 | Jonathan Bloom | "Intro to Data Governance"
 ... | ... | ...
 
 ## Other:
