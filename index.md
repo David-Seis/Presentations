@@ -21,6 +21,7 @@ Buck Woody | Buck.Woody@msftcommunity.com | [@BuckWoodyMSFT](https://twitter.com
 
 We want to enrich our professional community with many voices. Please pick something you know and love in the SQL and data field [and teach us about it!](https://forms.office.com/r/6PjaybWnNn)
 
+Date | Presenter | Session Title
 8/17/21 | Buck Woody | "Data Literacy for the Data Professional"
 9/21/21 | David Seis | "On Becoming a DBA"
 10/19/21 | Ken Muse | "Introduction to Azure Databricks"
