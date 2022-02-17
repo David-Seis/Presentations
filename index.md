@@ -1,8 +1,7 @@
 # Tampa Bay SQL User Group HUB
 
 ## Announcements
-- Vote on where and when the February in-person meeting will be on this [StrawPoll](https://strawpoll.com/rvddggzhf) 
-- SQL Bits is coming up, there are group discounts and a 5% off code for members of the TBSSUG group, ping David to get the code!
+- SQL Bits is coming up, there are group discounts and a 5% off code for members of the TBSSUG group, ping David to get the code! Also, Saturday is free for everyone if you want to save money and get some training!
 
 ## Social Media
 
@@ -31,6 +30,7 @@ Date | Presenter | Session Title
 2/??/22 | In-Person | Social gathering for the group
 3/15/22 | Niko Neugebauer | "Introduction to SQL Managed Instance"
 4/19/22 | Jonathan Bloom | "Intro to Data Governance"
+5/17/22 | Edward Pollack | "My Favorite System Views and Tables"
 ... | ... | ...
 
 ## Other:
