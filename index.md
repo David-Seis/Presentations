@@ -29,8 +29,9 @@ Date | Presenter | Session Title
 1/18/22 | Pete Bishop | "Intro to SQL in Azure and Power Platform"
 2/??/22 | In-Person | Social gathering for the group
 3/15/22 | Niko Neugebauer | "Introduction to SQL Managed Instance"
-4/19/22 | Jonathan Bloom | "Intro to Data Governance"
-5/17/22 | Edward Pollack | "My Favorite System Views and Tables"
+4/19/22 | David Seis | "SQL Server Security 101"
+5/17/22 | Jonathan Bloom | "Intro to Data Governance"
+6/21/22 | Edward Pollack | "My Favorite System Views and Tables"
 ... | ... | ...
 
 ## Other:
