@@ -1,7 +1,7 @@
 # Tampa Bay SQL User Group HUB
 
 ## Announcements
-- SQL Bits is coming up, there are group discounts and a 5% off code for members of the TBSSUG group, ping David to get the code! Also, Saturday is free for everyone if you want to save money and get some training!
+- Find all of our archived slide decks [here!](https://msftcommunity-my.sharepoint.com/:f:/p/david_seis/EnBw0_6Sh2RApcrmteQEkmwB9CC8GNXCR-CIIxRbdjP3QA?e=1e3qqG)
 
 ## Social Media
 
