@@ -1,7 +1,8 @@
 # Tampa Bay SQL User Group HUB
 
 ## Announcements
-- Find all of our archived slide decks [here!](https://msftcommunity-my.sharepoint.com/:f:/p/david_seis/EnBw0_6Sh2RApcrmteQEkmwB9CC8GNXCR-CIIxRbdjP3QA?e=1e3qqG)
+- MS office location for Hybrid event [here!](https://www.microsoft.com/en-us/about/officelocator?Location=33609)
+- Find all of our archived slide decks [here!](https://msftcommunity-my.sharepoint.com/:f:/p/david_seis/EnBw0_6Sh2RApcrmteQEkmwB9CC8GNXCR-CIIxRbdjP3QA?e=SEHNyp)
 
 ## Social Media
 
@@ -31,6 +32,7 @@ Date | Presenter | Session Title
 4/19/22 | David Seis | "SQL Server Security 101"
 5/17/22 | Jonathan Bloom | "Intro to Data Governance"
 6/21/22 | Edward Pollack | "My Favorite System Views and Tables"
+7/19/22 | TBD | TBD|
 ... | ... | ...
 
 ## Other:
