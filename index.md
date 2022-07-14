@@ -48,10 +48,10 @@ Date | Presenter | Session Title
 
 ## Tools for the DBA/  Link-List
 
-- [Ola Hallengrin Maintenance Sslution](https://ola.hallengren.com/)
+- Ola Hallengrin's [Maintenance Sslution](https://ola.hallengren.com/)
 - Brent Ozar's [First Responder Toolkit](https://github.com/BrentOzarULTD/SQL-Server-First-Responder-Kit)
-- [Adam Machanic's sp_WhoIsActive](https://github.com/amachanic/sp_whoisactive)
-- [David Schanzer's DBA Toolbox](https://github.com/DavidSchanzer/Sql-Server-DBA-Toolbox)
+- Adam Machanic's [sp_WhoIsActive](https://github.com/amachanic/sp_whoisactive)
+- David Schanzer's [DBA Toolbox](https://github.com/DavidSchanzer/Sql-Server-DBA-Toolbox)
 - [DBAtools](https://dbatools.io/)
 
 ## Free Learning Opportunities
