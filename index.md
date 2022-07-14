@@ -21,6 +21,8 @@ Buck Woody | Buck.Woody@msftcommunity.com | [@BuckWoodyMSFT](https://twitter.com
 We want to enrich our professional community with many voices. Please pick something you know and love in the SQL and data field [and teach us about it!](https://forms.office.com/r/6PjaybWnNn)
 
 ## Upcoming Sessions
+
+Date | Presenter | Session Title
 7/19/22 | Samuel Mesel | "Intelligent Query Processing"
 8/16/22 | TBD | TBD
 9/20/22 | Torsten Strauss | TDB
@@ -30,6 +32,7 @@ We want to enrich our professional community with many voices. Please pick somet
 ... | ... | ...
 
 ## Past Sessions
+
 Date | Presenter | Session Title
 6/21/22 | Edward Pollack | "My Favorite System Views and Tables"
 5/17/22 | Jonathan Bloom | "Intro to Data Governance"
