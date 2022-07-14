@@ -25,7 +25,7 @@ We want to enrich our professional community with many voices. Please pick somet
 Date | Presenter | Session Title
 7/19/22 | Samuel Mesel | "Intelligent Query Processing"
 8/16/22 | TBD | TBD
-9/20/22 | Torsten Strauss | TDB
+9/20/22 | Torsten Strauss | TBD
 10/18/22 | TBD | TBD
 11/15/22 | TBD |TBD
 12/20/22 | TBD |TBD
