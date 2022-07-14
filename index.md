@@ -32,7 +32,12 @@ Date | Presenter | Session Title
 4/19/22 | David Seis | "SQL Server Security 101"
 5/17/22 | Jonathan Bloom | "Intro to Data Governance"
 6/21/22 | Edward Pollack | "My Favorite System Views and Tables"
-7/19/22 | TBD | TBD|
+7/19/22 | Samuel Mesel | Intelligent Query Processing |
+8/16/22 | TBD | TBD
+9/20/22 | Torsten Strauss | TDB
+10/18/22 | TBD | TBD
+11/15/22 | TBD |TBD
+
 ... | ... | ...
 
 ## Other:
