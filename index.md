@@ -1,15 +1,15 @@
 # Tampa Bay SQL User Group HUB
 
-## Announcements
-- MS office location for Hybrid event [here!](https://www.microsoft.com/en-us/about/officelocator?Location=33609)
-- Find all of our archived slide decks [here!](https://msftcommunity-my.sharepoint.com/:f:/p/david_seis/EnBw0_6Sh2RApcrmteQEkmwB9CC8GNXCR-CIIxRbdjP3QA?e=SEHNyp)
-
 ## Social Media
 
+- [TBSSUG Meetup - Register and get the meeting link here!](https://www.meetup.com/Tampa-SQL-User-Groups/) 
 - [TBSSUG Twitter](https://twitter.com/TBSSUG) 
 - [TBSSUG Facebook](https://www.facebook.com/tbssug)
 - [TBSSUG Linkedin](https://www.linkedin.com/groups/1893703/)  
-- [TBSSUG Meetup - Register and get the meeting link here!](https://www.meetup.com/Tampa-SQL-User-Groups/) 
+
+## Announcements
+- MS office location for Hybrid events [here!](https://www.microsoft.com/en-us/about/officelocator?Location=33609)
+- Find all of our archived slide decks [here!](https://msftcommunity-my.sharepoint.com/:f:/p/david_seis/EnBw0_6Sh2RApcrmteQEkmwB9CC8GNXCR-CIIxRbdjP3QA?e=SEHNyp)
 
 ## Leadership
 
