@@ -9,7 +9,7 @@
 
 ## Announcements
 - MS office location for Hybrid events [here!](https://www.microsoft.com/en-us/about/officelocator?Location=33609)
-- Find all of our archived slide decks [here!](https://msftcommunity-my.sharepoint.com/:f:/p/david_seis/EnBw0_6Sh2RApcrmteQEkmwB9CC8GNXCR-CIIxRbdjP3QA?e=SEHNyp)
+- Find all of our archived slide decks [here!](https://msftcommunity-my.sharepoint.com/:f:/p/david_seis/EnBw0_6Sh2RApcrmteQEkmwB9CC8GNXCR-CIIxRbdjP3QA?e=gVHsJm)
 
 ## Leadership
 
@@ -24,16 +24,18 @@ We want to enrich our professional community with many voices. Please pick somet
 
 Date | Presenter | Session Title
 
-8/16/22 | Dale Sullenberger | "CTEs vs Table Variables vs Temporary Tables"
 9/20/22 | Torsten Strauss | TBD
-10/18/22 | TBD | TBD
-11/15/22 | TBD |TBD
-12/20/22 | TBD |TBD
+10/18/22 | Buck | SQL Security "ground to cloud" workshop pt.1
+11/15/22 | David | SQL Security "ground to cloud" workshop pt.2
+12/20/22 | David | SQL Security "ground to cloud" workshop pt.3
+1/17/23 | Buck | SQL Security "ground to cloud" workshop pt.4
+TBD | TBD | TBD 
 ... | ... | ...
 
 ## Past Sessions
 
 Date | Presenter | Session Title
+8/16/22 | Dale Sullenberger | "CTEs vs Table Variables vs Temporary Tables"
 7/19/22 | Samuel Mesel | "Intelligent Query Processing"
 6/21/22 | Edward Pollack | "My Favorite System Views and Tables"
 5/17/22 | Jonathan Bloom | "Intro to Data Governance"
@@ -52,7 +54,6 @@ Date | Presenter | Session Title
 - Ola Hallengrin's [Maintenance Sslution](https://ola.hallengren.com/)
 - Brent Ozar's [First Responder Toolkit](https://github.com/BrentOzarULTD/SQL-Server-First-Responder-Kit)
 - Adam Machanic's [sp_WhoIsActive](https://github.com/amachanic/sp_whoisactive)
-- David Schanzer's [DBA Toolbox](https://github.com/DavidSchanzer/Sql-Server-DBA-Toolbox)
 - [DBAtools](https://dbatools.io/)
 
 ## Free Learning Opportunities
