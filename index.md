@@ -29,7 +29,7 @@ Date | Presenter | Session Title
 11/15/22 | David | SQL Security "ground to cloud" workshop pt.2
 12/20/22 | David | SQL Security "ground to cloud" workshop pt.3
 1/17/23 | Buck | SQL Security "ground to cloud" workshop pt.4
-TBD | TBD | TBD 
+TBD | Pedro Franco | Data Governance and Purview 
 ... | ... | ...
 
 ## Past Sessions
