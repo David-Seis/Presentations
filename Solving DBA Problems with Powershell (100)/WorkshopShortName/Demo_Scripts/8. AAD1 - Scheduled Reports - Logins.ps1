@@ -22,12 +22,11 @@ $ClientName = '' #Please use dashes as spaces
 $reportname = 'Weekly-Login-Report' 
 
 $ServerToSetUpSendgridOn = '' #Needs to be a sql instance for SQLmail
-$serverWhereBeaconLives = ''
+$serverlist = ''
 
-$Testrecipient = 'david.seis@straightpathsql.com; alertinbox@straightpathsql.com'
-$EmailRecipients = 'david.seis@straightpathsql.com; alertinbox@straightpathsql.com' #separate with semicolons within the ''
+$EmailRecipients = 'david.seis@straightpathsql.com;' #separate with semicolons within the ''
 
-$Servers = 'se1sql400', 'se1sql500','se1sql600'
+$Servers = ''
 #known bug - manual server entry will not have quotations in final script - manual fix needed
 
 <###############################################################################################################################>
@@ -42,7 +41,7 @@ $Servers = 'se1sql400', 'se1sql500','se1sql600'
 
 
 <# Create C:\StraightPath\Reports for all the reports to go into#>
-$dir = "\\$ServerWhereBeaconLives\C$\StraightPath\Reports"
+$dir = "C:\StraightPath\Reports"
 If(!(test-path -PathType container $dir))
 {
 New-Item -ItemType Directory -Path $dir
@@ -57,7 +56,7 @@ New-Item -Path "\\$serverWhereBeaconLives\C`$\StraightPath\Reports" -Name "$repo
 
 Set-DbatoolsConfig -FullName sql.connection.trustcert -Value `$true
 
-`$path=`"\\$ServerWhereBeaconLives\C$\StraightPath\Reports\$clientname`_$reportname`_`$(get-date -f MM-dd-yyyy).htm`"
+`$path=`"C:\StraightPath\Reports\$clientname`_$reportname`_`$(get-date -f MM-dd-yyyy).htm`"
 
 <# Collect Server and Instance information #>
 `$SQLInstance = $servers
@@ -121,7 +120,7 @@ GO
 
 
 Write-Host "Creating XML File..." -ForegroundColor Green
-New-Item -Path "\\$ServerWhereBeaconLives\C$\Straightpath\Reports" -Name "$reportname`_Task.xml" -ItemType 'file' -value "<?xml version=`"1.0`" encoding=`"UTF-16`"?>
+New-Item -Path "C:\StraightPath\Reports" -Name "$reportname`_Task.xml" -ItemType 'file' -value "<?xml version=`"1.0`" encoding=`"UTF-16`"?>
 <Task version=`"1.2`" xmlns=`"http://schemas.microsoft.com/windows/2004/02/mit/task`">
 <RegistrationInfo>
 <Date>2022-02-23T12:59:09.8081565</Date>
@@ -187,7 +186,7 @@ New-Item -Path "\\$ServerWhereBeaconLives\C$\Straightpath\Reports" -Name "$repor
 </Actions>
 </Task>"
 
-Register-ScheduledTask -Xml (get-content "\\$ServerWhereBeaconLives\C$\StraightPath\Reports\$reportname`_Task.xml" | out-string) -Taskname "_REPORT_$reportname" -User $TaskSchedulerServiceAccount  -Password $TaskSchedulerServiceAccountPassword
+Register-ScheduledTask -Xml (get-content "C:\StraightPath\Reports\$reportname`_Task.xml" | out-string) -Taskname "_REPORT_$reportname" -User $TaskSchedulerServiceAccount  -Password $TaskSchedulerServiceAccountPassword
 
 
 

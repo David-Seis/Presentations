@@ -39,13 +39,12 @@ IF($CertificateNeeded -eq 1) {
     Write-Host "Security: Sending Test email..." -ForegroundColor Green
     [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
     $Parameters = @{
-        FromAddress     = "alertinbox@straightpathsql.com"
+        FromAddress     = ""
         ToAddress       = "david.seis@straightpathsql.com"
-        #CCAddress       = "alertinbox@straightpathsql.com"
         Subject         = "$ClientName Certificate Test"
         Body            = "$DataCollector has installed the Monthly Proactive Data Report on $ClientName using the [$($ServiceAccount.GetNetworkCredential().username)] account"
         Token           = Unprotect-CmsMessage -Path $SecurityPath\Sendgrid.txt
-        FromName        = "StraightPathSendGrid"
+        FromName        = ""
         ToName          = "David"
     }
     Send-PSSendGridMail @Parameters 

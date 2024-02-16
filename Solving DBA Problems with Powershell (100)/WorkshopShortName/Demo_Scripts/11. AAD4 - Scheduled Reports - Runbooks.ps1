@@ -1,6 +1,6 @@
 NEEDS Adjustment before session
 
-$ClientName = 'VSS'
+$ClientName = ''
 $toaddress = "david.seis@straightpathsql.com"
 
 
@@ -64,48 +64,7 @@ h5{ margin-left:50px; background-color:#abc8f7;}
 <H2 style="background-color:#8fbaff;">A Report from Straight Path IT Solutions, LLC.</H2>
 "@
 
-#Beacon Server List
-[System.Xml.XmlDocument] $xd = new-object System.Xml.XmlDocument
-[System.Xml.XmlNamespaceManager] $nsmgr = new-object System.Xml.XmlNamespaceManager($xd.NameTable)
-$file = resolve-path("C:\SQL Beacon\SQL Beacon Agent Gen2\Live-SQLBeaconSettings.xml")
-$xd.load($file)
-$nsmgr.AddNamespace("ns", "http://tempuri.org/DBMSettings.xsd")
 
-Write-Progress -Activity 'Preparation' -Status 'Enumeratign Servers from Beacon' -PercentComplete 25
-		$servers = @()
-		foreach($node in $xd.DBMSettings.WindowsServerOS)
-		{
-		<# for the most part the Windows Server Name is the SQL Server name, but this is to handle named instances #>
-		foreach($instance in $xd.SelectNodes("*/ns:SQLInstance[ns:WindowsServerOSId=$($node.WindowsServerOSId)]/ns:InstanceName", $nsmgr))
-		{
-		<# no named instance #>
-		if($instance.InnerText -eq "" -or $null -eq $instance)
-		{
-		$servers += $node.ServerName 
-		}
-		<# not sure this really belongs, but it handles the odd case of smith brothers farms WHERE the SQL instance is on a non-default port so it has 
-		a value but won't work if you make it a named instance #>
-		elseif ($instance.InnerText.ToString().Contains($node.ServerName))
-		{
-		$servers += $instance.InnerText
-		}
-		<# actual named instance #>
-		else
-		{
-		$servers += $node.ServerName + "\" + $instance.InnerText
-		}
-
-		}
-		}
-Write-Progress -Activity 'Preparation' -Status 'Separatign Computer names from Instance names' -PercentComplete 75
-		$computers = @()
-		foreach($node in $xd.DBMSettings.WindowsServerOS)
-		{ 
-		$computers += $node.ServerName 
-		}
-
-		$computer = $computers
-		$SQLInstance= $servers
 
 Set-DbatoolsConfig -FullName sql.connection.trustcert -Value $true
 
@@ -234,13 +193,12 @@ Compress-7Zip @compress
 Write-Host "Sending email..." -ForegroundColor Green
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 $Parameters = @{
-    FromAddress     = "alertinbox@straightpathsql.com"
+    FromAddress     = ""
     ToAddress       = $toaddress
-    CCAddress       = "alertinbox@straightpathsql.com"
     Subject         = "Runbooks for $ClientName attached!"
     Body            = "Please find your reports for $ClientName, sent by $DataCollector, attached!"
     Token           = Unprotect-CmsMessage -Path $SecurityPath\Sendgrid.txt
-    FromName        = "StraightPathSendGrid"
+    FromName        = ""
     ToName          = "David"
     AttachmentPath  = "C:\Straightpath\reports\$ClientName`_Runbooks_$(get-date -f MM-yyyy).zip"
 }

@@ -29,9 +29,6 @@ IF($CreateToolingReport -eq 1) {
     `$root = '$DataCollector' +'_'+$ClientID+'_'+'$ClientName'
     
     Write-Host `"Server Prep...`" -ForegroundColor Green
-    `$ServerTable = `$root+'_ServerTable_'+`$(get-date -f MM-dd-yy)
-    `$InstanceTable = `$root+'_InstanceTable_'+`$(get-date -f MM-dd-yy)
-    `$SrvrTableDetails = `$root+'_SrvrTableDetails_'+`$(get-date -f MM-dd-yy)
     `$jumpboxfile = `$root+'_Jumpbox_'+`$(get-date -f MM-dd-yy)
     
     `$dir = `"C:\Temp\SPReports`"
@@ -183,13 +180,12 @@ IF($CreateToolingReport -eq 1) {
     Write-Host `"Sending email...`" -ForegroundColor Green
     [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
     `$Parameters = @{
-        FromAddress     = `"alertinbox@straightpathsql.com`"
+        FromAddress     = 
         ToAddress       = `"david.seis@straightpathsql.com`"
-        CCAddress       = `"alertinbox@straightpathsql.com`"
         Subject         = `"Reports for $ClientName attached!`"
         Body            = `"Please find your reports for $ClientName, sent by $DataCollector, attached!`"
         Token           = Unprotect-CmsMessage -Path $SecurityPath\Sendgrid.txt
-        FromName        = `"StraightPathSendGrid`"
+        FromName        = `"`"
         ToName          = `"David`"
         AttachmentPath  = `"C:\temp\$ClientName`_Reports_`$(get-date -f MM-yyyy).zip`"
     }

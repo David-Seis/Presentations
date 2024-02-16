@@ -52,15 +52,12 @@ $SQLInstance = 'Labsql3'
     #>
 
 
-#Where Ola will be installed, as well as the Whoisactive table
-$OlaDatabase = 'Admin' 
-
 #Ola Parameters
 $olaParams = @{
     CleanupTime = 336 #number of hours backups will be retained
     BackupLocation = '\\labshare\SQLBackups' #Backup location for OLA jobs
     SqlInstance = $SqlInstance
-    Database = $Database
+    Database = ''
     InstallJobs = $true
     LogToTable = $true
     Verbose = $false # this shows ola install alerts during install
