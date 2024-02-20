@@ -16,10 +16,12 @@ Changes:
 #>
 
 <#-- Step 1 -- Check Connectivity  
-#Priming Query check for connectivity to all the target servers - change the test targets to the servers you want to prep for.
-$TestTargets = 'Labsql1','Labsql2','Labsql3' #, '', '', '', '' target SQL server
+$cred = $host.ui.PromptForCredential("SQLlogin", "", "sa", "") #Str0ngP@sSw0rd !
 
-Invoke-DbaQuery -SQLInstance $TestTargets -query "
+#Priming Query check for connectivity to all the target servers - change the test targets to the servers you want to prep for.
+$TestTargets = 'seis-work,1435' #, '', '', '', '' target SQL server
+
+Invoke-DbaQuery -SQLInstance $TestTargets -SqlCredential $cred -query "
 /*~~~ Find Current Location of Data and Log File of All the Database ~~~*/
 	SELECT @@servername as [Server name], TYPE_DESC, physical_name AS current_file_location 
 	FROM sys.master_files 
@@ -32,11 +34,11 @@ Invoke-DbaQuery -SQLInstance $TestTargets -query "
 
 
 #The server where maintenance will be installed:
-$SQLInstance = 'Labsql3'
+$SQLInstance = 'seis-work,1435'
 
 #Create a management database? # 1 = yes, 0 = No . PICK DEFAULT OR CUSTOM for the database fiel locations, NOT BOTH#>
 
-    $AdminDatabase = 'Admin'
+    $AdminDatabase = 'DB_Admin'
     
         $YesWithCUSTOMlocation = 0
             $DBDataLoc = 'D:\SQLDATA\' #'E:\SQLData\' #where DB admin data files will be put
@@ -55,9 +57,9 @@ $SQLInstance = 'Labsql3'
 #Ola Parameters
 $olaParams = @{
     CleanupTime = 336 #number of hours backups will be retained
-    BackupLocation = '\\labshare\SQLBackups' #Backup location for OLA jobs
+    BackupLocation = '' #Backup location for OLA jobs
     SqlInstance = $SqlInstance
-    Database = 'Admin'
+    Database = 'DB_Admin'
     InstallJobs = $true
     LogToTable = $true
     Verbose = $false # this shows ola install alerts during install
@@ -81,8 +83,8 @@ $indexOptimize = 1
 $CommandLogCleanup = 1 
 $CycleErrorLog = 1 
 $OutputFileCleanup = 1
-$DeleteBackupHistory = 0
-$PurgeJobHistory = 0
+$DeleteBackupHistory = 1
+$PurgeJobHistory = 1
 $Whoisactive = 1
 
 
@@ -94,6 +96,8 @@ $Whoisactive = 1
 <#==========                        Nothing more needs to be done. F5                        =========#>
 <#====================================================================================================#>
 <#====================================================================================================#>
+$cred = $host.ui.PromptForCredential("SQLlogin", "", "sa", "") #Str0ngP@sSw0rd !
+
 
 
 Write-Host "Admin Database: Preparing to create [$AdminDatabase] Database..." -ForegroundColor Green
@@ -102,7 +106,7 @@ IF($YesWithCUSTOMlocation -eq 1 -AND $YesWithDEFAULTlocation -eq 1) {
     Return
 } ELSEIF ($YesWithDEFAULTlocation -eq 1) {
     Write-Host "Admin Database: Create $AdminDatabase using the Server default data and log locations..." -ForegroundColor Green
-    Invoke-DbaQuery -SQLInstance $SQLInstance -Query "
+    Invoke-DbaQuery -SQLInstance $SQLInstance -SqlCredential $cred -Query "
     CREATE DATABASE [$AdminDatabase];
     GO
     ALTER DATABASE [$AdminDatabase] MODIFY FILE (NAME = N'$AdminDatabase' , SIZE = 512 MB , FILEGROWTH = 128 MB , MAXSIZE = 10240 MB );
@@ -113,7 +117,7 @@ IF($YesWithCUSTOMlocation -eq 1 -AND $YesWithDEFAULTlocation -eq 1) {
     "
 } ELSEIF ($YesWithCUSTOMlocation -eq 1) {
     Write-Host "Admin Database: Create $AdminDatabase with Custom data and log locations..." -ForegroundColor Green
-    Invoke-DbaQuery -SQLInstance $SQLInstance -Query "
+    Invoke-DbaQuery -SQLInstance $SQLInstance -SqlCredential $cred -Query "
 
     CREATE DATABASE [$AdminDatabase] ON PRIMARY 
     ( NAME = N'$AdminDatabase', FILENAME = N'$($DBDataLoc+$AdminDatabase).mdf' , SIZE = 512 MB , FILEGROWTH = 128 MB , MAXSIZE = 10240 MB )
@@ -128,16 +132,16 @@ IF($YesWithCUSTOMlocation -eq 1 -AND $YesWithDEFAULTlocation -eq 1) {
 }
 
 Write-Host "Community Tools: Installing First Responder..." -ForegroundColor Green
-Install-DbaFirstResponderKit -SqlInstance $SQLInstance -Database $FirstResponderDB
+Install-DbaFirstResponderKit -SqlInstance $SQLInstance -Database $FirstResponderDB -SqlCredential $cred
 Write-Host "Community Tools: Installing WhoIsActive (with $AdminDatabase as host DB unless you changed this above)..." -ForegroundColor Green
-Install-DbaWhoIsActive -SqlInstance $SqlInstance -Database $SPWhoisactiveDB
+Install-DbaWhoIsActive -SqlInstance $SqlInstance -Database $SPWhoisactiveDB -SqlCredential $cred
 
 
 Write-Host "Ola Maintenance: Install OLA..." -ForegroundColor Green
-Install-DbaMaintenanceSolution @olaParams
+Install-DbaMaintenanceSolution @olaParams -SqlCredential $cred
 
 Write-Host "Ola Maintenance: Add Recommended OLA Schedules..." -ForegroundColor Green
-Invoke-DbaQuery -SQLInstance $SQLInstance -Query "
+Invoke-DbaQuery -SQLInstance $SQLInstance -SqlCredential $cred -Query "
 
 USE [msdb]
 GO
@@ -329,7 +333,7 @@ GO
 "
 
 Write-Host "Community Tools: Add WhoIsActive Job..." -ForegroundColor Green
-Invoke-DbaQuery -SQLInstance $SQLInstance -Query "
+Invoke-DbaQuery -SQLInstance $SQLInstance -SqlCredential $cred -Query "
 /************************ This creates a job that runs sp_whoisactive every minute and logs to $AdminDatabase.dbo.WhoIsActive table and retains the data for 3 days. *************************
 ************************* If using this be sure to cap the size of $AdminDatabase so that it doesn't fill a drive. **************************************************************************/
 
@@ -349,7 +353,7 @@ IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
 END
 
 DECLARE @jobId BINARY(16)
-EXEC @ReturnCode =  msdb.dbo.sp_add_job @job_name=N'_MAINT_sp_whoisactive data collection monitoring', 
+EXEC @ReturnCode =  msdb.dbo.sp_add_job @job_name=N'sp_whoisactive data collection monitoring', 
 		@enabled=1, 
 		@notify_level_eventlog=0, 
 		@notify_level_email=0, 
@@ -450,18 +454,18 @@ GO
 "
 
 Write-Host "Ola Maintenance: Enabling/ Disabling jobs..." -ForegroundColor Green
-Invoke-DbaQuery -SqlInstance $SQLInstance -database msdb -Query sp_update_job -SqlParameter @{ job_name = "DatabaseBackup - USER_DATABASES - FULL"; enabled = $UserFULLBackups} -CommandType StoredProcedure
-Invoke-DbaQuery -SqlInstance $SQLInstance -database msdb -Query sp_update_job -SqlParameter @{ job_name = "DatabaseBackup - USER_DATABASES - DIFF"; enabled = $UserDIFFBackups} -CommandType StoredProcedure
-Invoke-DbaQuery -SqlInstance $SQLInstance -database msdb -Query sp_update_job -SqlParameter @{ job_name = "DatabaseBackup - USER_DATABASES - LOG"; enabled = $UserLOGBackups} -CommandType StoredProcedure
-Invoke-DbaQuery -SqlInstance $SQLInstance -database msdb -Query sp_update_job -SqlParameter @{ job_name = "DatabaseBackup - SYSTEM_DATABASES - FULL"; enabled = $SystemFULLBackups} -CommandType StoredProcedure
-Invoke-DbaQuery -SqlInstance $SQLInstance -database msdb -Query sp_update_job -SqlParameter @{ job_name = "DatabaseIntegritycheck - SYSTEM_DATABASES"; enabled = $SystemIntegrity} -CommandType StoredProcedure
-Invoke-DbaQuery -SqlInstance $SQLInstance -database msdb -Query sp_update_job -SqlParameter @{ job_name = "DatabaseIntegritycheck - USER_DATABASES"; enabled = $UserIntegrity} -CommandType StoredProcedure
-Invoke-DbaQuery -SqlInstance $SQLInstance -database msdb -Query sp_update_job -SqlParameter @{ job_name = "IndexOptimize - USER_DATABASES"; enabled = $indexOptimize} -CommandType StoredProcedure
-Invoke-DbaQuery -SqlInstance $SQLInstance -database msdb -Query sp_update_job -SqlParameter @{ job_name = "CommandLog Cleanup"; enabled = $CommandLogCleanup} -CommandType StoredProcedure
-Invoke-DbaQuery -SqlInstance $SQLInstance -database msdb -Query sp_update_job -SqlParameter @{ job_name = "CycleErrorLog"; enabled = $CycleErrorLog} -CommandType StoredProcedure
-Invoke-DbaQuery -SqlInstance $SQLInstance -database msdb -Query sp_update_job -SqlParameter @{ job_name = "Output File Cleanup"; enabled = $OutputFileCleanup} -CommandType StoredProcedure
-Invoke-DbaQuery -SqlInstance $SQLInstance -database msdb -Query sp_update_job -SqlParameter @{ job_name = "sp_delete_backuphistory"; enabled = $DeleteBackupHistory} -CommandType StoredProcedure
-Invoke-DbaQuery -SqlInstance $SQLInstance -database msdb -Query sp_update_job -SqlParameter @{ job_name = "sp_purge_jobhistory"; enabled = $PurgeJobHistory} -CommandType StoredProcedure
-Invoke-DbaQuery -SqlInstance $SQLInstance -database msdb -Query sp_update_job -SqlParameter @{ job_name = "sp_whoisactive data collection monitoring"; enabled = $Whoisactive} -CommandType StoredProcedure
+Invoke-DbaQuery -SqlInstance $SQLInstance -SqlCredential $cred -database msdb -Query sp_update_job -SqlParameter @{ job_name = "DatabaseBackup - USER_DATABASES - FULL"; enabled = $UserFULLBackups} -CommandType StoredProcedure
+Invoke-DbaQuery -SqlInstance $SQLInstance -SqlCredential $cred -database msdb -Query sp_update_job -SqlParameter @{ job_name = "DatabaseBackup - USER_DATABASES - DIFF"; enabled = $UserDIFFBackups} -CommandType StoredProcedure
+Invoke-DbaQuery -SqlInstance $SQLInstance -SqlCredential $cred -database msdb -Query sp_update_job -SqlParameter @{ job_name = "DatabaseBackup - USER_DATABASES - LOG"; enabled = $UserLOGBackups} -CommandType StoredProcedure
+Invoke-DbaQuery -SqlInstance $SQLInstance -SqlCredential $cred -database msdb -Query sp_update_job -SqlParameter @{ job_name = "DatabaseBackup - SYSTEM_DATABASES - FULL"; enabled = $SystemFULLBackups} -CommandType StoredProcedure
+Invoke-DbaQuery -SqlInstance $SQLInstance -SqlCredential $cred -database msdb -Query sp_update_job -SqlParameter @{ job_name = "DatabaseIntegritycheck - SYSTEM_DATABASES"; enabled = $SystemIntegrity} -CommandType StoredProcedure
+Invoke-DbaQuery -SqlInstance $SQLInstance -SqlCredential $cred -database msdb -Query sp_update_job -SqlParameter @{ job_name = "DatabaseIntegritycheck - USER_DATABASES"; enabled = $UserIntegrity} -CommandType StoredProcedure
+Invoke-DbaQuery -SqlInstance $SQLInstance -SqlCredential $cred -database msdb -Query sp_update_job -SqlParameter @{ job_name = "IndexOptimize - USER_DATABASES"; enabled = $indexOptimize} -CommandType StoredProcedure
+Invoke-DbaQuery -SqlInstance $SQLInstance -SqlCredential $cred -database msdb -Query sp_update_job -SqlParameter @{ job_name = "CommandLog Cleanup"; enabled = $CommandLogCleanup} -CommandType StoredProcedure
+Invoke-DbaQuery -SqlInstance $SQLInstance -SqlCredential $cred -database msdb -Query sp_update_job -SqlParameter @{ job_name = "sp_delete_backuphistory"; enabled = $DeleteBackupHistory} -CommandType StoredProcedure
+Invoke-DbaQuery -SqlInstance $SQLInstance -SqlCredential $cred -database msdb -Query sp_update_job -SqlParameter @{ job_name = "sp_purge_jobhistory"; enabled = $PurgeJobHistory} -CommandType StoredProcedure
+Invoke-DbaQuery -SqlInstance $SQLInstance -SqlCredential $cred -database msdb -Query sp_update_job -SqlParameter @{ job_name = "sp_whoisactive data collection monitoring"; enabled = $Whoisactive} -CommandType StoredProcedure
+#Invoke-DbaQuery -SqlInstance $SQLInstance -SqlCredential $cred -database msdb -Query sp_update_job -SqlParameter @{ job_name = "CycleErrorLog"; enabled = $CycleErrorLog} -CommandType StoredProcedure
+#Invoke-DbaQuery -SqlInstance $SQLInstance -SqlCredential $cred -database msdb -Query sp_update_job -SqlParameter @{ job_name = "Output File Cleanup"; enabled = $OutputFileCleanup} -CommandType StoredProcedure
 
 Write-Host "Complete." -ForegroundColor Green

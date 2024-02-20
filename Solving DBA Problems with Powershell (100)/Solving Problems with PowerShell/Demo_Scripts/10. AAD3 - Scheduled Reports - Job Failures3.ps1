@@ -1,5 +1,3 @@
-NEEDS Adjustment before session
-
 ## DEPENDENCIES
 # 1. Dbatools
 # 2. Service account access to all monitored servers
@@ -14,10 +12,11 @@ NEEDS Adjustment before session
 <# Necessary Variables #>
 $reportname = "Job Run Report"
 
-$TaskSchedulerServiceAccount = ''
-$TaskScheduelrServiceAccountPassword = ''
+$cred = $host.ui.PromptForCredential("Task Scheduler Login", "", "AzureAD\davidseis", "") 
+$sqlcred = $host.ui.PromptForCredential("SQLlogin", "", "sa", "") #Str0ngP@sSw0rd !
 
-$ClientName = '' #No spaces will look better!
+
+$ClientName = 'TestLab' #No spaces will look better!
 
 $ServerToSetUpSendgridOn = '' #Needs to have sql on it
 $serverlistpath = ''
@@ -37,9 +36,10 @@ Write-Host "Creating Powershell File..." -ForegroundColor Green
             }
             `$path=`"C:\Straightpath\Reports\$clientname`_$reportname`$(get-date -f MM-dd-yyyy).htm`"
 
+            `$sqllist = Get-Content -Path `"C:\Users\Administrator\Desktop\sqllist.txt`"
 
 
-            `$SQLInstance= `"`"
+  
 
 
 
@@ -62,9 +62,9 @@ Write-Host "Creating Powershell File..." -ForegroundColor Green
                 `"
 
 
-            `$results = Invoke-DbaQuery -SQLInstance `$SQLInstance -Query `"
+            `$results = Invoke-DbaQuery -SQLInstance `$SQLlist -sqlcredential $sqlcred -Query `"
             WITH jobhistory as (   
-                SELECT    job_id,
+                SELECT   job_id,
                          Max(instance_id) instance_id
                FROM      msdb.dbo.sysjobhistory
                 WHERE     step_id = 0
@@ -73,7 +73,7 @@ Write-Host "Creating Powershell File..." -ForegroundColor Green
                 GROUP BY job_id
              --   order by run_status asc
                 )
-             SELECT  --  j.job_id,
+             SELECT  @@ServerName as [Servername]
                        j.name,
                        CASE sjh.run_status
                  WHEN 0 THEN 'Failed'
@@ -121,14 +121,14 @@ Write-Host "Creating Powershell File..." -ForegroundColor Green
         
 
             #Format Body and send the email
-            Invoke-dbaquery -SqlInstance $ServerToSetUpSendgridOn -query `"
+            <#Invoke-dbaquery -SqlInstance $ServerToSetUpSendgridOn -query `"
             EXEC msdb.dbo.sp_send_dbmail
-            @profile_name = 'StraightPath_Sendgrid_Profile',
+            @profile_name = '',
             @recipients = '$EmailRecipients',
             @body = '`$output',
             @body_format = 'HTML',
             @subject = '`$subject';
-            GO
+            GO#>
             `"
             "
         
@@ -167,7 +167,7 @@ Write-Host "Creating Powershell File..." -ForegroundColor Green
       </Triggers>
         <Principals>
             <Principal id=`"Author`">
-            <UserId>$TaskSchedulerServiceAccount</UserId>
+            <UserId>$($cred.GetNetworkCredential().username)</UserId>
             <LogonType>Password</LogonType>
             <RunLevel>HighestAvailable</RunLevel>
             </Principal>
@@ -199,7 +199,7 @@ Write-Host "Creating Powershell File..." -ForegroundColor Green
         </Actions>
         </Task>"
 
-    Register-ScheduledTask -Xml (get-content "C:\Straightpath\Reports\$reportname`_Task.xml" | out-string) -Taskname "_REPORT_$reportname" -User $TaskSchedulerServiceAccount  -Password $TaskScheduelrServiceAccountPassword
+    Register-ScheduledTask -Xml (get-content "C:\Straightpath\Reports\$reportname`_Task.xml" | out-string) -Taskname "_REPORT_$reportname" -User $($cred.GetNetworkCredential().username) -Password $($cred.GetNetworkCredential().Password)
 
 
 
