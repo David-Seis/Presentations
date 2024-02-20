@@ -39,7 +39,7 @@ Write-Host "Creating Powershell File..." -ForegroundColor Green
 
 
 
-            `$SQLInstance= `"ARCU-SQL`"
+            `$SQLInstance= `"`"
 
 
 

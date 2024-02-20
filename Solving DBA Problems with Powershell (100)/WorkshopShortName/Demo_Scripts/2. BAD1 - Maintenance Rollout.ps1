@@ -17,7 +17,7 @@ Changes:
 
 <#-- Step 1 -- Check Connectivity  
 #Priming Query check for connectivity to all the target servers - change the test targets to the servers you want to prep for.
-$TestTargets = 'Lbsql1','Labsql2','Labsql3' #, '', '', '', '' target SQL server
+$TestTargets = 'Labsql1','Labsql2','Labsql3' #, '', '', '', '' target SQL server
 
 Invoke-DbaQuery -SQLInstance $TestTargets -query "
 /*~~~ Find Current Location of Data and Log File of All the Database ~~~*/
@@ -42,7 +42,7 @@ $SQLInstance = 'Labsql3'
             $DBDataLoc = 'D:\SQLDATA\' #'E:\SQLData\' #where DB admin data files will be put
             $DBLogLoc = 'L:\SQLLogs\' #'L:\SQLLogs\' # where DB admin logs will be put
     
-        $YesWithDEFAULTlocation = 0
+        $YesWithDEFAULTlocation = 1
 
     <# USE THIS TO CHECK CURRENT DEFAULT data and log LOCATIONS
         $SQLInstance = 'LabSQL3'
@@ -57,7 +57,7 @@ $olaParams = @{
     CleanupTime = 336 #number of hours backups will be retained
     BackupLocation = '\\labshare\SQLBackups' #Backup location for OLA jobs
     SqlInstance = $SqlInstance
-    Database = ''
+    Database = 'Admin'
     InstallJobs = $true
     LogToTable = $true
     Verbose = $false # this shows ola install alerts during install
@@ -81,8 +81,8 @@ $indexOptimize = 1
 $CommandLogCleanup = 1 
 $CycleErrorLog = 1 
 $OutputFileCleanup = 1
-$DeleteBackupHistory = 1
-$PurgeJobHistory = 1
+$DeleteBackupHistory = 0
+$PurgeJobHistory = 0
 $Whoisactive = 1
 
 
