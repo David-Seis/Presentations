@@ -1,3 +1,4 @@
+clear-host
 ## DEPENDENCIES
 # 1. Dbatools
 # 2. Service account access to all monitored servers
@@ -12,31 +13,34 @@
 <# Necessary Variables #>
 $reportname = "Job Run Report"
 
-$cred = $host.ui.PromptForCredential("Task Scheduler Login", "", "AzureAD\davidseis", "") 
-$sqlcred = $host.ui.PromptForCredential("SQLlogin", "", "sa", "") #Str0ngP@sSw0rd !
-
+$cred = $host.ui.PromptForCredential("Task Scheduler Login", "", "Test_Service", "") 
 
 $ClientName = 'TestLab' #No spaces will look better!
 
-$ServerToSetUpSendgridOn = '' #Needs to have sql on it
-$serverlistpath = ''
 
 $EmailRecipients = 'David.seis@straightpathsql.com;' #separate with semicolons
 
 
 
 Write-Host "Creating Powershell File..." -ForegroundColor Green
-    New-Item -Path "C:\Straightpath\Reports" -Name "$reportname`Script.ps1" -ItemType 'file' -value "
+    New-Item -Path "C:\Straightpath\Reports" -Name "$reportname`_Script.ps1" -ItemType 'file' -value "
             
+
+            `$username = 'SA'
+            `$password = 'Str0ngP@sSw0rd !'
+            `$securePassword = ConvertTo-SecureString `$password -AsPlainText -Force
+            `$credential = New-Object System.Management.Automation.PSCredential(`$username, `$securePassword)
+
+
         <# Create C:\StraightPath\Reports for all the reports to go into#>
             `$dir = `"C:\Straightpath\Reports`"
             If(!(test-path -PathType container `$dir))
             {
                 New-Item -ItemType Directory -Path `$path
             }
-            `$path=`"C:\Straightpath\Reports\$clientname`_$reportname`$(get-date -f MM-dd-yyyy).htm`"
+            `$path=`"C:\Straightpath\Reports\$clientname`_$reportname`_$(get-date -f MM-dd-yyyy).htm`"
 
-            `$sqllist = Get-Content -Path `"C:\Users\Administrator\Desktop\sqllist.txt`"
+            `$sqllist = Get-Content -Path `"C:\StraightPath\Reports\SQLlist.txt`"
 
 
   
@@ -62,49 +66,44 @@ Write-Host "Creating Powershell File..." -ForegroundColor Green
                 `"
 
 
-            `$results = Invoke-DbaQuery -SQLInstance `$SQLlist -sqlcredential $sqlcred -Query `"
-            WITH jobhistory as (   
-                SELECT   job_id,
-                         Max(instance_id) instance_id
-               FROM      msdb.dbo.sysjobhistory
-                WHERE     step_id = 0
-                          AND run_status is not null
-                         
+            `$results = Invoke-DbaQuery -SQLInstance `$SQLlist -sqlcredential `$credential -Query `"
+                WITH jobhistory as 
+                (   
+                SELECT   
+		                job_id
+	                ,	Max(instance_id) instance_id
+                FROM	msdb.dbo.sysjobhistory
+                WHERE	step_id = 0
+	                AND	run_status is not null                      
                 GROUP BY job_id
-             --   order by run_status asc
+
                 )
-             SELECT  @@ServerName as [Servername]
-                       j.name,
-                       CASE sjh.run_status
-                 WHEN 0 THEN 'Failed'
-                 WHEN 1 THEN 'Succeeded'
-                 WHEN 2 THEN 'Retry'
-                 WHEN 3 THEN 'Canceled'
-                 WHEN 4 THEN 'In Progress'
-                 else 'boogy man'
-               END RunStatus,
-             --  jh.run_status,
-              last_run_time =  (msdb.dbo.agent_datetime(run_date, run_time)),
-                          last_end_time = (dateadd(ss,run_duration % 100 + ROUND((run_duration % 10000) / 100, 0, 0) * 60 + ROUND((run_duration % 1000000) / 10000, 0, 0) * 3600 ,msdb.dbo.agent_datetime(run_date, run_time)))
-              --  ,j.enabled 
-                
-                ,
-                CASE SJ.next_run_date
-                         WHEN 0 THEN cast('n/a' as char(10))
-                         ELSE convert(char(10), convert(datetime, convert(char(8),SJ.next_run_date)),120)  + ' ' + left(stuff((stuff((replicate('0', 6 - len(next_run_time)))+ convert(varchar(6),next_run_time),3,0,':')),6,0,':'),8)
-                     END AS NextRunTime
-             --           jh.duration
-             FROM      msdb.dbo.sysjobs j
-                       LEFT OUTER JOIN jobhistory jh
-                       ON j.job_id = jh.job_id
-                       join msdb..sysjobhistory sjh
-                       on jh.instance_id = sjh.instance_id
-                       left join msdb.dbo.sysjobschedules SJ on J.job_id = SJ.job_id  
-             left join msdb.dbo.sysschedules SS on SS.schedule_id = SJ.schedule_id
-             
-             where sjh.run_status is not null
-                 and j.enabled = 1
-             ORDER BY Runstatus,last_end_time desc 
+                SELECT  
+	                @@ServerName as [Servername]
+                ,	j.name
+                ,	CASE sjh.run_status
+		                WHEN 0 THEN 'Failed'
+		                WHEN 1 THEN 'Succeeded'
+		                WHEN 2 THEN 'Retry'
+		                WHEN 3 THEN 'Canceled'
+		                WHEN 4 THEN 'In Progress'
+		                ELSE 'boogy man'
+	                END RunStatus
+                ,	last_run_time =  (msdb.dbo.agent_datetime(run_date, run_time))
+                ,	last_end_time = (dateadd(ss,run_duration % 100 + ROUND((run_duration % 10000) / 100, 0, 0) * 60 + ROUND((run_duration % 1000000) / 10000, 0, 0) * 3600 ,msdb.dbo.agent_datetime(run_date, run_time)))           
+                ,	CASE SJ.next_run_date
+		                WHEN 0 THEN cast('n/a' as char(10))
+		                ELSE convert(char(10), convert(datetime, convert(char(8),SJ.next_run_date)),120)  + ' ' + left(stuff((stuff((replicate('0', 6 - len(next_run_time)))+ convert(varchar(6),next_run_time),3,0,':')),6,0,':'),8)
+	                END AS NextRunTime
+                FROM	msdb.dbo.sysjobs j
+	                LEFT OUTER JOIN jobhistory jh	ON j.job_id = jh.job_id
+	                JOIN msdb..sysjobhistory sjh	ON jh.instance_id = sjh.instance_id
+	                LEFT JOIN msdb.dbo.sysjobschedules SJ ON J.job_id = SJ.job_id  
+	                LEFT JOIN msdb.dbo.sysschedules SS ON SS.schedule_id = SJ.schedule_id
+	
+                WHERE sjh.run_status is not null
+	                AND j.enabled = 1
+                ORDER BY Runstatus,last_end_time desc 
             
             `" | Select-object * -ExcludeProperty RowError, RowState, Table, ItemArray, HasErrors | ConvertTo-Html | Out-String
 
@@ -128,8 +127,9 @@ Write-Host "Creating Powershell File..." -ForegroundColor Green
             @body = '`$output',
             @body_format = 'HTML',
             @subject = '`$subject';
-            GO#>
+            GO
             `"
+            #>
             "
         
 
@@ -194,7 +194,7 @@ Write-Host "Creating Powershell File..." -ForegroundColor Green
         <Actions Context=`"Author`">
         <Exec>
             <Command>Powershell.exe</Command>
-            <Arguments>-ExecutionPolicy Unrestricted -File `"C:\StraightPath\Reports\$reportname`_Script.ps1`"</Arguments>
+            <Arguments>-ExecutionPolicy Unrestricted -File `"C:\StraightPath\Reports\$($reportname)`_Script.ps1`"</Arguments>
         </Exec>
         </Actions>
         </Task>"

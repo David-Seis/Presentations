@@ -1,4 +1,5 @@
-﻿###########################################################################
+﻿
+###########################################################################
 #						Created by David Seis							  #
 #							  11/1/2022									  #
 #																		  #
@@ -25,7 +26,7 @@ Invoke-DbaQuery -SQLInstance $TestTargets -SqlCredential $cred -query "
 /*~~~ Find Current Location of Data and Log File of All the Database ~~~*/
 	SELECT @@servername as [Server name], TYPE_DESC, physical_name AS current_file_location 
 	FROM sys.master_files 
-    WHERE database_id > 4
+    --WHERE database_id > 4
     ORDER BY type_desc
 "| Select * -ExcludeProperty RowError, RowState, Table, ItemArray, HasErrors | format-table
 --#>
@@ -34,7 +35,7 @@ Invoke-DbaQuery -SQLInstance $TestTargets -SqlCredential $cred -query "
 
 
 #The server where maintenance will be installed:
-$SQLInstance = 'seis-work,1435'
+$SQLInstance = 'seis-work,1433', 'seis-work,1434', 'seis-work,1435'
 
 #Create a management database? # 1 = yes, 0 = No . PICK DEFAULT OR CUSTOM for the database fiel locations, NOT BOTH#>
 
@@ -57,7 +58,7 @@ $SQLInstance = 'seis-work,1435'
 #Ola Parameters
 $olaParams = @{
     CleanupTime = 336 #number of hours backups will be retained
-    BackupLocation = '' #Backup location for OLA jobs
+    BackupLocation = 'NULL' #Backup location for OLA jobs
     SqlInstance = $SqlInstance
     Database = 'DB_Admin'
     InstallJobs = $true
@@ -132,13 +133,13 @@ IF($YesWithCUSTOMlocation -eq 1 -AND $YesWithDEFAULTlocation -eq 1) {
 }
 
 Write-Host "Community Tools: Installing First Responder..." -ForegroundColor Green
-Install-DbaFirstResponderKit -SqlInstance $SQLInstance -Database $FirstResponderDB -SqlCredential $cred
+Install-DbaFirstResponderKit -SqlInstance $SQLInstance -Database $FirstResponderDB -SqlCredential $cred | Out-Null
 Write-Host "Community Tools: Installing WhoIsActive (with $AdminDatabase as host DB unless you changed this above)..." -ForegroundColor Green
-Install-DbaWhoIsActive -SqlInstance $SqlInstance -Database $SPWhoisactiveDB -SqlCredential $cred
+Install-DbaWhoIsActive -SqlInstance $SqlInstance -Database $SPWhoisactiveDB -SqlCredential $cred | Out-Null
 
 
 Write-Host "Ola Maintenance: Install OLA..." -ForegroundColor Green
-Install-DbaMaintenanceSolution @olaParams -SqlCredential $cred
+Install-DbaMaintenanceSolution @olaParams -SqlCredential $cred | Out-Null
 
 Write-Host "Ola Maintenance: Add Recommended OLA Schedules..." -ForegroundColor Green
 Invoke-DbaQuery -SQLInstance $SQLInstance -SqlCredential $cred -Query "
