@@ -14,4 +14,4 @@
 ## Notebooks and Courses
 
 - [Shut the Front Door - A guide for organization security audits (Co-Authored with Buck Woody)](https://github.com/BuckWoody/presentations/tree/master/shut_the_front_door)
-- [Solving DBA Problems with Powershell]
+- [Solving DBA Problems with Powershell](https://github.com/David-Seis/Presentations/tree/main/Solving%20DBA%20Problems%20with%20Powershell%20(100))
