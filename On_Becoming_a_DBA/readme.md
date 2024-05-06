@@ -29,7 +29,7 @@ In this list you will find resources I've found, been pointed to, found useful, 
 <h3>Courses and other Misc.</h3>
 
 - [DBATools](https://dbatools.io/commands/) - This powershell module is powerful. Studying these commands and using them helps understand T-SQL better, and makes you more efficient (especially at scripting scripts) 
-- [SQL Skills Immersion](https://www.sqlskills.com/product/ie0-online-delivery-20200914-90day/) - Johnathan Kehayias and Erin Stellato do an amazing job. I have listened through a few times, waterfall style, simultaneously as I work and encounter new problems and hear my seniors talk about client's challenges, it is helping me peice the puzzle together faster.
+- [SQL Skills Immersion](https://www.sqlskills.com/product/ie0-online-delivery-20200914-90day/) - Johnathan Kehayias and Erin Stellato do an amazing job. I have listened through a few times, waterfall style, simultaneously as I work and encounter new problems and hear the senior team talk about client challenges, it is helping me peice the puzzle together faster.
 - [Microsoft learn](https://docs.microsoft.com/en-us/learn/browse/?products=sql-server) - There are many courses on different SQL Server Topics from Microsoft, for free. My first step after learning the basics with Buck was to work through Bob and Anna's 'Azure SQL Fundamentals.' 
 
 
