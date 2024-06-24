@@ -14,7 +14,7 @@
 ## Notebooks and Courses
 
 - [Shut the Front Door - A guide for organization security audits (Co-Authored with Buck Woody)](https://github.com/BuckWoody/presentations/tree/master/shut_the_front_door)
-- [SQL Server Security Ground to Cloud (wo-Authored with Buck Woody)](https://github.com/David-Seis/SecureYourAzureData)
+- [SQL Server Security Ground to Cloud (co-authored with Buck Woody)](https://github.com/David-Seis/SecureYourAzureData)
 
 
 ## Resources
