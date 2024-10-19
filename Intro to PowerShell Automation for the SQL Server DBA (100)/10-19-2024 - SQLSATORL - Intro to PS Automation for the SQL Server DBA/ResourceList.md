@@ -16,3 +16,7 @@
 - [DBATools.io](dbatools.io)
 - [Azure Data Studio](https://learn.microsoft.com/en-us/azure-data-studio/download-azure-data-studio?tabs=win-install%2Cwin-user-install%2Credhat-install%2Cwindows-uninstall%2Credhat-uninstall)
 - [Visual Studio Code](https://code.visualstudio.com/)
+
+## Connect with David
+- [Linkedin](https://www.linkedin.com/in/davidseis/)
+- Email: david.seis@straightpathsql.com
