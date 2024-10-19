@@ -16,7 +16,7 @@
 - [Here is our Current HUB](aka.ms/tfab)
 
 ## Referenced Tools and Modules
-- [DBATools.io](dbatools.io)
+- [DBATools.io](https://dbatools.io/commands/)
 - [Azure Data Studio](https://learn.microsoft.com/en-us/azure-data-studio/download-azure-data-studio?tabs=win-install%2Cwin-user-install%2Credhat-install%2Cwindows-uninstall%2Credhat-uninstall)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [SQL Server Developer download](https://go.microsoft.com/fwlink/p/?linkid=2215158&clcid=0x409&culture=en-us&country=us)
