@@ -13,7 +13,7 @@
 - [David's Blog Posts](https://straightpathsql.com/archives/author/davidseis/)
 
 ## Join us for the Tampa User group some time!
-- [Here is our Current HUB](aka.ms/tfab)
+- [Here is our Current HUB](https://aka.ms/TFAB)
 
 ## Referenced Tools and Modules
 - [DBATools.io](https://dbatools.io/commands/)
