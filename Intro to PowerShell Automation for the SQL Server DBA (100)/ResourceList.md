@@ -1,7 +1,7 @@
 # Introduction to Powershell the SQL Server DBA Resource list
 
 # Please review my session!
-- [If you have more comments, concerns, ideas, criticism or encouragement please share here:](https://forms.office.com/r/HQmuRnDQnd)
+- [If you have more comments, concerns, ideas, criticism or encouragement please share here.](https://forms.office.com/r/HQmuRnDQnd)
 
 ## Downloads
 - [Demo Notebooks](https://github.com/David-Seis/Presentations/tree/main/Intro%20to%20PowerShell%20Automation%20for%20the%20SQL%20Server%20DBA%20(100)/2025-03-07%20-%20SQLSATATL-BI%2BAI-%20Intro%20to%20PS%20Automation%20for%20the%20SQL%20Server%20DBA%20copy/Notebooks)
@@ -22,4 +22,4 @@
 
 ## Connect with David
 - [Linkedin](https://www.linkedin.com/in/davidseis/)
-- [Email:](mailto:david.seis@straightpathsql.com)
+- [Email](mailto:david.seis@straightpathsql.com)
