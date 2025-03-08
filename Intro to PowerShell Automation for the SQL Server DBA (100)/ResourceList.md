@@ -1,5 +1,8 @@
 # Introduction to Powershell the SQL Server DBA Resource list
 
+<img src="./graphics/QR Code.png" alt="QR COde" width="200" height="200"/>
+
+
 # Please review my session!
 - [If you have more comments, concerns, ideas, criticism or encouragement please share here.](https://forms.office.com/r/HQmuRnDQnd)
 
