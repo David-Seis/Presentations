@@ -4,7 +4,7 @@
 
 ## Tampa Bay SQL User Group:
 
-- [Social Hub and Info](aka.ms/TFAB)
+- [Social Hub and Info](https://www.aka.ms/TFAB)
 
 ## Presentations:
 
