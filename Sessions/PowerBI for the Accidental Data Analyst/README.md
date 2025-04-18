@@ -4,6 +4,6 @@
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-In this session I will cover concepts, tools, tips, and tricks that helped me get started in PowerBI as my companies internal Data Analyst. 
+In this session I will cover concepts, tools, tips, and tricks that helped me get started in PowerBI as my company's internal Data Analyst. 
 
 <dl>
