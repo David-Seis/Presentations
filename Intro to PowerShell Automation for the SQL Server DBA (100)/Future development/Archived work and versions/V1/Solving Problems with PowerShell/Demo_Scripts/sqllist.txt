@@ -1,3 +1,0 @@
-labsql1
-labsql2
-labsql3

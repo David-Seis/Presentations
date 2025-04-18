@@ -10,6 +10,7 @@
 
 - [On Becoming a DBA (Resources)](https://github.com/David-Seis/Presentations/tree/main/On_Becoming_a_DBA)
 - [Intro to Powershell Automation for the SQL Server DBA](https://github.com/David-Seis/Presentations/tree/main/Intro%20to%20PowerShell%20Automation%20for%20the%20SQL%20Server%20DBA%20(100))
+- 
 
 ## Notebooks and Courses
 
