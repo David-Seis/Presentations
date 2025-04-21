@@ -10,7 +10,11 @@
 ### Takeaway 1: Setting Up Your SQL Server Development Environment (15 minutes)
 - **Introduction to SQL Server Development Tools**
   - Overview of essential tools with a focus on Visual Studio Code.
+    - SSMS is a required 
+    - PowerShell ISE
   - Benefits of using Visual Studio Code for SQL scripting and PowerShell development.
+    - Extension integrations (Azure data studio features are built in to the extension, powershell extension, docker extension and more.)
+    - GIt Integration
   - Installation and setup of Visual Studio Code.
 - **Demo: Setting Up Visual Studio Code**
   - Live demonstration of downloading and installing Visual Studio Code.
@@ -50,6 +54,12 @@
   - **Example 2: IntelliSense**
     - Utilize IntelliSense for auto-completion and syntax checking.
     - Reduce errors and speed up coding with real-time suggestions.
+
+Extensions 
+  -- Mermaid chart
+  -- peacock
+  -- Prettier Sql
+
   - **Example 3: Version Control Integration**
     - Integrate with Git for version control.
     - Track changes and collaborate with team members seamlessly.
