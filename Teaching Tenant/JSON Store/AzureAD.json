@@ -1,0 +1,170 @@
+{
+    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "apiVersion": {
+            "type": "String"
+        },
+        "sku": {
+            "type": "String"
+        },
+        "domainConfigurationType": {
+            "type": "String"
+        },
+        "domainName": {
+            "type": "String"
+        },
+        "filteredSync": {
+            "type": "String"
+        },
+        "syncScope": {
+            "type": "String"
+        },
+        "location": {
+            "type": "String"
+        },
+        "notificationSettings": {
+            "type": "Object"
+        },
+        "subnetName": {
+            "type": "String"
+        },
+        "tags": {
+            "type": "Object"
+        },
+        "vnetName": {
+            "type": "String"
+        },
+        "tlsV1": {
+            "type": "String"
+        },
+        "ntlmV1": {
+            "type": "String"
+        },
+        "syncNtlmPasswords": {
+            "type": "String"
+        },
+        "syncOnPremPasswords": {
+            "type": "String"
+        },
+        "kerberosRc4Encryption": {
+            "type": "String"
+        },
+        "kerberosArmoring": {
+            "type": "String"
+        },
+        "ldapSigning": {
+            "type": "String"
+        },
+        "channelBinding": {
+            "type": "String"
+        },
+        "vnetAddressPrefixes": {
+            "type": "Array"
+        },
+        "subnetAddressPrefix": {
+            "type": "String"
+        },
+        "nsgName": {
+            "type": "String"
+        }
+    },
+    "resources": [
+        {
+            "type": "Microsoft.AAD/DomainServices",
+            "apiVersion": "2022-12-01",
+            "name": "[parameters('domainName')]",
+            "location": "[parameters('location')]",
+            "dependsOn": [
+                "[concat('Microsoft.Network/virtualNetworks/', parameters('vnetName'))]"
+            ],
+            "tags": "[parameters('tags')]",
+            "properties": {
+                "domainName": "[parameters('domainName')]",
+                "filteredSync": "[parameters('filteredSync')]",
+                "syncScope": "[parameters('syncScope')]",
+                "domainConfigurationType": "[parameters('domainConfigurationType')]",
+                "notificationSettings": "[parameters('notificationSettings')]",
+                "replicaSets": [
+                    {
+                        "subnetId": "[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Network/virtualNetworks/', parameters('vnetName'), '/subnets/', parameters('subnetName'))]",
+                        "location": "[parameters('location')]"
+                    }
+                ],
+                "domainSecuritySettings": {
+                    "tlsV1": "[parameters('tlsV1')]",
+                    "ntlmV1": "[parameters('ntlmV1')]",
+                    "syncNtlmPasswords": "[parameters('syncNtlmPasswords')]",
+                    "syncOnPremPasswords": "[parameters('syncOnPremPasswords')]",
+                    "kerberosRc4Encryption": "[parameters('kerberosRc4Encryption')]",
+                    "kerberosArmoring": "[parameters('kerberosArmoring')]",
+                    "ldapSigning": "[parameters('ldapSigning')]",
+                    "channelBinding": "[parameters('channelBinding')]"
+                },
+                "sku": "[parameters('sku')]"
+            }
+        },
+        {
+            "type": "Microsoft.Network/NetworkSecurityGroups",
+            "apiVersion": "2019-09-01",
+            "name": "[parameters('nsgName')]",
+            "location": "[parameters('location')]",
+            "properties": {
+                "securityRules": [
+                    {
+                        "name": "AllowPSRemoting",
+                        "properties": {
+                            "access": "Allow",
+                            "priority": 301,
+                            "direction": "Inbound",
+                            "protocol": "Tcp",
+                            "sourceAddressPrefix": "AzureActiveDirectoryDomainServices",
+                            "sourcePortRange": "*",
+                            "destinationAddressPrefix": "*",
+                            "destinationPortRange": "5986"
+                        }
+                    },
+                    {
+                        "name": "AllowRD",
+                        "properties": {
+                            "access": "Allow",
+                            "priority": 201,
+                            "direction": "Inbound",
+                            "protocol": "Tcp",
+                            "sourceAddressPrefix": "CorpNetSaw",
+                            "sourcePortRange": "*",
+                            "destinationAddressPrefix": "*",
+                            "destinationPortRange": "3389"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": "Microsoft.Network/virtualNetworks",
+            "apiVersion": "2019-09-01",
+            "name": "[parameters('vnetName')]",
+            "location": "[parameters('location')]",
+            "dependsOn": [
+                "[concat('Microsoft.Network/NetworkSecurityGroups/', parameters('nsgName'))]"
+            ],
+            "properties": {
+                "addressSpace": {
+                    "addressPrefixes": "[parameters('vnetAddressPrefixes')]"
+                },
+                "subnets": [
+                    {
+                        "name": "[parameters('subnetName')]",
+                        "properties": {
+                            "addressPrefix": "[parameters('subnetAddressPrefix')]",
+                            "networkSecurityGroup": {
+                                "id": "[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Network/NetworkSecurityGroups/', parameters('nsgName'))]"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "outputs": {}
+}
