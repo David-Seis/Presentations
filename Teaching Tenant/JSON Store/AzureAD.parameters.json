@@ -1,0 +1,80 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "apiVersion": {
+            "value": "2022-12-01"
+        },
+        "sku": {
+            "value": "Standard"
+        },
+        "domainConfigurationType": {
+            "value": "FullySynced"
+        },
+        "domainName": {
+            "value": "tampadata.org"
+        },
+        "filteredSync": {
+            "value": "Disabled"
+        },
+        "syncScope": {
+            "value": "All"
+        },
+        "location": {
+            "value": "eastus"
+        },
+        "notificationSettings": {
+            "value": {
+                "notifyGlobalAdmins": "Enabled",
+                "notifyDcAdmins": "Enabled",
+                "additionalRecipients": []
+            }
+        },
+        "subnetName": {
+            "value": "aadds-subnet"
+        },
+        "tags": {
+            "value": {
+                "TeachingResources": "true"
+            }
+        },
+        "vnetName": {
+            "value": "aadds-vnet"
+        },
+        "tlsV1": {
+            "value": "Disabled"
+        },
+        "ntlmV1": {
+            "value": "Disabled"
+        },
+        "syncNtlmPasswords": {
+            "value": "Enabled"
+        },
+        "syncOnPremPasswords": {
+            "value": "Enabled"
+        },
+        "kerberosRc4Encryption": {
+            "value": "Disabled"
+        },
+        "kerberosArmoring": {
+            "value": "Enabled"
+        },
+        "ldapSigning": {
+            "value": "Enabled"
+        },
+        "channelBinding": {
+            "value": "Enabled"
+        },
+        "vnetAddressPrefixes": {
+            "value": [
+                "10.0.0.0/24"
+            ]
+        },
+        "subnetAddressPrefix": {
+            "value": "10.0.0.0/24"
+        },
+        "nsgName": {
+            "value": "aadds-nsg"
+        }
+    }
+}

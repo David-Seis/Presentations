@@ -1,0 +1,235 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "eastus"
+        },
+        "networkInterfaceName1": {
+            "value": "labsql1655_z1"
+        },
+        "enableAcceleratedNetworking": {
+            "value": false
+        },
+        "subnetName": {
+            "value": "aadds-subnet"
+        },
+        "virtualNetworkId": {
+            "value": "/subscriptions/acc6c67c-34e7-4ec5-b705-dc1f291e6c9e/resourceGroups/TeachingResources/providers/Microsoft.Network/virtualNetworks/aadds-vnet"
+        },
+        "publicIpAddressName1": {
+            "value": "labsql1-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Static"
+        },
+        "publicIpAddressSku": {
+            "value": "Standard"
+        },
+        "pipDeleteOption": {
+            "value": "Delete"
+        },
+        "virtualMachineName": {
+            "value": "labsql1"
+        },
+        "virtualMachineName1": {
+            "value": "labsql1"
+        },
+        "virtualMachineComputerName1": {
+            "value": "labsql1"
+        },
+        "virtualMachineRG": {
+            "value": "TeachingResources"
+        },
+        "osDiskType": {
+            "value": "StandardSSD_LRS"
+        },
+        "osDiskDeleteOption": {
+            "value": "Delete"
+        },
+        "dataDisks1": {
+            "value": [
+                {
+                    "lun": 0,
+                    "createOption": "attach",
+                    "deleteOption": "delete",
+                    "caching": "ReadOnly",
+                    "writeAcceleratorEnabled": false,
+                    "id": null,
+                    "name": "labsql1_DataDisk_0",
+                    "storageAccountType": null,
+                    "diskSizeGB": null,
+                    "tier": null,
+                    "diskEncryptionSet": null
+                },
+                {
+                    "lun": 1,
+                    "createOption": "attach",
+                    "deleteOption": "delete",
+                    "caching": "None",
+                    "writeAcceleratorEnabled": false,
+                    "id": null,
+                    "name": "labsql1_DataDisk_1",
+                    "storageAccountType": null,
+                    "diskSizeGB": null,
+                    "tier": null,
+                    "diskEncryptionSet": null
+                }
+            ]
+        },
+        "dataDiskResources1": {
+            "value": [
+                {
+                    "name": "labsql1_DataDisk_0",
+                    "sku": "Premium_LRS",
+                    "properties": {
+                        "diskSizeGB": 128,
+                        "creationData": {
+                            "createOption": "empty"
+                        }
+                    }
+                },
+                {
+                    "name": "labsql1_DataDisk_1",
+                    "sku": "Premium_LRS",
+                    "properties": {
+                        "diskSizeGB": 128,
+                        "creationData": {
+                            "createOption": "empty"
+                        }
+                    }
+                }
+            ]
+        },
+        "virtualMachineSize": {
+            "value": "Standard_DS11-1_v2"
+        },
+        "nicDeleteOption": {
+            "value": "Delete"
+        },
+        "hibernationEnabled": {
+            "value": false
+        },
+        "adminUsername": {
+            "value": "TestSQL"
+        },
+        "adminPassword": {
+            "value": "vaccines-ALLISON*slide7moan"
+        },
+        "patchMode": {
+            "value": "Manual"
+        },
+        "enablePeriodicAssessment": {
+            "value": "ImageDefault"
+        },
+        "enableHotpatching": {
+            "value": false
+        },
+        "securityType": {
+            "value": "TrustedLaunch"
+        },
+        "secureBoot": {
+            "value": true
+        },
+        "vTPM": {
+            "value": true
+        },
+        "virtualMachine1Zone": {
+            "value": "1"
+        },
+        "sqlVirtualMachineLocation": {
+            "value": "eastus"
+        },
+        "sqlVirtualMachineName": {
+            "value": "labsql1"
+        },
+        "sqlConnectivityType": {
+            "value": "Private"
+        },
+        "sqlPortNumber": {
+            "value": 1433
+        },
+        "sqlStorageDisksCount": {
+            "value": 1
+        },
+        "sqlStorageWorkloadType": {
+            "value": "OLTP"
+        },
+        "sqlStorageDisksConfigurationType": {
+            "value": "NEW"
+        },
+        "sqlStorageStartingDeviceId": {
+            "value": 2
+        },
+        "sqlStorageDeploymentToken": {
+            "value": 81613
+        },
+        "sqlAuthenticationLogin": {
+            "value": "TestSQL"
+        },
+        "sqlAuthenticationPassword": {
+            "value": "vaccines-ALLISON*slide7moan"
+        },
+        "dataPath": {
+            "value": "F:\\data"
+        },
+        "dataDisksLUNs": {
+            "value": [
+                0
+            ]
+        },
+        "logPath": {
+            "value": "G:\\log"
+        },
+        "logDisksLUNs": {
+            "value": [
+                1
+            ]
+        },
+        "tempDbPath": {
+            "value": "D:\\tempDb"
+        },
+        "dataFileCount": {
+            "value": 2
+        },
+        "dataFileSize": {
+            "value": 8
+        },
+        "dataGrowth": {
+            "value": 64
+        },
+        "logFileSize": {
+            "value": 8
+        },
+        "logGrowth": {
+            "value": 64
+        },
+        "SQLSystemDbOnDataDisk": {
+            "value": false
+        },
+        "rServicesEnabled": {
+            "value": "false"
+        },
+        "maxdop": {
+            "value": 0
+        },
+        "isOptimizeForAdHocWorkloadsEnabled": {
+            "value": true
+        },
+        "collation": {
+            "value": "SQL_Latin1_General_CP1_CI_AS"
+        },
+        "minServerMemoryMB": {
+            "value": 0
+        },
+        "maxServerMemoryMB": {
+            "value": 2048
+        },
+        "isLPIMEnabled": {
+            "value": false
+        },
+        "isIFIEnabled": {
+            "value": true
+        }
+    }
+}

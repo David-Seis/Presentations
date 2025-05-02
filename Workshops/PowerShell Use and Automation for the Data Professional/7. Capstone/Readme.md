@@ -1,0 +1,1 @@
+Show off a complete powershell enabled monitoring tool from data extraction, transformation, loading and the powerbi report connection.
