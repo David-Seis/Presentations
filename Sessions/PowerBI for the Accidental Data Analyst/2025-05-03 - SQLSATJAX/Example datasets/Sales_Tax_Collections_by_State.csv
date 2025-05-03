@@ -1,0 +1,3163 @@
+state,month,year,tax type,value,fips state,numeric month,note,id
+Florida,July,2019,motor fuel,241299325,12,7,,12_2019_7
+Maine,February,2020,motor fuel,17363969,23,2,,23_2020_2
+Rhode Island,June,2019,motor fuel,,44,6,,44_2019_6
+Alabama,May,2024,motor fuel,85680827,1,5,,1_2024_5
+Alaska,May,2024,motor fuel,,2,5,,2_2024_5
+Arizona,May,2024,motor fuel,65905029,4,5,,4_2024_5
+Arkansas,May,2024,motor fuel,49197761,5,5,,5_2024_5
+California,May,2024,motor fuel,819564000,6,5,,6_2024_5
+Colorado,May,2024,motor fuel,57249000,8,5,,8_2024_5
+Connecticut,May,2024,motor fuel,40414226,9,5,,9_2024_5
+Delaware,May,2024,motor fuel,,10,5,,10_2024_5
+District of Columbia,May,2024,motor fuel,,11,5,,11_2024_5
+Florida,May,2024,motor fuel,,12,5,,12_2024_5
+Georgia,May,2024,motor fuel,192626000,13,5,,13_2024_5
+Hawaii,May,2024,motor fuel,8744524,15,5,,15_2024_5
+Idaho,May,2024,motor fuel,36832355,16,5,,16_2024_5
+Illinois,May,2024,motor fuel,245431872,17,5,,17_2024_5
+Indiana,May,2024,motor fuel,139594313,18,5,,18_2024_5
+Iowa,May,2024,motor fuel,58877946,19,5,,19_2024_5
+Kansas,May,2024,motor fuel,,20,5,,20_2024_5
+Kentucky,May,2024,motor fuel,75035159,21,5,,21_2024_5
+Louisiana,May,2024,motor fuel,51160910,22,5,,22_2024_5
+Maine,May,2024,motor fuel,16861166,23,5,,23_2024_5
+Maryland,May,2024,motor fuel,,24,5,,24_2024_5
+Massachusetts,May,2024,motor fuel,57871557,25,5,,25_2024_5
+Michigan,May,2024,motor fuel,127909007,26,5,,26_2024_5
+Minnesota,May,2024,motor fuel,71536199,27,5,,27_2024_5
+Mississippi,May,2024,motor fuel,36500423,28,5,,28_2024_5
+Missouri,May,2024,motor fuel,84299306,29,5,,29_2024_5
+Montana,May,2024,motor fuel,,30,5,,30_2024_5
+Nebraska,May,2024,motor fuel,,31,5,,31_2024_5
+Nevada,May,2024,motor fuel,,32,5,,32_2024_5
+New Hampshire,May,2024,motor fuel,10000000,33,5,,33_2024_5
+New Jersey,May,2024,motor fuel,34951000,34,5,,34_2024_5
+New Mexico,May,2024,motor fuel,,35,5,,35_2024_5
+New York,May,2024,motor fuel,127281698,36,5,,36_2024_5
+North Carolina,May,2024,motor fuel,154714225,37,5,,37_2024_5
+North Dakota,May,2024,motor fuel,,38,5,,38_2024_5
+Ohio,May,2024,motor fuel,,39,5,,39_2024_5
+Oklahoma,May,2024,motor fuel,,40,5,,40_2024_5
+Oregon,May,2024,motor fuel,61217128,41,5,,41_2024_5
+Pennsylvania,May,2024,motor fuel,185151000,42,5,,42_2024_5
+Rhode Island,May,2024,motor fuel,,44,5,,44_2024_5
+South Carolina,May,2024,motor fuel,89400000,45,5,,45_2024_5
+South Dakota,May,2024,motor fuel,,46,5,,46_2024_5
+Tennessee,May,2024,motor fuel,106732983,47,5,,47_2024_5
+Texas,May,2024,motor fuel,324974000,48,5,,48_2024_5
+Utah,May,2024,motor fuel,56900000,49,5,,49_2024_5
+Vermont,May,2024,motor fuel,6792165,50,5,,50_2024_5
+Virginia,May,2024,motor fuel,136469000,51,5,,51_2024_5
+Washington,May,2024,motor fuel,124150816,53,5,,53_2024_5
+West Virginia,May,2024,motor fuel,37831000,54,5,,54_2024_5
+Wisconsin,May,2024,motor fuel,80719231,55,5,,55_2024_5
+Wyoming,May,2024,motor fuel,,56,5,,56_2024_5
+Alabama,April,2019,motor fuel,52036706,1,4,,1_2019_4
+Alabama,April,2020,motor fuel,65662369,1,4,,1_2020_4
+Alabama,April,2021,motor fuel,76906209,1,4,,1_2021_4
+Alabama,April,2022,motor fuel,83768890,1,4,,1_2022_4
+Alabama,August,2019,motor fuel,52798054,1,8,,1_2019_8
+Alabama,August,2020,motor fuel,68727297,1,8,,1_2020_8
+Alabama,August,2021,motor fuel,77552706,1,8,,1_2021_8
+Alabama,December,2019,motor fuel,66672054,1,12,,1_2019_12
+Alabama,December,2020,motor fuel,69345746,1,12,,1_2020_12
+Alabama,December,2021,motor fuel,79305645,1,12,,1_2021_12
+Alabama,February,2020,motor fuel,64761385,1,2,,1_2020_2
+Alabama,February,2021,motor fuel,67832592,1,2,,1_2021_2
+Alabama,February,2022,motor fuel,73338408,1,2,,1_2022_2
+Alabama,January,2020,motor fuel,65383746,1,1,,1_2020_1
+Alabama,January,2021,motor fuel,71431282,1,1,,1_2021_1
+Alabama,January,2022,motor fuel,79709108,1,1,,1_2022_1
+Alabama,July,2019,motor fuel,50579293,1,7,,1_2019_7
+Alabama,July,2020,motor fuel,65992175,1,7,,1_2020_7
+Alabama,July,2021,motor fuel,76892341,1,7,,1_2021_7
+Alabama,June,2019,motor fuel,53790643,1,6,,1_2019_6
+Alabama,June,2020,motor fuel,61272299,1,6,,1_2020_6
+Alabama,June,2021,motor fuel,78332379,1,6,,1_2021_6
+Alabama,March,2020,motor fuel,62069126,1,3,,1_2020_3
+Alabama,March,2021,motor fuel,62969975,1,3,,1_2021_3
+Alabama,March,2022,motor fuel,73626199,1,3,,1_2022_3
+Alabama,May,2019,motor fuel,51555634,1,5,,1_2019_5
+Alabama,May,2020,motor fuel,50664880,1,5,,1_2020_5
+Alabama,May,2021,motor fuel,77483316,1,5,,1_2021_5
+Alabama,November,2019,motor fuel,69467807,1,11,,1_2019_11
+Alabama,November,2020,motor fuel,74631180,1,11,,1_2020_11
+Alabama,November,2021,motor fuel,82310161,1,11,,1_2021_11
+Alabama,October,2019,motor fuel,66916914,1,10,,1_2019_10
+Alabama,October,2020,motor fuel,66714253,1,10,,1_2020_10
+Alabama,October,2021,motor fuel,74235611,1,10,,1_2021_10
+Alabama,September,2019,motor fuel,53936438,1,9,,1_2019_9
+Alabama,September,2020,motor fuel,67849259,1,9,,1_2020_9
+Alabama,September,2021,motor fuel,78220865,1,9,,1_2021_9
+Alaska,April,2019,motor fuel,3770030,2,4,,2_2019_4
+Alaska,April,2020,motor fuel,2706976,2,4,,2_2020_4
+Alaska,April,2021,motor fuel,3380717,2,4,,2_2021_4
+Alaska,April,2022,motor fuel,3320705,2,4,,2_2022_4
+Alaska,August,2019,motor fuel,5175240,2,8,,2_2019_8
+Alaska,August,2020,motor fuel,5450925,2,8,,2_2020_8
+Alaska,August,2021,motor fuel,5790478,2,8,,2_2021_8
+Alaska,December,2019,motor fuel,3077290,2,12,,2_2019_12
+Alaska,December,2020,motor fuel,2975466,2,12,,2_2020_12
+Alaska,December,2021,motor fuel,3132670,2,12,,2_2021_12
+Alaska,February,2020,motor fuel,3593386,2,2,,2_2020_2
+Alaska,February,2021,motor fuel,3135529,2,2,,2_2021_2
+Alaska,February,2022,motor fuel,3244081,2,2,,2_2022_2
+Alaska,January,2020,motor fuel,3407252,2,1,,2_2020_1
+Alaska,January,2021,motor fuel,2904902,2,1,,2_2021_1
+Alaska,January,2022,motor fuel,3036054,2,1,,2_2022_1
+Alaska,July,2019,motor fuel,6275608,2,7,,2_2019_7
+Alaska,July,2020,motor fuel,4245909,2,7,,2_2020_7
+Alaska,July,2021,motor fuel,5690988,2,7,,2_2021_7
+Alaska,June,2019,motor fuel,3643629,2,6,,2_2019_6
+Alaska,June,2020,motor fuel,4372440,2,6,,2_2020_6
+Alaska,June,2021,motor fuel,4193122,2,6,,2_2021_6
+Alaska,March,2020,motor fuel,3533122,2,3,,2_2020_3
+Alaska,March,2021,motor fuel,3622718,2,3,,2_2021_3
+Alaska,March,2022,motor fuel,3594661,2,3,,2_2022_3
+Alaska,May,2019,motor fuel,4379707,2,5,,2_2019_5
+Alaska,May,2020,motor fuel,3214186,2,5,,2_2020_5
+Alaska,May,2021,motor fuel,3735531,2,5,,2_2021_5
+Alaska,November,2019,motor fuel,3014739,2,11,,2_2019_11
+Alaska,November,2020,motor fuel,2780141,2,11,,2_2020_11
+Alaska,November,2021,motor fuel,3307966,2,11,,2_2021_11
+Alaska,October,2019,motor fuel,4028544,2,10,,2_2019_10
+Alaska,October,2020,motor fuel,3699622,2,10,,2_2020_10
+Alaska,October,2021,motor fuel,3329627,2,10,,2_2021_10
+Alaska,September,2019,motor fuel,4059407,2,9,,2_2019_9
+Alaska,September,2020,motor fuel,4142529,2,9,,2_2020_9
+Alaska,September,2021,motor fuel,4037472,2,9,,2_2021_9
+Arizona,April,2019,motor fuel,66740952,4,4,,4_2019_4
+Arizona,April,2020,motor fuel,61570083,4,4,,4_2020_4
+Arizona,April,2021,motor fuel,72153656,4,4,,4_2021_4
+Arizona,April,2022,motor fuel,72720236,4,4,,4_2022_4
+Arizona,August,2019,motor fuel,60102221,4,8,,4_2019_8
+Arizona,August,2020,motor fuel,56671360,4,8,,4_2020_8
+Arizona,August,2021,motor fuel,67666465,4,8,,4_2021_8
+Arizona,December,2019,motor fuel,62440818,4,12,,4_2019_12
+Arizona,December,2020,motor fuel,60385133,4,12,,4_2020_12
+Arizona,December,2021,motor fuel,66822326,4,12,,4_2021_12
+Arizona,February,2020,motor fuel,62784422,4,2,,4_2020_2
+Arizona,February,2021,motor fuel,59511248,4,2,,4_2021_2
+Arizona,February,2022,motor fuel,60122670,4,2,,4_2022_2
+Arizona,January,2020,motor fuel,62440818,4,1,,4_2020_1
+Arizona,January,2021,motor fuel,62354396,4,1,,4_2021_1
+Arizona,January,2022,motor fuel,65159849,4,1,,4_2022_1
+Arizona,July,2019,motor fuel,62477830,4,7,,4_2019_7
+Arizona,July,2020,motor fuel,57702010,4,7,,4_2020_7
+Arizona,July,2021,motor fuel,68606095,4,7,,4_2021_7
+Arizona,June,2019,motor fuel,67228043,4,6,,4_2019_6
+Arizona,June,2020,motor fuel,56205864,4,6,,4_2020_6
+Arizona,June,2021,motor fuel,72132232,4,6,,4_2021_6
+Arizona,March,2020,motor fuel,63069232,4,3,,4_2020_3
+Arizona,March,2021,motor fuel,58759492,4,3,,4_2021_3
+Arizona,March,2022,motor fuel,63958280,4,3,,4_2022_3
+Arizona,May,2019,motor fuel,60501721,4,5,,4_2019_5
+Arizona,May,2020,motor fuel,42603815,4,5,,4_2020_5
+Arizona,May,2021,motor fuel,65366771,4,5,,4_2021_5
+Arizona,November,2019,motor fuel,64375731,4,11,,4_2019_11
+Arizona,November,2020,motor fuel,63324167,4,11,,4_2020_11
+Arizona,November,2021,motor fuel,64658238,4,11,,4_2021_11
+Arizona,October,2019,motor fuel,64776745,4,10,,4_2019_10
+Arizona,October,2020,motor fuel,62652923,4,10,,4_2020_10
+Arizona,October,2021,motor fuel,66941031,4,10,,4_2021_10
+Arizona,September,2019,motor fuel,68722037,4,9,,4_2019_9
+Arizona,September,2020,motor fuel,64034111,4,9,,4_2020_9
+Arizona,September,2021,motor fuel,65460528,4,9,,4_2021_9
+Arkansas,April,2019,motor fuel,40116042,5,4,,5_2019_4
+Arkansas,April,2020,motor fuel,44652838,5,4,,5_2020_4
+Arkansas,April,2021,motor fuel,49320713,5,4,,5_2021_4
+Arkansas,April,2022,motor fuel,48306716,5,4,,5_2022_4
+Arkansas,August,2019,motor fuel,42437635,5,8,,5_2019_8
+Arkansas,August,2020,motor fuel,46880472,5,8,,5_2020_8
+Arkansas,August,2021,motor fuel,49959678,5,8,,5_2021_8
+Arkansas,December,2019,motor fuel,38969365,5,12,,5_2019_12
+Arkansas,December,2020,motor fuel,47091981,5,12,,5_2020_12
+Arkansas,December,2021,motor fuel,50606669,5,12,,5_2021_12
+Arkansas,February,2020,motor fuel,44722866,5,2,,5_2020_2
+Arkansas,February,2021,motor fuel,42175287,5,2,,5_2021_2
+Arkansas,February,2022,motor fuel,43564471,5,2,,5_2022_2
+Arkansas,January,2020,motor fuel,45180655,5,1,,5_2020_1
+Arkansas,January,2021,motor fuel,46087917,5,1,,5_2021_1
+Arkansas,January,2022,motor fuel,46157226,5,1,,5_2022_1
+Arkansas,July,2019,motor fuel,40024844,5,7,,5_2019_7
+Arkansas,July,2020,motor fuel,45767052,5,7,,5_2020_7
+Arkansas,July,2021,motor fuel,47893679,5,7,,5_2021_7
+Arkansas,June,2019,motor fuel,40638507,5,6,,5_2019_6
+Arkansas,June,2020,motor fuel,40663634,5,6,,5_2020_6
+Arkansas,June,2021,motor fuel,49556216,5,6,,5_2021_6
+Arkansas,March,2020,motor fuel,42844347,5,3,,5_2020_3
+Arkansas,March,2021,motor fuel,39690016,5,3,,5_2021_3
+Arkansas,March,2022,motor fuel,43121326,5,3,,5_2022_3
+Arkansas,May,2019,motor fuel,40127411,5,5,,5_2019_5
+Arkansas,May,2020,motor fuel,37350997,5,5,,5_2020_5
+Arkansas,May,2021,motor fuel,51079727,5,5,,5_2021_5
+Arkansas,November,2019,motor fuel,44055652,5,11,,5_2019_11
+Arkansas,November,2020,motor fuel,46173616,5,11,,5_2020_11
+Arkansas,November,2021,motor fuel,47512678,5,11,,5_2021_11
+Arkansas,October,2019,motor fuel,41512851,5,10,,5_2019_10
+Arkansas,October,2020,motor fuel,46068329,5,10,,5_2020_10
+Arkansas,October,2021,motor fuel,49205863,5,10,,5_2021_10
+Arkansas,September,2019,motor fuel,40889534,5,9,,5_2019_9
+Arkansas,September,2020,motor fuel,46665466,5,9,,5_2020_9
+Arkansas,September,2021,motor fuel,49236373,5,9,,5_2021_9
+California,April,2019,motor fuel,496996000,6,4,,6_2019_4
+California,April,2020,motor fuel,548318000,6,4,,6_2020_4
+California,April,2021,motor fuel,615441000,6,4,,6_2021_4
+California,April,2022,motor fuel,684972000,6,4,,6_2022_4
+California,August,2019,motor fuel,681565000,6,8,,6_2019_8
+California,August,2020,motor fuel,615856000,6,8,,6_2020_8
+California,August,2021,motor fuel,729539000,6,8,,6_2021_8
+California,December,2019,motor fuel,757435000,6,12,,6_2019_12
+California,December,2020,motor fuel,692180000,6,12,,6_2020_12
+California,December,2021,motor fuel,752487000,6,12,,6_2021_12
+California,February,2020,motor fuel,679586000,6,2,,6_2020_2
+California,February,2021,motor fuel,600408000,6,2,,6_2021_2
+California,February,2022,motor fuel,643496000,6,2,,6_2022_2
+California,January,2020,motor fuel,667682000,6,1,,6_2020_1
+California,January,2021,motor fuel,593481000,6,1,,6_2021_1
+California,January,2022,motor fuel,679057000,6,1,,6_2022_1
+California,July,2019,motor fuel,621765000,6,7,,6_2019_7
+California,July,2020,motor fuel,620863000,6,7,,6_2020_7
+California,July,2021,motor fuel,720253000,6,7,,6_2021_7
+California,June,2019,motor fuel,729818000,6,6,,6_2019_6
+California,June,2020,motor fuel,427800000,6,6,,6_2020_6
+California,June,2021,motor fuel,731415000,6,6,,6_2021_6
+California,March,2020,motor fuel,683085000,6,3,,6_2020_3
+California,March,2021,motor fuel,599015000,6,3,,6_2021_3
+California,March,2022,motor fuel,649500000,6,3,,6_2022_3
+California,May,2019,motor fuel,633248000,6,5,,6_2019_5
+California,May,2020,motor fuel,489838000,6,5,,6_2020_5
+California,May,2021,motor fuel,716685000,6,5,,6_2021_5
+California,November,2019,motor fuel,694096000,6,11,,6_2019_11
+California,November,2020,motor fuel,642095000,6,11,,6_2020_11
+California,November,2021,motor fuel,691949000,6,11,,6_2021_11
+California,October,2019,motor fuel,740081000,6,10,,6_2019_10
+California,October,2020,motor fuel,689449000,6,10,,6_2020_10
+California,October,2021,motor fuel,718204000,6,10,,6_2021_10
+California,September,2019,motor fuel,796672000,6,9,,6_2019_9
+California,September,2020,motor fuel,700186000,6,9,,6_2020_9
+California,September,2021,motor fuel,780371000,6,9,,6_2021_9
+Colorado,April,2019,motor fuel,53089000,8,4,,8_2019_4
+Colorado,April,2020,motor fuel,52261000,8,4,,8_2020_4
+Colorado,April,2021,motor fuel,48716000,8,4,,8_2021_4
+Colorado,April,2022,motor fuel,48987000,8,4,,8_2022_4
+Colorado,August,2019,motor fuel,64185000,8,8,,8_2019_8
+Colorado,August,2020,motor fuel,57705000,8,8,,8_2020_8
+Colorado,August,2021,motor fuel,65969000,8,8,,8_2021_8
+Colorado,December,2019,motor fuel,44076000,8,12,,8_2019_12
+Colorado,December,2020,motor fuel,44916000,8,12,,8_2020_12
+Colorado,December,2021,motor fuel,52585000,8,12,,8_2021_12
+Colorado,February,2020,motor fuel,47960000,8,2,,8_2020_2
+Colorado,February,2021,motor fuel,44695000,8,2,,8_2021_2
+Colorado,February,2022,motor fuel,29885000,8,2,,8_2022_2
+Colorado,January,2020,motor fuel,53722000,8,1,,8_2020_1
+Colorado,January,2021,motor fuel,45373000,8,1,,8_2021_1
+Colorado,January,2022,motor fuel,54258000,8,1,,8_2022_1
+Colorado,July,2019,motor fuel,62930000,8,7,,8_2019_7
+Colorado,July,2020,motor fuel,47880000,8,7,,8_2020_7
+Colorado,July,2021,motor fuel,56149000,8,7,,8_2021_7
+Colorado,June,2019,motor fuel,54263000,8,6,,8_2019_6
+Colorado,June,2020,motor fuel,46889000,8,6,,8_2020_6
+Colorado,June,2021,motor fuel,55503000,8,6,,8_2021_6
+Colorado,March,2020,motor fuel,48857000,8,3,,8_2020_3
+Colorado,March,2021,motor fuel,44445000,8,3,,8_2021_3
+Colorado,March,2022,motor fuel,70967000,8,3,,8_2022_3
+Colorado,May,2019,motor fuel,50264000,8,5,,8_2019_5
+Colorado,May,2020,motor fuel,35254000,8,5,,8_2020_5
+Colorado,May,2021,motor fuel,57552000,8,5,,8_2021_5
+Colorado,November,2019,motor fuel,58398000,8,11,,8_2019_11
+Colorado,November,2020,motor fuel,54696000,8,11,,8_2020_11
+Colorado,November,2021,motor fuel,56294000,8,11,,8_2021_11
+Colorado,October,2019,motor fuel,54793000,8,10,,8_2019_10
+Colorado,October,2020,motor fuel,51989000,8,10,,8_2020_10
+Colorado,October,2021,motor fuel,60323000,8,10,,8_2021_10
+Colorado,September,2019,motor fuel,61110000,8,9,,8_2019_9
+Colorado,September,2020,motor fuel,56182000,8,9,,8_2020_9
+Colorado,September,2021,motor fuel,59757000,8,9,,8_2021_9
+Connecticut,April,2019,motor fuel,41344084,9,4,,9_2019_4
+Connecticut,April,2020,motor fuel,34966618,9,4,,9_2020_4
+Connecticut,April,2021,motor fuel,38693559,9,4,,9_2021_4
+Connecticut,April,2022,motor fuel,38995438,9,4,,9_2022_4
+Connecticut,August,2019,motor fuel,43822076,9,8,,9_2019_8
+Connecticut,August,2020,motor fuel,39157539,9,8,,9_2020_8
+Connecticut,August,2021,motor fuel,40793390,9,8,,9_2021_8
+Connecticut,December,2019,motor fuel,44405738,9,12,,9_2019_12
+Connecticut,December,2020,motor fuel,38301042,9,12,,9_2020_12
+Connecticut,December,2021,motor fuel,42174126,9,12,,9_2021_12
+Connecticut,February,2020,motor fuel,38902966,9,2,,9_2020_2
+Connecticut,February,2021,motor fuel,35108303,9,2,,9_2021_2
+Connecticut,February,2022,motor fuel,34805324,9,2,,9_2022_2
+Connecticut,January,2020,motor fuel,41031152,9,1,,9_2020_1
+Connecticut,January,2021,motor fuel,37432756,9,1,,9_2021_1
+Connecticut,January,2022,motor fuel,40179497,9,1,,9_2022_1
+Connecticut,July,2019,motor fuel,41224880,9,7,,9_2019_7
+Connecticut,July,2020,motor fuel,37118387,9,7,,9_2020_7
+Connecticut,July,2021,motor fuel,41264126,9,7,,9_2021_7
+Connecticut,June,2019,motor fuel,44529218,9,6,,9_2019_6
+Connecticut,June,2020,motor fuel,35480797,9,6,,9_2020_6
+Connecticut,June,2021,motor fuel,42886236,9,6,,9_2021_6
+Connecticut,March,2020,motor fuel,39590917,9,3,,9_2020_3
+Connecticut,March,2021,motor fuel,34307147,9,3,,9_2021_3
+Connecticut,March,2022,motor fuel,35141068,9,3,,9_2022_3
+Connecticut,May,2019,motor fuel,40637252,9,5,,9_2019_5
+Connecticut,May,2020,motor fuel,25899227,9,5,,9_2020_5
+Connecticut,May,2021,motor fuel,40331552,9,5,,9_2021_5
+Connecticut,November,2019,motor fuel,43988376,9,11,,9_2019_11
+Connecticut,November,2020,motor fuel,38248485,9,11,,9_2020_11
+Connecticut,November,2021,motor fuel,41620952,9,11,,9_2021_11
+Connecticut,October,2019,motor fuel,41834521,9,10,,9_2019_10
+Connecticut,October,2020,motor fuel,38640492,9,10,,9_2020_10
+Connecticut,October,2021,motor fuel,39731591,9,10,,9_2021_10
+Connecticut,September,2019,motor fuel,46428055,9,9,,9_2019_9
+Connecticut,September,2020,motor fuel,44702261,9,9,,9_2020_9
+Connecticut,September,2021,motor fuel,40729409,9,9,,9_2021_9
+Delaware,April,2019,motor fuel,15069264,10,4,,10_2019_4
+Delaware,April,2020,motor fuel,13815342,10,4,,10_2020_4
+Delaware,April,2021,motor fuel,,10,4,,10_2021_4
+Delaware,April,2022,motor fuel,,10,4,,10_2022_4
+Delaware,August,2019,motor fuel,,10,8,,10_2019_8
+Delaware,August,2020,motor fuel,,10,8,,10_2020_8
+Delaware,August,2021,motor fuel,,10,8,,10_2021_8
+Delaware,December,2019,motor fuel,11733556,10,12,,10_2019_12
+Delaware,December,2020,motor fuel,9543483,10,12,,10_2020_12
+Delaware,December,2021,motor fuel,,10,12,,10_2021_12
+Delaware,February,2020,motor fuel,,10,2,,10_2020_2
+Delaware,February,2021,motor fuel,,10,2,,10_2021_2
+Delaware,February,2022,motor fuel,,10,2,,10_2022_2
+Delaware,January,2020,motor fuel,,10,1,,10_2020_1
+Delaware,January,2021,motor fuel,,10,1,,10_2021_1
+Delaware,January,2022,motor fuel,,10,1,,10_2022_1
+Delaware,July,2019,motor fuel,,10,7,,10_2019_7
+Delaware,July,2020,motor fuel,,10,7,,10_2020_7
+Delaware,July,2021,motor fuel,,10,7,,10_2021_7
+Delaware,June,2019,motor fuel,19722481,10,6,,10_2019_6
+Delaware,June,2020,motor fuel,15564365,10,6,,10_2020_6
+Delaware,June,2021,motor fuel,17597264,10,6,,10_2021_6
+Delaware,March,2020,motor fuel,11146656,10,3,,10_2020_3
+Delaware,March,2021,motor fuel,8376805,10,3,,10_2021_3
+Delaware,March,2022,motor fuel,,10,3,,10_2022_3
+Delaware,May,2019,motor fuel,,10,5,,10_2019_5
+Delaware,May,2020,motor fuel,,10,5,,10_2020_5
+Delaware,May,2021,motor fuel,,10,5,,10_2021_5
+Delaware,November,2019,motor fuel,,10,11,,10_2019_11
+Delaware,November,2020,motor fuel,,10,11,,10_2020_11
+Delaware,November,2021,motor fuel,,10,11,,10_2021_11
+Delaware,October,2019,motor fuel,,10,10,,10_2019_10
+Delaware,October,2020,motor fuel,,10,10,,10_2020_10
+Delaware,October,2021,motor fuel,,10,10,,10_2021_10
+Delaware,September,2019,motor fuel,13540926,10,9,,10_2019_9
+Delaware,September,2020,motor fuel,11201693,10,9,,10_2020_9
+Delaware,September,2021,motor fuel,,10,9,,10_2021_9
+District of Columbia,April,2019,motor fuel,2248907,11,4,,11_2019_4
+District of Columbia,April,2020,motor fuel,1775376,11,4,,11_2020_4
+District of Columbia,April,2021,motor fuel,1924699,11,4,,11_2021_4
+District of Columbia,April,2022,motor fuel,1907737,11,4,,11_2022_4
+District of Columbia,August,2019,motor fuel,1860601,11,8,,11_2019_8
+District of Columbia,August,2020,motor fuel,1973052,11,8,,11_2020_8
+District of Columbia,August,2021,motor fuel,2254177,11,8,,11_2021_8
+District of Columbia,December,2019,motor fuel,2609363,11,12,,11_2019_12
+District of Columbia,December,2020,motor fuel,1537570,11,12,,11_2020_12
+District of Columbia,December,2021,motor fuel,2421486,11,12,,11_2021_12
+District of Columbia,February,2020,motor fuel,1283208,11,2,,11_2020_2
+District of Columbia,February,2021,motor fuel,1488019,11,2,,11_2021_2
+District of Columbia,February,2022,motor fuel,1689147,11,2,,11_2022_2
+District of Columbia,January,2020,motor fuel,2181808,11,1,,11_2020_1
+District of Columbia,January,2021,motor fuel,1923169,11,1,,11_2021_1
+District of Columbia,January,2022,motor fuel,2015884,11,1,,11_2022_1
+District of Columbia,July,2019,motor fuel,2467216,11,7,,11_2019_7
+District of Columbia,July,2020,motor fuel,1723799,11,7,,11_2020_7
+District of Columbia,July,2021,motor fuel,2059586,11,7,,11_2021_7
+District of Columbia,June,2019,motor fuel,19435772,11,6,,11_2019_6
+District of Columbia,June,2020,motor fuel,1421660,11,6,,11_2020_6
+District of Columbia,June,2021,motor fuel,1993297,11,6,,11_2021_6
+District of Columbia,March,2020,motor fuel,2865079,11,3,,11_2020_3
+District of Columbia,March,2021,motor fuel,1962694,11,3,,11_2021_3
+District of Columbia,March,2022,motor fuel,1734440,11,3,,11_2022_3
+District of Columbia,May,2019,motor fuel,2688790,11,5,,11_2019_5
+District of Columbia,May,2020,motor fuel,1126278,11,5,,11_2020_5
+District of Columbia,May,2021,motor fuel,1947170,11,5,,11_2021_5
+District of Columbia,November,2019,motor fuel,1560991,11,11,,11_2019_11
+District of Columbia,November,2020,motor fuel,2403443,11,11,,11_2020_11
+District of Columbia,November,2021,motor fuel,1614613,11,11,,11_2021_11
+District of Columbia,October,2019,motor fuel,1721063,11,10,,11_2019_10
+District of Columbia,October,2020,motor fuel,1532386,11,10,,11_2020_10
+District of Columbia,October,2021,motor fuel,2103633,11,10,,11_2021_10
+District of Columbia,September,2019,motor fuel,-13781900,11,9,,11_2019_9
+District of Columbia,September,2020,motor fuel,2484152,11,9,,11_2020_9
+District of Columbia,September,2021,motor fuel,2025151,11,9,,11_2021_9
+Florida,April,2019,motor fuel,268793456,12,4,,12_2019_4
+Florida,April,2020,motor fuel,233287140,12,4,,12_2020_4
+Florida,April,2021,motor fuel,266148162,12,4,,12_2021_4
+Florida,April,2022,motor fuel,286028441,12,4,,12_2022_4
+Florida,August,2019,motor fuel,247028809,12,8,,12_2019_8
+Florida,August,2020,motor fuel,225194661,12,8,,12_2020_8
+Florida,August,2021,motor fuel,253737255,12,8,,12_2021_8
+Florida,December,2019,motor fuel,241508085,12,12,,12_2019_12
+Florida,December,2020,motor fuel,223222199,12,12,,12_2020_12
+Florida,December,2021,motor fuel,250858716,12,12,,12_2021_12
+Florida,February,2020,motor fuel,249607224,12,2,,12_2020_2
+Florida,February,2021,motor fuel,233686829,12,2,,12_2021_2
+Florida,February,2022,motor fuel,255514307,12,2,,12_2022_2
+Florida,January,2020,motor fuel,243894439,12,1,,12_2020_1
+Florida,January,2021,motor fuel,234635545,12,1,,12_2021_1
+Florida,January,2022,motor fuel,256248266,12,1,,12_2022_1
+Florida,July,2020,motor fuel,218822217,12,7,,12_2020_7
+Florida,July,2021,motor fuel,255019506,12,7,,12_2021_7
+Florida,June,2019,motor fuel,261390695,12,6,,12_2019_6
+Florida,June,2020,motor fuel,193734735,12,6,,12_2020_6
+Florida,June,2021,motor fuel,268836684,12,6,,12_2021_6
+Florida,March,2020,motor fuel,241344847,12,3,,12_2020_3
+Florida,March,2021,motor fuel,220915599,12,3,,12_2021_3
+Florida,March,2022,motor fuel,250817067,12,3,,12_2022_3
+Florida,May,2019,motor fuel,256436763,12,5,,12_2019_5
+Florida,May,2020,motor fuel,156950539,12,5,,12_2020_5
+Florida,May,2021,motor fuel,263075113,12,5,,12_2021_5
+Florida,November,2019,motor fuel,253008081,12,11,,12_2019_11
+Florida,November,2020,motor fuel,235502249,12,11,,12_2020_11
+Florida,November,2021,motor fuel,260973519,12,11,,12_2021_11
+Florida,October,2019,motor fuel,220666501,12,10,,12_2019_10
+Florida,October,2020,motor fuel,218870878,12,10,,12_2020_10
+Florida,October,2021,motor fuel,241687796,12,10,,12_2021_10
+Florida,September,2019,motor fuel,260821820,12,9,,12_2019_9
+Florida,September,2020,motor fuel,224653761,12,9,,12_2020_9
+Florida,September,2021,motor fuel,256593460,12,9,,12_2021_9
+Georgia,April,2019,motor fuel,157901000,13,4,,13_2019_4
+Georgia,April,2020,motor fuel,238227000,13,4,,13_2020_4
+Georgia,April,2021,motor fuel,173458000,13,4,,13_2021_4
+Georgia,April,2022,motor fuel,104868000,13,4,,13_2022_4
+Georgia,August,2019,motor fuel,156134000,13,8,,13_2019_8
+Georgia,August,2020,motor fuel,152211000,13,8,,13_2020_8
+Georgia,August,2021,motor fuel,171387000,13,8,,13_2021_8
+Georgia,December,2019,motor fuel,147891598,13,12,,13_2019_12
+Georgia,December,2020,motor fuel,149137248,13,12,,13_2020_12
+Georgia,December,2021,motor fuel,166136000,13,12,,13_2021_12
+Georgia,February,2020,motor fuel,154764000,13,2,,13_2020_2
+Georgia,February,2021,motor fuel,153937000,13,2,,13_2021_2
+Georgia,February,2022,motor fuel,157441000,13,2,,13_2022_2
+Georgia,January,2020,motor fuel,156109000,13,1,,13_2020_1
+Georgia,January,2021,motor fuel,158134000,13,1,,13_2021_1
+Georgia,January,2022,motor fuel,169178000,13,1,,13_2022_1
+Georgia,July,2019,motor fuel,151855000,13,7,,13_2019_7
+Georgia,July,2020,motor fuel,151164000,13,7,,13_2020_7
+Georgia,July,2021,motor fuel,160836000,13,7,,13_2021_7
+Georgia,June,2019,motor fuel,164441000,13,6,,13_2019_6
+Georgia,June,2020,motor fuel,139907000,13,6,,13_2020_6
+Georgia,June,2021,motor fuel,57111000,13,6,,13_2021_6
+Georgia,March,2020,motor fuel,145294000,13,3,,13_2020_3
+Georgia,March,2021,motor fuel,142949000,13,3,,13_2021_3
+Georgia,March,2022,motor fuel,155588000,13,3,,13_2022_3
+Georgia,May,2019,motor fuel,152843000,13,5,,13_2019_5
+Georgia,May,2020,motor fuel,113611000,13,5,,13_2020_5
+Georgia,May,2021,motor fuel,170095000,13,5,,13_2021_5
+Georgia,November,2019,motor fuel,157575000,13,11,,13_2019_11
+Georgia,November,2020,motor fuel,160115000,13,11,,13_2020_11
+Georgia,November,2021,motor fuel,173485000,13,11,,13_2021_11
+Georgia,October,2019,motor fuel,150916000,13,10,,13_2019_10
+Georgia,October,2020,motor fuel,153543000,13,10,,13_2020_10
+Georgia,October,2021,motor fuel,167333000,13,10,,13_2021_10
+Georgia,September,2019,motor fuel,160936000,13,9,,13_2019_9
+Georgia,September,2020,motor fuel,159827000,13,9,,13_2020_9
+Georgia,September,2021,motor fuel,174341000,13,9,,13_2021_9
+Hawaii,April,2019,motor fuel,7401638,15,4,,15_2019_4
+Hawaii,April,2020,motor fuel,6107011,15,4,,15_2020_4
+Hawaii,April,2021,motor fuel,8336508,15,4,,15_2021_4
+Hawaii,April,2022,motor fuel,9214382,15,4,,15_2022_4
+Hawaii,August,2019,motor fuel,9462979,15,8,,15_2019_8
+Hawaii,August,2020,motor fuel,7897615,15,8,,15_2020_8
+Hawaii,August,2021,motor fuel,9201553,15,8,,15_2021_8
+Hawaii,December,2019,motor fuel,9424783,15,12,,15_2019_12
+Hawaii,December,2020,motor fuel,7469345,15,12,,15_2020_12
+Hawaii,December,2021,motor fuel,8598752,15,12,,15_2021_12
+Hawaii,February,2020,motor fuel,9259857,15,2,,15_2020_2
+Hawaii,February,2021,motor fuel,7818332,15,2,,15_2021_2
+Hawaii,February,2022,motor fuel,8665738,15,2,,15_2022_2
+Hawaii,January,2020,motor fuel,9561356,15,1,,15_2020_1
+Hawaii,January,2021,motor fuel,8201550,15,1,,15_2021_1
+Hawaii,January,2022,motor fuel,8851848,15,1,,15_2022_1
+Hawaii,July,2019,motor fuel,2779296,15,7,,15_2019_7
+Hawaii,July,2020,motor fuel,7168309,15,7,,15_2020_7
+Hawaii,July,2021,motor fuel,9228640,15,7,,15_2021_7
+Hawaii,June,2019,motor fuel,7221116,15,6,,15_2019_6
+Hawaii,June,2020,motor fuel,4882279,15,6,,15_2020_6
+Hawaii,June,2021,motor fuel,8996011,15,6,,15_2021_6
+Hawaii,March,2020,motor fuel,9038319,15,3,,15_2020_3
+Hawaii,March,2021,motor fuel,7320928,15,3,,15_2021_3
+Hawaii,March,2022,motor fuel,8192258,15,3,,15_2022_3
+Hawaii,May,2019,motor fuel,7298017,15,5,,15_2019_5
+Hawaii,May,2020,motor fuel,4037752,15,5,,15_2020_5
+Hawaii,May,2021,motor fuel,8539719,15,5,,15_2021_5
+Hawaii,November,2019,motor fuel,9640880,15,11,,15_2019_11
+Hawaii,November,2020,motor fuel,7926764,15,11,,15_2020_11
+Hawaii,November,2021,motor fuel,8873788,15,11,,15_2021_11
+Hawaii,October,2019,motor fuel,9518207,15,10,,15_2019_10
+Hawaii,October,2020,motor fuel,6630807,15,10,,15_2020_10
+Hawaii,October,2021,motor fuel,8678044,15,10,,15_2021_10
+Hawaii,September,2019,motor fuel,17147309,15,9,,15_2019_9
+Hawaii,September,2020,motor fuel,7026766,15,9,,15_2020_9
+Hawaii,September,2021,motor fuel,9383737,15,9,,15_2021_9
+Idaho,April,2019,motor fuel,24600800,16,4,,16_2019_4
+Idaho,April,2020,motor fuel,31700670,16,4,,16_2020_4
+Idaho,April,2021,motor fuel,26302268,16,4,,16_2021_4
+Idaho,April,2022,motor fuel,28269248,16,4,,16_2022_4
+Idaho,August,2019,motor fuel,30958243,16,8,,16_2019_8
+Idaho,August,2020,motor fuel,31859840,16,8,,16_2020_8
+Idaho,August,2021,motor fuel,33669427,16,8,,16_2021_8
+Idaho,December,2019,motor fuel,33770586,16,12,,16_2019_12
+Idaho,December,2020,motor fuel,42573579,16,12,,16_2020_12
+Idaho,December,2021,motor fuel,34564579,16,12,,16_2021_12
+Idaho,February,2020,motor fuel,26668834,16,2,,16_2020_2
+Idaho,February,2021,motor fuel,29066702,16,2,,16_2021_2
+Idaho,February,2022,motor fuel,29340175,16,2,,16_2022_2
+Idaho,January,2020,motor fuel,32377834,16,1,,16_2020_1
+Idaho,January,2021,motor fuel,22273106,16,1,,16_2021_1
+Idaho,January,2022,motor fuel,32005893,16,1,,16_2022_1
+Idaho,July,2019,motor fuel,36466826,16,7,,16_2019_7
+Idaho,July,2020,motor fuel,39508740,16,7,,16_2020_7
+Idaho,July,2021,motor fuel,30750472,16,7,,16_2021_7
+Idaho,June,2019,motor fuel,26655643,16,6,,16_2019_6
+Idaho,June,2020,motor fuel,22053545,16,6,,16_2020_6
+Idaho,June,2021,motor fuel,34596971,16,6,,16_2021_6
+Idaho,March,2020,motor fuel,21692301,16,3,,16_2020_3
+Idaho,March,2021,motor fuel,31613887,16,3,,16_2021_3
+Idaho,March,2022,motor fuel,27727969,16,3,,16_2022_3
+Idaho,May,2019,motor fuel,32769452,16,5,,16_2019_5
+Idaho,May,2020,motor fuel,22673428,16,5,,16_2020_5
+Idaho,May,2021,motor fuel,31037952,16,5,,16_2021_5
+Idaho,November,2019,motor fuel,28261717,16,11,,16_2019_11
+Idaho,November,2020,motor fuel,28842183,16,11,,16_2020_11
+Idaho,November,2021,motor fuel,30002415,16,11,,16_2021_11
+Idaho,October,2019,motor fuel,40533457,16,10,,16_2019_10
+Idaho,October,2020,motor fuel,34219391,16,10,,16_2020_10
+Idaho,October,2021,motor fuel,30610236,16,10,,16_2021_10
+Idaho,September,2019,motor fuel,35399032,16,9,,16_2019_9
+Idaho,September,2020,motor fuel,35591331,16,9,,16_2020_9
+Idaho,September,2021,motor fuel,46153235,16,9,,16_2021_9
+Illinois,April,2019,motor fuel,114192883,17,4,,17_2019_4
+Illinois,April,2020,motor fuel,186054919,17,4,,17_2020_4
+Illinois,April,2021,motor fuel,208412966,17,4,,17_2021_4
+Illinois,April,2022,motor fuel,213857874,17,4,,17_2022_4
+Illinois,August,2019,motor fuel,215692912,17,8,,17_2019_8
+Illinois,August,2020,motor fuel,207208946,17,8,,17_2020_8
+Illinois,August,2021,motor fuel,217142086,17,8,,17_2021_8
+Illinois,December,2019,motor fuel,215406020,17,12,,17_2019_12
+Illinois,December,2020,motor fuel,182648943,17,12,,17_2020_12
+Illinois,December,2021,motor fuel,209923304,17,12,,17_2021_12
+Illinois,February,2020,motor fuel,203396175,17,2,,17_2020_2
+Illinois,February,2021,motor fuel,187614401,17,2,,17_2021_2
+Illinois,February,2022,motor fuel,200636128,17,2,,17_2022_2
+Illinois,January,2020,motor fuel,214185223,17,1,,17_2020_1
+Illinois,January,2021,motor fuel,197021313,17,1,,17_2021_1
+Illinois,January,2022,motor fuel,214269207,17,1,,17_2022_1
+Illinois,July,2019,motor fuel,119970663,17,7,,17_2019_7
+Illinois,July,2020,motor fuel,194024130,17,7,,17_2020_7
+Illinois,July,2021,motor fuel,214969887,17,7,,17_2021_7
+Illinois,June,2019,motor fuel,113632050,17,6,,17_2019_6
+Illinois,June,2020,motor fuel,160091885,17,6,,17_2020_6
+Illinois,June,2021,motor fuel,209434335,17,6,,17_2021_6
+Illinois,March,2020,motor fuel,193400714,17,3,,17_2020_3
+Illinois,March,2021,motor fuel,175873085,17,3,,17_2021_3
+Illinois,March,2022,motor fuel,183444369,17,3,,17_2022_3
+Illinois,May,2019,motor fuel,112395636,17,5,,17_2019_5
+Illinois,May,2020,motor fuel,147899738,17,5,,17_2020_5
+Illinois,May,2021,motor fuel,203589546,17,5,,17_2021_5
+Illinois,November,2019,motor fuel,226887383,17,11,,17_2019_11
+Illinois,November,2020,motor fuel,212636270,17,11,,17_2020_11
+Illinois,November,2021,motor fuel,213744740,17,11,,17_2021_11
+Illinois,October,2019,motor fuel,210006067,17,10,,17_2019_10
+Illinois,October,2020,motor fuel,200374834,17,10,,17_2020_10
+Illinois,October,2021,motor fuel,217386657,17,10,,17_2021_10
+Illinois,September,2019,motor fuel,219507337,17,9,,17_2019_9
+Illinois,September,2020,motor fuel,202233416,17,9,,17_2020_9
+Illinois,September,2021,motor fuel,217350101,17,9,,17_2021_9
+Indiana,April,2019,motor fuel,130810314,18,4,,18_2019_4
+Indiana,April,2020,motor fuel,123102883,18,4,,18_2020_4
+Indiana,April,2021,motor fuel,127842224,18,4,,18_2021_4
+Indiana,April,2022,motor fuel,137391566,18,4,,18_2022_4
+Indiana,August,2019,motor fuel,151678615,18,8,,18_2019_8
+Indiana,August,2020,motor fuel,146536145,18,8,,18_2020_8
+Indiana,August,2021,motor fuel,138590117,18,8,,18_2021_8
+Indiana,December,2019,motor fuel,123542026,18,12,,18_2019_12
+Indiana,December,2020,motor fuel,113145603,18,12,,18_2020_12
+Indiana,December,2021,motor fuel,136024633,18,12,,18_2021_12
+Indiana,February,2020,motor fuel,116328690,18,2,,18_2020_2
+Indiana,February,2021,motor fuel,116439201,18,2,,18_2021_2
+Indiana,February,2022,motor fuel,122971028,18,2,,18_2022_2
+Indiana,January,2020,motor fuel,118302382,18,1,,18_2020_1
+Indiana,January,2021,motor fuel,124201783,18,1,,18_2021_1
+Indiana,January,2022,motor fuel,132372738,18,1,,18_2022_1
+Indiana,July,2019,motor fuel,139357230,18,7,,18_2019_7
+Indiana,July,2020,motor fuel,132348242,18,7,,18_2020_7
+Indiana,July,2021,motor fuel,131904907,18,7,,18_2021_7
+Indiana,June,2019,motor fuel,145870867,18,6,,18_2019_6
+Indiana,June,2020,motor fuel,95218257,18,6,,18_2020_6
+Indiana,June,2021,motor fuel,134121199,18,6,,18_2021_6
+Indiana,March,2020,motor fuel,113103058,18,3,,18_2020_3
+Indiana,March,2021,motor fuel,108368593,18,3,,18_2021_3
+Indiana,March,2022,motor fuel,113733727,18,3,,18_2022_3
+Indiana,May,2019,motor fuel,131361942,18,5,,18_2019_5
+Indiana,May,2020,motor fuel,95813868,18,5,,18_2020_5
+Indiana,May,2021,motor fuel,127590030,18,5,,18_2021_5
+Indiana,November,2019,motor fuel,129222441,18,11,,18_2019_11
+Indiana,November,2020,motor fuel,129384086,18,11,,18_2020_11
+Indiana,November,2021,motor fuel,131233772,18,11,,18_2021_11
+Indiana,October,2019,motor fuel,121919199,18,10,,18_2019_10
+Indiana,October,2020,motor fuel,124902122,18,10,,18_2020_10
+Indiana,October,2021,motor fuel,135851031,18,10,,18_2021_10
+Indiana,September,2019,motor fuel,162648399,18,9,,18_2019_9
+Indiana,September,2020,motor fuel,153388688,18,9,,18_2020_9
+Indiana,September,2021,motor fuel,141706203,18,9,,18_2021_9
+Iowa,April,2019,motor fuel,57351798,19,4,,19_2019_4
+Iowa,April,2020,motor fuel,50137158,19,4,,19_2020_4
+Iowa,April,2021,motor fuel,58448996,19,4,,19_2021_4
+Iowa,April,2022,motor fuel,55613394,19,4,,19_2022_4
+Iowa,August,2019,motor fuel,61869919,19,8,,19_2019_8
+Iowa,August,2020,motor fuel,59259583,19,8,,19_2020_8
+Iowa,August,2021,motor fuel,62929657,19,8,,19_2021_8
+Iowa,December,2019,motor fuel,57720595,19,12,,19_2019_12
+Iowa,December,2020,motor fuel,51799717,19,12,,19_2020_12
+Iowa,December,2021,motor fuel,58965932,19,12,,19_2021_12
+Iowa,February,2020,motor fuel,51783545,19,2,,19_2020_2
+Iowa,February,2021,motor fuel,45014198,19,2,,19_2021_2
+Iowa,February,2022,motor fuel,59763539,19,2,,19_2022_2
+Iowa,January,2020,motor fuel,57503505,19,1,,19_2020_1
+Iowa,January,2021,motor fuel,60677751,19,1,,19_2021_1
+Iowa,January,2022,motor fuel,53883889,19,1,,19_2022_1
+Iowa,July,2019,motor fuel,56015256,19,7,,19_2019_7
+Iowa,July,2020,motor fuel,54963145,19,7,,19_2020_7
+Iowa,July,2021,motor fuel,61501975,19,7,,19_2021_7
+Iowa,June,2019,motor fuel,58858327,19,6,,19_2019_6
+Iowa,June,2020,motor fuel,48924282,19,6,,19_2020_6
+Iowa,June,2021,motor fuel,58204341,19,6,,19_2021_6
+Iowa,March,2020,motor fuel,47324362,19,3,,19_2020_3
+Iowa,March,2021,motor fuel,47333171,19,3,,19_2021_3
+Iowa,March,2022,motor fuel,48722194,19,3,,19_2022_3
+Iowa,May,2019,motor fuel,53923751,19,5,,19_2019_5
+Iowa,May,2020,motor fuel,48355601,19,5,,19_2020_5
+Iowa,May,2021,motor fuel,57591543,19,5,,19_2021_5
+Iowa,November,2019,motor fuel,60216214,19,11,,19_2019_11
+Iowa,November,2020,motor fuel,63268725,19,11,,19_2020_11
+Iowa,November,2021,motor fuel,73375774,19,11,,19_2021_11
+Iowa,October,2019,motor fuel,55900965,19,10,,19_2019_10
+Iowa,October,2020,motor fuel,58345912,19,10,,19_2020_10
+Iowa,October,2021,motor fuel,53830232,19,10,,19_2021_10
+Iowa,September,2019,motor fuel,62963332,19,9,,19_2019_9
+Iowa,September,2020,motor fuel,60058038,19,9,,19_2020_9
+Iowa,September,2021,motor fuel,59418388,19,9,,19_2021_9
+Kansas,April,2019,motor fuel,,20,4,,20_2019_4
+Kansas,April,2020,motor fuel,,20,4,,20_2020_4
+Kansas,April,2021,motor fuel,,20,4,,20_2021_4
+Kansas,April,2022,motor fuel,,20,4,,20_2022_4
+Kansas,August,2019,motor fuel,,20,8,,20_2019_8
+Kansas,August,2020,motor fuel,,20,8,,20_2020_8
+Kansas,August,2021,motor fuel,,20,8,,20_2021_8
+Kansas,December,2019,motor fuel,,20,12,,20_2019_12
+Kansas,December,2020,motor fuel,,20,12,,20_2020_12
+Kansas,December,2021,motor fuel,,20,12,,20_2021_12
+Kansas,February,2020,motor fuel,,20,2,,20_2020_2
+Kansas,February,2021,motor fuel,,20,2,,20_2021_2
+Kansas,February,2022,motor fuel,,20,2,,20_2022_2
+Kansas,January,2020,motor fuel,,20,1,,20_2020_1
+Kansas,January,2021,motor fuel,,20,1,,20_2021_1
+Kansas,January,2022,motor fuel,,20,1,,20_2022_1
+Kansas,July,2019,motor fuel,,20,7,,20_2019_7
+Kansas,July,2020,motor fuel,,20,7,,20_2020_7
+Kansas,July,2021,motor fuel,,20,7,,20_2021_7
+Kansas,June,2019,motor fuel,,20,6,,20_2019_6
+Kansas,June,2020,motor fuel,,20,6,,20_2020_6
+Kansas,June,2021,motor fuel,,20,6,,20_2021_6
+Kansas,March,2020,motor fuel,,20,3,,20_2020_3
+Kansas,March,2021,motor fuel,,20,3,,20_2021_3
+Kansas,March,2022,motor fuel,,20,3,,20_2022_3
+Kansas,May,2019,motor fuel,,20,5,,20_2019_5
+Kansas,May,2020,motor fuel,,20,5,,20_2020_5
+Kansas,May,2021,motor fuel,,20,5,,20_2021_5
+Kansas,November,2019,motor fuel,,20,11,,20_2019_11
+Kansas,November,2020,motor fuel,,20,11,,20_2020_11
+Kansas,November,2021,motor fuel,,20,11,,20_2021_11
+Kansas,October,2019,motor fuel,,20,10,,20_2019_10
+Kansas,October,2020,motor fuel,,20,10,,20_2020_10
+Kansas,October,2021,motor fuel,,20,10,,20_2021_10
+Kansas,September,2019,motor fuel,,20,9,,20_2019_9
+Kansas,September,2020,motor fuel,,20,9,,20_2020_9
+Kansas,September,2021,motor fuel,,20,9,,20_2021_9
+Kentucky,April,2019,motor fuel,63637490,21,4,,21_2019_4
+Kentucky,April,2020,motor fuel,56114521,21,4,,21_2020_4
+Kentucky,April,2021,motor fuel,64376951,21,4,,21_2021_4
+Kentucky,April,2022,motor fuel,65905183,21,4,,21_2022_4
+Kentucky,August,2019,motor fuel,66600678,21,8,,21_2019_8
+Kentucky,August,2020,motor fuel,63612460,21,8,,21_2020_8
+Kentucky,August,2021,motor fuel,65684731,21,8,,21_2021_8
+Kentucky,December,2019,motor fuel,66660893,21,12,,21_2019_12
+Kentucky,December,2020,motor fuel,61342223,21,12,,21_2020_12
+Kentucky,December,2021,motor fuel,68336506,21,12,,21_2021_12
+Kentucky,February,2020,motor fuel,59522994,21,2,,21_2020_2
+Kentucky,February,2021,motor fuel,57132896,21,2,,21_2021_2
+Kentucky,February,2022,motor fuel,56990446,21,2,,21_2022_2
+Kentucky,January,2020,motor fuel,61592132,21,1,,21_2020_1
+Kentucky,January,2021,motor fuel,59086444,21,1,,21_2021_1
+Kentucky,January,2022,motor fuel,64530150,21,1,,21_2022_1
+Kentucky,July,2019,motor fuel,62670993,21,7,,21_2019_7
+Kentucky,July,2020,motor fuel,61972924,21,7,,21_2020_7
+Kentucky,July,2021,motor fuel,65376785,21,7,,21_2021_7
+Kentucky,June,2019,motor fuel,71396352,21,6,,21_2019_6
+Kentucky,June,2020,motor fuel,58720958,21,6,,21_2020_6
+Kentucky,June,2021,motor fuel,70490087,21,6,,21_2021_6
+Kentucky,March,2020,motor fuel,62016305,21,3,,21_2020_3
+Kentucky,March,2021,motor fuel,54764835,21,3,,21_2021_3
+Kentucky,March,2022,motor fuel,59220921,21,3,,21_2022_3
+Kentucky,May,2019,motor fuel,62908704,21,5,,21_2019_5
+Kentucky,May,2020,motor fuel,45468619,21,5,,21_2020_5
+Kentucky,May,2021,motor fuel,64713614,21,5,,21_2021_5
+Kentucky,November,2019,motor fuel,65332077,21,11,,21_2019_11
+Kentucky,November,2020,motor fuel,62948588,21,11,,21_2020_11
+Kentucky,November,2021,motor fuel,64259497,21,11,,21_2021_11
+Kentucky,October,2019,motor fuel,63348039,21,10,,21_2019_10
+Kentucky,October,2020,motor fuel,61425224,21,10,,21_2020_10
+Kentucky,October,2021,motor fuel,61818224,21,10,,21_2021_10
+Kentucky,September,2019,motor fuel,73552918,21,9,,21_2019_9
+Kentucky,September,2020,motor fuel,66510868,21,9,,21_2020_9
+Kentucky,September,2021,motor fuel,70396578,21,9,,21_2021_9
+Louisiana,April,2019,motor fuel,52466454,22,4,,22_2019_4
+Louisiana,April,2020,motor fuel,50665688,22,4,,22_2020_4
+Louisiana,April,2021,motor fuel,55321830,22,4,,22_2021_4
+Louisiana,April,2022,motor fuel,55380147,22,4,,22_2022_4
+Louisiana,August,2019,motor fuel,58559846,22,8,,22_2019_8
+Louisiana,August,2020,motor fuel,54314955,22,8,,22_2020_8
+Louisiana,August,2021,motor fuel,55675354,22,8,,22_2021_8
+Louisiana,December,2019,motor fuel,55420405,22,12,,22_2019_12
+Louisiana,December,2020,motor fuel,52700809,22,12,,22_2020_12
+Louisiana,December,2021,motor fuel,54785130,22,12,,22_2021_12
+Louisiana,February,2020,motor fuel,52888612,22,2,,22_2020_2
+Louisiana,February,2021,motor fuel,49940688,22,2,,22_2021_2
+Louisiana,February,2022,motor fuel,48005517,22,2,,22_2022_2
+Louisiana,January,2020,motor fuel,53461058,22,1,,22_2020_1
+Louisiana,January,2021,motor fuel,53199444,22,1,,22_2021_1
+Louisiana,January,2022,motor fuel,59002560,22,1,,22_2022_1
+Louisiana,July,2019,motor fuel,51191125,22,7,,22_2019_7
+Louisiana,July,2020,motor fuel,47100021,22,7,,22_2020_7
+Louisiana,July,2021,motor fuel,51940889,22,7,,22_2021_7
+Louisiana,June,2019,motor fuel,57354368,22,6,,22_2019_6
+Louisiana,June,2020,motor fuel,44900918,22,6,,22_2020_6
+Louisiana,June,2021,motor fuel,56462225,22,6,,22_2021_6
+Louisiana,March,2020,motor fuel,50060839,22,3,,22_2020_3
+Louisiana,March,2021,motor fuel,45217910,22,3,,22_2021_3
+Louisiana,March,2022,motor fuel,49198882,22,3,,22_2022_3
+Louisiana,May,2019,motor fuel,55386838,22,5,,22_2019_5
+Louisiana,May,2020,motor fuel,31502425,22,5,,22_2020_5
+Louisiana,May,2021,motor fuel,54258237,22,5,,22_2021_5
+Louisiana,November,2019,motor fuel,56681245,22,11,,22_2019_11
+Louisiana,November,2020,motor fuel,56612092,22,11,,22_2020_11
+Louisiana,November,2021,motor fuel,58870786,22,11,,22_2021_11
+Louisiana,October,2019,motor fuel,52583965,22,10,,22_2019_10
+Louisiana,October,2020,motor fuel,55033507,22,10,,22_2020_10
+Louisiana,October,2021,motor fuel,51106552,22,10,,22_2021_10
+Louisiana,September,2019,motor fuel,56924465,22,9,,22_2019_9
+Louisiana,September,2020,motor fuel,54724524,22,9,,22_2020_9
+Louisiana,September,2021,motor fuel,55264167,22,9,,22_2021_9
+Maine,April,2019,motor fuel,18170518,23,4,,23_2019_4
+Maine,April,2020,motor fuel,15642839,23,4,,23_2020_4
+Maine,April,2021,motor fuel,16228215,23,4,,23_2021_4
+Maine,April,2022,motor fuel,16955979,23,4,,23_2022_4
+Maine,August,2019,motor fuel,21925867,23,8,,23_2019_8
+Maine,August,2020,motor fuel,19496186,23,8,,23_2020_8
+Maine,August,2021,motor fuel,21378032,23,8,,23_2021_8
+Maine,December,2019,motor fuel,19249212,23,12,,23_2019_12
+Maine,December,2020,motor fuel,18024399,23,12,,23_2020_12
+Maine,December,2021,motor fuel,18499544,23,12,,23_2021_12
+Maine,February,2021,motor fuel,16310504,23,2,,23_2021_2
+Maine,February,2022,motor fuel,17268880,23,2,,23_2022_2
+Maine,January,2020,motor fuel,17653122,23,1,,23_2020_1
+Maine,January,2021,motor fuel,16026323,23,1,,23_2021_1
+Maine,January,2022,motor fuel,17966034,23,1,,23_2022_1
+Maine,July,2019,motor fuel,20272647,23,7,,23_2019_7
+Maine,July,2020,motor fuel,17225417,23,7,,23_2020_7
+Maine,July,2021,motor fuel,19509205,23,7,,23_2021_7
+Maine,June,2019,motor fuel,19880301,23,6,,23_2019_6
+Maine,June,2020,motor fuel,15626960,23,6,,23_2020_6
+Maine,June,2021,motor fuel,16458922,23,6,,23_2021_6
+Maine,March,2020,motor fuel,16889664,23,3,,23_2020_3
+Maine,March,2021,motor fuel,15319016,23,3,,23_2021_3
+Maine,March,2022,motor fuel,16100639,23,3,,23_2022_3
+Maine,May,2019,motor fuel,17152153,23,5,,23_2019_5
+Maine,May,2020,motor fuel,12194945,23,5,,23_2020_5
+Maine,May,2021,motor fuel,17586565,23,5,,23_2021_5
+Maine,November,2019,motor fuel,20282731,23,11,,23_2019_11
+Maine,November,2020,motor fuel,18611044,23,11,,23_2020_11
+Maine,November,2021,motor fuel,18478745,23,11,,23_2021_11
+Maine,October,2019,motor fuel,16086972,23,10,,23_2019_10
+Maine,October,2020,motor fuel,18700678,23,10,,23_2020_10
+Maine,October,2021,motor fuel,19493441,23,10,,23_2021_10
+Maine,September,2019,motor fuel,25804412,23,9,,23_2019_9
+Maine,September,2020,motor fuel,19872939,23,9,,23_2020_9
+Maine,September,2021,motor fuel,21617574,23,9,,23_2021_9
+Maryland,April,2019,motor fuel,96137451,24,4,,24_2019_4
+Maryland,April,2020,motor fuel,60078473,24,4,,24_2020_4
+Maryland,April,2021,motor fuel,123636237,24,4,,24_2021_4
+Maryland,April,2022,motor fuel,44948683,24,4,,24_2022_4
+Maryland,August,2019,motor fuel,107725570,24,8,,24_2019_8
+Maryland,August,2020,motor fuel,89107662,24,8,,24_2020_8
+Maryland,August,2021,motor fuel,88104338,24,8,,24_2021_8
+Maryland,December,2019,motor fuel,99360219,24,12,,24_2019_12
+Maryland,December,2020,motor fuel,79015398,24,12,,24_2020_12
+Maryland,December,2021,motor fuel,88188550,24,12,,24_2021_12
+Maryland,February,2020,motor fuel,93365995,24,2,,24_2020_2
+Maryland,February,2021,motor fuel,67553611,24,2,,24_2021_2
+Maryland,February,2022,motor fuel,81938145,24,2,,24_2022_2
+Maryland,January,2020,motor fuel,98421848,24,1,,24_2020_1
+Maryland,January,2021,motor fuel,71763758,24,1,,24_2021_1
+Maryland,January,2022,motor fuel,92134037,24,1,,24_2022_1
+Maryland,July,2019,motor fuel,100621238,24,7,,24_2019_7
+Maryland,July,2020,motor fuel,85770156,24,7,,24_2020_7
+Maryland,July,2021,motor fuel,88997745,24,7,,24_2021_7
+Maryland,June,2019,motor fuel,105733374,24,6,,24_2019_6
+Maryland,June,2020,motor fuel,58753277,24,6,,24_2020_6
+Maryland,June,2021,motor fuel,98912538,24,6,,24_2021_6
+Maryland,March,2020,motor fuel,76999235,24,3,,24_2020_3
+Maryland,March,2021,motor fuel,58776417,24,3,,24_2021_3
+Maryland,March,2022,motor fuel,81232082,24,3,,24_2022_3
+Maryland,May,2019,motor fuel,95527032,24,5,,24_2019_5
+Maryland,May,2020,motor fuel,62387555,24,5,,24_2020_5
+Maryland,May,2021,motor fuel,85569898,24,5,,24_2021_5
+Maryland,November,2019,motor fuel,101590178,24,11,,24_2019_11
+Maryland,November,2020,motor fuel,85617745,24,11,,24_2020_11
+Maryland,November,2021,motor fuel,88530474,24,11,,24_2021_11
+Maryland,October,2019,motor fuel,96559933,24,10,,24_2019_10
+Maryland,October,2020,motor fuel,78355727,24,10,,24_2020_10
+Maryland,October,2021,motor fuel,98132005,24,10,,24_2021_10
+Maryland,September,2019,motor fuel,103208791,24,9,,24_2019_9
+Maryland,September,2020,motor fuel,89107662,24,9,,24_2020_9
+Maryland,September,2021,motor fuel,101345655,24,9,,24_2021_9
+Massachusetts,April,2019,motor fuel,63756591,25,4,,25_2019_4
+Massachusetts,April,2020,motor fuel,50822686,25,4,,25_2020_4
+Massachusetts,April,2021,motor fuel,56628210,25,4,,25_2021_4
+Massachusetts,April,2022,motor fuel,58881912,25,4,,25_2022_4
+Massachusetts,August,2019,motor fuel,67714235,25,8,,25_2019_8
+Massachusetts,August,2020,motor fuel,56448688,25,8,,25_2020_8
+Massachusetts,August,2021,motor fuel,62014105,25,8,,25_2021_8
+Massachusetts,December,2019,motor fuel,63453866,25,12,,25_2019_12
+Massachusetts,December,2020,motor fuel,52841872,25,12,,25_2020_12
+Massachusetts,December,2021,motor fuel,59991192,25,12,,25_2021_12
+Massachusetts,February,2020,motor fuel,61406648,25,2,,25_2020_2
+Massachusetts,February,2021,motor fuel,50975192,25,2,,25_2021_2
+Massachusetts,February,2022,motor fuel,52960571,25,2,,25_2022_2
+Massachusetts,January,2020,motor fuel,63848833,25,1,,25_2020_1
+Massachusetts,January,2021,motor fuel,54411062,25,1,,25_2021_1
+Massachusetts,January,2022,motor fuel,60562087,25,1,,25_2022_1
+Massachusetts,July,2019,motor fuel,65207934,25,7,,25_2019_7
+Massachusetts,July,2020,motor fuel,53628494,25,7,,25_2020_7
+Massachusetts,July,2021,motor fuel,62779970,25,7,,25_2021_7
+Massachusetts,June,2019,motor fuel,67238690,25,6,,25_2019_6
+Massachusetts,June,2020,motor fuel,44992595,25,6,,25_2020_6
+Massachusetts,June,2021,motor fuel,61180336,25,6,,25_2021_6
+Massachusetts,March,2020,motor fuel,56306014,25,3,,25_2020_3
+Massachusetts,March,2021,motor fuel,48467498,25,3,,25_2021_3
+Massachusetts,March,2022,motor fuel,54098151,25,3,,25_2022_3
+Massachusetts,May,2019,motor fuel,62049984,25,5,,25_2019_5
+Massachusetts,May,2020,motor fuel,34702719,25,5,,25_2020_5
+Massachusetts,May,2021,motor fuel,55542024,25,5,,25_2021_5
+Massachusetts,November,2019,motor fuel,67309882,25,11,,25_2019_11
+Massachusetts,November,2020,motor fuel,58045720,25,11,,25_2020_11
+Massachusetts,November,2021,motor fuel,62740104,25,11,,25_2021_11
+Massachusetts,October,2019,motor fuel,63352754,25,10,,25_2019_10
+Massachusetts,October,2020,motor fuel,56123058,25,10,,25_2020_10
+Massachusetts,October,2021,motor fuel,62951619,25,10,,25_2021_10
+Massachusetts,September,2019,motor fuel,68758878,25,9,,25_2019_9
+Massachusetts,September,2020,motor fuel,58640109,25,9,,25_2020_9
+Massachusetts,September,2021,motor fuel,61771679,25,9,,25_2021_9
+Michigan,April,2019,motor fuel,120853742,26,4,,26_2019_4
+Michigan,April,2020,motor fuel,103677245,26,4,,26_2020_4
+Michigan,April,2021,motor fuel,130834656,26,4,,26_2021_4
+Michigan,April,2022,motor fuel,120819302,26,4,,26_2022_4
+Michigan,August,2019,motor fuel,126804536,26,8,,26_2019_8
+Michigan,August,2020,motor fuel,141308290,26,8,,26_2020_8
+Michigan,August,2021,motor fuel,128280749,26,8,,26_2021_8
+Michigan,December,2019,motor fuel,140132062,26,12,,26_2019_12
+Michigan,December,2020,motor fuel,102739029,26,12,,26_2020_12
+Michigan,December,2021,motor fuel,118376376,26,12,,26_2021_12
+Michigan,February,2020,motor fuel,113814395,26,2,,26_2020_2
+Michigan,February,2021,motor fuel,98536525,26,2,,26_2021_2
+Michigan,February,2022,motor fuel,128131323,26,2,,26_2022_2
+Michigan,January,2020,motor fuel,117602871,26,1,,26_2020_1
+Michigan,January,2021,motor fuel,105318956,26,1,,26_2021_1
+Michigan,January,2022,motor fuel,117382731,26,1,,26_2022_1
+Michigan,July,2019,motor fuel,128877968,26,7,,26_2019_7
+Michigan,July,2020,motor fuel,109272211,26,7,,26_2020_7
+Michigan,July,2021,motor fuel,124435879,26,7,,26_2021_7
+Michigan,June,2019,motor fuel,126825609,26,6,,26_2019_6
+Michigan,June,2020,motor fuel,77894437,26,6,,26_2020_6
+Michigan,June,2021,motor fuel,118019995,26,6,,26_2021_6
+Michigan,March,2020,motor fuel,99709371,26,3,,26_2020_3
+Michigan,March,2021,motor fuel,92732391,26,3,,26_2021_3
+Michigan,March,2022,motor fuel,102190653,26,3,,26_2022_3
+Michigan,May,2019,motor fuel,114353386,26,5,,26_2019_5
+Michigan,May,2020,motor fuel,64772662,26,5,,26_2020_5
+Michigan,May,2021,motor fuel,110252082,26,5,,26_2021_5
+Michigan,November,2019,motor fuel,103649130,26,11,,26_2019_11
+Michigan,November,2020,motor fuel,104901949,26,11,,26_2020_11
+Michigan,November,2021,motor fuel,120506559,26,11,,26_2021_11
+Michigan,October,2019,motor fuel,123248016,26,10,,26_2019_10
+Michigan,October,2020,motor fuel,115942947,26,10,,26_2020_10
+Michigan,October,2021,motor fuel,103719743,26,10,,26_2021_10
+Michigan,September,2019,motor fuel,132766377,26,9,,26_2019_9
+Michigan,September,2020,motor fuel,118078519,26,9,,26_2020_9
+Michigan,September,2021,motor fuel,131274838,26,9,,26_2021_9
+Minnesota,April,2019,motor fuel,74790845,27,4,,27_2019_4
+Minnesota,April,2020,motor fuel,62033033,27,4,,27_2020_4
+Minnesota,April,2021,motor fuel,72122651,27,4,,27_2021_4
+Minnesota,April,2022,motor fuel,75034178,27,4,,27_2022_4
+Minnesota,August,2019,motor fuel,82896949,27,8,,27_2019_8
+Minnesota,August,2020,motor fuel,76755456,27,8,,27_2020_8
+Minnesota,August,2021,motor fuel,82223862,27,8,,27_2021_8
+Minnesota,December,2019,motor fuel,80028223,27,12,,27_2019_12
+Minnesota,December,2020,motor fuel,63645141,27,12,,27_2020_12
+Minnesota,December,2021,motor fuel,71986057,27,12,,27_2021_12
+Minnesota,February,2020,motor fuel,71544908,27,2,,27_2020_2
+Minnesota,February,2021,motor fuel,68273529,27,2,,27_2021_2
+Minnesota,February,2022,motor fuel,64868144,27,2,,27_2022_2
+Minnesota,January,2020,motor fuel,71583917,27,1,,27_2020_1
+Minnesota,January,2021,motor fuel,71413672,27,1,,27_2021_1
+Minnesota,January,2022,motor fuel,72026720,27,1,,27_2022_1
+Minnesota,July,2019,motor fuel,73921429,27,7,,27_2019_7
+Minnesota,July,2020,motor fuel,72735034,27,7,,27_2020_7
+Minnesota,July,2021,motor fuel,80910768,27,7,,27_2021_7
+Minnesota,June,2019,motor fuel,80573271,27,6,,27_2019_6
+Minnesota,June,2020,motor fuel,63011979,27,6,,27_2020_6
+Minnesota,June,2021,motor fuel,77146593,27,6,,27_2021_6
+Minnesota,March,2020,motor fuel,63645141,27,3,,27_2020_3
+Minnesota,March,2021,motor fuel,67792498,27,3,,27_2021_3
+Minnesota,March,2022,motor fuel,71591618,27,3,,27_2022_3
+Minnesota,May,2019,motor fuel,70716368,27,5,,27_2019_5
+Minnesota,May,2020,motor fuel,48805477,27,5,,27_2020_5
+Minnesota,May,2021,motor fuel,68836717,27,5,,27_2021_5
+Minnesota,November,2019,motor fuel,84194275,27,11,,27_2019_11
+Minnesota,November,2020,motor fuel,75297264,27,11,,27_2020_11
+Minnesota,November,2021,motor fuel,78507475,27,11,,27_2021_11
+Minnesota,October,2019,motor fuel,76079311,27,10,,27_2019_10
+Minnesota,October,2020,motor fuel,72978394,27,10,,27_2020_10
+Minnesota,October,2021,motor fuel,77491877,27,10,,27_2021_10
+Minnesota,September,2019,motor fuel,84443177,27,9,,27_2019_9
+Minnesota,September,2020,motor fuel,73533985,27,9,,27_2020_9
+Minnesota,September,2021,motor fuel,81415073,27,9,,27_2021_9
+Mississippi,April,2019,motor fuel,39207047,28,4,,28_2019_4
+Mississippi,April,2020,motor fuel,36016759,28,4,,28_2020_4
+Mississippi,April,2021,motor fuel,41413140,28,4,,28_2021_4
+Mississippi,April,2022,motor fuel,40630076,28,4,,28_2022_4
+Mississippi,August,2019,motor fuel,37462657,28,8,,28_2019_8
+Mississippi,August,2020,motor fuel,36719300,28,8,,28_2020_8
+Mississippi,August,2021,motor fuel,37409295,28,8,,28_2021_8
+Mississippi,December,2019,motor fuel,35107029,28,12,,28_2019_12
+Mississippi,December,2020,motor fuel,35516985,28,12,,28_2020_12
+Mississippi,December,2021,motor fuel,41511128,28,12,,28_2021_12
+Mississippi,February,2020,motor fuel,33461628,28,2,,28_2020_2
+Mississippi,February,2021,motor fuel,32811233,28,2,,28_2021_2
+Mississippi,February,2022,motor fuel,31676187,28,2,,28_2022_2
+Mississippi,January,2020,motor fuel,35961192,28,1,,28_2020_1
+Mississippi,January,2021,motor fuel,36739606,28,1,,28_2021_1
+Mississippi,January,2022,motor fuel,37688759,28,1,,28_2022_1
+Mississippi,July,2019,motor fuel,35969082,28,7,,28_2019_7
+Mississippi,July,2020,motor fuel,38859632,28,7,,28_2020_7
+Mississippi,July,2021,motor fuel,38315429,28,7,,28_2021_7
+Mississippi,June,2019,motor fuel,39147214,28,6,,28_2019_6
+Mississippi,June,2020,motor fuel,34357576,28,6,,28_2020_6
+Mississippi,June,2021,motor fuel,41443931,28,6,,28_2021_6
+Mississippi,March,2020,motor fuel,32668779,28,3,,28_2020_3
+Mississippi,March,2021,motor fuel,29144366,28,3,,28_2021_3
+Mississippi,March,2022,motor fuel,32284081,28,3,,28_2022_3
+Mississippi,May,2019,motor fuel,36484430,28,5,,28_2019_5
+Mississippi,May,2020,motor fuel,23644100,28,5,,28_2020_5
+Mississippi,May,2021,motor fuel,37302688,28,5,,28_2021_5
+Mississippi,November,2019,motor fuel,37220216,28,11,,28_2019_11
+Mississippi,November,2020,motor fuel,36834197,28,11,,28_2020_11
+Mississippi,November,2021,motor fuel,37971951,28,11,,28_2021_11
+Mississippi,October,2019,motor fuel,35586555,28,10,,28_2019_10
+Mississippi,October,2020,motor fuel,36862054,28,10,,28_2020_10
+Mississippi,October,2021,motor fuel,37680072,28,10,,28_2021_10
+Mississippi,September,2019,motor fuel,38718154,28,9,,28_2019_9
+Mississippi,September,2020,motor fuel,37914529,28,9,,28_2020_9
+Mississippi,September,2021,motor fuel,40682619,28,9,,28_2021_9
+Missouri,April,2019,motor fuel,60834807,29,4,,29_2019_4
+Missouri,April,2020,motor fuel,55713970,29,4,,29_2020_4
+Missouri,April,2021,motor fuel,59812486,29,4,,29_2021_4
+Missouri,April,2022,motor fuel,74319379,29,4,,29_2022_4
+Missouri,August,2019,motor fuel,61771063,29,8,,29_2019_8
+Missouri,August,2020,motor fuel,57844475,29,8,,29_2020_8
+Missouri,August,2021,motor fuel,59154522,29,8,,29_2021_8
+Missouri,December,2019,motor fuel,59425120,29,12,,29_2019_12
+Missouri,December,2020,motor fuel,55779550,29,12,,29_2020_12
+Missouri,December,2021,motor fuel,67182837,29,12,,29_2021_12
+Missouri,February,2020,motor fuel,48692729,29,2,,29_2020_2
+Missouri,February,2021,motor fuel,51268422,29,2,,29_2021_2
+Missouri,February,2022,motor fuel,60743121,29,2,,29_2022_2
+Missouri,January,2020,motor fuel,60270942,29,1,,29_2020_1
+Missouri,January,2021,motor fuel,58695748,29,1,,29_2021_1
+Missouri,January,2022,motor fuel,74218561,29,1,,29_2022_1
+Missouri,July,2019,motor fuel,60685347,29,7,,29_2019_7
+Missouri,July,2020,motor fuel,58757010,29,7,,29_2020_7
+Missouri,July,2021,motor fuel,63961957,29,7,,29_2021_7
+Missouri,June,2019,motor fuel,62904050,29,6,,29_2019_6
+Missouri,June,2020,motor fuel,52216045,29,6,,29_2020_6
+Missouri,June,2021,motor fuel,63234373,29,6,,29_2021_6
+Missouri,March,2020,motor fuel,56658234,29,3,,29_2020_3
+Missouri,March,2021,motor fuel,48679714,29,3,,29_2021_3
+Missouri,March,2022,motor fuel,55387332,29,3,,29_2022_3
+Missouri,May,2019,motor fuel,55366561,29,5,,29_2019_5
+Missouri,May,2020,motor fuel,44172444,29,5,,29_2020_5
+Missouri,May,2021,motor fuel,58562738,29,5,,29_2021_5
+Missouri,November,2019,motor fuel,59767397,29,11,,29_2019_11
+Missouri,November,2020,motor fuel,55040797,29,11,,29_2020_11
+Missouri,November,2021,motor fuel,65252870,29,11,,29_2021_11
+Missouri,October,2019,motor fuel,59224043,29,10,,29_2019_10
+Missouri,October,2020,motor fuel,57496793,29,10,,29_2020_10
+Missouri,October,2021,motor fuel,65177018,29,10,,29_2021_10
+Missouri,September,2019,motor fuel,63562993,29,9,,29_2019_9
+Missouri,September,2020,motor fuel,60423628,29,9,,29_2020_9
+Missouri,September,2021,motor fuel,61932793,29,9,,29_2021_9
+Montana,April,2019,motor fuel,,30,4,,30_2019_4
+Montana,April,2020,motor fuel,,30,4,,30_2020_4
+Montana,April,2021,motor fuel,,30,4,,30_2021_4
+Montana,April,2022,motor fuel,,30,4,,30_2022_4
+Montana,August,2019,motor fuel,,30,8,,30_2019_8
+Montana,August,2020,motor fuel,,30,8,,30_2020_8
+Montana,August,2021,motor fuel,,30,8,,30_2021_8
+Montana,December,2019,motor fuel,,30,12,,30_2019_12
+Montana,December,2020,motor fuel,,30,12,,30_2020_12
+Montana,December,2021,motor fuel,,30,12,,30_2021_12
+Montana,February,2020,motor fuel,,30,2,,30_2020_2
+Montana,February,2021,motor fuel,,30,2,,30_2021_2
+Montana,February,2022,motor fuel,,30,2,,30_2022_2
+Montana,January,2020,motor fuel,,30,1,,30_2020_1
+Montana,January,2021,motor fuel,,30,1,,30_2021_1
+Montana,January,2022,motor fuel,,30,1,,30_2022_1
+Montana,July,2019,motor fuel,,30,7,,30_2019_7
+Montana,July,2020,motor fuel,,30,7,,30_2020_7
+Montana,July,2021,motor fuel,,30,7,,30_2021_7
+Montana,June,2019,motor fuel,,30,6,,30_2019_6
+Montana,June,2020,motor fuel,,30,6,,30_2020_6
+Montana,June,2021,motor fuel,,30,6,,30_2021_6
+Montana,March,2020,motor fuel,,30,3,,30_2020_3
+Montana,March,2021,motor fuel,,30,3,,30_2021_3
+Montana,March,2022,motor fuel,,30,3,,30_2022_3
+Montana,May,2019,motor fuel,,30,5,,30_2019_5
+Montana,May,2020,motor fuel,,30,5,,30_2020_5
+Montana,May,2021,motor fuel,,30,5,,30_2021_5
+Montana,November,2019,motor fuel,,30,11,,30_2019_11
+Montana,November,2020,motor fuel,,30,11,,30_2020_11
+Montana,November,2021,motor fuel,,30,11,,30_2021_11
+Montana,October,2019,motor fuel,,30,10,,30_2019_10
+Montana,October,2020,motor fuel,,30,10,,30_2020_10
+Montana,October,2021,motor fuel,,30,10,,30_2021_10
+Montana,September,2019,motor fuel,,30,9,,30_2019_9
+Montana,September,2020,motor fuel,,30,9,,30_2020_9
+Montana,September,2021,motor fuel,,30,9,,30_2021_9
+Nebraska,April,2019,motor fuel,34253454,31,4,,31_2019_4
+Nebraska,April,2020,motor fuel,27066837,31,4,,31_2020_4
+Nebraska,April,2021,motor fuel,34385137,31,4,,31_2021_4
+Nebraska,April,2022,motor fuel,29639452,31,4,,31_2022_4
+Nebraska,August,2019,motor fuel,36794007,31,8,,31_2019_8
+Nebraska,August,2020,motor fuel,39776192,31,8,,31_2020_8
+Nebraska,August,2021,motor fuel,35656922,31,8,,31_2021_8
+Nebraska,December,2019,motor fuel,34219998,31,12,,31_2019_12
+Nebraska,December,2020,motor fuel,35132281,31,12,,31_2020_12
+Nebraska,December,2021,motor fuel,32020077,31,12,,31_2021_12
+Nebraska,February,2020,motor fuel,30165522,31,2,,31_2020_2
+Nebraska,February,2021,motor fuel,28147271,31,2,,31_2021_2
+Nebraska,February,2022,motor fuel,25248156,31,2,,31_2022_2
+Nebraska,January,2020,motor fuel,30733779,31,1,,31_2020_1
+Nebraska,January,2021,motor fuel,34962798,31,1,,31_2021_1
+Nebraska,January,2022,motor fuel,32401734,31,1,,31_2022_1
+Nebraska,July,2019,motor fuel,36969161,31,7,,31_2019_7
+Nebraska,July,2020,motor fuel,39696241,31,7,,31_2020_7
+Nebraska,July,2021,motor fuel,36347979,31,7,,31_2021_7
+Nebraska,June,2019,motor fuel,36024983,31,6,,31_2019_6
+Nebraska,June,2020,motor fuel,34472417,31,6,,31_2020_6
+Nebraska,June,2021,motor fuel,37239485,31,6,,31_2021_6
+Nebraska,March,2020,motor fuel,30844251,31,3,,31_2020_3
+Nebraska,March,2021,motor fuel,27079419,31,3,,31_2021_3
+Nebraska,March,2022,motor fuel,26365153,31,3,,31_2022_3
+Nebraska,May,2019,motor fuel,35594224,31,5,,31_2019_5
+Nebraska,May,2020,motor fuel,29683005,31,5,,31_2020_5
+Nebraska,May,2021,motor fuel,35390658,31,5,,31_2021_5
+Nebraska,November,2019,motor fuel,34219998,31,11,,31_2019_11
+Nebraska,November,2020,motor fuel,34635685,31,11,,31_2020_11
+Nebraska,November,2021,motor fuel,35323287,31,11,,31_2021_11
+Nebraska,October,2019,motor fuel,37858143,31,10,,31_2019_10
+Nebraska,October,2020,motor fuel,39913188,31,10,,31_2020_10
+Nebraska,October,2021,motor fuel,34765202,31,10,,31_2021_10
+Nebraska,September,2019,motor fuel,35230717,31,9,,31_2019_9
+Nebraska,September,2020,motor fuel,39205879,31,9,,31_2020_9
+Nebraska,September,2021,motor fuel,34426566,31,9,,31_2021_9
+Nevada,April,2019,motor fuel,,32,4,,32_2019_4
+Nevada,April,2020,motor fuel,,32,4,,32_2020_4
+Nevada,April,2021,motor fuel,,32,4,,32_2021_4
+Nevada,April,2022,motor fuel,25392314,32,4,,32_2022_4
+Nevada,August,2019,motor fuel,,32,8,,32_2019_8
+Nevada,August,2020,motor fuel,,32,8,,32_2020_8
+Nevada,August,2021,motor fuel,,32,8,,32_2021_8
+Nevada,December,2019,motor fuel,,32,12,,32_2019_12
+Nevada,December,2020,motor fuel,,32,12,,32_2020_12
+Nevada,December,2021,motor fuel,,32,12,,32_2021_12
+Nevada,February,2020,motor fuel,,32,2,,32_2020_2
+Nevada,February,2021,motor fuel,,32,2,,32_2021_2
+Nevada,February,2022,motor fuel,1279685,32,2,,32_2022_2
+Nevada,January,2020,motor fuel,,32,1,,32_2020_1
+Nevada,January,2021,motor fuel,,32,1,,32_2021_1
+Nevada,January,2022,motor fuel,32050412,32,1,,32_2022_1
+Nevada,July,2019,motor fuel,,32,7,,32_2019_7
+Nevada,July,2020,motor fuel,,32,7,,32_2020_7
+Nevada,July,2021,motor fuel,,32,7,,32_2021_7
+Nevada,June,2019,motor fuel,,32,6,,32_2019_6
+Nevada,June,2020,motor fuel,,32,6,,32_2020_6
+Nevada,June,2021,motor fuel,,32,6,,32_2021_6
+Nevada,March,2020,motor fuel,,32,3,,32_2020_3
+Nevada,March,2021,motor fuel,,32,3,,32_2021_3
+Nevada,March,2022,motor fuel,32075214,32,3,,32_2022_3
+Nevada,May,2019,motor fuel,,32,5,,32_2019_5
+Nevada,May,2020,motor fuel,,32,5,,32_2020_5
+Nevada,May,2021,motor fuel,,32,5,,32_2021_5
+Nevada,November,2019,motor fuel,,32,11,,32_2019_11
+Nevada,November,2020,motor fuel,,32,11,,32_2020_11
+Nevada,November,2021,motor fuel,,32,11,,32_2021_11
+Nevada,October,2019,motor fuel,,32,10,,32_2019_10
+Nevada,October,2020,motor fuel,,32,10,,32_2020_10
+Nevada,October,2021,motor fuel,,32,10,,32_2021_10
+Nevada,September,2019,motor fuel,,32,9,,32_2019_9
+Nevada,September,2020,motor fuel,,32,9,,32_2020_9
+Nevada,September,2021,motor fuel,,32,9,,32_2021_9
+New Hampshire,April,2019,motor fuel,10300000,33,4,,33_2019_4
+New Hampshire,April,2020,motor fuel,7700000,33,4,,33_2020_4
+New Hampshire,April,2021,motor fuel,9900000,33,4,,33_2021_4
+New Hampshire,April,2022,motor fuel,10300000,33,4,,33_2022_4
+New Hampshire,August,2019,motor fuel,10900000,33,8,,33_2019_8
+New Hampshire,August,2020,motor fuel,10000000,33,8,,33_2020_8
+New Hampshire,August,2021,motor fuel,10000000,33,8,,33_2021_8
+New Hampshire,December,2019,motor fuel,10600000,33,12,,33_2019_12
+New Hampshire,December,2020,motor fuel,9100000,33,12,,33_2020_12
+New Hampshire,December,2021,motor fuel,10100000,33,12,,33_2021_12
+New Hampshire,February,2020,motor fuel,9900000,33,2,,33_2020_2
+New Hampshire,February,2021,motor fuel,8900000,33,2,,33_2021_2
+New Hampshire,February,2022,motor fuel,9400000,33,2,,33_2022_2
+New Hampshire,January,2020,motor fuel,10700000,33,1,,33_2020_1
+New Hampshire,January,2021,motor fuel,9600000,33,1,,33_2021_1
+New Hampshire,January,2022,motor fuel,10300000,33,1,,33_2022_1
+New Hampshire,July,2019,motor fuel,11000000,33,7,,33_2019_7
+New Hampshire,July,2020,motor fuel,9700000,33,7,,33_2020_7
+New Hampshire,July,2021,motor fuel,11000000,33,7,,33_2021_7
+New Hampshire,June,2019,motor fuel,10600000,33,6,,33_2019_6
+New Hampshire,June,2020,motor fuel,7800000,33,6,,33_2020_6
+New Hampshire,June,2021,motor fuel,10600000,33,6,,33_2021_6
+New Hampshire,March,2020,motor fuel,9600000,33,3,,33_2020_3
+New Hampshire,March,2021,motor fuel,8700000,33,3,,33_2021_3
+New Hampshire,March,2022,motor fuel,9600000,33,3,,33_2022_3
+New Hampshire,May,2019,motor fuel,10000000,33,5,,33_2019_5
+New Hampshire,May,2020,motor fuel,6800000,33,5,,33_2020_5
+New Hampshire,May,2021,motor fuel,9600000,33,5,,33_2021_5
+New Hampshire,November,2019,motor fuel,11300000,33,11,,33_2019_11
+New Hampshire,November,2020,motor fuel,10400000,33,11,,33_2020_11
+New Hampshire,November,2021,motor fuel,11000000,33,11,,33_2021_11
+New Hampshire,October,2019,motor fuel,10700000,33,10,,33_2019_10
+New Hampshire,October,2020,motor fuel,10200000,33,10,,33_2020_10
+New Hampshire,October,2021,motor fuel,10900000,33,10,,33_2021_10
+New Hampshire,September,2019,motor fuel,11900000,33,9,,33_2019_9
+New Hampshire,September,2020,motor fuel,10500000,33,9,,33_2020_9
+New Hampshire,September,2021,motor fuel,11500000,33,9,,33_2021_9
+New Jersey,April,2019,motor fuel,44029000,34,4,,34_2019_4
+New Jersey,April,2020,motor fuel,33845000,34,4,,34_2020_4
+New Jersey,April,2021,motor fuel,39718000,34,4,,34_2021_4
+New Jersey,April,2022,motor fuel,40101000,34,4,,34_2022_4
+New Jersey,August,2019,motor fuel,38416000,34,8,,34_2019_8
+New Jersey,August,2020,motor fuel,30246000,34,8,,34_2020_8
+New Jersey,August,2021,motor fuel,37676000,34,8,,34_2021_8
+New Jersey,December,2019,motor fuel,42839000,34,12,,34_2019_12
+New Jersey,December,2020,motor fuel,35658000,34,12,,34_2020_12
+New Jersey,December,2021,motor fuel,39033000,34,12,,34_2021_12
+New Jersey,February,2020,motor fuel,28934000,34,2,,34_2020_2
+New Jersey,February,2021,motor fuel,28133000,34,2,,34_2021_2
+New Jersey,February,2022,motor fuel,26977000,34,2,,34_2022_2
+New Jersey,January,2020,motor fuel,42815000,34,1,,34_2020_1
+New Jersey,January,2021,motor fuel,38160000,34,1,,34_2021_1
+New Jersey,January,2022,motor fuel,42431000,34,1,,34_2022_1
+New Jersey,July,2019,motor fuel,41947000,34,7,,34_2019_7
+New Jersey,July,2020,motor fuel,34393000,34,7,,34_2020_7
+New Jersey,July,2021,motor fuel,43504000,34,7,,34_2021_7
+New Jersey,June,2019,motor fuel,44361000,34,6,,34_2019_6
+New Jersey,June,2020,motor fuel,30974000,34,6,,34_2020_6
+New Jersey,June,2021,motor fuel,,34,6,,34_2021_6
+New Jersey,March,2020,motor fuel,42936000,34,3,,34_2020_3
+New Jersey,March,2021,motor fuel,27290000,34,3,,34_2021_3
+New Jersey,March,2022,motor fuel,35094000,34,3,,34_2022_3
+New Jersey,May,2019,motor fuel,36819000,34,5,,34_2019_5
+New Jersey,May,2020,motor fuel,15185000,34,5,,34_2020_5
+New Jersey,May,2021,motor fuel,31906340,34,5,,34_2021_5
+New Jersey,November,2019,motor fuel,37526000,34,11,,34_2019_11
+New Jersey,November,2020,motor fuel,31612000,34,11,,34_2020_11
+New Jersey,November,2021,motor fuel,36681000,34,11,,34_2021_11
+New Jersey,October,2019,motor fuel,37908546,34,10,,34_2019_10
+New Jersey,October,2020,motor fuel,39735852,34,10,,34_2020_10
+New Jersey,October,2021,motor fuel,40986000,34,10,,34_2021_10
+New Jersey,September,2019,motor fuel,47903000,34,9,,34_2019_9
+New Jersey,September,2020,motor fuel,40290000,34,9,,34_2020_9
+New Jersey,September,2021,motor fuel,40133000,34,9,,34_2021_9
+New Mexico,April,2019,motor fuel,26584322,35,4,,35_2019_4
+New Mexico,April,2020,motor fuel,25258938,35,4,,35_2020_4
+New Mexico,April,2021,motor fuel,28383701,35,4,,35_2021_4
+New Mexico,April,2022,motor fuel,27750474,35,4,,35_2022_4
+New Mexico,August,2019,motor fuel,28127561,35,8,,35_2019_8
+New Mexico,August,2020,motor fuel,26878390,35,8,,35_2020_8
+New Mexico,August,2021,motor fuel,29512901,35,8,,35_2021_8
+New Mexico,December,2019,motor fuel,25581947,35,12,,35_2019_12
+New Mexico,December,2020,motor fuel,25080195,35,12,,35_2020_12
+New Mexico,December,2021,motor fuel,26757604,35,12,,35_2021_12
+New Mexico,February,2020,motor fuel,25362622,35,2,,35_2020_2
+New Mexico,February,2021,motor fuel,22746934,35,2,,35_2021_2
+New Mexico,February,2022,motor fuel,25808153,35,2,,35_2022_2
+New Mexico,January,2020,motor fuel,26415696,35,1,,35_2020_1
+New Mexico,January,2021,motor fuel,24221122,35,1,,35_2021_1
+New Mexico,January,2022,motor fuel,28018792,35,1,,35_2022_1
+New Mexico,July,2019,motor fuel,26614866,35,7,,35_2019_7
+New Mexico,July,2020,motor fuel,25521375,35,7,,35_2020_7
+New Mexico,July,2021,motor fuel,27632104,35,7,,35_2021_7
+New Mexico,June,2019,motor fuel,24884786,35,6,,35_2019_6
+New Mexico,June,2020,motor fuel,23150291,35,6,,35_2020_6
+New Mexico,June,2021,motor fuel,28318580,35,6,,35_2021_6
+New Mexico,March,2020,motor fuel,25120052,35,3,,35_2020_3
+New Mexico,March,2021,motor fuel,22063275,35,3,,35_2021_3
+New Mexico,March,2022,motor fuel,24499641,35,3,,35_2022_3
+New Mexico,May,2019,motor fuel,26736033,35,5,,35_2019_5
+New Mexico,May,2020,motor fuel,20198626,35,5,,35_2020_5
+New Mexico,May,2021,motor fuel,28287528,35,5,,35_2021_5
+New Mexico,November,2019,motor fuel,28587742,35,11,,35_2019_11
+New Mexico,November,2020,motor fuel,26675516,35,11,,35_2020_11
+New Mexico,November,2021,motor fuel,26593733,35,11,,35_2021_11
+New Mexico,October,2019,motor fuel,25962230,35,10,,35_2019_10
+New Mexico,October,2020,motor fuel,26834240,35,10,,35_2020_10
+New Mexico,October,2021,motor fuel,26445687,35,10,,35_2021_10
+New Mexico,September,2019,motor fuel,28840115,35,9,,35_2019_9
+New Mexico,September,2020,motor fuel,26844252,35,9,,35_2020_9
+New Mexico,September,2021,motor fuel,29118317,35,9,,35_2021_9
+New York,April,2019,motor fuel,146377000,36,4,,36_2019_4
+New York,April,2020,motor fuel,98662000,36,4,,36_2020_4
+New York,April,2021,motor fuel,102981000,36,4,,36_2021_4
+New York,April,2022,motor fuel,112190000,36,4,,36_2022_4
+New York,August,2019,motor fuel,154881000,36,8,,36_2019_8
+New York,August,2020,motor fuel,129557000,36,8,,36_2020_8
+New York,August,2021,motor fuel,141860000,36,8,,36_2021_8
+New York,December,2019,motor fuel,131156000,36,12,,36_2019_12
+New York,December,2020,motor fuel,123600000,36,12,,36_2020_12
+New York,December,2021,motor fuel,125454000,36,12,,36_2021_12
+New York,February,2020,motor fuel,115755000,36,2,,36_2020_2
+New York,February,2021,motor fuel,100331000,36,2,,36_2021_2
+New York,February,2022,motor fuel,127998000,36,2,,36_2022_2
+New York,January,2020,motor fuel,140442000,36,1,,36_2020_1
+New York,January,2021,motor fuel,106438000,36,1,,36_2021_1
+New York,January,2022,motor fuel,117043000,36,1,,36_2022_1
+New York,July,2019,motor fuel,132963000,36,7,,36_2019_7
+New York,July,2020,motor fuel,127559000,36,7,,36_2020_7
+New York,July,2021,motor fuel,143528000,36,7,,36_2021_7
+New York,June,2019,motor fuel,149995000,36,6,,36_2019_6
+New York,June,2020,motor fuel,117277000,36,6,,36_2020_6
+New York,June,2021,motor fuel,139266000,36,6,,36_2021_6
+New York,March,2020,motor fuel,124035000,36,3,,36_2020_3
+New York,March,2021,motor fuel,110976000,36,3,,36_2021_3
+New York,March,2022,motor fuel,114201000,36,3,,36_2022_3
+New York,May,2019,motor fuel,143891000,36,5,,36_2019_5
+New York,May,2020,motor fuel,61087000,36,5,,36_2020_5
+New York,May,2021,motor fuel,130413000,36,5,,36_2021_5
+New York,November,2019,motor fuel,134551000,36,11,,36_2019_11
+New York,November,2020,motor fuel,122480000,36,11,,36_2020_11
+New York,November,2021,motor fuel,121797000,36,11,,36_2021_11
+New York,October,2019,motor fuel,154621000,36,10,,36_2019_10
+New York,October,2020,motor fuel,128971000,36,10,,36_2020_10
+New York,October,2021,motor fuel,136796000,36,10,,36_2021_10
+New York,September,2019,motor fuel,143953000,36,9,,36_2019_9
+New York,September,2020,motor fuel,140076000,36,9,,36_2020_9
+New York,September,2021,motor fuel,125361000,36,9,,36_2021_9
+North Carolina,April,2019,motor fuel,172692750,37,4,,37_2019_4
+North Carolina,April,2020,motor fuel,137096142,37,4,,37_2020_4
+North Carolina,April,2021,motor fuel,179560907,37,4,,37_2021_4
+North Carolina,April,2022,motor fuel,191809427,37,4,,37_2022_4
+North Carolina,August,2019,motor fuel,187941047,37,8,,37_2019_8
+North Carolina,August,2020,motor fuel,168130603,37,8,,37_2020_8
+North Carolina,August,2021,motor fuel,169079437,37,8,,37_2021_8
+North Carolina,December,2019,motor fuel,176942974,37,12,,37_2019_12
+North Carolina,December,2020,motor fuel,174168747,37,12,,37_2020_12
+North Carolina,December,2021,motor fuel,191109256,37,12,,37_2021_12
+North Carolina,February,2020,motor fuel,173793292,37,2,,37_2020_2
+North Carolina,February,2021,motor fuel,153140021,37,2,,37_2021_2
+North Carolina,February,2022,motor fuel,167194218,37,2,,37_2022_2
+North Carolina,January,2020,motor fuel,165277310,37,1,,37_2020_1
+North Carolina,January,2021,motor fuel,153823436,37,1,,37_2021_1
+North Carolina,January,2022,motor fuel,186850964,37,1,,37_2022_1
+North Carolina,July,2019,motor fuel,161594099,37,7,,37_2019_7
+North Carolina,July,2020,motor fuel,245112353,37,7,,37_2020_7
+North Carolina,July,2021,motor fuel,171708553,37,7,,37_2021_7
+North Carolina,June,2019,motor fuel,209604656,37,6,,37_2019_6
+North Carolina,June,2020,motor fuel,130195521,37,6,,37_2020_6
+North Carolina,June,2021,motor fuel,193578192,37,6,,37_2021_6
+North Carolina,March,2020,motor fuel,164817875,37,3,,37_2020_3
+North Carolina,March,2021,motor fuel,149347164,37,3,,37_2021_3
+North Carolina,March,2022,motor fuel,176003254,37,3,,37_2022_3
+North Carolina,May,2019,motor fuel,180403352,37,5,,37_2019_5
+North Carolina,May,2020,motor fuel,96494538,37,5,,37_2020_5
+North Carolina,May,2021,motor fuel,177227844,37,5,,37_2021_5
+North Carolina,November,2019,motor fuel,185666759,37,11,,37_2019_11
+North Carolina,November,2020,motor fuel,170665255,37,11,,37_2020_11
+North Carolina,November,2021,motor fuel,179177548,37,11,,37_2021_11
+North Carolina,October,2019,motor fuel,173187154,37,10,,37_2019_10
+North Carolina,October,2020,motor fuel,162835663,37,10,,37_2020_10
+North Carolina,October,2021,motor fuel,164514836,37,10,,37_2021_10
+North Carolina,September,2019,motor fuel,190565549,37,9,,37_2019_9
+North Carolina,September,2020,motor fuel,188196420,37,9,,37_2020_9
+North Carolina,September,2021,motor fuel,218853168,37,9,,37_2021_9
+North Dakota,April,2019,motor fuel,,38,4,,38_2019_4
+North Dakota,April,2020,motor fuel,,38,4,,38_2020_4
+North Dakota,April,2021,motor fuel,,38,4,,38_2021_4
+North Dakota,April,2022,motor fuel,,38,4,,38_2022_4
+North Dakota,August,2019,motor fuel,,38,8,,38_2019_8
+North Dakota,August,2020,motor fuel,,38,8,,38_2020_8
+North Dakota,August,2021,motor fuel,,38,8,,38_2021_8
+North Dakota,December,2019,motor fuel,,38,12,,38_2019_12
+North Dakota,December,2020,motor fuel,,38,12,,38_2020_12
+North Dakota,December,2021,motor fuel,,38,12,,38_2021_12
+North Dakota,February,2020,motor fuel,,38,2,,38_2020_2
+North Dakota,February,2021,motor fuel,,38,2,,38_2021_2
+North Dakota,February,2022,motor fuel,,38,2,,38_2022_2
+North Dakota,January,2020,motor fuel,,38,1,,38_2020_1
+North Dakota,January,2021,motor fuel,,38,1,,38_2021_1
+North Dakota,January,2022,motor fuel,,38,1,,38_2022_1
+North Dakota,July,2019,motor fuel,,38,7,,38_2019_7
+North Dakota,July,2020,motor fuel,,38,7,,38_2020_7
+North Dakota,July,2021,motor fuel,,38,7,,38_2021_7
+North Dakota,June,2019,motor fuel,,38,6,,38_2019_6
+North Dakota,June,2020,motor fuel,,38,6,,38_2020_6
+North Dakota,June,2021,motor fuel,,38,6,,38_2021_6
+North Dakota,March,2020,motor fuel,,38,3,,38_2020_3
+North Dakota,March,2021,motor fuel,,38,3,,38_2021_3
+North Dakota,March,2022,motor fuel,,38,3,,38_2022_3
+North Dakota,May,2019,motor fuel,,38,5,,38_2019_5
+North Dakota,May,2020,motor fuel,,38,5,,38_2020_5
+North Dakota,May,2021,motor fuel,,38,5,,38_2021_5
+North Dakota,November,2019,motor fuel,,38,11,,38_2019_11
+North Dakota,November,2020,motor fuel,,38,11,,38_2020_11
+North Dakota,November,2021,motor fuel,,38,11,,38_2021_11
+North Dakota,October,2019,motor fuel,,38,10,,38_2019_10
+North Dakota,October,2020,motor fuel,,38,10,,38_2020_10
+North Dakota,October,2021,motor fuel,,38,10,,38_2021_10
+North Dakota,September,2019,motor fuel,,38,9,,38_2019_9
+North Dakota,September,2020,motor fuel,,38,9,,38_2020_9
+North Dakota,September,2021,motor fuel,,38,9,,38_2021_9
+Ohio,April,2019,motor fuel,158966637,39,4,,39_2019_4
+Ohio,April,2020,motor fuel,155490571,39,4,,39_2020_4
+Ohio,April,2021,motor fuel,220850767,39,4,,39_2021_4
+Ohio,April,2022,motor fuel,215434820,39,4,,39_2022_4
+Ohio,August,2019,motor fuel,244895720,39,8,,39_2019_8
+Ohio,August,2020,motor fuel,220011526,39,8,,39_2020_8
+Ohio,August,2021,motor fuel,237908939,39,8,,39_2021_8
+Ohio,December,2019,motor fuel,219254554,39,12,,39_2019_12
+Ohio,December,2020,motor fuel,203560825,39,12,,39_2020_12
+Ohio,December,2021,motor fuel,218223564,39,12,,39_2021_12
+Ohio,February,2020,motor fuel,206463132,39,2,,39_2020_2
+Ohio,February,2021,motor fuel,183774185,39,2,,39_2021_2
+Ohio,February,2022,motor fuel,195775897,39,2,,39_2022_2
+Ohio,January,2020,motor fuel,214989659,39,1,,39_2020_1
+Ohio,January,2021,motor fuel,196595468,39,1,,39_2021_1
+Ohio,January,2022,motor fuel,202363263,39,1,,39_2022_1
+Ohio,July,2019,motor fuel,240259633,39,7,,39_2019_7
+Ohio,July,2020,motor fuel,222884925,39,7,,39_2020_7
+Ohio,July,2021,motor fuel,233378397,39,7,,39_2021_7
+Ohio,June,2019,motor fuel,163356424,39,6,,39_2019_6
+Ohio,June,2020,motor fuel,211378960,39,6,,39_2020_6
+Ohio,June,2021,motor fuel,229171061,39,6,,39_2021_6
+Ohio,March,2020,motor fuel,200235785,39,3,,39_2020_3
+Ohio,March,2021,motor fuel,220888649,39,3,,39_2021_3
+Ohio,March,2022,motor fuel,220232861,39,3,,39_2022_3
+Ohio,May,2019,motor fuel,170462947,39,5,,39_2019_5
+Ohio,May,2020,motor fuel,182660053,39,5,,39_2020_5
+Ohio,May,2021,motor fuel,230859957,39,5,,39_2021_5
+Ohio,November,2019,motor fuel,220795099,39,11,,39_2019_11
+Ohio,November,2020,motor fuel,202449312,39,11,,39_2020_11
+Ohio,November,2021,motor fuel,218952188,39,11,,39_2021_11
+Ohio,October,2019,motor fuel,240831539,39,10,,39_2019_10
+Ohio,October,2020,motor fuel,221795905,39,10,,39_2020_10
+Ohio,October,2021,motor fuel,225638251,39,10,,39_2021_10
+Ohio,September,2019,motor fuel,226591721,39,9,,39_2019_9
+Ohio,September,2020,motor fuel,215947933,39,9,,39_2020_9
+Ohio,September,2021,motor fuel,223574746,39,9,,39_2021_9
+Oklahoma,April,2019,motor fuel,38627095,40,4,,40_2019_4
+Oklahoma,April,2020,motor fuel,43862443,40,4,,40_2020_4
+Oklahoma,April,2021,motor fuel,50592453,40,4,,40_2021_4
+Oklahoma,April,2022,motor fuel,51073810,40,4,,40_2022_4
+Oklahoma,August,2019,motor fuel,51811603,40,8,,40_2019_8
+Oklahoma,August,2020,motor fuel,47703115,40,8,,40_2020_8
+Oklahoma,August,2021,motor fuel,50222533,40,8,,40_2021_8
+Oklahoma,December,2019,motor fuel,49767194,40,12,,40_2019_12
+Oklahoma,December,2020,motor fuel,44579094,40,12,,40_2020_12
+Oklahoma,December,2021,motor fuel,48589419,40,12,,40_2021_12
+Oklahoma,February,2020,motor fuel,45656597,40,2,,40_2020_2
+Oklahoma,February,2021,motor fuel,43491065,40,2,,40_2021_2
+Oklahoma,February,2022,motor fuel,45947123,40,2,,40_2022_2
+Oklahoma,January,2020,motor fuel,47788071,40,1,,40_2020_1
+Oklahoma,January,2021,motor fuel,45757097,40,1,,40_2021_1
+Oklahoma,January,2022,motor fuel,50402853,40,1,,40_2022_1
+Oklahoma,July,2019,motor fuel,60511255,40,7,,40_2019_7
+Oklahoma,July,2020,motor fuel,45867886,40,7,,40_2020_7
+Oklahoma,July,2021,motor fuel,50251478,40,7,,40_2021_7
+Oklahoma,June,2019,motor fuel,38415817,40,6,,40_2019_6
+Oklahoma,June,2020,motor fuel,41201415,40,6,,40_2020_6
+Oklahoma,June,2021,motor fuel,49965473,40,6,,40_2021_6
+Oklahoma,March,2020,motor fuel,43737590,40,3,,40_2020_3
+Oklahoma,March,2021,motor fuel,36342993,40,3,,40_2021_3
+Oklahoma,March,2022,motor fuel,40519760,40,3,,40_2022_3
+Oklahoma,May,2019,motor fuel,61096398,40,5,,40_2019_5
+Oklahoma,May,2020,motor fuel,36850179,40,5,,40_2020_5
+Oklahoma,May,2021,motor fuel,50181887,40,5,,40_2021_5
+Oklahoma,November,2019,motor fuel,48674050,40,11,,40_2019_11
+Oklahoma,November,2020,motor fuel,45767569,40,11,,40_2020_11
+Oklahoma,November,2021,motor fuel,48532754,40,11,,40_2021_11
+Oklahoma,October,2019,motor fuel,59126667,40,10,,40_2019_10
+Oklahoma,October,2020,motor fuel,46209353,40,10,,40_2020_10
+Oklahoma,October,2021,motor fuel,48464668,40,10,,40_2021_10
+Oklahoma,September,2019,motor fuel,39419996,40,9,,40_2019_9
+Oklahoma,September,2020,motor fuel,47559611,40,9,,40_2020_9
+Oklahoma,September,2021,motor fuel,51101903,40,9,,40_2021_9
+Oregon,April,2019,motor fuel,51228581,41,4,,41_2019_4
+Oregon,April,2020,motor fuel,36257370,41,4,,41_2020_4
+Oregon,April,2021,motor fuel,54665956,41,4,,41_2021_4
+Oregon,April,2022,motor fuel,56989780,41,4,,41_2022_4
+Oregon,August,2019,motor fuel,58614153,41,8,,41_2019_8
+Oregon,August,2020,motor fuel,56857119,41,8,,41_2020_8
+Oregon,August,2021,motor fuel,59870365,41,8,,41_2021_8
+Oregon,December,2019,motor fuel,49623933,41,12,,41_2019_12
+Oregon,December,2020,motor fuel,50017707,41,12,,41_2020_12
+Oregon,December,2021,motor fuel,50210335,41,12,,41_2021_12
+Oregon,February,2020,motor fuel,40831361,41,2,,41_2020_2
+Oregon,February,2021,motor fuel,42980817,41,2,,41_2021_2
+Oregon,February,2022,motor fuel,49757568,41,2,,41_2022_2
+Oregon,January,2020,motor fuel,47678862,41,1,,41_2020_1
+Oregon,January,2021,motor fuel,46284797,41,1,,41_2021_1
+Oregon,January,2022,motor fuel,49698841,41,1,,41_2022_1
+Oregon,July,2019,motor fuel,57998183,41,7,,41_2019_7
+Oregon,July,2020,motor fuel,48569402,41,7,,41_2020_7
+Oregon,July,2021,motor fuel,62578300,41,7,,41_2021_7
+Oregon,June,2019,motor fuel,55690629,41,6,,41_2019_6
+Oregon,June,2020,motor fuel,52554177,41,6,,41_2020_6
+Oregon,June,2021,motor fuel,58525999,41,6,,41_2021_6
+Oregon,March,2020,motor fuel,58558176,41,3,,41_2020_3
+Oregon,March,2021,motor fuel,52710175,41,3,,41_2021_3
+Oregon,March,2022,motor fuel,52100687,41,3,,41_2022_3
+Oregon,May,2019,motor fuel,54860765,41,5,,41_2019_5
+Oregon,May,2020,motor fuel,42009048,41,5,,41_2020_5
+Oregon,May,2021,motor fuel,56470435,41,5,,41_2021_5
+Oregon,November,2019,motor fuel,49696965,41,11,,41_2019_11
+Oregon,November,2020,motor fuel,48767632,41,11,,41_2020_11
+Oregon,November,2021,motor fuel,70397863,41,11,,41_2021_11
+Oregon,October,2019,motor fuel,54488591,41,10,,41_2019_10
+Oregon,October,2020,motor fuel,52924727,41,10,,41_2020_10
+Oregon,October,2021,motor fuel,37535498,41,10,,41_2021_10
+Oregon,September,2019,motor fuel,53459465,41,9,,41_2019_9
+Oregon,September,2020,motor fuel,51378294,41,9,,41_2020_9
+Oregon,September,2021,motor fuel,56616316,41,9,,41_2021_9
+Pennsylvania,April,2019,motor fuel,162237000,42,4,,42_2019_4
+Pennsylvania,April,2020,motor fuel,126725000,42,4,,42_2020_4
+Pennsylvania,April,2021,motor fuel,159856000,42,4,,42_2021_4
+Pennsylvania,April,2022,motor fuel,148778000,42,4,,42_2022_4
+Pennsylvania,August,2019,motor fuel,146282000,42,8,,42_2019_8
+Pennsylvania,August,2020,motor fuel,157837000,42,8,,42_2020_8
+Pennsylvania,August,2021,motor fuel,171862000,42,8,,42_2021_8
+Pennsylvania,December,2019,motor fuel,130026000,42,12,,42_2019_12
+Pennsylvania,December,2020,motor fuel,103210000,42,12,,42_2020_12
+Pennsylvania,December,2021,motor fuel,134231000,42,12,,42_2021_12
+Pennsylvania,February,2020,motor fuel,149183000,42,2,,42_2020_2
+Pennsylvania,February,2021,motor fuel,119899000,42,2,,42_2021_2
+Pennsylvania,February,2022,motor fuel,132862000,42,2,,42_2022_2
+Pennsylvania,January,2020,motor fuel,138857000,42,1,,42_2020_1
+Pennsylvania,January,2021,motor fuel,126113000,42,1,,42_2021_1
+Pennsylvania,January,2022,motor fuel,135642000,42,1,,42_2022_1
+Pennsylvania,July,2019,motor fuel,162296000,42,7,,42_2019_7
+Pennsylvania,July,2020,motor fuel,168673000,42,7,,42_2020_7
+Pennsylvania,July,2021,motor fuel,147506000,42,7,,42_2021_7
+Pennsylvania,June,2019,motor fuel,150575000,42,6,,42_2019_6
+Pennsylvania,June,2020,motor fuel,129039000,42,6,,42_2020_6
+Pennsylvania,June,2021,motor fuel,140728000,42,6,,42_2021_6
+Pennsylvania,March,2020,motor fuel,116826000,42,3,,42_2020_3
+Pennsylvania,March,2021,motor fuel,121196000,42,3,,42_2021_3
+Pennsylvania,March,2022,motor fuel,123099000,42,3,,42_2022_3
+Pennsylvania,May,2019,motor fuel,189348000,42,5,,42_2019_5
+Pennsylvania,May,2020,motor fuel,135326000,42,5,,42_2020_5
+Pennsylvania,May,2021,motor fuel,130355000,42,5,,42_2021_5
+Pennsylvania,November,2019,motor fuel,189282000,42,11,,42_2019_11
+Pennsylvania,November,2020,motor fuel,167564000,42,11,,42_2020_11
+Pennsylvania,November,2021,motor fuel,172286000,42,11,,42_2021_11
+Pennsylvania,October,2019,motor fuel,130643000,42,10,,42_2019_10
+Pennsylvania,October,2020,motor fuel,127464000,42,10,,42_2020_10
+Pennsylvania,October,2021,motor fuel,134630000,42,10,,42_2021_10
+Pennsylvania,September,2019,motor fuel,153953000,42,9,,42_2019_9
+Pennsylvania,September,2020,motor fuel,133465000,42,9,,42_2020_9
+Pennsylvania,September,2021,motor fuel,142275000,42,9,,42_2021_9
+Rhode Island,April,2019,motor fuel,,44,4,,44_2019_4
+Rhode Island,April,2020,motor fuel,,44,4,,44_2020_4
+Rhode Island,April,2021,motor fuel,,44,4,,44_2021_4
+Rhode Island,April,2022,motor fuel,,44,4,,44_2022_4
+Rhode Island,August,2019,motor fuel,,44,8,,44_2019_8
+Rhode Island,August,2020,motor fuel,,44,8,,44_2020_8
+Rhode Island,August,2021,motor fuel,,44,8,,44_2021_8
+Rhode Island,December,2019,motor fuel,,44,12,,44_2019_12
+Rhode Island,December,2020,motor fuel,,44,12,,44_2020_12
+Rhode Island,December,2021,motor fuel,,44,12,,44_2021_12
+Rhode Island,February,2020,motor fuel,,44,2,,44_2020_2
+Rhode Island,February,2021,motor fuel,,44,2,,44_2021_2
+Rhode Island,February,2022,motor fuel,,44,2,,44_2022_2
+Rhode Island,January,2020,motor fuel,,44,1,,44_2020_1
+Rhode Island,January,2021,motor fuel,,44,1,,44_2021_1
+Rhode Island,January,2022,motor fuel,,44,1,,44_2022_1
+Rhode Island,July,2019,motor fuel,,44,7,,44_2019_7
+Rhode Island,July,2020,motor fuel,,44,7,,44_2020_7
+Rhode Island,July,2021,motor fuel,,44,7,,44_2021_7
+Rhode Island,June,2020,motor fuel,,44,6,,44_2020_6
+Rhode Island,June,2021,motor fuel,11798875,44,6,,44_2021_6
+Rhode Island,March,2020,motor fuel,,44,3,,44_2020_3
+Rhode Island,March,2021,motor fuel,,44,3,,44_2021_3
+Rhode Island,March,2022,motor fuel,,44,3,,44_2022_3
+Rhode Island,May,2019,motor fuel,,44,5,,44_2019_5
+Rhode Island,May,2020,motor fuel,,44,5,,44_2020_5
+Rhode Island,May,2021,motor fuel,,44,5,,44_2021_5
+Rhode Island,November,2019,motor fuel,,44,11,,44_2019_11
+Rhode Island,November,2020,motor fuel,,44,11,,44_2020_11
+Rhode Island,November,2021,motor fuel,,44,11,,44_2021_11
+Rhode Island,October,2019,motor fuel,,44,10,,44_2019_10
+Rhode Island,October,2020,motor fuel,,44,10,,44_2020_10
+Rhode Island,October,2021,motor fuel,,44,10,,44_2021_10
+Rhode Island,September,2019,motor fuel,,44,9,,44_2019_9
+Rhode Island,September,2020,motor fuel,,44,9,,44_2020_9
+Rhode Island,September,2021,motor fuel,,44,9,,44_2021_9
+South Carolina,April,2019,motor fuel,64300000,45,4,,45_2019_4
+South Carolina,April,2020,motor fuel,26300000,45,4,,45_2020_4
+South Carolina,April,2021,motor fuel,75400000,45,4,,45_2021_4
+South Carolina,April,2022,motor fuel,83700000,45,4,,45_2022_4
+South Carolina,August,2019,motor fuel,62500000,45,8,,45_2019_8
+South Carolina,August,2020,motor fuel,66600000,45,8,,45_2020_8
+South Carolina,August,2021,motor fuel,77200000,45,8,,45_2021_8
+South Carolina,December,2019,motor fuel,64200000,45,12,,45_2019_12
+South Carolina,December,2020,motor fuel,74800000,45,12,,45_2020_12
+South Carolina,December,2021,motor fuel,78300000,45,12,,45_2021_12
+South Carolina,February,2020,motor fuel,64400000,45,2,,45_2020_2
+South Carolina,February,2021,motor fuel,75300000,45,2,,45_2021_2
+South Carolina,February,2022,motor fuel,68800000,45,2,,45_2022_2
+South Carolina,January,2020,motor fuel,66900000,45,1,,45_2020_1
+South Carolina,January,2021,motor fuel,63100000,45,1,,45_2021_1
+South Carolina,January,2022,motor fuel,83300000,45,1,,45_2022_1
+South Carolina,July,2019,motor fuel,53600000,45,7,,45_2019_7
+South Carolina,July,2020,motor fuel,53700000,45,7,,45_2020_7
+South Carolina,July,2021,motor fuel,66000000,45,7,,45_2021_7
+South Carolina,June,2019,motor fuel,66200000,45,6,,45_2019_6
+South Carolina,June,2020,motor fuel,115700000,45,6,,45_2020_6
+South Carolina,June,2021,motor fuel,78400000,45,6,,45_2021_6
+South Carolina,March,2020,motor fuel,62100000,45,3,,45_2020_3
+South Carolina,March,2021,motor fuel,62300000,45,3,,45_2021_3
+South Carolina,March,2022,motor fuel,73500000,45,3,,45_2022_3
+South Carolina,May,2019,motor fuel,64100000,45,5,,45_2019_5
+South Carolina,May,2020,motor fuel,29800000,45,5,,45_2020_5
+South Carolina,May,2021,motor fuel,76700000,45,5,,45_2021_5
+South Carolina,November,2019,motor fuel,70800000,45,11,,45_2019_11
+South Carolina,November,2020,motor fuel,67200000,45,11,,45_2020_11
+South Carolina,November,2021,motor fuel,81900000,45,11,,45_2021_11
+South Carolina,October,2019,motor fuel,65900000,45,10,,45_2019_10
+South Carolina,October,2020,motor fuel,69500000,45,10,,45_2020_10
+South Carolina,October,2021,motor fuel,87300000,45,10,,45_2021_10
+South Carolina,September,2019,motor fuel,72300000,45,9,,45_2019_9
+South Carolina,September,2020,motor fuel,72200000,45,9,,45_2020_9
+South Carolina,September,2021,motor fuel,77600000,45,9,,45_2021_9
+South Dakota,April,2019,motor fuel,,46,4,,46_2019_4
+South Dakota,April,2020,motor fuel,,46,4,,46_2020_4
+South Dakota,April,2021,motor fuel,,46,4,,46_2021_4
+South Dakota,April,2022,motor fuel,,46,4,,46_2022_4
+South Dakota,August,2019,motor fuel,,46,8,,46_2019_8
+South Dakota,August,2020,motor fuel,,46,8,,46_2020_8
+South Dakota,August,2021,motor fuel,,46,8,,46_2021_8
+South Dakota,December,2019,motor fuel,,46,12,,46_2019_12
+South Dakota,December,2020,motor fuel,,46,12,,46_2020_12
+South Dakota,December,2021,motor fuel,,46,12,,46_2021_12
+South Dakota,February,2020,motor fuel,,46,2,,46_2020_2
+South Dakota,February,2021,motor fuel,,46,2,,46_2021_2
+South Dakota,February,2022,motor fuel,,46,2,,46_2022_2
+South Dakota,January,2020,motor fuel,,46,1,,46_2020_1
+South Dakota,January,2021,motor fuel,,46,1,,46_2021_1
+South Dakota,January,2022,motor fuel,,46,1,,46_2022_1
+South Dakota,July,2019,motor fuel,,46,7,,46_2019_7
+South Dakota,July,2020,motor fuel,,46,7,,46_2020_7
+South Dakota,July,2021,motor fuel,,46,7,,46_2021_7
+South Dakota,June,2019,motor fuel,,46,6,,46_2019_6
+South Dakota,June,2020,motor fuel,,46,6,,46_2020_6
+South Dakota,June,2021,motor fuel,,46,6,,46_2021_6
+South Dakota,March,2020,motor fuel,,46,3,,46_2020_3
+South Dakota,March,2021,motor fuel,,46,3,,46_2021_3
+South Dakota,March,2022,motor fuel,,46,3,,46_2022_3
+South Dakota,May,2019,motor fuel,,46,5,,46_2019_5
+South Dakota,May,2020,motor fuel,,46,5,,46_2020_5
+South Dakota,May,2021,motor fuel,,46,5,,46_2021_5
+South Dakota,November,2019,motor fuel,,46,11,,46_2019_11
+South Dakota,November,2020,motor fuel,,46,11,,46_2020_11
+South Dakota,November,2021,motor fuel,,46,11,,46_2021_11
+South Dakota,October,2019,motor fuel,,46,10,,46_2019_10
+South Dakota,October,2020,motor fuel,,46,10,,46_2020_10
+South Dakota,October,2021,motor fuel,,46,10,,46_2021_10
+South Dakota,September,2019,motor fuel,,46,9,,46_2019_9
+South Dakota,September,2020,motor fuel,,46,9,,46_2020_9
+South Dakota,September,2021,motor fuel,,46,9,,46_2021_9
+Tennessee,April,2019,motor fuel,104529558,47,4,,47_2019_4
+Tennessee,April,2020,motor fuel,103069668,47,4,,47_2020_4
+Tennessee,April,2021,motor fuel,102293955,47,4,,47_2021_4
+Tennessee,April,2022,motor fuel,117361737,47,4,,47_2022_4
+Tennessee,August,2019,motor fuel,109616902,47,8,,47_2019_8
+Tennessee,August,2020,motor fuel,101122940,47,8,,47_2020_8
+Tennessee,August,2021,motor fuel,106947900,47,8,,47_2021_8
+Tennessee,December,2019,motor fuel,102195138,47,12,,47_2019_12
+Tennessee,December,2020,motor fuel,95328508,47,12,,47_2020_12
+Tennessee,December,2021,motor fuel,105447435,47,12,,47_2021_12
+Tennessee,February,2020,motor fuel,96361803,47,2,,47_2020_2
+Tennessee,February,2021,motor fuel,93244293,47,2,,47_2021_2
+Tennessee,February,2022,motor fuel,97801896,47,2,,47_2022_2
+Tennessee,January,2020,motor fuel,104045965,47,1,,47_2020_1
+Tennessee,January,2021,motor fuel,103975952,47,1,,47_2021_1
+Tennessee,January,2022,motor fuel,109279885,47,1,,47_2022_1
+Tennessee,July,2019,motor fuel,99782638,47,7,,47_2019_7
+Tennessee,July,2020,motor fuel,105293090,47,7,,47_2020_7
+Tennessee,July,2021,motor fuel,114411008,47,7,,47_2021_7
+Tennessee,June,2019,motor fuel,103308699,47,6,,47_2019_6
+Tennessee,June,2020,motor fuel,92729642,47,6,,47_2020_6
+Tennessee,June,2021,motor fuel,109777093,47,6,,47_2021_6
+Tennessee,March,2020,motor fuel,89172056,47,3,,47_2020_3
+Tennessee,March,2021,motor fuel,80751374,47,3,,47_2021_3
+Tennessee,March,2022,motor fuel,83275845,47,3,,47_2022_3
+Tennessee,May,2019,motor fuel,97484427,47,5,,47_2019_5
+Tennessee,May,2020,motor fuel,69784632,47,5,,47_2020_5
+Tennessee,May,2021,motor fuel,108427178,47,5,,47_2021_5
+Tennessee,November,2019,motor fuel,104440171,47,11,,47_2019_11
+Tennessee,November,2020,motor fuel,100660606,47,11,,47_2020_11
+Tennessee,November,2021,motor fuel,105029247,47,11,,47_2021_11
+Tennessee,October,2019,motor fuel,130152067,47,10,,47_2019_10
+Tennessee,October,2020,motor fuel,107746640,47,10,,47_2020_10
+Tennessee,October,2021,motor fuel,109818842,47,10,,47_2021_10
+Tennessee,September,2019,motor fuel,108790234,47,9,,47_2019_9
+Tennessee,September,2020,motor fuel,102186846,47,9,,47_2020_9
+Tennessee,September,2021,motor fuel,112233517,47,9,,47_2021_9
+Texas,April,2019,motor fuel,322015000,48,4,,48_2019_4
+Texas,April,2020,motor fuel,283703000,48,4,,48_2020_4
+Texas,April,2021,motor fuel,325371000,48,4,,48_2021_4
+Texas,April,2022,motor fuel,335001000,48,4,,48_2022_4
+Texas,August,2019,motor fuel,327100000,48,8,,48_2019_8
+Texas,August,2020,motor fuel,286976000,48,8,,48_2020_8
+Texas,August,2021,motor fuel,331275000,48,8,,48_2021_8
+Texas,December,2019,motor fuel,310689000,48,12,,48_2019_12
+Texas,December,2020,motor fuel,277658000,48,12,,48_2020_12
+Texas,December,2021,motor fuel,311628000,48,12,,48_2021_12
+Texas,February,2020,motor fuel,301163000,48,2,,48_2020_2
+Texas,February,2021,motor fuel,285649000,48,2,,48_2021_2
+Texas,February,2022,motor fuel,300510000,48,2,,48_2022_2
+Texas,January,2020,motor fuel,308889000,48,1,,48_2020_1
+Texas,January,2021,motor fuel,294316000,48,1,,48_2021_1
+Texas,January,2022,motor fuel,296304000,48,1,,48_2022_1
+Texas,July,2019,motor fuel,311051000,48,7,,48_2019_7
+Texas,July,2020,motor fuel,304212000,48,7,,48_2020_7
+Texas,July,2021,motor fuel,315011000,48,7,,48_2021_7
+Texas,June,2019,motor fuel,328126000,48,6,,48_2019_6
+Texas,June,2020,motor fuel,250041000,48,6,,48_2020_6
+Texas,June,2021,motor fuel,315332000,48,6,,48_2021_6
+Texas,March,2020,motor fuel,293000000,48,3,,48_2020_3
+Texas,March,2021,motor fuel,232164000,48,3,,48_2021_3
+Texas,March,2022,motor fuel,276216000,48,3,,48_2022_3
+Texas,May,2019,motor fuel,315971000,48,5,,48_2019_5
+Texas,May,2020,motor fuel,221366000,48,5,,48_2020_5
+Texas,May,2021,motor fuel,314846000,48,5,,48_2021_5
+Texas,November,2019,motor fuel,327261000,48,11,,48_2019_11
+Texas,November,2020,motor fuel,325334000,48,11,,48_2020_11
+Texas,November,2021,motor fuel,334054000,48,11,,48_2021_11
+Texas,October,2019,motor fuel,311806000,48,10,,48_2019_10
+Texas,October,2020,motor fuel,285810000,48,10,,48_2020_10
+Texas,October,2021,motor fuel,321517000,48,10,,48_2021_10
+Texas,September,2019,motor fuel,322566888,48,9,,48_2019_9
+Texas,September,2020,motor fuel,294125000,48,9,,48_2020_9
+Texas,September,2021,motor fuel,321253000,48,9,,48_2021_9
+Utah,April,2019,motor fuel,39300000,49,4,,49_2019_4
+Utah,April,2020,motor fuel,41100000,49,4,,49_2020_4
+Utah,April,2021,motor fuel,46400000,49,4,,49_2021_4
+Utah,April,2022,motor fuel,40300000,49,4,,49_2022_4
+Utah,August,2019,motor fuel,33047656,49,8,,49_2019_8
+Utah,August,2020,motor fuel,46697883,49,8,,49_2020_8
+Utah,August,2021,motor fuel,45919314,49,8,,49_2021_8
+Utah,December,2019,motor fuel,41100000,49,12,,49_2019_12
+Utah,December,2020,motor fuel,40400000,49,12,,49_2020_12
+Utah,December,2021,motor fuel,42700000,49,12,,49_2021_12
+Utah,February,2020,motor fuel,40800000,49,2,,49_2020_2
+Utah,February,2021,motor fuel,40100000,49,2,,49_2021_2
+Utah,February,2022,motor fuel,43900000,49,2,,49_2022_2
+Utah,January,2020,motor fuel,44800000,49,1,,49_2020_1
+Utah,January,2021,motor fuel,46600000,49,1,,49_2021_1
+Utah,January,2022,motor fuel,50700000,49,1,,49_2022_1
+Utah,July,2019,motor fuel,29323754,49,7,,49_2019_7
+Utah,July,2020,motor fuel,31093034,49,7,,49_2020_7
+Utah,July,2021,motor fuel,30131868,49,7,,49_2021_7
+Utah,June,2019,motor fuel,43600000,49,6,,49_2019_6
+Utah,June,2020,motor fuel,41500000,49,6,,49_2020_6
+Utah,June,2021,motor fuel,54400000,49,6,,49_2021_6
+Utah,March,2020,motor fuel,42900000,49,3,,49_2020_3
+Utah,March,2021,motor fuel,40800000,49,3,,49_2021_3
+Utah,March,2022,motor fuel,46000000,49,3,,49_2022_3
+Utah,May,2019,motor fuel,46100000,49,5,,49_2019_5
+Utah,May,2020,motor fuel,29800000,49,5,,49_2020_5
+Utah,May,2021,motor fuel,43300000,49,5,,49_2021_5
+Utah,November,2019,motor fuel,45900000,49,11,,49_2019_11
+Utah,November,2020,motor fuel,47200000,49,11,,49_2020_11
+Utah,November,2021,motor fuel,56500000,49,11,,49_2021_11
+Utah,October,2019,motor fuel,47022734,49,10,,49_2019_10
+Utah,October,2020,motor fuel,50620000,49,10,,49_2020_10
+Utah,October,2021,motor fuel,40931407,49,10,,49_2021_10
+Utah,September,2019,motor fuel,72413196,49,9,,49_2019_9
+Utah,September,2020,motor fuel,63731011,49,9,,49_2020_9
+Utah,September,2021,motor fuel,67217411,49,9,,49_2021_9
+Vermont,April,2019,motor fuel,8160000,50,4,,50_2019_4
+Vermont,April,2020,motor fuel,7960000,50,4,,50_2020_4
+Vermont,April,2021,motor fuel,6960000,50,4,,50_2021_4
+Vermont,April,2022,motor fuel,7407558,50,4,,50_2022_4
+Vermont,August,2019,motor fuel,8920000,50,8,,50_2019_8
+Vermont,August,2020,motor fuel,7140000,50,8,,50_2020_8
+Vermont,August,2021,motor fuel,7978710,50,8,,50_2021_8
+Vermont,December,2019,motor fuel,8080000,50,12,,50_2019_12
+Vermont,December,2020,motor fuel,6720000,50,12,,50_2020_12
+Vermont,December,2021,motor fuel,7393873,50,12,,50_2021_12
+Vermont,February,2020,motor fuel,7340000,50,2,,50_2020_2
+Vermont,February,2021,motor fuel,3750000,50,2,,50_2021_2
+Vermont,February,2022,motor fuel,4629513,50,2,,50_2022_2
+Vermont,January,2020,motor fuel,7400000,50,1,,50_2020_1
+Vermont,January,2021,motor fuel,6740000,50,1,,50_2021_1
+Vermont,January,2022,motor fuel,7531889,50,1,,50_2022_1
+Vermont,July,2019,motor fuel,7960000,50,7,,50_2019_7
+Vermont,July,2020,motor fuel,6400000,50,7,,50_2020_7
+Vermont,July,2021,motor fuel,7697350,50,7,,50_2021_7
+Vermont,June,2019,motor fuel,8250000,50,6,,50_2019_6
+Vermont,June,2020,motor fuel,7020000,50,6,,50_2020_6
+Vermont,June,2021,motor fuel,7863789,50,6,,50_2021_6
+Vermont,March,2020,motor fuel,5860000,50,3,,50_2020_3
+Vermont,March,2021,motor fuel,9370000,50,3,,50_2021_3
+Vermont,March,2022,motor fuel,9267190,50,3,,50_2022_3
+Vermont,May,2019,motor fuel,7130000,50,5,,50_2019_5
+Vermont,May,2020,motor fuel,3380000,50,5,,50_2020_5
+Vermont,May,2021,motor fuel,6517405,50,5,,50_2021_5
+Vermont,November,2019,motor fuel,8230000,50,11,,50_2019_11
+Vermont,November,2020,motor fuel,7340000,50,11,,50_2020_11
+Vermont,November,2021,motor fuel,7727728,50,11,,50_2021_11
+Vermont,October,2019,motor fuel,7900000,50,10,,50_2019_10
+Vermont,October,2020,motor fuel,7430000,50,10,,50_2020_10
+Vermont,October,2021,motor fuel,7708719,50,10,,50_2021_10
+Vermont,September,2019,motor fuel,8890000,50,9,,50_2019_9
+Vermont,September,2020,motor fuel,9010000,50,9,,50_2020_9
+Vermont,September,2021,motor fuel,8708941,50,9,,50_2021_9
+Virginia,April,2019,motor fuel,65385000,51,4,,51_2019_4
+Virginia,April,2020,motor fuel,61027000,51,4,,51_2020_4
+Virginia,April,2021,motor fuel,82517000,51,4,,51_2021_4
+Virginia,April,2022,motor fuel,96474000,51,4,,51_2022_4
+Virginia,August,2019,motor fuel,78752000,51,8,,51_2019_8
+Virginia,August,2020,motor fuel,61616000,51,8,,51_2020_8
+Virginia,August,2021,motor fuel,101898000,51,8,,51_2021_8
+Virginia,December,2019,motor fuel,75487000,51,12,,51_2019_12
+Virginia,December,2020,motor fuel,92275000,51,12,,51_2020_12
+Virginia,December,2021,motor fuel,113287000,51,12,,51_2021_12
+Virginia,February,2020,motor fuel,77611000,51,2,,51_2020_2
+Virginia,February,2021,motor fuel,82019000,51,2,,51_2021_2
+Virginia,February,2022,motor fuel,103948000,51,2,,51_2022_2
+Virginia,January,2020,motor fuel,93965000,51,1,,51_2020_1
+Virginia,January,2021,motor fuel,85578000,51,1,,51_2021_1
+Virginia,January,2022,motor fuel,126438000,51,1,,51_2022_1
+Virginia,July,2019,motor fuel,66015000,51,7,,51_2019_7
+Virginia,July,2020,motor fuel,49367000,51,7,,51_2020_7
+Virginia,July,2021,motor fuel,61416000,51,7,,51_2021_7
+Virginia,June,2019,motor fuel,83910000,51,6,,51_2019_6
+Virginia,June,2020,motor fuel,72138000,51,6,,51_2020_6
+Virginia,June,2021,motor fuel,53059512,51,6,,51_2021_6
+Virginia,March,2020,motor fuel,75232000,51,3,,51_2020_3
+Virginia,March,2021,motor fuel,82600000,51,3,,51_2021_3
+Virginia,March,2022,motor fuel,113387000,51,3,,51_2022_3
+Virginia,May,2019,motor fuel,78271000,51,5,,51_2019_5
+Virginia,May,2020,motor fuel,59405000,51,5,,51_2020_5
+Virginia,May,2021,motor fuel,87278000,51,5,,51_2021_5
+Virginia,November,2019,motor fuel,71853000,51,11,,51_2019_11
+Virginia,November,2020,motor fuel,89580000,51,11,,51_2020_11
+Virginia,November,2021,motor fuel,110551000,51,11,,51_2021_11
+Virginia,October,2019,motor fuel,77464000,51,10,,51_2019_10
+Virginia,October,2020,motor fuel,84421000,51,10,,51_2020_10
+Virginia,October,2021,motor fuel,117164000,51,10,,51_2021_10
+Virginia,September,2019,motor fuel,80597000,51,9,,51_2019_9
+Virginia,September,2020,motor fuel,96173000,51,9,,51_2020_9
+Virginia,September,2021,motor fuel,112914000,51,9,,51_2021_9
+Washington,April,2019,motor fuel,,53,4,,53_2019_4
+Washington,April,2020,motor fuel,127602868,53,4,,53_2020_4
+Washington,April,2021,motor fuel,103529200,53,4,,53_2021_4
+Washington,April,2022,motor fuel,112947402,53,4,,53_2022_4
+Washington,August,2019,motor fuel,,53,8,,53_2019_8
+Washington,August,2020,motor fuel,121193110,53,8,,53_2020_8
+Washington,August,2021,motor fuel,143422288,53,8,,53_2021_8
+Washington,December,2019,motor fuel,,53,12,,53_2019_12
+Washington,December,2020,motor fuel,70231877,53,12,,53_2020_12
+Washington,December,2021,motor fuel,115660049,53,12,,53_2021_12
+Washington,February,2020,motor fuel,,53,2,,53_2020_2
+Washington,February,2021,motor fuel,126203789,53,2,,53_2021_2
+Washington,February,2022,motor fuel,131364817,53,2,,53_2022_2
+Washington,January,2020,motor fuel,,53,1,,53_2020_1
+Washington,January,2021,motor fuel,104849403,53,1,,53_2021_1
+Washington,January,2022,motor fuel,124628954,53,1,,53_2022_1
+Washington,July,2019,motor fuel,,53,7,,53_2019_7
+Washington,July,2020,motor fuel,111970146,53,7,,53_2020_7
+Washington,July,2021,motor fuel,137764946,53,7,,53_2021_7
+Washington,June,2019,motor fuel,,53,6,,53_2019_6
+Washington,June,2020,motor fuel,88389209,53,6,,53_2020_6
+Washington,June,2021,motor fuel,129282397,53,6,,53_2021_6
+Washington,March,2020,motor fuel,,53,3,,53_2020_3
+Washington,March,2021,motor fuel,107467697,53,3,,53_2021_3
+Washington,March,2022,motor fuel,105382539,53,3,,53_2022_3
+Washington,May,2019,motor fuel,,53,5,,53_2019_5
+Washington,May,2020,motor fuel,79022789,53,5,,53_2020_5
+Washington,May,2021,motor fuel,124005493,53,5,,53_2021_5
+Washington,November,2019,motor fuel,,53,11,,53_2019_11
+Washington,November,2020,motor fuel,139812167,53,11,,53_2020_11
+Washington,November,2021,motor fuel,135443933,53,11,,53_2021_11
+Washington,October,2019,motor fuel,,53,10,,53_2019_10
+Washington,October,2020,motor fuel,170586146,53,10,,53_2020_10
+Washington,October,2021,motor fuel,149605501,53,10,,53_2021_10
+Washington,September,2019,motor fuel,,53,9,,53_2019_9
+Washington,September,2020,motor fuel,94029227,53,9,,53_2020_9
+Washington,September,2021,motor fuel,137971745,53,9,,53_2021_9
+West Virginia,April,2019,motor fuel,39196000,54,4,,54_2019_4
+West Virginia,April,2020,motor fuel,35656000,54,4,,54_2020_4
+West Virginia,April,2021,motor fuel,31341000,54,4,,54_2021_4
+West Virginia,April,2022,motor fuel,32089000,54,4,,54_2022_4
+West Virginia,August,2019,motor fuel,33987000,54,8,,54_2019_8
+West Virginia,August,2020,motor fuel,37320000,54,8,,54_2020_8
+West Virginia,August,2021,motor fuel,35747000,54,8,,54_2021_8
+West Virginia,December,2019,motor fuel,48341000,54,12,,54_2019_12
+West Virginia,December,2020,motor fuel,34196000,54,12,,54_2020_12
+West Virginia,December,2021,motor fuel,34046000,54,12,,54_2021_12
+West Virginia,February,2020,motor fuel,24751000,54,2,,54_2020_2
+West Virginia,February,2021,motor fuel,30608000,54,2,,54_2021_2
+West Virginia,February,2022,motor fuel,20342000,54,2,,54_2022_2
+West Virginia,January,2020,motor fuel,39220000,54,1,,54_2020_1
+West Virginia,January,2021,motor fuel,23188000,54,1,,54_2021_1
+West Virginia,January,2022,motor fuel,48359000,54,1,,54_2022_1
+West Virginia,July,2019,motor fuel,51395000,54,7,,54_2019_7
+West Virginia,July,2020,motor fuel,36544000,54,7,,54_2020_7
+West Virginia,July,2021,motor fuel,38012000,54,7,,54_2021_7
+West Virginia,June,2019,motor fuel,25572000,54,6,,54_2019_6
+West Virginia,June,2020,motor fuel,29015000,54,6,,54_2020_6
+West Virginia,June,2021,motor fuel,43526000,54,6,,54_2021_6
+West Virginia,March,2020,motor fuel,39396000,54,3,,54_2020_3
+West Virginia,March,2021,motor fuel,42948000,54,3,,54_2021_3
+West Virginia,March,2022,motor fuel,30077000,54,3,,54_2022_3
+West Virginia,May,2019,motor fuel,35458000,54,5,,54_2019_5
+West Virginia,May,2020,motor fuel,22182000,54,5,,54_2020_5
+West Virginia,May,2021,motor fuel,23060000,54,5,,54_2021_5
+West Virginia,November,2019,motor fuel,20931000,54,11,,54_2019_11
+West Virginia,November,2020,motor fuel,37304000,54,11,,54_2020_11
+West Virginia,November,2021,motor fuel,39630000,54,11,,54_2021_11
+West Virginia,October,2019,motor fuel,41401000,54,10,,54_2019_10
+West Virginia,October,2020,motor fuel,28784000,54,10,,54_2020_10
+West Virginia,October,2021,motor fuel,33913000,54,10,,54_2021_10
+West Virginia,September,2019,motor fuel,40997000,54,9,,54_2019_9
+West Virginia,September,2020,motor fuel,30722000,54,9,,54_2020_9
+West Virginia,September,2021,motor fuel,35712000,54,9,,54_2021_9
+Wisconsin,April,2019,motor fuel,115091815,55,4,,55_2019_4
+Wisconsin,April,2020,motor fuel,75691041,55,4,,55_2020_4
+Wisconsin,April,2021,motor fuel,78286019,55,4,,55_2021_4
+Wisconsin,April,2022,motor fuel,88090586,55,4,,55_2022_4
+Wisconsin,August,2019,motor fuel,98393561,55,8,,55_2019_8
+Wisconsin,August,2020,motor fuel,85721266,55,8,,55_2020_8
+Wisconsin,August,2021,motor fuel,100268097,55,8,,55_2021_8
+Wisconsin,December,2019,motor fuel,66644439,55,12,,55_2019_12
+Wisconsin,December,2020,motor fuel,84107538,55,12,,55_2020_12
+Wisconsin,December,2021,motor fuel,83214019,55,12,,55_2021_12
+Wisconsin,February,2020,motor fuel,78391910,55,2,,55_2020_2
+Wisconsin,February,2021,motor fuel,76554009,55,2,,55_2021_2
+Wisconsin,February,2022,motor fuel,80626701,55,2,,55_2022_2
+Wisconsin,January,2020,motor fuel,114811614,55,1,,55_2020_1
+Wisconsin,January,2021,motor fuel,84696626,55,1,,55_2021_1
+Wisconsin,January,2022,motor fuel,90622626,55,1,,55_2022_1
+Wisconsin,July,2019,motor fuel,88614257,55,7,,55_2019_7
+Wisconsin,July,2020,motor fuel,90910406,55,7,,55_2020_7
+Wisconsin,July,2021,motor fuel,89499974,55,7,,55_2021_7
+Wisconsin,June,2019,motor fuel,94373275,55,6,,55_2019_6
+Wisconsin,June,2020,motor fuel,89369607,55,6,,55_2020_6
+Wisconsin,June,2021,motor fuel,87169954,55,6,,55_2021_6
+Wisconsin,March,2020,motor fuel,89810498,55,3,,55_2020_3
+Wisconsin,March,2021,motor fuel,77228494,55,3,,55_2021_3
+Wisconsin,March,2022,motor fuel,88956702,55,3,,55_2022_3
+Wisconsin,May,2019,motor fuel,87941581,55,5,,55_2019_5
+Wisconsin,May,2020,motor fuel,52307087,55,5,,55_2020_5
+Wisconsin,May,2021,motor fuel,89053365,55,5,,55_2021_5
+Wisconsin,November,2019,motor fuel,85381407,55,11,,55_2019_11
+Wisconsin,November,2020,motor fuel,102036147,55,11,,55_2020_11
+Wisconsin,November,2021,motor fuel,113856218,55,11,,55_2021_11
+Wisconsin,October,2019,motor fuel,91446589,55,10,,55_2019_10
+Wisconsin,October,2020,motor fuel,69682620,55,10,,55_2020_10
+Wisconsin,October,2021,motor fuel,128824463,55,10,,55_2021_10
+Wisconsin,September,2019,motor fuel,100984974,55,9,,55_2019_9
+Wisconsin,September,2020,motor fuel,91960810,55,9,,55_2020_9
+Wisconsin,September,2021,motor fuel,70022879,55,9,,55_2021_9
+Wyoming,April,2019,motor fuel,,56,4,,56_2019_4
+Wyoming,April,2020,motor fuel,,56,4,,56_2020_4
+Wyoming,April,2021,motor fuel,,56,4,,56_2021_4
+Wyoming,April,2022,motor fuel,,56,4,,56_2022_4
+Wyoming,August,2019,motor fuel,,56,8,,56_2019_8
+Wyoming,August,2020,motor fuel,,56,8,,56_2020_8
+Wyoming,August,2021,motor fuel,,56,8,,56_2021_8
+Wyoming,December,2019,motor fuel,,56,12,,56_2019_12
+Wyoming,December,2020,motor fuel,,56,12,,56_2020_12
+Wyoming,December,2021,motor fuel,,56,12,,56_2021_12
+Wyoming,February,2020,motor fuel,,56,2,,56_2020_2
+Wyoming,February,2021,motor fuel,,56,2,,56_2021_2
+Wyoming,February,2022,motor fuel,,56,2,,56_2022_2
+Wyoming,January,2020,motor fuel,,56,1,,56_2020_1
+Wyoming,January,2021,motor fuel,,56,1,,56_2021_1
+Wyoming,January,2022,motor fuel,,56,1,,56_2022_1
+Wyoming,July,2019,motor fuel,,56,7,,56_2019_7
+Wyoming,July,2020,motor fuel,,56,7,,56_2020_7
+Wyoming,July,2021,motor fuel,,56,7,,56_2021_7
+Wyoming,June,2019,motor fuel,,56,6,,56_2019_6
+Wyoming,June,2020,motor fuel,,56,6,,56_2020_6
+Wyoming,June,2021,motor fuel,,56,6,,56_2021_6
+Wyoming,March,2020,motor fuel,,56,3,,56_2020_3
+Wyoming,March,2021,motor fuel,,56,3,,56_2021_3
+Wyoming,March,2022,motor fuel,,56,3,,56_2022_3
+Wyoming,May,2019,motor fuel,,56,5,,56_2019_5
+Wyoming,May,2020,motor fuel,,56,5,,56_2020_5
+Wyoming,May,2021,motor fuel,,56,5,,56_2021_5
+Wyoming,November,2019,motor fuel,,56,11,,56_2019_11
+Wyoming,November,2020,motor fuel,,56,11,,56_2020_11
+Wyoming,November,2021,motor fuel,,56,11,,56_2021_11
+Wyoming,October,2019,motor fuel,,56,10,,56_2019_10
+Wyoming,October,2020,motor fuel,,56,10,,56_2020_10
+Wyoming,October,2021,motor fuel,,56,10,,56_2021_10
+Wyoming,September,2019,motor fuel,,56,9,,56_2019_9
+Wyoming,September,2020,motor fuel,,56,9,,56_2020_9
+Wyoming,September,2021,motor fuel,,56,9,,56_2021_9
+Alabama,May,2022,motor fuel,79128788,1,5,,1_2022_5
+Alaska,May,2022,motor fuel,3656125,2,5,,2_2022_5
+Arizona,May,2022,motor fuel,64160381,4,5,,4_2022_5
+Arkansas,May,2022,motor fuel,44856593,5,5,,5_2022_5
+California,May,2022,motor fuel,706968000,6,5,,6_2022_5
+Colorado,May,2022,motor fuel,49103000,8,5,,8_2022_5
+Connecticut,May,2022,motor fuel,10863464,9,5,,9_2022_5
+Delaware,May,2022,motor fuel,,10,5,,10_2022_5
+District of Columbia,May,2022,motor fuel,1720193,11,5,,11_2022_5
+Florida,May,2022,motor fuel,272486018,12,5,,12_2022_5
+Georgia,May,2022,motor fuel,1198000,13,5,,13_2022_5
+Hawaii,May,2022,motor fuel,9080005,15,5,,15_2022_5
+Idaho,May,2022,motor fuel,31616292,16,5,,16_2022_5
+Illinois,May,2022,motor fuel,204774326,17,5,,17_2022_5
+Indiana,May,2022,motor fuel,126856877,18,5,,18_2022_5
+Iowa,May,2022,motor fuel,59502503,19,5,,19_2022_5
+Kansas,May,2022,motor fuel,,20,5,,20_2022_5
+Kentucky,May,2022,motor fuel,62736012,21,5,,21_2022_5
+Louisiana,May,2022,motor fuel,55545594,22,5,,22_2022_5
+Maine,May,2022,motor fuel,16809080,23,5,,23_2022_5
+Maryland,May,2022,motor fuel,53961708,24,5,,24_2022_5
+Massachusetts,May,2022,motor fuel,56613569,25,5,,25_2022_5
+Michigan,May,2022,motor fuel,98362970,26,5,,26_2022_5
+Minnesota,May,2022,motor fuel,72196332,27,5,,27_2022_5
+Mississippi,May,2022,motor fuel,34853265,28,5,,28_2022_5
+Missouri,May,2022,motor fuel,65489739,29,5,,29_2022_5
+Montana,May,2022,motor fuel,,30,5,,30_2022_5
+Nebraska,May,2022,motor fuel,29169437,31,5,,31_2022_5
+Nevada,May,2022,motor fuel,28740216,32,5,,32_2022_5
+New Hampshire,May,2022,motor fuel,9600000,33,5,,33_2022_5
+New Jersey,May,2022,motor fuel,34614000,34,5,,34_2022_5
+New Mexico,May,2022,motor fuel,,35,5,,35_2022_5
+New York,May,2022,motor fuel,112190000,36,5,,36_2022_5
+North Carolina,May,2022,motor fuel,165032613,37,5,,37_2022_5
+North Dakota,May,2022,motor fuel,,38,5,,38_2022_5
+Ohio,May,2022,motor fuel,230880436,39,5,,39_2022_5
+Oklahoma,May,2022,motor fuel,48585251,40,5,,40_2022_5
+Oregon,May,2022,motor fuel,56578165,41,5,,41_2022_5
+Pennsylvania,May,2022,motor fuel,166935000,42,5,,42_2022_5
+Rhode Island,May,2022,motor fuel,,44,5,,44_2022_5
+South Carolina,May,2022,motor fuel,80600000,45,5,,45_2022_5
+South Dakota,May,2022,motor fuel,,46,5,,46_2022_5
+Tennessee,May,2022,motor fuel,101065176,47,5,,47_2022_5
+Texas,May,2022,motor fuel,319148000,48,5,,48_2022_5
+Utah,May,2022,motor fuel,54400000,49,5,,49_2022_5
+Vermont,May,2022,motor fuel,6541519,50,5,,50_2022_5
+Virginia,May,2022,motor fuel,116862000,51,5,,51_2022_5
+Washington,May,2022,motor fuel,134012532,53,5,,53_2022_5
+West Virginia,May,2022,motor fuel,37200000,54,5,,54_2022_5
+Wisconsin,May,2022,motor fuel,80361752,55,5,,55_2022_5
+Wyoming,May,2022,motor fuel,,56,5,,56_2022_5
+Alabama,July,2022,motor fuel,80185773,1,7,,1_2022_7
+Alabama,June,2022,motor fuel,82923733,1,6,,1_2022_6
+Alaska,July,2022,motor fuel,5612668,2,7,,2_2022_7
+Alaska,June,2022,motor fuel,4496539,2,6,,2_2022_6
+Arizona,July,2022,motor fuel,64479535,4,7,,4_2022_7
+Arizona,June,2022,motor fuel,70161210,4,6,,4_2022_6
+Arkansas,July,2022,motor fuel,51501614,5,7,,5_2022_7
+Arkansas,June,2022,motor fuel,53931080,5,6,,5_2022_6
+California,July,2022,motor fuel,724241000,6,7,,6_2022_7
+California,June,2022,motor fuel,695597000,6,6,,6_2022_6
+Colorado,July,2022,motor fuel,52035000,8,7,,8_2022_7
+Colorado,June,2022,motor fuel,52506000,8,6,,8_2022_6
+Connecticut,July,2022,motor fuel,9927536,9,7,,9_2022_7
+Connecticut,June,2022,motor fuel,9463538,9,6,,9_2022_6
+Delaware,July,2022,motor fuel,,10,7,,10_2022_7
+Delaware,June,2022,motor fuel,,10,6,,10_2022_6
+District of Columbia,July,2022,motor fuel,1948783,11,7,,11_2022_7
+District of Columbia,June,2022,motor fuel,7306441,11,6,,11_2022_6
+Florida,July,2022,motor fuel,256131390,12,7,,12_2022_7
+Florida,June,2022,motor fuel,270088936,12,6,,12_2022_6
+Georgia,July,2022,motor fuel,3612000,13,7,,13_2022_7
+Georgia,June,2022,motor fuel,262000,13,6,,13_2022_6
+Hawaii,July,2022,motor fuel,8883868,15,7,,15_2022_7
+Hawaii,June,2022,motor fuel,8871815,15,6,,15_2022_6
+Idaho,July,2022,motor fuel,34315324,16,7,,16_2022_7
+Idaho,June,2022,motor fuel,29822127,16,6,,16_2022_6
+Illinois,July,2022,motor fuel,211417689,17,7,,17_2022_7
+Illinois,June,2022,motor fuel,216376846,17,6,,17_2022_6
+Indiana,July,2022,motor fuel,140710378,18,7,,18_2022_7
+Indiana,June,2022,motor fuel,139628754,18,6,,18_2022_6
+Iowa,July,2022,motor fuel,59533536,19,7,,19_2022_7
+Iowa,June,2022,motor fuel,59700391,19,6,,19_2022_6
+Kansas,July,2022,motor fuel,,20,7,,20_2022_7
+Kansas,June,2022,motor fuel,,20,6,,20_2022_6
+Kentucky,July,2022,motor fuel,65868675,21,7,,21_2022_7
+Kentucky,June,2022,motor fuel,69392363,21,6,,21_2022_6
+Louisiana,July,2022,motor fuel,50639480,22,7,,22_2022_7
+Louisiana,June,2022,motor fuel,57492243,22,6,,22_2022_6
+Maine,July,2022,motor fuel,18709921,23,7,,23_2022_7
+Maine,June,2022,motor fuel,18925608,23,6,,23_2022_6
+Maryland,July,2022,motor fuel,85589860,24,7,,24_2022_7
+Maryland,June,2022,motor fuel,94992582,24,6,,24_2022_6
+Massachusetts,July,2022,motor fuel,60613357,25,7,,25_2022_7
+Massachusetts,June,2022,motor fuel,67422722,25,6,,25_2022_6
+Michigan,July,2022,motor fuel,127588245,26,7,,26_2022_7
+Michigan,June,2022,motor fuel,122434867,26,6,,26_2022_6
+Minnesota,July,2022,motor fuel,78206641,27,7,,27_2022_7
+Minnesota,June,2022,motor fuel,83559186,27,6,,27_2022_6
+Mississippi,July,2022,motor fuel,39109671,28,7,,28_2022_7
+Mississippi,June,2022,motor fuel,40012456,28,6,,28_2022_6
+Missouri,July,2022,motor fuel,71928072,29,7,,29_2022_7
+Missouri,June,2022,motor fuel,69421198,29,6,,29_2022_6
+Montana,July,2022,motor fuel,,30,7,,30_2022_7
+Montana,June,2022,motor fuel,,30,6,,30_2022_6
+Nebraska,July,2022,motor fuel,31368275,31,7,,31_2022_7
+Nebraska,June,2022,motor fuel,29585257,31,6,,31_2022_6
+Nevada,July,2022,motor fuel,,32,7,,32_2022_7
+Nevada,June,2022,motor fuel,129112896,32,6,,32_2022_6
+New Hampshire,July,2022,motor fuel,10700000,33,7,,33_2022_7
+New Hampshire,June,2022,motor fuel,10600000,33,6,,33_2022_6
+New Jersey,July,2022,motor fuel,42149000,34,7,,34_2022_7
+New Jersey,June,2022,motor fuel,,34,6,,34_2022_6
+New Mexico,July,2022,motor fuel,26200212,35,7,,35_2022_7
+New Mexico,June,2022,motor fuel,,35,6,,35_2022_6
+New York,July,2022,motor fuel,87265000,36,7,,36_2022_7
+New York,June,2022,motor fuel,115329000,36,6,,36_2022_6
+North Carolina,July,2022,motor fuel,188456294,37,7,,37_2022_7
+North Carolina,June,2022,motor fuel,206121692,37,6,,37_2022_6
+North Dakota,July,2022,motor fuel,,38,7,,38_2022_7
+North Dakota,June,2022,motor fuel,,38,6,,38_2022_6
+Ohio,July,2022,motor fuel,217328691,39,7,,39_2022_7
+Ohio,June,2022,motor fuel,223687468,39,6,,39_2022_6
+Oklahoma,July,2022,motor fuel,48210575,40,7,,40_2022_7
+Oklahoma,June,2022,motor fuel,51110858,40,6,,40_2022_6
+Oregon,July,2022,motor fuel,60498759,41,7,,41_2022_7
+Oregon,June,2022,motor fuel,59058398,41,6,,41_2022_6
+Pennsylvania,July,2022,motor fuel,141648000,42,7,,42_2022_7
+Pennsylvania,June,2022,motor fuel,136864000,42,6,,42_2022_6
+Rhode Island,July,2022,motor fuel,,44,7,,44_2022_7
+Rhode Island,June,2022,motor fuel,,44,6,,44_2022_6
+South Carolina,July,2022,motor fuel,62000000,45,7,,45_2022_7
+South Carolina,June,2022,motor fuel,88200000,45,6,,45_2022_6
+South Dakota,July,2022,motor fuel,,46,7,,46_2022_7
+South Dakota,June,2022,motor fuel,,46,6,,46_2022_6
+Tennessee,July,2022,motor fuel,110118807,47,7,,47_2022_7
+Tennessee,June,2022,motor fuel,111382310,47,6,,47_2022_6
+Texas,July,2022,motor fuel,324474000,48,7,,48_2022_7
+Texas,June,2022,motor fuel,323497000,48,6,,48_2022_6
+Utah,July,2022,motor fuel,32837447,49,7,,49_2022_7
+Utah,June,2022,motor fuel,44100000,49,6,,49_2022_6
+Vermont,July,2022,motor fuel,7525460,50,7,,50_2022_7
+Vermont,June,2022,motor fuel,7599495,50,6,,50_2022_6
+Virginia,July,2022,motor fuel,123370000,51,7,,51_2022_7
+Virginia,June,2022,motor fuel,,51,6,,51_2022_6
+Washington,July,2022,motor fuel,135929653,53,7,,53_2022_7
+Washington,June,2022,motor fuel,126722266,53,6,,53_2022_6
+West Virginia,July,2022,motor fuel,31759000,54,7,,54_2022_7
+West Virginia,June,2022,motor fuel,34465000,54,6,,54_2022_6
+Wisconsin,July,2022,motor fuel,95674276,55,7,,55_2022_7
+Wisconsin,June,2022,motor fuel,95144799,55,6,,55_2022_6
+Wyoming,July,2022,motor fuel,,56,7,,56_2022_7
+Wyoming,June,2022,motor fuel,,56,6,,56_2022_6
+Alabama,August,2022,motor fuel,80080116,1,8,,1_2022_8
+Alabama,September,2022,motor fuel,81672566,1,9,,1_2022_9
+Alaska,August,2022,motor fuel,5571509,2,8,,2_2022_8
+Alaska,September,2022,motor fuel,3944573,2,9,,2_2022_9
+Arizona,August,2022,motor fuel,57641463,4,8,,4_2022_8
+Arizona,September,2022,motor fuel,68543631,4,9,,4_2022_9
+Arkansas,August,2022,motor fuel,48087581,5,8,,5_2022_8
+Arkansas,September,2022,motor fuel,48862138,5,9,,5_2022_9
+California,August,2022,motor fuel,672892000,6,8,,6_2022_8
+California,September,2022,motor fuel,795387000,6,9,,6_2022_9
+Colorado,August,2022,motor fuel,58807000,8,8,,8_2022_8
+Colorado,September,2022,motor fuel,73955000,8,9,,8_2022_9
+Connecticut,August,2022,motor fuel,11189007,9,8,,9_2022_8
+Connecticut,September,2022,motor fuel,10662908,9,9,,9_2022_9
+Delaware,August,2022,motor fuel,,10,8,,10_2022_8
+Delaware,September,2022,motor fuel,,10,9,,10_2022_9
+District of Columbia,August,2022,motor fuel,2093139,11,8,,11_2022_8
+District of Columbia,September,2022,motor fuel,2577364,11,9,,11_2022_9
+Florida,August,2022,motor fuel,259154363,12,8,,12_2022_8
+Florida,September,2022,motor fuel,252050398,12,9,,12_2022_9
+Georgia,August,2022,motor fuel,686000,13,8,,13_2022_8
+Georgia,September,2022,motor fuel,-6419000,13,9,,13_2022_9
+Hawaii,August,2022,motor fuel,9102220,15,8,,15_2022_8
+Hawaii,September,2022,motor fuel,9568070,15,9,,15_2022_9
+Idaho,August,2022,motor fuel,35217040,16,8,,16_2022_8
+Idaho,September,2022,motor fuel,30875426,16,9,,16_2022_9
+Illinois,August,2022,motor fuel,218301869,17,8,,17_2022_8
+Illinois,September,2022,motor fuel,227160111,17,9,,17_2022_9
+Indiana,August,2022,motor fuel,121639261,18,8,,18_2022_8
+Indiana,September,2022,motor fuel,113926225,18,9,,18_2022_9
+Iowa,August,2022,motor fuel,63501458,19,8,,19_2022_8
+Iowa,September,2022,motor fuel,61884305,19,9,,19_2022_9
+Kansas,August,2022,motor fuel,,20,8,,20_2022_8
+Kansas,September,2022,motor fuel,,20,9,,20_2022_9
+Kentucky,August,2022,motor fuel,64222182,21,8,,21_2022_8
+Kentucky,September,2022,motor fuel,70051525,21,9,,21_2022_9
+Louisiana,August,2022,motor fuel,55839490,22,8,,22_2022_8
+Louisiana,September,2022,motor fuel,54616709,22,9,,22_2022_9
+Maine,August,2022,motor fuel,20585238,23,8,,23_2022_8
+Maine,September,2022,motor fuel,21760150,23,9,,23_2022_9
+Maryland,August,2022,motor fuel,105389133,24,8,,24_2022_8
+Maryland,September,2022,motor fuel,114198577,24,9,,24_2022_9
+Massachusetts,August,2022,motor fuel,60973822,25,8,,25_2022_8
+Massachusetts,September,2022,motor fuel,57876687,25,9,,25_2022_9
+Michigan,August,2022,motor fuel,125502369,26,8,,26_2022_8
+Michigan,September,2022,motor fuel,139006816,26,9,,26_2022_9
+Minnesota,August,2022,motor fuel,79176309,27,8,,27_2022_8
+Minnesota,September,2022,motor fuel,79252168,27,9,,27_2022_9
+Mississippi,August,2022,motor fuel,35495674,28,8,,28_2022_8
+Mississippi,September,2022,motor fuel,38901654,28,9,,28_2022_9
+Missouri,August,2022,motor fuel,71562671,29,8,,29_2022_8
+Missouri,September,2022,motor fuel,84287223,29,9,,29_2022_9
+Montana,August,2022,motor fuel,,30,8,,30_2022_8
+Montana,September,2022,motor fuel,,30,9,,30_2022_9
+Nebraska,August,2022,motor fuel,30701758,31,8,,31_2022_8
+Nebraska,September,2022,motor fuel,30936948,31,9,,31_2022_9
+Nevada,August,2022,motor fuel,,32,8,,32_2022_8
+Nevada,September,2022,motor fuel,29912211,32,9,,32_2022_9
+New Hampshire,August,2022,motor fuel,9900000,33,8,,33_2022_8
+New Hampshire,September,2022,motor fuel,11600000,33,9,,33_2022_9
+New Jersey,August,2022,motor fuel,37533000,34,8,,34_2022_8
+New Jersey,September,2022,motor fuel,42534000,34,9,,34_2022_9
+New Mexico,August,2022,motor fuel,26420231,35,8,,35_2022_8
+New Mexico,September,2022,motor fuel,27278022,35,9,,35_2022_9
+New York,August,2022,motor fuel,93163000,36,8,,36_2022_8
+New York,September,2022,motor fuel,101442000,36,9,,36_2022_9
+North Carolina,August,2022,motor fuel,184691420,37,8,,37_2022_8
+North Carolina,September,2022,motor fuel,216118713,37,9,,37_2022_9
+North Dakota,August,2022,motor fuel,,38,8,,38_2022_8
+North Dakota,September,2022,motor fuel,,38,9,,38_2022_9
+Ohio,August,2022,motor fuel,231650607,39,8,,39_2022_8
+Ohio,September,2022,motor fuel,216906050,39,9,,39_2022_9
+Oklahoma,August,2022,motor fuel,48675047,40,8,,40_2022_8
+Oklahoma,September,2022,motor fuel,50927145,40,9,,40_2022_9
+Oregon,August,2022,motor fuel,61976723,41,8,,41_2022_8
+Oregon,September,2022,motor fuel,58990943,41,9,,41_2022_9
+Pennsylvania,August,2022,motor fuel,161156000,42,8,,42_2022_8
+Pennsylvania,September,2022,motor fuel,152494000,42,9,,42_2022_9
+Rhode Island,August,2022,motor fuel,,44,8,,44_2022_8
+Rhode Island,September,2022,motor fuel,,44,9,,44_2022_9
+South Carolina,August,2022,motor fuel,82900000,45,8,,45_2022_8
+South Carolina,September,2022,motor fuel,94300000,45,9,,45_2022_9
+South Dakota,August,2022,motor fuel,,46,8,,46_2022_8
+South Dakota,September,2022,motor fuel,,46,9,,46_2022_9
+Tennessee,August,2022,motor fuel,108898951,47,8,,47_2022_8
+Tennessee,September,2022,motor fuel,106438882,47,9,,47_2022_9
+Texas,August,2022,motor fuel,320303000,48,8,,48_2022_8
+Texas,September,2022,motor fuel,328482000,48,9,,48_2022_9
+Utah,August,2022,motor fuel,44151851,49,8,,49_2022_8
+Utah,September,2022,motor fuel,67346437,49,9,,49_2022_9
+Vermont,August,2022,motor fuel,8430056,50,8,,50_2022_8
+Vermont,September,2022,motor fuel,7229423,50,9,,50_2022_9
+Virginia,August,2022,motor fuel,120194000,51,8,,51_2022_8
+Virginia,September,2022,motor fuel,115888000,51,9,,51_2022_9
+Washington,August,2022,motor fuel,159257101,53,8,,53_2022_8
+Washington,September,2022,motor fuel,136086298,53,9,,53_2022_9
+West Virginia,August,2022,motor fuel,40651000,54,8,,54_2022_8
+West Virginia,September,2022,motor fuel,36311000,54,9,,54_2022_9
+Wisconsin,August,2022,motor fuel,92327089,55,8,,55_2022_8
+Wisconsin,September,2022,motor fuel,110019987,55,9,,55_2022_9
+Wyoming,August,2022,motor fuel,,56,8,,56_2022_8
+Wyoming,September,2022,motor fuel,,56,9,,56_2022_9
+Alabama,October,2022,motor fuel,80850005,1,10,,1_2022_10
+Alaska,October,2022,motor fuel,3559386,2,10,,2_2022_10
+Arizona,October,2022,motor fuel,67962955,4,10,,4_2022_10
+Arkansas,October,2022,motor fuel,47025345,5,10,,5_2022_10
+California,October,2022,motor fuel,759581000,6,10,,6_2022_10
+Colorado,October,2022,motor fuel,60137000,8,10,,8_2022_10
+Connecticut,October,2022,motor fuel,11997504,9,10,,9_2022_10
+Delaware,October,2022,motor fuel,,10,10,,10_2022_10
+District of Columbia,October,2022,motor fuel,1683610,11,10,,11_2022_10
+Florida,October,2022,motor fuel,251647866,12,10,,12_2022_10
+Georgia,October,2022,motor fuel,1755000,13,10,,13_2022_10
+Hawaii,October,2022,motor fuel,9085467,15,10,,15_2022_10
+Idaho,October,2022,motor fuel,32800632,16,10,,16_2022_10
+Illinois,October,2022,motor fuel,218050713,17,10,,17_2022_10
+Indiana,October,2022,motor fuel,152544397,18,10,,18_2022_10
+Iowa,October,2022,motor fuel,61110576,19,10,,19_2022_10
+Kansas,October,2022,motor fuel,,20,10,,20_2022_10
+Kentucky,October,2022,motor fuel,65310050,21,10,,21_2022_10
+Louisiana,October,2022,motor fuel,52958989,22,10,,22_2022_10
+Maine,October,2022,motor fuel,19836978,23,10,,23_2022_10
+Maryland,October,2022,motor fuel,109428357,24,10,,24_2022_10
+Massachusetts,October,2022,motor fuel,58397788,25,10,,25_2022_10
+Michigan,October,2022,motor fuel,106353559,26,10,,26_2022_10
+Minnesota,October,2022,motor fuel,77306000,27,10,,27_2022_10
+Mississippi,October,2022,motor fuel,39632679,28,10,,28_2022_10
+Missouri,October,2022,motor fuel,79242057,29,10,,29_2022_10
+Montana,October,2022,motor fuel,,30,10,,30_2022_10
+Nebraska,October,2022,motor fuel,31033609,31,10,,31_2022_10
+Nevada,October,2022,motor fuel,1422822,32,10,,32_2022_10
+New Hampshire,October,2022,motor fuel,10400000,33,10,,33_2022_10
+New Jersey,October,2022,motor fuel,41344000,34,10,,34_2022_10
+New Mexico,October,2022,motor fuel,25958442,35,10,,35_2022_10
+New York,October,2022,motor fuel,86840000,36,10,,36_2022_10
+North Carolina,October,2022,motor fuel,192356902,37,10,,37_2022_10
+North Dakota,October,2022,motor fuel,,38,10,,38_2022_10
+Ohio,October,2022,motor fuel,218803218,39,10,,39_2022_10
+Oklahoma,October,2022,motor fuel,48200715,40,10,,40_2022_10
+Oregon,October,2022,motor fuel,57105695,41,10,,41_2022_10
+Pennsylvania,October,2022,motor fuel,131395000,42,10,,42_2022_10
+Rhode Island,October,2022,motor fuel,,44,10,,44_2022_10
+South Carolina,October,2022,motor fuel,85800000,45,10,,45_2022_10
+South Dakota,October,2022,motor fuel,,46,10,,46_2022_10
+Tennessee,October,2022,motor fuel,112180800,47,10,,47_2022_10
+Texas,October,2022,motor fuel,311564000,48,10,,48_2022_10
+Utah,October,2022,motor fuel,45664265,49,10,,49_2022_10
+Vermont,October,2022,motor fuel,9868861,50,10,,50_2022_10
+Virginia,October,2022,motor fuel,118961000,51,10,,51_2022_10
+Washington,October,2022,motor fuel,144708209,53,10,,53_2022_10
+West Virginia,October,2022,motor fuel,36662000,54,10,,54_2022_10
+Wisconsin,October,2022,motor fuel,89314439,55,10,,55_2022_10
+Wyoming,October,2022,motor fuel,,56,10,,56_2022_10
+Alabama,November,2022,motor fuel,80853525,1,11,,1_2022_11
+Alaska,November,2022,motor fuel,3068884,2,11,,2_2022_11
+Arizona,November,2022,motor fuel,63323717,4,11,,4_2022_11
+Arkansas,November,2022,motor fuel,51877323,5,11,,5_2022_11
+California,November,2022,motor fuel,711104000,6,11,,6_2022_11
+Colorado,November,2022,motor fuel,67172000,8,11,,8_2022_11
+Connecticut,November,2022,motor fuel,10929975,9,11,,9_2022_11
+Delaware,November,2022,motor fuel,,10,11,,10_2022_11
+District of Columbia,November,2022,motor fuel,1846071,11,11,,11_2022_11
+Florida,November,2022,motor fuel,152370595,12,11,,12_2022_11
+Georgia,November,2022,motor fuel,1025000,13,11,,13_2022_11
+Hawaii,November,2022,motor fuel,9288140,15,11,,15_2022_11
+Idaho,November,2022,motor fuel,32315811,16,11,,16_2022_11
+Illinois,November,2022,motor fuel,216147092,17,11,,17_2022_11
+Indiana,November,2022,motor fuel,130404171,18,11,,18_2022_11
+Iowa,November,2022,motor fuel,67298860,19,11,,19_2022_11
+Kansas,November,2022,motor fuel,,20,11,,20_2022_11
+Kentucky,November,2022,motor fuel,64985650,21,11,,21_2022_11
+Louisiana,November,2022,motor fuel,52125479,22,11,,22_2022_11
+Maine,November,2022,motor fuel,19233748,23,11,,23_2022_11
+Maryland,November,2022,motor fuel,107867966,24,11,,24_2022_11
+Massachusetts,November,2022,motor fuel,60044047,25,11,,25_2022_11
+Michigan,November,2022,motor fuel,106458251,26,11,,26_2022_11
+Minnesota,November,2022,motor fuel,79933492,27,11,,27_2022_11
+Mississippi,November,2022,motor fuel,38118742,28,11,,28_2022_11
+Missouri,November,2022,motor fuel,75499666,29,11,,29_2022_11
+Montana,November,2022,motor fuel,,30,11,,30_2022_11
+Nebraska,November,2022,motor fuel,30522602,31,11,,31_2022_11
+Nevada,November,2022,motor fuel,34970799,32,11,,32_2022_11
+New Hampshire,November,2022,motor fuel,10700000,33,11,,33_2022_11
+New Jersey,November,2022,motor fuel,33762000,34,11,,34_2022_11
+New Mexico,November,2022,motor fuel,26743076,35,11,,35_2022_11
+New York,November,2022,motor fuel,87884000,36,11,,36_2022_11
+North Carolina,November,2022,motor fuel,189165719,37,11,,37_2022_11
+North Dakota,November,2022,motor fuel,,38,11,,38_2022_11
+Ohio,November,2022,motor fuel,211479661,39,11,,39_2022_11
+Oklahoma,November,2022,motor fuel,49050893,40,11,,40_2022_11
+Oregon,November,2022,motor fuel,53358132,41,11,,41_2022_11
+Pennsylvania,November,2022,motor fuel,168403000,42,11,,42_2022_11
+Rhode Island,November,2022,motor fuel,,44,11,,44_2022_11
+South Carolina,November,2022,motor fuel,86000000,45,11,,45_2022_11
+South Dakota,November,2022,motor fuel,,46,11,,46_2022_11
+Tennessee,November,2022,motor fuel,106939484,47,11,,47_2022_11
+Texas,November,2022,motor fuel,331457000,48,11,,48_2022_11
+Utah,November,2022,motor fuel,46200000,49,11,,49_2022_11
+Vermont,November,2022,motor fuel,7984969,50,11,,50_2022_11
+Virginia,November,2022,motor fuel,135851000,51,11,,51_2022_11
+Washington,November,2022,motor fuel,118724971,53,11,,53_2022_11
+West Virginia,November,2022,motor fuel,34940000,54,11,,54_2022_11
+Wisconsin,November,2022,motor fuel,71339039,55,11,,55_2022_11
+Wyoming,November,2022,motor fuel,,56,11,,56_2022_11
+Alabama,December,2022,motor fuel,77550951,1,12,,1_2022_12
+Alaska,December,2022,motor fuel,3330555,2,12,,2_2022_12
+Arizona,December,2022,motor fuel,66203292,4,12,,4_2022_12
+Arkansas,December,2022,motor fuel,48040360,5,12,,5_2022_12
+California,December,2022,motor fuel,778562000,6,12,,6_2022_12
+Colorado,December,2022,motor fuel,66033000,8,12,,8_2022_12
+Connecticut,December,2022,motor fuel,13259597,9,12,,9_2022_12
+Delaware,December,2022,motor fuel,,10,12,,10_2022_12
+District of Columbia,December,2022,motor fuel,1849984,11,12,,11_2022_12
+Florida,December,2022,motor fuel,260553740,12,12,,12_2022_12
+Georgia,December,2022,motor fuel,-6995000,13,12,,13_2022_12
+Hawaii,December,2022,motor fuel,8897749,15,12,,15_2022_12
+Idaho,December,2022,motor fuel,33884606,16,12,,16_2022_12
+Illinois,December,2022,motor fuel,238481946,17,12,,17_2022_12
+Indiana,December,2022,motor fuel,134775069,18,12,,18_2022_12
+Iowa,December,2022,motor fuel,57052721,19,12,,19_2022_12
+Kansas,December,2022,motor fuel,,20,12,,20_2022_12
+Kentucky,December,2022,motor fuel,72470744,21,12,,21_2022_12
+Louisiana,December,2022,motor fuel,51893019,22,12,,22_2022_12
+Maine,December,2022,motor fuel,17980439,23,12,,23_2022_12
+Maryland,December,2022,motor fuel,105302856,24,12,,24_2022_12
+Massachusetts,December,2022,motor fuel,59345976,25,12,,25_2022_12
+Michigan,December,2022,motor fuel,139423898,26,12,,26_2022_12
+Minnesota,December,2022,motor fuel,71539337,27,12,,27_2022_12
+Mississippi,December,2022,motor fuel,35816091,28,12,,28_2022_12
+Missouri,December,2022,motor fuel,79001677,29,12,,29_2022_12
+Montana,December,2022,motor fuel,,30,12,,30_2022_12
+Nebraska,December,2022,motor fuel,29211372,31,12,,31_2022_12
+Nevada,December,2022,motor fuel,62276960,32,12,,32_2022_12
+New Hampshire,December,2022,motor fuel,10200000,33,12,,33_2022_12
+New Jersey,December,2022,motor fuel,40188000,34,12,,34_2022_12
+New Mexico,December,2022,motor fuel,25333825,35,12,,35_2022_12
+New York,December,2022,motor fuel,95185000,36,12,,36_2022_12
+North Carolina,December,2022,motor fuel,197066131,37,12,,37_2022_12
+North Dakota,December,2022,motor fuel,,38,12,,38_2022_12
+Ohio,December,2022,motor fuel,211729682,39,12,,39_2022_12
+Oklahoma,December,2022,motor fuel,47448853,40,12,,40_2022_12
+Oregon,December,2022,motor fuel,51335237,41,12,,41_2022_12
+Pennsylvania,December,2022,motor fuel,128965000,42,12,,42_2022_12
+Rhode Island,December,2022,motor fuel,,44,12,,44_2022_12
+South Carolina,December,2022,motor fuel,83900000,45,12,,45_2022_12
+South Dakota,December,2022,motor fuel,,46,12,,46_2022_12
+Tennessee,December,2022,motor fuel,106429720,47,12,,47_2022_12
+Texas,December,2022,motor fuel,317072000,48,12,,48_2022_12
+Utah,December,2022,motor fuel,53400000,49,12,,49_2022_12
+Vermont,December,2022,motor fuel,8050893,50,12,,50_2022_12
+Virginia,December,2022,motor fuel,112663000,51,12,,51_2022_12
+Washington,December,2022,motor fuel,104741761,53,12,,53_2022_12
+West Virginia,December,2022,motor fuel,35002000,54,12,,54_2022_12
+Wisconsin,December,2022,motor fuel,99363055,55,12,,55_2022_12
+Wyoming,December,2022,motor fuel,,56,12,,56_2022_12
+Alabama,January,2023,motor fuel,76542922,1,1,,1_2023_1
+Alaska,January,2023,motor fuel,3104623,2,1,,2_2023_1
+Arizona,January,2023,motor fuel,68749491,4,1,,4_2023_1
+Arkansas,January,2023,motor fuel,48146831,5,1,,5_2023_1
+California,January,2023,motor fuel,663699000,6,1,,6_2023_1
+Colorado,January,2023,motor fuel,57256000,8,1,,8_2023_1
+Connecticut,January,2023,motor fuel,11838325,9,1,,9_2023_1
+Delaware,January,2023,motor fuel,,10,1,,10_2023_1
+District of Columbia,January,2023,motor fuel,1817754,11,1,,11_2023_1
+Florida,January,2023,motor fuel,266427672,12,1,,12_2023_1
+Georgia,January,2023,motor fuel,2248000,13,1,,13_2023_1
+Hawaii,January,2023,motor fuel,9043377,15,1,,15_2023_1
+Idaho,January,2023,motor fuel,30312108,16,1,,16_2023_1
+Illinois,January,2023,motor fuel,222719063,17,1,,17_2023_1
+Indiana,January,2023,motor fuel,131491678,18,1,,18_2023_1
+Iowa,January,2023,motor fuel,54646535,19,1,,19_2023_1
+Kansas,January,2023,motor fuel,,20,1,,20_2023_1
+Kentucky,January,2023,motor fuel,60723762,21,1,,21_2023_1
+Louisiana,January,2023,motor fuel,50327855,22,1,,22_2023_1
+Maine,January,2023,motor fuel,18275187,23,1,,23_2023_1
+Maryland,January,2023,motor fuel,110542330,24,1,,24_2023_1
+Massachusetts,January,2023,motor fuel,59566703,25,1,,25_2023_1
+Michigan,January,2023,motor fuel,112250012,26,1,,26_2023_1
+Minnesota,January,2023,motor fuel,70089828,27,1,,27_2023_1
+Mississippi,January,2023,motor fuel,36254177,28,1,,28_2023_1
+Missouri,January,2023,motor fuel,77538669,29,1,,29_2023_1
+Montana,January,2023,motor fuel,,30,1,,30_2023_1
+Nebraska,January,2023,motor fuel,27743252,31,1,,31_2023_1
+Nevada,January,2023,motor fuel,31854408,32,1,,32_2023_1
+New Hampshire,January,2023,motor fuel,10900000,33,1,,33_2023_1
+New Jersey,January,2023,motor fuel,43047000,34,1,,34_2023_1
+New Mexico,January,2023,motor fuel,26533671,35,1,,35_2023_1
+New York,January,2023,motor fuel,110298000,36,1,,36_2023_1
+North Carolina,January,2023,motor fuel,188114023,37,1,,37_2023_1
+North Dakota,January,2023,motor fuel,,38,1,,38_2023_1
+Ohio,January,2023,motor fuel,201624042,39,1,,39_2023_1
+Oklahoma,January,2023,motor fuel,49614015,40,1,,40_2023_1
+Oregon,January,2023,motor fuel,29723427,41,1,,41_2023_1
+Pennsylvania,January,2023,motor fuel,135435000,42,1,,42_2023_1
+Rhode Island,January,2023,motor fuel,,44,1,,44_2023_1
+South Carolina,January,2023,motor fuel,77000000,45,1,,45_2023_1
+South Dakota,January,2023,motor fuel,,46,1,,46_2023_1
+Tennessee,January,2023,motor fuel,106935768,47,1,,47_2023_1
+Texas,January,2023,motor fuel,311052000,48,1,,48_2023_1
+Utah,January,2023,motor fuel,46900000,49,1,,49_2023_1
+Vermont,January,2023,motor fuel,7633929,50,1,,50_2023_1
+Virginia,January,2023,motor fuel,133067000,51,1,,51_2023_1
+Washington,January,2023,motor fuel,121630052,53,1,,53_2023_1
+West Virginia,January,2023,motor fuel,36901000,54,1,,54_2023_1
+Wisconsin,January,2023,motor fuel,104186338,55,1,,55_2023_1
+Wyoming,January,2023,motor fuel,,56,1,,56_2023_1
+Alabama,February,2023,motor fuel,75593002,1,2,,1_2023_2
+Alaska,February,2023,motor fuel,3413215,2,2,,2_2023_2
+Arizona,February,2023,motor fuel,64352711,4,2,,4_2023_2
+Arkansas,February,2023,motor fuel,39454366,5,2,,5_2023_2
+California,February,2023,motor fuel,718770000,6,2,,6_2023_2
+Colorado,February,2023,motor fuel,37021000,8,2,,8_2023_2
+Connecticut,February,2023,motor fuel,17034955,9,2,,9_2023_2
+Delaware,February,2023,motor fuel,,10,2,,10_2023_2
+District of Columbia,February,2023,motor fuel,1285814,11,2,,11_2023_2
+Florida,February,2023,motor fuel,282723107,12,2,,12_2023_2
+Georgia,February,2023,motor fuel,119057000,13,2,,13_2023_2
+Hawaii,February,2023,motor fuel,9234748,15,2,,15_2023_2
+Idaho,February,2023,motor fuel,24710295,16,2,,16_2023_2
+Illinois,February,2023,motor fuel,221878372,17,2,,17_2023_2
+Indiana,February,2023,motor fuel,127481698,18,2,,18_2023_2
+Iowa,February,2023,motor fuel,58543326,19,2,,19_2023_2
+Kansas,February,2023,motor fuel,,20,2,,20_2023_2
+Kentucky,February,2023,motor fuel,58501933,21,2,,21_2023_2
+Louisiana,February,2023,motor fuel,48459984,22,2,,22_2023_2
+Maine,February,2023,motor fuel,16099241,23,2,,23_2023_2
+Maryland,February,2023,motor fuel,97296421,24,2,,24_2023_2
+Massachusetts,February,2023,motor fuel,54840218,25,2,,25_2023_2
+Michigan,February,2023,motor fuel,108526599,26,2,,26_2023_2
+Minnesota,February,2023,motor fuel,68192798,27,2,,27_2023_2
+Mississippi,February,2023,motor fuel,32111502,28,2,,28_2023_2
+Missouri,February,2023,motor fuel,76559790,29,2,,29_2023_2
+Montana,February,2023,motor fuel,,30,2,,30_2023_2
+Nebraska,February,2023,motor fuel,29602607,31,2,,31_2023_2
+Nevada,February,2023,motor fuel,1413767,32,2,,32_2023_2
+New Hampshire,February,2023,motor fuel,10000000,33,2,,33_2023_2
+New Jersey,February,2023,motor fuel,32210000,34,2,,34_2023_2
+New Mexico,February,2023,motor fuel,24952657,35,2,,35_2023_2
+New York,February,2023,motor fuel,131741000,36,2,,36_2023_2
+North Carolina,February,2023,motor fuel,192033308,37,2,,37_2023_2
+North Dakota,February,2023,motor fuel,,38,2,,38_2023_2
+Ohio,February,2023,motor fuel,193411019,39,2,,39_2023_2
+Oklahoma,February,2023,motor fuel,47478683,40,2,,40_2023_2
+Oregon,February,2023,motor fuel,68540075,41,2,,41_2023_2
+Pennsylvania,February,2023,motor fuel,156944000,42,2,,42_2023_2
+Rhode Island,February,2023,motor fuel,,44,2,,44_2023_2
+South Carolina,February,2023,motor fuel,83400000,45,2,,45_2023_2
+South Dakota,February,2023,motor fuel,,46,2,,46_2023_2
+Tennessee,February,2023,motor fuel,97033062,47,2,,47_2023_2
+Texas,February,2023,motor fuel,303877000,48,2,,48_2023_2
+Utah,February,2023,motor fuel,47900000,49,2,,49_2023_2
+Vermont,February,2023,motor fuel,5781291,50,2,,50_2023_2
+Virginia,February,2023,motor fuel,100931000,51,2,,51_2023_2
+Washington,February,2023,motor fuel,114951180,53,2,,53_2023_2
+West Virginia,February,2023,motor fuel,49688000,54,2,,54_2023_2
+Wisconsin,February,2023,motor fuel,80773322,55,2,,55_2023_2
+Wyoming,February,2023,motor fuel,,56,2,,56_2023_2
+Alabama,March,2023,motor fuel,72243414,1,3,,1_2023_3
+Alaska,March,2023,motor fuel,3671648,2,3,,2_2023_3
+Arizona,March,2023,motor fuel,63476494,4,3,,4_2023_3
+Arkansas,March,2023,motor fuel,48038883,5,3,,5_2023_3
+California,March,2023,motor fuel,680167000,6,3,,6_2023_3
+Colorado,March,2023,motor fuel,60691000,8,3,,8_2023_3
+Connecticut,March,2023,motor fuel,27314661,9,3,,9_2023_3
+Delaware,March,2023,motor fuel,,10,3,,10_2023_3
+District of Columbia,March,2023,motor fuel,1249800,11,3,,11_2023_3
+Florida,March,2023,motor fuel,271668987,12,3,,12_2023_3
+Georgia,March,2023,motor fuel,157004000,13,3,,13_2023_3
+Hawaii,March,2023,motor fuel,8163699,15,3,,15_2023_3
+Idaho,March,2023,motor fuel,35575986,16,3,,16_2023_3
+Illinois,March,2023,motor fuel,213358969,17,3,,17_2023_3
+Indiana,March,2023,motor fuel,120403915,18,3,,18_2023_3
+Iowa,March,2023,motor fuel,44675419,19,3,,19_2023_3
+Kansas,March,2023,motor fuel,,20,3,,20_2023_3
+Kentucky,March,2023,motor fuel,60461893,21,3,,21_2023_3
+Louisiana,March,2023,motor fuel,46828288,22,3,,22_2023_3
+Maine,March,2023,motor fuel,16625980,23,3,,23_2023_3
+Maryland,March,2023,motor fuel,101784828,24,3,,24_2023_3
+Massachusetts,March,2023,motor fuel,51925763,25,3,,25_2023_3
+Michigan,March,2023,motor fuel,110857977,26,3,,26_2023_3
+Minnesota,March,2023,motor fuel,58204236,27,3,,27_2023_3
+Mississippi,March,2023,motor fuel,32187217,28,3,,28_2023_3
+Missouri,March,2023,motor fuel,71896543,29,3,,29_2023_3
+Montana,March,2023,motor fuel,,30,3,,30_2023_3
+Nebraska,March,2023,motor fuel,28164214,31,3,,31_2023_3
+Nevada,March,2023,motor fuel,55828594,32,3,,32_2023_3
+New Hampshire,March,2023,motor fuel,9200000,33,3,,33_2023_3
+New Jersey,March,2023,motor fuel,34262000,34,3,,34_2023_3
+New Mexico,March,2023,motor fuel,25622611,35,3,,35_2023_3
+New York,March,2023,motor fuel,125138000,36,3,,36_2023_3
+North Carolina,March,2023,motor fuel,177785417,37,3,,37_2023_3
+North Dakota,March,2023,motor fuel,,38,3,,38_2023_3
+Ohio,March,2023,motor fuel,220352313,39,3,,39_2023_3
+Oklahoma,March,2023,motor fuel,28989583,40,3,,40_2023_3
+Oregon,March,2023,motor fuel,55512747,41,3,,41_2023_3
+Pennsylvania,March,2023,motor fuel,120066000,42,3,,42_2023_3
+Rhode Island,March,2023,motor fuel,,44,3,,44_2023_3
+South Carolina,March,2023,motor fuel,82600000,45,3,,45_2023_3
+South Dakota,March,2023,motor fuel,,46,3,,46_2023_3
+Tennessee,March,2023,motor fuel,85241433,47,3,,47_2023_3
+Texas,March,2023,motor fuel,287256000,48,3,,48_2023_3
+Utah,March,2023,motor fuel,48400000,49,3,,49_2023_3
+Vermont,March,2023,motor fuel,7790474,50,3,,50_2023_3
+Virginia,March,2023,motor fuel,133702000,51,3,,51_2023_3
+Washington,March,2023,motor fuel,113904157,53,3,,53_2023_3
+West Virginia,March,2023,motor fuel,17417000,54,3,,54_2023_3
+Wisconsin,March,2023,motor fuel,83536166,55,3,,55_2023_3
+Wyoming,March,2023,motor fuel,,56,3,,56_2023_3
+Alabama,April,2023,motor fuel,84606599,1,4,,1_2023_4
+Alabama,July,2023,motor fuel,83403043,1,7,,1_2023_7
+Alabama,June,2023,motor fuel,85659816,1,6,,1_2023_6
+Alabama,May,2023,motor fuel,79834594,1,5,,1_2023_5
+Alaska,April,2023,motor fuel,3385839,2,4,,2_2023_4
+Alaska,July,2023,motor fuel,4731851,2,7,,2_2023_7
+Alaska,June,2023,motor fuel,4614939,2,6,,2_2023_6
+Alaska,May,2023,motor fuel,3644974,2,5,,2_2023_5
+Arizona,April,2023,motor fuel,71745900,4,4,,4_2023_4
+Arizona,July,2023,motor fuel,66294873,4,7,,4_2023_7
+Arizona,June,2023,motor fuel,68761235,4,6,,4_2023_6
+Arizona,May,2023,motor fuel,60084205,4,5,,4_2023_5
+Arkansas,April,2023,motor fuel,45651743,5,4,,5_2023_4
+Arkansas,July,2023,motor fuel,48791407,5,7,,5_2023_7
+Arkansas,June,2023,motor fuel,51546100,5,6,,5_2023_6
+Arkansas,May,2023,motor fuel,49059932,5,5,,5_2023_5
+California,April,2023,motor fuel,662723000,6,4,,6_2023_4
+California,July,2023,motor fuel,754200000,6,7,,6_2023_7
+California,June,2023,motor fuel,733057000,6,6,,6_2023_6
+California,May,2023,motor fuel,759877000,6,5,,6_2023_5
+Colorado,April,2023,motor fuel,71278000,8,4,,8_2023_4
+Colorado,July,2023,motor fuel,74637000,8,7,,8_2023_7
+Colorado,June,2023,motor fuel,41896000,8,6,,8_2023_6
+Colorado,May,2023,motor fuel,57467000,8,5,,8_2023_5
+Connecticut,April,2023,motor fuel,34646764,9,4,,9_2023_4
+Connecticut,July,2023,motor fuel,41402639,9,7,,9_2023_7
+Connecticut,June,2023,motor fuel,49947980,9,6,,9_2023_6
+Connecticut,May,2023,motor fuel,39669288,9,5,,9_2023_5
+Delaware,April,2023,motor fuel,,10,4,,10_2023_4
+Delaware,July,2023,motor fuel,,10,7,,10_2023_7
+Delaware,June,2023,motor fuel,,10,6,,10_2023_6
+Delaware,May,2023,motor fuel,,10,5,,10_2023_5
+District of Columbia,April,2023,motor fuel,1868060,11,4,,11_2023_4
+District of Columbia,July,2023,motor fuel,2307874,11,7,,11_2023_7
+District of Columbia,June,2023,motor fuel,2300876,11,6,,11_2023_6
+District of Columbia,May,2023,motor fuel,921285,11,5,,11_2023_5
+Florida,April,2023,motor fuel,311772076,12,4,,12_2023_4
+Florida,July,2023,motor fuel,,12,7,,12_2023_7
+Florida,June,2023,motor fuel,304513191,12,6,,12_2023_6
+Florida,May,2023,motor fuel,291555499,12,5,,12_2023_5
+Georgia,April,2023,motor fuel,192398000,13,4,,13_2023_4
+Georgia,July,2023,motor fuel,183114000,13,7,,13_2023_7
+Georgia,June,2023,motor fuel,191484000,13,6,,13_2023_6
+Georgia,May,2023,motor fuel,181362000,13,5,,13_2023_5
+Hawaii,April,2023,motor fuel,9199282,15,4,,15_2023_4
+Hawaii,July,2023,motor fuel,8893426,15,7,,15_2023_7
+Hawaii,June,2023,motor fuel,9406534,15,6,,15_2023_6
+Hawaii,May,2023,motor fuel,9053262,15,5,,15_2023_5
+Idaho,April,2023,motor fuel,22489426,16,4,,16_2023_4
+Idaho,July,2023,motor fuel,38610456,16,7,,16_2023_7
+Idaho,June,2023,motor fuel,30619047,16,6,,16_2023_6
+Idaho,May,2023,motor fuel,33781552,16,5,,16_2023_5
+Illinois,April,2023,motor fuel,233951712,17,4,,17_2023_4
+Illinois,July,2023,motor fuel,236163305,17,7,,17_2023_7
+Illinois,June,2023,motor fuel,245699850,17,6,,17_2023_6
+Illinois,May,2023,motor fuel,232393759,17,5,,17_2023_5
+Indiana,April,2023,motor fuel,139803860,18,4,,18_2023_4
+Indiana,July,2023,motor fuel,144471348,18,7,,18_2023_7
+Indiana,June,2023,motor fuel,136862492,18,6,,18_2023_6
+Indiana,May,2023,motor fuel,131180067,18,5,,18_2023_5
+Iowa,April,2023,motor fuel,56542160,19,4,,19_2023_4
+Iowa,July,2023,motor fuel,59610756,19,7,,19_2023_7
+Iowa,June,2023,motor fuel,58598631,19,6,,19_2023_6
+Iowa,May,2023,motor fuel,58353180,19,5,,19_2023_5
+Kansas,April,2023,motor fuel,,20,4,,20_2023_4
+Kansas,July,2023,motor fuel,,20,7,,20_2023_7
+Kansas,June,2023,motor fuel,,20,6,,20_2023_6
+Kansas,May,2023,motor fuel,,20,5,,20_2023_5
+Kentucky,April,2023,motor fuel,70952574,21,4,,21_2023_4
+Kentucky,July,2023,motor fuel,69511349,21,7,,21_2023_7
+Kentucky,June,2023,motor fuel,76017923,21,6,,21_2023_6
+Kentucky,May,2023,motor fuel,68696952,21,5,,21_2023_5
+Louisiana,April,2023,motor fuel,56608092,22,4,,22_2023_4
+Louisiana,July,2023,motor fuel,50969755,22,7,,22_2023_7
+Louisiana,June,2023,motor fuel,56851317,22,6,,22_2023_6
+Louisiana,May,2023,motor fuel,50759578,22,5,,22_2023_5
+Maine,April,2023,motor fuel,16419871,23,4,,23_2023_4
+Maine,July,2023,motor fuel,19630162,23,7,,23_2023_7
+Maine,June,2023,motor fuel,19838599,23,6,,23_2023_6
+Maine,May,2023,motor fuel,17324172,23,5,,23_2023_5
+Maryland,April,2023,motor fuel,104626118,24,4,,24_2023_4
+Maryland,July,2023,motor fuel,104938635,24,7,,24_2023_7
+Maryland,June,2023,motor fuel,117367677,24,6,,24_2023_6
+Maryland,May,2023,motor fuel,107544152,24,5,,24_2023_5
+Massachusetts,April,2023,motor fuel,58338044,25,4,,25_2023_4
+Massachusetts,July,2023,motor fuel,61416684,25,7,,25_2023_7
+Massachusetts,June,2023,motor fuel,62951886,25,6,,25_2023_6
+Massachusetts,May,2023,motor fuel,57034428,25,5,,25_2023_5
+Michigan,April,2023,motor fuel,112211955,26,4,,26_2023_4
+Michigan,July,2023,motor fuel,126789813,26,7,,26_2023_7
+Michigan,June,2023,motor fuel,133813080,26,6,,26_2023_6
+Michigan,May,2023,motor fuel,140078733,26,5,,26_2023_5
+Minnesota,April,2023,motor fuel,69362406,27,4,,27_2023_4
+Minnesota,July,2023,motor fuel,87907121,27,7,,27_2023_7
+Minnesota,June,2023,motor fuel,86565256,27,6,,27_2023_6
+Minnesota,May,2023,motor fuel,72873760,27,5,,27_2023_5
+Mississippi,April,2023,motor fuel,41552354,28,4,,28_2023_4
+Mississippi,July,2023,motor fuel,37349142,28,7,,28_2023_7
+Mississippi,June,2023,motor fuel,41372874,28,6,,28_2023_6
+Mississippi,May,2023,motor fuel,34795254,28,5,,28_2023_5
+Missouri,April,2023,motor fuel,71037417,29,4,,29_2023_4
+Missouri,July,2023,motor fuel,82182858,29,7,,29_2023_7
+Missouri,June,2023,motor fuel,81873431,29,6,,29_2023_6
+Missouri,May,2023,motor fuel,74168671,29,5,,29_2023_5
+Montana,April,2023,motor fuel,,30,4,,30_2023_4
+Montana,July,2023,motor fuel,6025000,30,7,,30_2023_7
+Montana,June,2023,motor fuel,,30,6,,30_2023_6
+Montana,May,2023,motor fuel,,30,5,,30_2023_5
+Nebraska,April,2023,motor fuel,34131193,31,4,,31_2023_4
+Nebraska,July,2023,motor fuel,37801509,31,7,,31_2023_7
+Nebraska,June,2023,motor fuel,37139167,31,6,,31_2023_6
+Nebraska,May,2023,motor fuel,33100975,31,5,,31_2023_5
+Nevada,April,2023,motor fuel,,32,4,,32_2023_4
+Nevada,July,2023,motor fuel,,32,7,,32_2023_7
+Nevada,June,2023,motor fuel,,32,6,,32_2023_6
+Nevada,May,2023,motor fuel,,32,5,,32_2023_5
+New Hampshire,April,2023,motor fuel,10200000,33,4,,33_2023_4
+New Hampshire,July,2023,motor fuel,10900000,33,7,,33_2023_7
+New Hampshire,June,2023,motor fuel,11000000,33,6,,33_2023_6
+New Hampshire,May,2023,motor fuel,9800000,33,5,,33_2023_5
+New Jersey,April,2023,motor fuel,40319000,34,4,,34_2023_4
+New Jersey,July,2023,motor fuel,42446000,34,7,,34_2023_7
+New Jersey,June,2023,motor fuel,,34,6,,34_2023_6
+New Jersey,May,2023,motor fuel,35174000,34,5,,34_2023_5
+New Mexico,April,2023,motor fuel,30549527,35,4,,35_2023_4
+New Mexico,July,2023,motor fuel,25917208,35,7,,35_2023_7
+New Mexico,June,2023,motor fuel,29374172,35,6,,35_2023_6
+New Mexico,May,2023,motor fuel,27024270,35,5,,35_2023_5
+New York,April,2023,motor fuel,118260000,36,4,,36_2023_4
+New York,July,2023,motor fuel,141001353,36,7,,36_2023_7
+New York,June,2023,motor fuel,134005000,36,6,,36_2023_6
+New York,May,2023,motor fuel,141132000,36,5,,36_2023_5
+North Carolina,April,2023,motor fuel,216775159,37,4,,37_2023_4
+North Carolina,July,2023,motor fuel,203049221,37,7,,37_2023_7
+North Carolina,June,2023,motor fuel,220814719,37,6,,37_2023_6
+North Carolina,May,2023,motor fuel,189335671,37,5,,37_2023_5
+North Dakota,April,2023,motor fuel,,38,4,,38_2023_4
+North Dakota,July,2023,motor fuel,,38,7,,38_2023_7
+North Dakota,June,2023,motor fuel,,38,6,,38_2023_6
+North Dakota,May,2023,motor fuel,,38,5,,38_2023_5
+Ohio,April,2023,motor fuel,213307761,39,4,,39_2023_4
+Ohio,July,2023,motor fuel,226026266,39,7,,39_2023_7
+Ohio,June,2023,motor fuel,228606396,39,6,,39_2023_6
+Ohio,May,2023,motor fuel,231591508,39,5,,39_2023_5
+Oklahoma,April,2023,motor fuel,65477538,40,4,,40_2023_4
+Oklahoma,July,2023,motor fuel,48669980,40,7,,40_2023_7
+Oklahoma,June,2023,motor fuel,49484050,40,6,,40_2023_6
+Oklahoma,May,2023,motor fuel,47180975,40,5,,40_2023_5
+Oregon,April,2023,motor fuel,55737199,41,4,,41_2023_4
+Oregon,July,2023,motor fuel,63968060,41,7,,41_2023_7
+Oregon,June,2023,motor fuel,61968422,41,6,,41_2023_6
+Oregon,May,2023,motor fuel,61838533,41,5,,41_2023_5
+Pennsylvania,April,2023,motor fuel,160690000,42,4,,42_2023_4
+Pennsylvania,July,2023,motor fuel,144723000,42,7,,42_2023_7
+Pennsylvania,June,2023,motor fuel,148696000,42,6,,42_2023_6
+Pennsylvania,May,2023,motor fuel,168912000,42,5,,42_2023_5
+Rhode Island,April,2023,motor fuel,,44,4,,44_2023_4
+Rhode Island,July,2023,motor fuel,,44,7,,44_2023_7
+Rhode Island,June,2023,motor fuel,,44,6,,44_2023_6
+Rhode Island,May,2023,motor fuel,,44,5,,44_2023_5
+South Carolina,April,2023,motor fuel,91000000,45,4,,45_2023_4
+South Carolina,July,2023,motor fuel,79000000,45,7,,45_2023_7
+South Carolina,June,2023,motor fuel,104000000,45,6,,45_2023_6
+South Carolina,May,2023,motor fuel,79200000,45,5,,45_2023_5
+South Dakota,April,2023,motor fuel,,46,4,,46_2023_4
+South Dakota,July,2023,motor fuel,,46,7,,46_2023_7
+South Dakota,June,2023,motor fuel,,46,6,,46_2023_6
+South Dakota,May,2023,motor fuel,,46,5,,46_2023_5
+Tennessee,April,2023,motor fuel,109171429,47,4,,47_2023_4
+Tennessee,July,2023,motor fuel,106768430,47,7,,47_2023_7
+Tennessee,June,2023,motor fuel,110267234,47,6,,47_2023_6
+Tennessee,May,2023,motor fuel,113489873,47,5,,47_2023_5
+Texas,April,2023,motor fuel,318680000,48,4,,48_2023_4
+Texas,July,2023,motor fuel,329793000,48,7,,48_2023_7
+Texas,June,2023,motor fuel,324218000,48,6,,48_2023_6
+Texas,May,2023,motor fuel,339535000,48,5,,48_2023_5
+Utah,April,2023,motor fuel,54100000,49,4,,49_2023_4
+Utah,July,2023,motor fuel,29201115,49,7,,49_2023_7
+Utah,June,2023,motor fuel,55300000,49,6,,49_2023_6
+Utah,May,2023,motor fuel,55500000,49,5,,49_2023_5
+Vermont,April,2023,motor fuel,6843191,50,4,,50_2023_4
+Vermont,July,2023,motor fuel,7578053,50,7,,50_2023_7
+Vermont,June,2023,motor fuel,7828634,50,6,,50_2023_6
+Vermont,May,2023,motor fuel,6495663,50,5,,50_2023_5
+Virginia,April,2023,motor fuel,110786000,51,4,,51_2023_4
+Virginia,July,2023,motor fuel,106335000,51,7,,51_2023_7
+Virginia,June,2023,motor fuel,57242000,51,6,,51_2023_6
+Virginia,May,2023,motor fuel,120144000,51,5,,51_2023_5
+Washington,April,2023,motor fuel,110032740,53,4,,53_2023_4
+Washington,July,2023,motor fuel,136837417,53,7,,53_2023_7
+Washington,June,2023,motor fuel,125307660,53,6,,53_2023_6
+Washington,May,2023,motor fuel,133894968,53,5,,53_2023_5
+West Virginia,April,2023,motor fuel,32110000,54,4,,54_2023_4
+West Virginia,July,2023,motor fuel,52378000,54,7,,54_2023_7
+West Virginia,June,2023,motor fuel,36359000,54,6,,54_2023_6
+West Virginia,May,2023,motor fuel,44642000,54,5,,54_2023_5
+Wisconsin,April,2023,motor fuel,62841902,55,4,,55_2023_4
+Wisconsin,July,2023,motor fuel,93132297,55,7,,55_2023_7
+Wisconsin,June,2023,motor fuel,114035411,55,6,,55_2023_6
+Wisconsin,May,2023,motor fuel,77753040,55,5,,55_2023_5
+Wyoming,April,2023,motor fuel,,56,4,,56_2023_4
+Wyoming,July,2023,motor fuel,,56,7,,56_2023_7
+Wyoming,June,2023,motor fuel,,56,6,,56_2023_6
+Wyoming,May,2023,motor fuel,,56,5,,56_2023_5
+Alabama,August,2023,motor fuel,81898874,1,8,,1_2023_8
+Alabama,September,2023,motor fuel,85792362,1,9,,1_2023_9
+Alaska,August,2023,motor fuel,6038904,2,8,,2_2023_8
+Alaska,September,2023,motor fuel,4575241,2,9,,2_2023_9
+Arizona,August,2023,motor fuel,66124753,4,8,,4_2023_8
+Arizona,September,2023,motor fuel,68718804,4,9,,4_2023_9
+Arkansas,August,2023,motor fuel,51895055,5,8,,5_2023_8
+Arkansas,September,2023,motor fuel,52485383,5,9,,5_2023_9
+California,August,2023,motor fuel,745427000,6,8,,6_2023_8
+California,September,2023,motor fuel,841505000,6,9,,6_2023_9
+Colorado,August,2023,motor fuel,62211000,8,8,,8_2023_8
+Colorado,September,2023,motor fuel,64459000,8,9,,8_2023_9
+Connecticut,August,2023,motor fuel,42988178,9,8,,9_2023_8
+Connecticut,September,2023,motor fuel,45245002,9,9,,9_2023_9
+Delaware,August,2023,motor fuel,,10,8,,10_2023_8
+Delaware,September,2023,motor fuel,,10,9,,10_2023_9
+District of Columbia,October,2023,motor fuel,1736912,11,10,,11_2023_10
+District of Columbia,September,2023,motor fuel,1852678,11,9,,11_2023_9
+Florida,August,2023,motor fuel,,12,8,,12_2023_8
+Florida,September,2023,motor fuel,,12,9,,12_2023_9
+Georgia,August,2023,motor fuel,182289000,13,8,,13_2023_8
+Georgia,September,2023,motor fuel,193399000,13,9,,13_2023_9
+Hawaii,August,2023,motor fuel,9068559,15,8,,15_2023_8
+Hawaii,September,2023,motor fuel,9357773,15,9,,15_2023_9
+Idaho,August,2023,motor fuel,36519729,16,8,,16_2023_8
+Idaho,September,2023,motor fuel,33671852,16,9,,16_2023_9
+Illinois,August,2023,motor fuel,245641638,17,8,,17_2023_8
+Illinois,September,2023,motor fuel,257692238,17,9,,17_2023_9
+Indiana,August,2023,motor fuel,138052060,18,8,,18_2023_8
+Indiana,September,2023,motor fuel,151143515,18,9,,18_2023_9
+Iowa,August,2023,motor fuel,62125354,19,8,,19_2023_8
+Iowa,September,2023,motor fuel,57770161,19,9,,19_2023_9
+Kansas,August,2023,motor fuel,,20,8,,20_2023_8
+Kansas,September,2023,motor fuel,,20,9,,20_2023_9
+Kentucky,August,2023,motor fuel,74415626,21,8,,21_2023_8
+Kentucky,September,2023,motor fuel,84196529,21,9,,21_2023_9
+Louisiana,August,2023,motor fuel,52287170,22,8,,22_2023_8
+Louisiana,September,2023,motor fuel,55242196,22,9,,22_2023_9
+Maine,August,2023,motor fuel,20844342,23,8,,23_2023_8
+Maine,September,2023,motor fuel,20103702,23,9,,23_2023_9
+Maryland,August,2023,motor fuel,,24,8,,24_2023_8
+Maryland,September,2023,motor fuel,,24,9,,24_2023_9
+Massachusetts,August,2023,motor fuel,61167393,25,8,,25_2023_8
+Massachusetts,September,2023,motor fuel,63294757,25,9,,25_2023_9
+Michigan,August,2023,motor fuel,128517069,26,8,,26_2023_8
+Michigan,September,2023,motor fuel,120682177,26,9,,26_2023_9
+Minnesota,August,2023,motor fuel,85076496,27,8,,27_2023_8
+Minnesota,September,2023,motor fuel,80615206,27,9,,27_2023_9
+Mississippi,August,2023,motor fuel,35850249,28,8,,28_2023_8
+Mississippi,September,2023,motor fuel,40970718,28,9,,28_2023_9
+Missouri,August,2023,motor fuel,83997541,29,8,,29_2023_8
+Missouri,September,2023,motor fuel,91271398,29,9,,29_2023_9
+Montana,August,2023,motor fuel,,30,8,,30_2023_8
+Montana,September,2023,motor fuel,,30,9,,30_2023_9
+Nebraska,August,2023,motor fuel,35932281,31,8,,31_2023_8
+Nebraska,September,2023,motor fuel,37762435,31,9,,31_2023_9
+Nevada,August,2023,motor fuel,,32,8,,32_2023_8
+Nevada,September,2023,motor fuel,,32,9,,32_2023_9
+New Hampshire,August,2023,motor fuel,9500000,33,8,,33_2023_8
+New Hampshire,September,2023,motor fuel,11800000,33,9,,33_2023_9
+New Jersey,August,2023,motor fuel,35466000,34,8,,34_2023_8
+New Jersey,September,2023,motor fuel,42334000,34,9,,34_2023_9
+New Mexico,August,2023,motor fuel,26827591,35,8,,35_2023_8
+New Mexico,September,2023,motor fuel,26534200,35,9,,35_2023_9
+New York,August,2023,motor fuel,141809692,36,8,,36_2023_8
+New York,September,2023,motor fuel,151687877,36,9,,36_2023_9
+North Carolina,August,2023,motor fuel,194144253,37,8,,37_2023_8
+North Carolina,September,2023,motor fuel,224908946,37,9,,37_2023_9
+North Dakota,August,2023,motor fuel,,38,8,,38_2023_8
+North Dakota,September,2023,motor fuel,,38,9,,38_2023_9
+Ohio,August,2023,motor fuel,240452930,39,8,,39_2023_8
+Ohio,September,2023,motor fuel,223591889,39,9,,39_2023_9
+Oklahoma,August,2023,motor fuel,48484432,40,8,,40_2023_8
+Oklahoma,September,2023,motor fuel,50545861,40,9,,40_2023_9
+Oregon,August,2023,motor fuel,62590682,41,8,,41_2023_8
+Oregon,September,2023,motor fuel,57164876,41,9,,41_2023_9
+Pennsylvania,August,2023,motor fuel,170619000,42,8,,42_2023_8
+Pennsylvania,September,2023,motor fuel,161949000,42,9,,42_2023_9
+Rhode Island,August,2023,motor fuel,,44,8,,44_2023_8
+Rhode Island,September,2023,motor fuel,,44,9,,44_2023_9
+South Carolina,August,2023,motor fuel,81100000,45,8,,45_2023_8
+South Carolina,September,2023,motor fuel,93600000,45,9,,45_2023_9
+South Dakota,August,2023,motor fuel,,46,8,,46_2023_8
+South Dakota,September,2023,motor fuel,,46,9,,46_2023_9
+Tennessee,August,2023,motor fuel,109655457,47,8,,47_2023_8
+Tennessee,September,2023,motor fuel,116376623,47,9,,47_2023_9
+Texas,August,2023,motor fuel,329095000,48,8,,48_2023_8
+Texas,September,2023,motor fuel,329327000,48,9,,48_2023_9
+Utah,August,2023,motor fuel,59399207,49,8,,49_2023_8
+Utah,September,2023,motor fuel,72444989,49,9,,49_2023_9
+Vermont,August,2023,motor fuel,8023877,50,8,,50_2023_8
+Vermont,September,2023,motor fuel,7813812,50,9,,50_2023_9
+Virginia,August,2023,motor fuel,127145000,51,8,,51_2023_8
+Virginia,September,2023,motor fuel,138090000,51,9,,51_2023_9
+Washington,August,2023,motor fuel,148907153,53,8,,53_2023_8
+Washington,September,2023,motor fuel,138792558,53,9,,53_2023_9
+West Virginia,August,2023,motor fuel,21382000,54,8,,54_2023_8
+West Virginia,September,2023,motor fuel,34278000,54,9,,54_2023_9
+Wisconsin,August,2023,motor fuel,108559096,55,8,,55_2023_8
+Wisconsin,September,2023,motor fuel,93310446,55,9,,55_2023_9
+Wyoming,August,2023,motor fuel,,56,8,,56_2023_8
+Wyoming,September,2023,motor fuel,,56,9,,56_2023_9
+Alabama,November,2023,motor fuel,85476394,1,11,,1_2023_11
+Alabama,October,2023,motor fuel,79262088,1,10,,1_2023_10
+Alaska,November,2023,motor fuel,3160487,2,11,,2_2023_11
+Alaska,October,2023,motor fuel,4575241,2,10,,2_2023_10
+Arizona,November,2023,motor fuel,67376067,4,11,,4_2023_11
+Arizona,October,2023,motor fuel,67320521,4,10,,4_2023_10
+Arkansas,November,2023,motor fuel,51715194,5,11,,5_2023_11
+Arkansas,October,2023,motor fuel,48052195,5,10,,5_2023_10
+California,November,2023,motor fuel,765642000,6,11,,6_2023_11
+California,October,2023,motor fuel,793645000,6,10,,6_2023_10
+Colorado,November,2023,motor fuel,59666000,8,11,,8_2023_11
+Colorado,October,2023,motor fuel,63027000,8,10,,8_2023_10
+Connecticut,November,2023,motor fuel,42744964,9,11,,9_2023_11
+Connecticut,October,2023,motor fuel,40980926,9,10,,9_2023_10
+Delaware,November,2023,motor fuel,,10,11,,10_2023_11
+Delaware,October,2023,motor fuel,,10,10,,10_2023_10
+District of Columbia,August,2023,motor fuel,1731955,11,8,,11_2023_8
+District of Columbia,November,2023,motor fuel,131743,11,11,,11_2023_11
+Florida,November,2023,motor fuel,,12,11,,12_2023_11
+Florida,October,2023,motor fuel,,12,10,,12_2023_10
+Georgia,November,2023,motor fuel,908000,13,11,,13_2023_11
+Georgia,October,2023,motor fuel,72269000,13,10,,13_2023_10
+Hawaii,November,2023,motor fuel,9109129,15,11,,15_2023_11
+Hawaii,October,2023,motor fuel,8759361,15,10,,15_2023_10
+Idaho,November,2023,motor fuel,32454643,16,11,,16_2023_11
+Idaho,October,2023,motor fuel,39098191,16,10,,16_2023_10
+Illinois,November,2023,motor fuel,270707565,17,11,,17_2023_11
+Illinois,October,2023,motor fuel,243139909,17,10,,17_2023_10
+Indiana,November,2023,motor fuel,144661835,18,11,,18_2023_11
+Indiana,October,2023,motor fuel,142077597,18,10,,18_2023_10
+Iowa,November,2023,motor fuel,58924446,19,11,,19_2023_11
+Iowa,October,2023,motor fuel,61197136,19,10,,19_2023_10
+Kansas,November,2023,motor fuel,,20,11,,20_2023_11
+Kansas,October,2023,motor fuel,,20,10,,20_2023_10
+Kentucky,November,2023,motor fuel,75966810,21,11,,21_2023_11
+Kentucky,October,2023,motor fuel,72270391,21,10,,21_2023_10
+Louisiana,November,2023,motor fuel,55008125,22,11,,22_2023_11
+Louisiana,October,2023,motor fuel,45211267,22,10,,22_2023_10
+Maine,November,2023,motor fuel,19024748,23,11,,23_2023_11
+Maine,October,2023,motor fuel,19194372,23,10,,23_2023_10
+Maryland,November,2023,motor fuel,,24,11,,24_2023_11
+Maryland,October,2023,motor fuel,,24,10,,24_2023_10
+Massachusetts,November,2023,motor fuel,61052725,25,11,,25_2023_11
+Massachusetts,October,2023,motor fuel,59325933,25,10,,25_2023_10
+Michigan,November,2023,motor fuel,132234267,26,11,,26_2023_11
+Michigan,October,2023,motor fuel,147182082,26,10,,26_2023_10
+Minnesota,November,2023,motor fuel,79040946,27,11,,27_2023_11
+Minnesota,October,2023,motor fuel,75788847,27,10,,27_2023_10
+Mississippi,November,2023,motor fuel,36859984,28,11,,28_2023_11
+Mississippi,October,2023,motor fuel,35679508,28,10,,28_2023_10
+Missouri,November,2023,motor fuel,84657619,29,11,,29_2023_11
+Missouri,October,2023,motor fuel,85930750,29,10,,29_2023_10
+Montana,November,2023,motor fuel,,30,11,,30_2023_11
+Montana,October,2023,motor fuel,,30,10,,30_2023_10
+Nebraska,November,2023,motor fuel,36729125,31,11,,31_2023_11
+Nebraska,October,2023,motor fuel,36144551,31,10,,31_2023_10
+Nevada,November,2023,motor fuel,,32,11,,32_2023_11
+Nevada,October,2023,motor fuel,,32,10,,32_2023_10
+New Hampshire,November,2023,motor fuel,11000000,33,11,,33_2023_11
+New Hampshire,October,2023,motor fuel,11500000,33,10,,33_2023_10
+New Jersey,November,2023,motor fuel,35598000,34,11,,34_2023_11
+New Jersey,October,2023,motor fuel,41238000,34,10,,34_2023_10
+New Mexico,November,2023,motor fuel,27540527,35,11,,35_2023_11
+New Mexico,October,2023,motor fuel,23132578,35,10,,35_2023_10
+New York,November,2023,motor fuel,136291000,36,11,,36_2023_11
+New York,October,2023,motor fuel,139775000,36,10,,36_2023_10
+North Carolina,November,2023,motor fuel,214027745,37,11,,37_2023_11
+North Carolina,October,2023,motor fuel,203498081,37,10,,37_2023_10
+North Dakota,November,2023,motor fuel,,38,11,,38_2023_11
+North Dakota,October,2023,motor fuel,,38,10,,38_2023_10
+Ohio,November,2023,motor fuel,215490606,39,11,,39_2023_11
+Ohio,October,2023,motor fuel,231883520,39,10,,39_2023_10
+Oklahoma,November,2023,motor fuel,46792092,40,11,,40_2023_11
+Oklahoma,October,2023,motor fuel,46779068,40,10,,40_2023_10
+Oregon,November,2023,motor fuel,53235237,41,11,,41_2023_11
+Oregon,October,2023,motor fuel,58075082,41,10,,41_2023_10
+Pennsylvania,November,2023,motor fuel,184086000,42,11,,42_2023_11
+Pennsylvania,October,2023,motor fuel,128366000,42,10,,42_2023_10
+Rhode Island,November,2023,motor fuel,,44,11,,44_2023_11
+Rhode Island,October,2023,motor fuel,,44,10,,44_2023_10
+South Carolina,November,2023,motor fuel,91300000,45,11,,45_2023_11
+South Carolina,October,2023,motor fuel,81700000,45,10,,45_2023_10
+South Dakota,November,2023,motor fuel,,46,11,,46_2023_11
+South Dakota,October,2023,motor fuel,,46,10,,46_2023_10
+Tennessee,November,2023,motor fuel,105466019,47,11,,47_2023_11
+Tennessee,October,2023,motor fuel,108524512,47,10,,47_2023_10
+Texas,November,2023,motor fuel,326514000,48,11,,48_2023_11
+Texas,October,2023,motor fuel,315796000,48,10,,48_2023_10
+Utah,November,2023,motor fuel,47100000,49,11,,49_2023_11
+Utah,October,2023,motor fuel,55100000,49,10,,49_2023_10
+Vermont,November,2023,motor fuel,7391710,50,11,,50_2023_11
+Vermont,October,2023,motor fuel,7755601,50,10,,50_2023_10
+Virginia,November,2023,motor fuel,123906000,51,11,,51_2023_11
+Virginia,October,2023,motor fuel,121399000,51,10,,51_2023_10
+Washington,November,2023,motor fuel,126320093,53,11,,53_2023_11
+Washington,October,2023,motor fuel,142291834,53,10,,53_2023_10
+West Virginia,November,2023,motor fuel,16037000,54,11,,54_2023_11
+West Virginia,October,2023,motor fuel,62462000,54,10,,54_2023_10
+Wisconsin,November,2023,motor fuel,88074479,55,11,,55_2023_11
+Wisconsin,October,2023,motor fuel,83424881,55,10,,55_2023_10
+Wyoming,November,2023,motor fuel,,56,11,,56_2023_11
+Wyoming,October,2023,motor fuel,,56,10,,56_2023_10
+Alabama,December,2023,motor fuel,80199096,1,12,,1_2023_12
+Alabama,January,2024,motor fuel,79210715,1,1,,1_2024_1
+Alaska,December,2023,motor fuel,3178225,2,12,,2_2023_12
+Alaska,January,2024,motor fuel,4575241,2,1,,2_2024_1
+Arizona,December,2023,motor fuel,69800156,4,12,,4_2023_12
+Arizona,January,2024,motor fuel,68686539,4,1,,4_2024_1
+Arkansas,December,2023,motor fuel,46863731,5,12,,5_2023_12
+Arkansas,January,2024,motor fuel,49875910,5,1,,5_2024_1
+California,December,2023,motor fuel,819570000,6,12,,6_2023_12
+California,January,2024,motor fuel,734286000,6,1,,6_2024_1
+Colorado,December,2023,motor fuel,57959000,8,12,,8_2023_12
+Colorado,January,2024,motor fuel,53954000,8,1,,8_2024_1
+Connecticut,December,2023,motor fuel,42601261,9,12,,9_2023_12
+Connecticut,January,2024,motor fuel,40819196,9,1,,9_2024_1
+Delaware,December,2023,motor fuel,,10,12,,10_2023_12
+Delaware,January,2024,motor fuel,,10,1,,10_2024_1
+District of Columbia,December,2023,motor fuel,1721322,11,12,,11_2023_12
+District of Columbia,January,2024,motor fuel,2049331,11,1,,11_2024_1
+Florida,December,2023,motor fuel,,12,12,,12_2023_12
+Florida,January,2024,motor fuel,,12,1,,12_2024_1
+Georgia,December,2023,motor fuel,4876000,13,12,,13_2023_12
+Georgia,January,2024,motor fuel,179667000,13,1,,13_2024_1
+Hawaii,December,2023,motor fuel,8769470,15,12,,15_2023_12
+Hawaii,January,2024,motor fuel,9097416,15,1,,15_2024_1
+Idaho,December,2023,motor fuel,33263497,16,12,,16_2023_12
+Idaho,January,2024,motor fuel,31845522,16,1,,16_2024_1
+Illinois,December,2023,motor fuel,245074371,17,12,,17_2023_12
+Illinois,January,2024,motor fuel,234145621,17,1,,17_2024_1
+Indiana,December,2023,motor fuel,151107333,18,12,,18_2023_12
+Indiana,January,2024,motor fuel,137271229,18,1,,18_2024_1
+Iowa,December,2023,motor fuel,59158757,19,12,,19_2023_12
+Iowa,January,2024,motor fuel,51702431,19,1,,19_2024_1
+Kansas,December,2023,motor fuel,,20,12,,20_2023_12
+Kansas,January,2024,motor fuel,,20,1,,20_2024_1
+Kentucky,December,2023,motor fuel,79212991,21,12,,21_2023_12
+Kentucky,January,2024,motor fuel,72196685,21,1,,21_2024_1
+Louisiana,December,2023,motor fuel,49793014,22,12,,22_2023_12
+Louisiana,January,2024,motor fuel,53452158,22,1,,22_2024_1
+Maine,December,2023,motor fuel,15346173,23,12,,23_2023_12
+Maine,January,2024,motor fuel,17792830,23,1,,23_2024_1
+Maryland,December,2023,motor fuel,,24,12,,24_2023_12
+Maryland,January,2024,motor fuel,,24,1,,24_2024_1
+Massachusetts,December,2023,motor fuel,59517795,25,12,,25_2023_12
+Massachusetts,January,2024,motor fuel,58708013,25,1,,25_2024_1
+Michigan,December,2023,motor fuel,121696433,26,12,,26_2023_12
+Michigan,January,2024,motor fuel,116579512,26,1,,26_2024_1
+Minnesota,December,2023,motor fuel,71828485,27,12,,27_2023_12
+Minnesota,January,2024,motor fuel,68177349,27,1,,27_2024_1
+Mississippi,December,2023,motor fuel,36216404,28,12,,28_2023_12
+Mississippi,January,2024,motor fuel,36332937,28,1,,28_2024_1
+Missouri,December,2023,motor fuel,85355034,29,12,,29_2023_12
+Missouri,January,2024,motor fuel,84799822,29,1,,29_2024_1
+Montana,December,2023,motor fuel,,30,12,,30_2023_12
+Montana,January,2024,motor fuel,,30,1,,30_2024_1
+Nebraska,December,2023,motor fuel,35529008,31,12,,31_2023_12
+Nebraska,January,2024,motor fuel,32861851,31,1,,31_2024_1
+Nevada,December,2023,motor fuel,,32,12,,32_2023_12
+Nevada,January,2024,motor fuel,,32,1,,32_2024_1
+New Hampshire,December,2023,motor fuel,10200000,33,12,,33_2023_12
+New Hampshire,January,2024,motor fuel,10300000,33,1,,33_2024_1
+New Jersey,December,2023,motor fuel,40578000,34,12,,34_2023_12
+New Jersey,January,2024,motor fuel,42630000,34,1,,34_2024_1
+New Mexico,December,2023,motor fuel,27266327,35,12,,35_2023_12
+New Mexico,January,2024,motor fuel,24466133,35,1,,35_2024_1
+New York,December,2023,motor fuel,129058000,36,12,,36_2023_12
+New York,January,2024,motor fuel,131844055,36,1,,36_2024_1
+North Carolina,December,2023,motor fuel,190038976,37,12,,37_2023_12
+North Carolina,January,2024,motor fuel,200518423,37,1,,37_2024_1
+North Dakota,December,2023,motor fuel,,38,12,,38_2023_12
+North Dakota,January,2024,motor fuel,,38,1,,38_2024_1
+Ohio,December,2023,motor fuel,215160676,39,12,,39_2023_12
+Ohio,January,2024,motor fuel,213461070,39,1,,39_2024_1
+Oklahoma,December,2023,motor fuel,46034381,40,12,,40_2023_12
+Oklahoma,January,2024,motor fuel,46557922,40,1,,40_2024_1
+Oregon,December,2023,motor fuel,52723539,41,12,,41_2023_12
+Oregon,January,2024,motor fuel,49588689,41,1,,41_2024_1
+Pennsylvania,December,2023,motor fuel,130875000,42,12,,42_2023_12
+Pennsylvania,January,2024,motor fuel,137764000,42,1,,42_2024_1
+Rhode Island,December,2023,motor fuel,,44,12,,44_2023_12
+Rhode Island,January,2024,motor fuel,,44,1,,44_2024_1
+South Carolina,December,2023,motor fuel,80700000,45,12,,45_2023_12
+South Carolina,January,2024,motor fuel,83300000,45,1,,45_2024_1
+South Dakota,December,2023,motor fuel,,46,12,,46_2023_12
+South Dakota,January,2024,motor fuel,,46,1,,46_2024_1
+Tennessee,December,2023,motor fuel,103814772,47,12,,47_2023_12
+Tennessee,January,2024,motor fuel,110115373,47,1,,47_2024_1
+Texas,December,2023,motor fuel,317294000,48,12,,48_2023_12
+Texas,January,2024,motor fuel,307392000,48,1,,48_2024_1
+Utah,December,2023,motor fuel,48300000,49,12,,49_2023_12
+Utah,January,2024,motor fuel,61254689,49,1,,49_2024_1
+Vermont,December,2023,motor fuel,8188653,50,12,,50_2023_12
+Vermont,January,2024,motor fuel,7174315,50,1,,50_2024_1
+Virginia,December,2023,motor fuel,140322000,51,12,,51_2023_12
+Virginia,January,2024,motor fuel,128410000,51,1,,51_2024_1
+Washington,December,2023,motor fuel,126550236,53,12,,53_2023_12
+Washington,January,2024,motor fuel,118099918,53,1,,53_2024_1
+West Virginia,December,2023,motor fuel,34986000,54,12,,54_2023_12
+West Virginia,January,2024,motor fuel,44012000,54,1,,54_2024_1
+Wisconsin,December,2023,motor fuel,85132858,55,12,,55_2023_12
+Wisconsin,January,2024,motor fuel,117728824,55,1,,55_2024_1
+Wyoming,December,2023,motor fuel,,56,12,,56_2023_12
+Wyoming,January,2024,motor fuel,,56,1,,56_2024_1
+Alabama,February,2024,motor fuel,76224603,1,2,,1_2024_2
+Alaska,February,2024,motor fuel,4621934,2,2,,2_2024_2
+Arizona,February,2024,motor fuel,64878991,4,2,,4_2024_2
+Arkansas,February,2024,motor fuel,44701374,5,2,,5_2024_2
+California,February,2024,motor fuel,754962000,6,2,,6_2024_2
+Colorado,February,2024,motor fuel,53883000,8,2,,8_2024_2
+Connecticut,February,2024,motor fuel,41758306,9,2,,9_2024_2
+Delaware,February,2024,motor fuel,,10,2,,10_2024_2
+District of Columbia,February,2024,motor fuel,1869191,11,2,,11_2024_2
+Florida,February,2024,motor fuel,,12,2,,12_2024_2
+Georgia,February,2024,motor fuel,176663000,13,2,,13_2024_2
+Hawaii,February,2024,motor fuel,8944302,15,2,,15_2024_2
+Idaho,February,2024,motor fuel,27883609,16,2,,16_2024_2
+Illinois,February,2024,motor fuel,228941461,17,2,,17_2024_2
+Indiana,February,2024,motor fuel,126265973,18,2,,18_2024_2
+Iowa,February,2024,motor fuel,53140909,19,2,,19_2024_2
+Kansas,February,2024,motor fuel,,20,2,,20_2024_2
+Kentucky,February,2024,motor fuel,66899338,21,2,,21_2024_2
+Louisiana,February,2024,motor fuel,47792812,22,2,,22_2024_2
+Maine,February,2024,motor fuel,18618414,23,2,,23_2024_2
+Maryland,February,2024,motor fuel,,24,2,,24_2024_2
+Massachusetts,February,2024,motor fuel,56525606,25,2,,25_2024_2
+Michigan,February,2024,motor fuel,116079811,26,2,,26_2024_2
+Minnesota,February,2024,motor fuel,69182664,27,2,,27_2024_2
+Mississippi,February,2024,motor fuel,33358658,28,2,,28_2024_2
+Missouri,February,2024,motor fuel,75006211,29,2,,29_2024_2
+Montana,February,2024,motor fuel,,30,2,,30_2024_2
+Nebraska,February,2024,motor fuel,29276832,31,2,,31_2024_2
+Nevada,February,2024,motor fuel,,32,2,,32_2024_2
+New Hampshire,February,2024,motor fuel,10400000,33,2,,33_2024_2
+New Jersey,February,2024,motor fuel,31926000,34,2,,34_2024_2
+New Mexico,February,2024,motor fuel,28524391,35,2,,35_2024_2
+New York,February,2024,motor fuel,114069662,36,2,,36_2024_2
+North Carolina,February,2024,motor fuel,186875822,37,2,,37_2024_2
+North Dakota,February,2024,motor fuel,,38,2,,38_2024_2
+Ohio,February,2024,motor fuel,207200403,39,2,,39_2024_2
+Oklahoma,February,2024,motor fuel,45268318,40,2,,40_2024_2
+Oregon,February,2024,motor fuel,51730003,41,2,,41_2024_2
+Pennsylvania,February,2024,motor fuel,133160000,42,2,,42_2024_2
+Rhode Island,February,2024,motor fuel,,44,2,,44_2024_2
+South Carolina,February,2024,motor fuel,82700000,45,2,,45_2024_2
+South Dakota,February,2024,motor fuel,,46,2,,46_2024_2
+Tennessee,February,2024,motor fuel,91721142,47,2,,47_2024_2
+Texas,February,2024,motor fuel,301998000,48,2,,48_2024_2
+Utah,February,2024,motor fuel,50400000,49,2,,49_2024_2
+Vermont,February,2024,motor fuel,7144181,50,2,,50_2024_2
+Virginia,February,2024,motor fuel,121279000,51,2,,51_2024_2
+Washington,February,2024,motor fuel,119000361,53,2,,53_2024_2
+West Virginia,February,2024,motor fuel,31520000,54,2,,54_2024_2
+Wisconsin,February,2024,motor fuel,83791477,55,2,,55_2024_2
+Wyoming,February,2024,motor fuel,,56,2,,56_2024_2
+Alabama,March,2024,motor fuel,78810002,1,3,,1_2024_3
+Alaska,March,2024,motor fuel,4575241,2,3,,2_2024_3
+Arizona,March,2024,motor fuel,66858912,4,3,,4_2024_3
+Arkansas,March,2024,motor fuel,45677239,5,3,,5_2024_3
+California,March,2024,motor fuel,732118000,6,3,,6_2024_3
+Colorado,March,2024,motor fuel,51730000,8,3,,8_2024_3
+Connecticut,March,2024,motor fuel,38169105,9,3,,9_2024_3
+Delaware,March,2024,motor fuel,,10,3,,10_2024_3
+District of Columbia,March,2024,motor fuel,1486171,11,3,,11_2024_3
+Florida,March,2024,motor fuel,,12,3,,12_2024_3
+Georgia,March,2024,motor fuel,178238000,13,3,,13_2024_3
+Hawaii,March,2024,motor fuel,8641224,15,3,,15_2024_3
+Idaho,March,2024,motor fuel,27918074,16,3,,16_2024_3
+Illinois,March,2024,motor fuel,232617283,17,3,,17_2024_3
+Indiana,March,2024,motor fuel,143499553,18,3,,18_2024_3
+Iowa,March,2024,motor fuel,50640289,19,3,,19_2024_3
+Kansas,March,2024,motor fuel,,20,3,,20_2024_3
+Kentucky,March,2024,motor fuel,75451312,21,3,,21_2024_3
+Louisiana,March,2024,motor fuel,47832707,22,3,,22_2024_3
+Maine,March,2024,motor fuel,14917530,23,3,,23_2024_3
+Maryland,March,2024,motor fuel,,24,3,,24_2024_3
+Massachusetts,March,2024,motor fuel,53608490,25,3,,25_2024_3
+Michigan,March,2024,motor fuel,116075770,26,3,,26_2024_3
+Minnesota,March,2024,motor fuel,63566264,27,3,,27_2024_3
+Mississippi,March,2024,motor fuel,34193239,28,3,,28_2024_3
+Missouri,March,2024,motor fuel,78832863,29,3,,29_2024_3
+Montana,March,2024,motor fuel,,30,3,,30_2024_3
+Nebraska,March,2024,motor fuel,29312423,31,3,,31_2024_3
+Nevada,March,2024,motor fuel,,32,3,,32_2024_3
+New Hampshire,March,2024,motor fuel,9800000,33,3,,33_2024_3
+New Jersey,March,2024,motor fuel,36691000,34,3,,34_2024_3
+New Mexico,March,2024,motor fuel,,35,3,,35_2024_3
+New York,March,2024,motor fuel,116944406,36,3,,36_2024_3
+North Carolina,March,2024,motor fuel,197666653,37,3,,37_2024_3
+North Dakota,March,2024,motor fuel,,38,3,,38_2024_3
+Ohio,March,2024,motor fuel,219471027,39,3,,39_2024_3
+Oklahoma,March,2024,motor fuel,46332579,40,3,,40_2024_3
+Oregon,March,2024,motor fuel,56985980,41,3,,41_2024_3
+Pennsylvania,March,2024,motor fuel,126668562,42,3,,42_2024_3
+Rhode Island,March,2024,motor fuel,,44,3,,44_2024_3
+South Carolina,March,2024,motor fuel,81000000,45,3,,45_2024_3
+South Dakota,March,2024,motor fuel,,46,3,,46_2024_3
+Tennessee,March,2024,motor fuel,91546527,47,3,,47_2024_3
+Texas,March,2024,motor fuel,302150000,48,3,,48_2024_3
+Utah,March,2024,motor fuel,50500000,49,3,,49_2024_3
+Vermont,March,2024,motor fuel,6800572,50,3,,50_2024_3
+Virginia,March,2024,motor fuel,119152000,51,3,,51_2024_3
+Washington,March,2024,motor fuel,106832265,53,3,,53_2024_3
+West Virginia,March,2024,motor fuel,28772000,54,3,,54_2024_3
+Wisconsin,March,2024,motor fuel,57555572,55,3,,55_2024_3
+Wyoming,March,2024,motor fuel,,56,3,,56_2024_3
+Alabama,April,2024,motor fuel,84736092,1,4,,1_2024_4
+Alaska,April,2024,motor fuel,4575241,2,4,,2_2024_4
+Arizona,April,2024,motor fuel,74813840,4,4,,4_2024_4
+Arkansas,April,2024,motor fuel,50788660,5,4,,5_2024_4
+California,April,2024,motor fuel,697394000,6,4,,6_2024_4
+Colorado,April,2024,motor fuel,56206000,8,4,,8_2024_4
+Connecticut,April,2024,motor fuel,39573254,9,4,,9_2024_4
+Delaware,April,2024,motor fuel,,10,4,,10_2024_4
+District of Columbia,April,2024,motor fuel,,11,4,,11_2024_4
+Florida,April,2024,motor fuel,,12,4,,12_2024_4
+Georgia,April,2024,motor fuel,195461000,13,4,,13_2024_4
+Hawaii,April,2024,motor fuel,8870399,15,4,,15_2024_4
+Idaho,April,2024,motor fuel,27352669,16,4,,16_2024_4
+Illinois,April,2024,motor fuel,241829206,17,4,,17_2024_4
+Indiana,April,2024,motor fuel,139812316,18,4,,18_2024_4
+Iowa,April,2024,motor fuel,57317175,19,4,,19_2024_4
+Kansas,April,2024,motor fuel,,20,4,,20_2024_4
+Kentucky,April,2024,motor fuel,75549868,21,4,,21_2024_4
+Louisiana,April,2024,motor fuel,50012845,22,4,,22_2024_4
+Maine,April,2024,motor fuel,17076708,23,4,,23_2024_4
+Maryland,April,2024,motor fuel,,24,4,,24_2024_4
+Massachusetts,April,2024,motor fuel,57746357,25,4,,25_2024_4
+Michigan,April,2024,motor fuel,125614132,26,4,,26_2024_4
+Minnesota,April,2024,motor fuel,66358367,27,4,,27_2024_4
+Mississippi,April,2024,motor fuel,37846768,28,4,,28_2024_4
+Missouri,April,2024,motor fuel,84922045,29,4,,29_2024_4
+Montana,April,2024,motor fuel,,30,4,,30_2024_4
+Nebraska,April,2024,motor fuel,,31,4,,31_2024_4
+Nevada,April,2024,motor fuel,,32,4,,32_2024_4
+New Hampshire,April,2024,motor fuel,10000000,33,4,,33_2024_4
+New Jersey,April,2024,motor fuel,40415000,34,4,,34_2024_4
+New Mexico,April,2024,motor fuel,,35,4,,35_2024_4
+New York,April,2024,motor fuel,120369000,36,4,,36_2024_4
+North Carolina,April,2024,motor fuel,220737817,37,4,,37_2024_4
+North Dakota,April,2024,motor fuel,,38,4,,38_2024_4
+Ohio,April,2024,motor fuel,222358348,39,4,,39_2024_4
+Oklahoma,April,2024,motor fuel,,40,4,,40_2024_4
+Oregon,April,2024,motor fuel,57622626,41,4,,41_2024_4
+Pennsylvania,April,2024,motor fuel,140472000,42,4,,42_2024_4
+Rhode Island,April,2024,motor fuel,,44,4,,44_2024_4
+South Carolina,April,2024,motor fuel,89000000,45,4,,45_2024_4
+South Dakota,April,2024,motor fuel,,46,4,,46_2024_4
+Tennessee,April,2024,motor fuel,111539289,47,4,,47_2024_4
+Texas,April,2024,motor fuel,332194000,48,4,,48_2024_4
+Utah,April,2024,motor fuel,53900000,49,4,,49_2024_4
+Vermont,April,2024,motor fuel,6970733,50,4,,50_2024_4
+Virginia,April,2024,motor fuel,117754000,51,4,,51_2024_4
+Washington,April,2024,motor fuel,111154981,53,4,,53_2024_4
+West Virginia,April,2024,motor fuel,52794000,54,4,,54_2024_4
+Wisconsin,April,2024,motor fuel,80719231,55,4,,55_2024_4
+Wyoming,April,2024,motor fuel,,56,4,,56_2024_4
