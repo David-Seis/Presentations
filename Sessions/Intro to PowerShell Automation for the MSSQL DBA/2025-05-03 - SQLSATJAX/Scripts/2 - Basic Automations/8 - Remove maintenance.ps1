@@ -1,56 +1,11 @@
-
-<# Priming query to test connectivity and identify file locations for the administration database #>
-###########################################################################
-#						Created by David Seis							  #
-#							  11/1/2022									  #
-#																		  #
-#					Straight Path IT Solutions, LLC.					  #
-###########################################################################
-
-<#
-Requirements:
-- DBATools version 2.0 Recommended, 1.0 minimum
-- Permissions on the SQL Instances
-#>
-
-<# -------------------------- STEP 1  ------------------------------------#>
-<# ----- Verifying Connectivity and file locations -----------------------#>
-
-<# 
-Description:
-Use this to find out if your connection to the server is working, as well 
-as the file locations for tha administrtaion database that will hold the 
-community tools.
-
-#>
-
-#Change the test targets to the servers you want to prep for.
-$TestTargets = 'Presenter' #, '', '', '', '' 
-
-Invoke-DbaQuery -SQLInstance $TestTargets -SqlCredential $cred -query "
-/*~~~ Find Current Location of Data and Log File of All the Database ~~~*/
-SELECT 
-@@servername as [Server name]
-, TYPE_DESC
-, physical_name AS current_file_location 
-FROM sys.master_files 
---WHERE database_id > 4
-ORDER BY type_desc
-"| Select-object * -ExcludeProperty RowError, RowState, Table, ItemArray, HasErrors | format-table
-
-Invoke-DbaQuery -SQLInstance $TestTargets -SqlCredential $cred -query "
-SELECT 
-@@servername as [Server name]
-, SERVERPROPERTY('InstanceDefaultDataPath') as default_data_path
-, SERVERPROPERTY('InstanceDefaultlogPath') as default_log_path
-"| Select-object * -ExcludeProperty RowError, RowState, Table, ItemArray, HasErrors | Format-List 
-
-
-
 <# Script to remove maintenance from a targeted server #>
 
 
-Invoke-DbaQuery -sqlinstance $sqlpresenter -sqlcredential $Cred -query "
+$Targets = 'Seis-Work'
+
+
+
+Invoke-DbaQuery -sqlinstance $Targets -sqlcredential $Cred -query "
 
 /* ~~~ Clears First Responder Kit Stored procedures from master if they exist ~~~*/
 Use master
