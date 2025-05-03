@@ -7,7 +7,7 @@
 - [If you have more comments, concerns, ideas, criticism or encouragement please share here.](https://forms.office.com/r/HQmuRnDQnd)
 
 ## Review Slides, downloads, and more with session History:
-- [Session History](https://github.com/David-Seis/Presentations/tree/main/Sessions/Intro%20to%20PowerShell%20Automation%20for%20the%20MSSQL%20DBA/1%20-%20History)
+- [Session History](https://github.com/David-Seis/Presentations/tree/main/Sessions/PowerBI%20for%20the%20Accidental%20Data%20Analyst/1%20-%20History)
 
 
 ## Extra Resources
