@@ -6,8 +6,8 @@
 # Please review my session!
 - [If you have more comments, concerns, ideas, criticism or encouragement please share here.](https://forms.office.com/r/HQmuRnDQnd)
 
-## Downloads
-- [Demo Notebooks](https://github.com/David-Seis/Presentations/tree/main/Intro%20to%20PowerShell%20Automation%20for%20the%20SQL%20Server%20DBA%20(100)/2025-03-07%20-%20SQLSATATL-BI%2BAI-%20Intro%20to%20PS%20Automation%20for%20the%20SQL%20Server%20DBA%20copy/Notebooks)
+## Review Slides, downloads, and more with session History:
+- [Session History](https://github.com/David-Seis/Presentations/tree/main/Sessions/Intro%20to%20PowerShell%20Automation%20for%20the%20MSSQL%20DBA/1%20-%20History)
 
 
 ## Extra Resources
