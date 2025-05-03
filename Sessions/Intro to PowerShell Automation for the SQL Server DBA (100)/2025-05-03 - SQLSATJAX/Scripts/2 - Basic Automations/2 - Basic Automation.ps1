@@ -1,24 +1,4 @@
-<# Credentials and Targets#>
-    $SQLInstance =  "Seis-Work,1433", "Seis-Work,1434", "Seis-Work,1435", "Seis-Work,1436", "Seis-Work,1437", "Presenter"
-    $cred = $host.ui.PromptForCredential("SQL Credential", "Please enter the username and password for the SQL Auth account", "sa", "")
 
-    Set-DbatoolsConfig -FullName sql.connection.trustcert -Value $true -register  
-
-<# Script to Backup, Copy a backup file, and then restore a database via DBAtools #> 
-
-    Backup-DbaDatabase -SqlCredential $cred -SqlInstance 'seis-work,1433' -Database StackOverflow2010
-
-    $Backup = Get-ChildItem -path C:\temp\Docker\SQL1\*.bak 
-    $Backup | Copy-Item -Destination C:\temp\Docker\SQL2
-    $backup.name
-
-    Invoke-DBAQuery -sqlinstance 'seis-work,1434'  -SqlCredential $cred -query  "
-
-        USE [master]
-            RESTORE DATABASE [StackOverflow2010] FROM  DISK = N'/var/opt/mssql/data/$($backup.name)' WITH  FILE = 1,  MOVE N'StackOverflow2010' TO N'/var/opt/mssql/data/StackOverflow2010.mdf',  MOVE N'StackOverflow2010_log' TO N'/var/opt/mssql/data/StackOverflow2010_log.ldf',  NOUNLOAD,  STATS = 5
-
-        GO
-    "
 
 <# Script to Clear the previous backup and restored database #> 
 
