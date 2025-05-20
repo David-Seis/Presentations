@@ -4,7 +4,7 @@
     $Role = "Hobbit of the Shire"
 
     # Use variables in a string
-    $message = "Greetings, I am $characterName, a $characterJob and I am a $Role on a quest to destroy the One Ring."
+    $message = "Greetings, I am $($characterName), a $characterJob and I am a $Role on a quest to destroy the One Ring."
 
     # Output the message
     Write-Output $message
@@ -24,5 +24,5 @@
 
     # Perform multiplication
     $product = $number1 * $number2
-    Write-Output "The product of $number1 and $number2 is $product."
+    Write-Output "The product of $number1 and $number2 is `$$product."
 

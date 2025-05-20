@@ -7,6 +7,7 @@
     # 3. SendGrid account for email sending
     # 4. SendGrid token stored in C:\temp\Demo\Sendgrid.txt
     
+    $ServiceAccount = $host.ui.PromptForCredential("Task Scheduler account", "Please enter the domainname\username and password for the service account that will run the tasks (password expiry = never is ideal). ", "TaskUser", "")
 
     <# Necessary Variables #>
     $reportname = "Job Run Report"
@@ -15,20 +16,19 @@
     $jobserver = 'Seis-Work'
     $monitoringTarget = $sqlinstance
 
-    $ServiceAccount = $host.ui.PromptForCredential("Task Scheduler account", "Please enter the domainname\username and password for the service account that will run the tasks (password expiry = never is ideal). ", "DOMAIN\Account", "")
-
+ 
     $EmailRecipients = 'David.seis@straightpathsql.com;' #separate with semicolons
 
     Write-Host "Creating Powershell File..." -ForegroundColor Green
-    New-Item -Path "\\$jobserver\C`$\StraightPath\Reports" -Name "$reportname`Script.ps1" -ItemType 'file' -value "
+    New-Item -Path "C:\StraightPath\Reports" -Name "$reportname`Script.ps1" -ItemType 'file' -value "
         
     <# Create C:\StraightPath\Reports for all the reports to go into#>
-        `$dir = `"\\$jobserver\C$\StraightPath\Reports`"
+        `$dir = `"C:\StraightPath\Reports`"
         If(!(test-path -PathType container `$dir))
         {
             New-Item -ItemType Directory -Path `$path
         }
-        `$path=`"\\$jobserver\C$\StraightPath\Reports\$clientname`_$reportname`$(get-date -f MM-dd-yyyy).htm`"
+        `$path=`"C:\StraightPath\Reports\$clientname`_$reportname`$(get-date -f MM-dd-yyyy).htm`"
 
         `$SQLInstance= `"$monitoringTarget`"
 
@@ -124,7 +124,7 @@
 
 
     Write-Host "Creating XML File..." -ForegroundColor Green
-    New-Item -Path "\\$jobserver\C$\Straightpath\Reports" -Name "$reportname`_Task.xml" -ItemType 'file' -value "<?xml version=`"1.0`" encoding=`"UTF-16`"?>
+    New-Item -Path "C:\StraightPath\Reports" -Name "$reportname`_Task.xml" -ItemType 'file' -value "<?xml version=`"1.0`" encoding=`"UTF-16`"?>
     <Task version=`"1.2`" xmlns=`"http://schemas.microsoft.com/windows/2004/02/mit/task`">
         <RegistrationInfo>
         <Date>2022-02-23T12:59:09.8081565</Date>
@@ -188,4 +188,4 @@
     </Actions>
     </Task>"
 
-    Register-ScheduledTask -Xml (get-content "\\$jobserver\C$\StraightPath\Reports\$reportname`_Task.xml" | out-string) -Taskname "_REPORT_$reportname" -User ($ServiceAccount.GetNetworkCredential().username) -Password $($ServiceAccount.GetNetworkCredential().Password) 
+    Register-ScheduledTask -Xml (get-content "C:\StraightPath\Reports\$reportname`_Task.xml" | out-string) -Taskname "_REPORT_$reportname" -User ($ServiceAccount.GetNetworkCredential().username) -Password $($ServiceAccount.GetNetworkCredential().Password) 

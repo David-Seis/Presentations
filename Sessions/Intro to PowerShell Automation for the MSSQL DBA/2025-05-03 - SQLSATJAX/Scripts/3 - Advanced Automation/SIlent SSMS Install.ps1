@@ -1,6 +1,6 @@
 <# SSMS update script #>
     
-$uninstallold = 0
+$uninstallold = 1
 
 <# Current install audit #>    
 Get-WmiObject Win32_product | Where-Object {$_.name -eq "SQL Server Management Studio"} | ForEach-object {

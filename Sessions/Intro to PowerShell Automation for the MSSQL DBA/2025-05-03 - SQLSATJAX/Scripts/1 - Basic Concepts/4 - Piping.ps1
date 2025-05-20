@@ -6,7 +6,7 @@
     $Actors = "Viggo Mortensen", "Elijah Wood", "Ian McKellen", "Orlando Bloom", "Sean Bean", "Liv Tyler"
 
     # Use piping to filter and manipulate data
-    $Actors | Where-Object { $_ -match 'Mortensen' } | ForEach-Object { "$_ is the true king" }
+    $Actors | Where-Object { $_ -match 'o' } | ForEach-Object { "$_ is the true king" }
 
 
 # Demo 2: Sorting and selecting data

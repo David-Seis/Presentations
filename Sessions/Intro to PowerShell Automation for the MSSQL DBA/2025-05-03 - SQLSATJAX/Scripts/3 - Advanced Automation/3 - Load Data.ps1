@@ -1,12 +1,13 @@
-New-DbaDatabase -SqlInstance "Presenter" -name "Admin" -SqlCredential $cred
+$SQLInstance =  "Seis-Work"
 
-Import-DbaCsv -Path "C:\Temp\Demo\Home-lab_InstanceTracking.csv"  -SqlInstance "Presenter" -SqlCredential $cred -Database "Admin" -AutoCreateTable
+
+Import-DbaCsv -Path "C:\Temp\Demo\Home-lab_InstanceTracking.csv"  -SqlInstance $SQLInstance -Database "DB_Administration" -AutoCreateTable
 
 
 <# Query Loaded data #>
 <# Code to show that the tabel is present - Using Invoke-DBAquery from Dbatools #> 
 
-invoke-dbaquery -sqlinstance "Presenter" -SQLcredential $cred -query  "
+invoke-dbaquery -sqlinstance $SQLInstance -query  "
 
 	SELECT [Machine_Name]
       ,[Instance_Name]
@@ -25,22 +26,22 @@ invoke-dbaquery -sqlinstance "Presenter" -SQLcredential $cred -query  "
       ,[local_tcp_port]
       ,[num_error_logs]
       ,[Collection_Date]
-  FROM [Admin].[dbo].[Home-lab_InstanceTracking]
+  FROM [DB_Administration].[dbo].[Home-lab_InstanceTracking]
 
         
-" | Format-Table
+" | Out-GridView
 
 
 <# Get Action items#>
 <# query to get action items from the data #>
 
-Invoke-DbaQuery -SqlInstance "Presenter" -SqlCredential $cred -Query "
-USE Admin
+Invoke-DbaQuery -SqlInstance "Seis-Work" -Query "
+
 SELECT 
 machine_name
 ,	Instance_name
 ,   'Sa is enabled for login - please correct immediately'
-FROM [ADMIN].[dbo].[Home-lab_InstanceTracking]
+FROM [DB_Administration].[dbo].[Home-lab_InstanceTracking]
 Where is_sa_disabled = 'False'
 " 
 <# Environment Cleanup #>
@@ -52,7 +53,7 @@ If((test-path -PathType container $outputPath))
     Write-Host "$outputPath Directory was removed"
 }
 
-Invoke-DbaQuery -SqlInstance "Presenter" -SqlCredential $cred -Query "
+Invoke-DbaQuery -SqlInstance "Seis-Work" -Query "
     DROP DATABASE ADMIN
 " 
 

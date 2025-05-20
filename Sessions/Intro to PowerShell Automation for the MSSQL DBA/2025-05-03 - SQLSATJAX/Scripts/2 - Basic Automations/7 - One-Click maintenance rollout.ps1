@@ -53,7 +53,7 @@ $SPWhoisactiveDB            = 'master' # where Whoisactive will be installed
 
 <#Ola Parameters#>
 $olaParams = @{
-    CleanupTime             = 336
+    CleanupTime             = 72
     BackupLocation          = '\\labshare\SQLBackups' #Backup location for OLA jobs
     Database                = $Databasename
     InstallJobs             = $true

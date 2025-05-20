@@ -1,6 +1,5 @@
 <# Credentials and Targets#>
-$SQLInstance =  "Seis-Work,1433", "Seis-Work,1434", "Seis-Work,1435", "Seis-Work,1436", "Seis-Work,1437", "Presenter"
-$cred = $host.ui.PromptForCredential("SQL Credential", "Please enter the username and password for the SQL Auth account", "sa", "")
+$SQLInstance =  "Seis-Work"
 
 Set-DbatoolsConfig -FullName sql.connection.trustcert -Value $true -register 
 
@@ -12,8 +11,7 @@ If(!(test-path -PathType container $DemoDir))
 
 
 Write-Host "Instance tracking..." -ForegroundColor Green
-Foreach ($inst in $SQLInstance) {
-$serverdetails = Invoke-dbaquery -SqlInstance $Inst -SqlCredential $cred -Query "
+$serverdetails = Invoke-dbaquery -SqlInstance $SQLInstance -Query "
 IF OBJECT_ID('tempdb..#ola') IS NOT NULL
 DROP TABLE #ola
     CREATE TABLE #ola (
@@ -95,4 +93,4 @@ SELECT
     } ELSE {
         $ServerDetails | Export-Csv -Path $CSVpath -Delimiter "," -NoTypeInformation -Append
     }
-    }
+
