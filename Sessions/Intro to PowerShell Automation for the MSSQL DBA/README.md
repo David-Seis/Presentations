@@ -4,7 +4,6 @@
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-In this Session you'll cover the basics of powershell automation and how it can save time for the work of the SQL Server DBA. 
+Let's face it, our data estates are growing while our Database Administration teams are not. How do we handle this? I will show you how PowerShell can transform common DBA tasks into easily packaged scripts that are quicker to deploy and less error prone. When you leave, you will be equipped to solve DBA issues faster and be prepared for the ever-changing database landscape. 
 
-Please use the saved powerpoint, notebooks, and recorded demos for further reference. Over time I will add this and other PowerShell Sessions into a Workshop.
 <dl>
