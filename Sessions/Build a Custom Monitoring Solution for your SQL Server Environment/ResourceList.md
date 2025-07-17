@@ -3,7 +3,7 @@
 <img src="./graphics/QR Code.png" alt="QR COde" width="200" height="200"/>
 
 ## Downloads and Survey
-- [Slides, Scripts, and Demos - [YYYY-MM-DD - EVENT]](https://github.com/David-Seis/Presentations/tree/main/Sessions/Building%20a%20Custom%20Monitoring%20Solution/1%20-%20History)
+- [Slides, Scripts, and Demos - [YYYY-MM-DD - EVENT]](https://github.com/David-Seis/Presentations/tree/main/Sessions/Build%20a%20Custom%20Monitoring%20Solution%20for%20your%20SQL%20Server%20Environment/1%20-%20History)
 - [Please review the session!](https://forms.office.com/r/HQmuRnDQnd)
 
 ## Referenced and Extra Resources

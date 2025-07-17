@@ -1,4 +1,4 @@
-# Introduction to Powershell the SQL Server DBA Resource list
+# PowerBI for the Accidental Data Analyst - Resource list
 
 <img src="./graphics/QR Code.png" alt="QR COde" width="200" height="200"/>
 

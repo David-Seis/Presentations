@@ -1,4 +1,4 @@
-# Introduction to Powershell the SQL Server DBA Resource list
+# Intro to PowerShell Automation for the SQL Server DBA - Resource list
 
 <img src="./graphics/QR Code.png" alt="QR COde" width="200" height="200"/>
 

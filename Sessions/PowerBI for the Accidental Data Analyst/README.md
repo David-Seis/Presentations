@@ -1,4 +1,4 @@
-# Session: Intro to PowerShell Automation for the SQL Server DBA 
+# Session: PowerBI for the Accidental Data Analyst
 
 #### <i>A Session from David Seis</i>
 

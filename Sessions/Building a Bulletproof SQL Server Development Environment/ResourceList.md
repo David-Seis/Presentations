@@ -1,4 +1,4 @@
-# Introduction to Powershell the SQL Server DBA Resource list
+# Building a Bulletproof SQL Server Development Environment - Resource list
 
 <img src="./graphics/QR Code.png" alt="QR COde" width="200" height="200"/>
 
