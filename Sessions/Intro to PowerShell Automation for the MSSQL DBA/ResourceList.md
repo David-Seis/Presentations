@@ -4,7 +4,7 @@
 
 
 ## Downloads and Survey
-- [Slides,Scripts, and Demos, [YYYY-MM-DD - EVENT]](https://github.com/David-Seis/Presentations/tree/main/Sessions/Intro%20to%20PowerShell%20Automation%20for%20the%20MSSQL%20DBA/1%20-%20History)
+- [Slides, Scripts, and Demos - [YYYY-MM-DD - EVENT]](https://github.com/David-Seis/Presentations/tree/main/Sessions/Intro%20to%20PowerShell%20Automation%20for%20the%20MSSQL%20DBA/1%20-%20History)
 - [Please review the session!](https://forms.office.com/r/HQmuRnDQnd)
 
 ## Referenced and Extra Resources

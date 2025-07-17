@@ -4,7 +4,7 @@
 
 
 ## Downloads and Survey
-- [Slides,Scripts, and Demos, [YYYY-MM-DD - EVENT]](https://github.com/David-Seis/Presentations/tree/main/Sessions/PowerBI%20for%20the%20Accidental%20Data%20Analyst/1%20-%20History)
+- [Slides, Scripts, and Demos - [YYYY-MM-DD - EVENT]](https://github.com/David-Seis/Presentations/tree/main/Sessions/PowerBI%20for%20the%20Accidental%20Data%20Analyst/1%20-%20History)
 - [Please review the session!](https://forms.office.com/r/HQmuRnDQnd)
 
 ## Referenced and Extra Resources
