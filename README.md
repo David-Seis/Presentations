@@ -1,14 +1,16 @@
 # Presentations and courses 
+David Seis -  DBA & Proactive Team Lead:  Straight Path IT Solutions, LLC.
 
-#### David Seis -  Remote DBA:  Straight Path IT Solutions, LLC.
-
-## Tampa Bay SQL User Group:
-
-- [Social Hub and Info](https://www.aka.ms/TFAB)
+## Connect with me:
+- [Tampa Fabric User Group](https://www.aka.ms/TFAB)
+- [Linkedin](https://www.linkedin.com/in/davidseis/)
+- [Email](mailto:david.seis@straightpathsql.com)
 
 ## Presentations:
 
 - [Intro to Powershell Automation for the SQL Server DBA](https://github.com/David-Seis/Presentations/tree/main/Intro%20to%20PowerShell%20Automation%20for%20the%20SQL%20Server%20DBA%20(100))
+- [Building a Bulletproof SQL Server Development Environment](https://github.com/David-Seis/Presentations/tree/main/Sessions/Building%20a%20Bulletproof%20SQL%20Server%20Development%20Environment(100))
+- [Build a Custom Monitoring Solution for your SQL Server Environment]()
 
 ## Notebooks and Courses
 

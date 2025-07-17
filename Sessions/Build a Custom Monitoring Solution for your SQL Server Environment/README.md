@@ -1,4 +1,4 @@
-# Session: Building a Custom Monitoring Solution
+# Session: Build a Custom Monitoring Solution for your SQL Server Environment
 
 #### <i>A Session from David Seis</i>
 
