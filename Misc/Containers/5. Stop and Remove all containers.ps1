@@ -1,4 +1,4 @@
-Set-Location -Path "C:\Users\DavidSeis\Documents\Git\Presentations\Misc\Containers"
+Set-Location -Path "C:\Temp\ContainerData"
 
 
 $containers = docker ps -a --format "{{.Names}}"
