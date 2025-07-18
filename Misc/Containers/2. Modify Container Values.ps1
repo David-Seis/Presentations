@@ -25,12 +25,3 @@ $cred = $host.ui.PromptForCredential("SQL Credential", "Please enter the usernam
 Set-DbatoolsConfig -FullName sql.connection.trustcert -Value $true -register  
 
 
-invoke-dbaquery -sqlinstance $sqlinstance -SQLcredential $cred -query  "
-
-	SELECT @@SERVERNAME AS [Server Name]
-	,	SERVERPROPERTY('Edition') AS [SQL Edition]
-	,	SERVERPROPERTY('ProductUpdateLevel') AS [Update level]
-	,	SERVERPROPERTY('ProductVersion') AS [Build]
-	,	@@VERSION AS [Version]
-        
-" | Format-Table
