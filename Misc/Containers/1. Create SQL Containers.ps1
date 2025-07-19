@@ -3,6 +3,7 @@ $sqlinstance = @()
 docker run --name "SQL1-25-1" `
     -e "ACCEPT_EULA=Y" `
     -e "MSSQL_SA_PASSWORD=Str0ngP@sSw0rd !" `
+    -e "MSSQL_AGENT_ENABLED=true" `
     -p "16000:1433" `
     --hostname SQL1-25-1 `
     -d mcr.microsoft.com/mssql/server:2025-latest
@@ -12,6 +13,7 @@ docker run --name "SQL1-25-1" `
 docker run --name "SQL2-25-2" `
     -e "ACCEPT_EULA=Y" `
     -e "MSSQL_SA_PASSWORD=Str0ngP@sSw0rd !" `
+    -e "MSSQL_AGENT_ENABLED=true" `
     -p "16001:1433" `
     --hostname SQL2-25-2 `
     -d mcr.microsoft.com/mssql/server:2025-latest
@@ -21,6 +23,7 @@ docker run --name "SQL2-25-2" `
 docker run --name "SQL3-25-3" `
     -e "ACCEPT_EULA=Y" `
     -e "MSSQL_SA_PASSWORD=Str0ngP@sSw0rd !" `
+    -e "MSSQL_AGENT_ENABLED=true" `
     -p "16002:1433" `
     --hostname SQL3-25-3 `
     -d mcr.microsoft.com/mssql/server:2025-latest
