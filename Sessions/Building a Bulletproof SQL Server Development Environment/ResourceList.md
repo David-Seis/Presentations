@@ -11,6 +11,7 @@
 - [DBATools Powershell Module](https://dbatools.io/commands/)
 - [Visual Studio Code IDE](https://code.visualstudio.com/)
 - [David's Blog Posts](https://straightpathsql.com/archives/author/davidseis/)
+- [Container Scripts](https://github.com/David-Seis/Presentations/tree/main/Misc/Containers)
 
 ## Connect
 - [Linkedin](https://www.linkedin.com/in/davidseis/)

@@ -14,6 +14,8 @@
 - [David's Blog Posts](https://straightpathsql.com/archives/author/davidseis/)
 - [Straight Path Blog](https://straightpathsql.com/blog/)
 - [Ola Hallengrin 'One Click Rollout' from the presentation](https://straightpathsql.com/archives/2023/01/ola-maintenance-from-a-jr-dba/)
+- [Container Scripts](https://github.com/David-Seis/Presentations/tree/main/Misc/Containers)
+
 
 ## Connect
 - [Linkedin](https://www.linkedin.com/in/davidseis/)
