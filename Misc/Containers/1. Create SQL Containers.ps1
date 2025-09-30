@@ -66,6 +66,7 @@ docker run --name "SQL6-19-1" `
     
     $sqlinstance += "Seis-Work,16005"
 
+<#
 docker run --name "SQL7-19-2" `
     -e "ACCEPT_EULA=Y" `
     -e "MSSQL_SA_PASSWORD=Str0ngP@sSw0rd !" `
@@ -137,6 +138,7 @@ docker run --name "SQL12-17-5" `
     -d mcr.microsoft.com/mssql/server:2017-latest 
 
     $sqlinstance += "Seis-Work,16011"
+#>
 
 $sqlinstance
 

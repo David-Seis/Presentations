@@ -1,4 +1,4 @@
-Invoke-DbaQuery -SqlInstance $sqlinstance -SQLCredential $cred -Query "
+Invoke-DbaQuery -SqlInstance $sqlinstance  -Query "
 DECLARE @num_logs int;
 EXEC xp_instance_regread N'HKEY_LOCAL_MACHINE',N'Software\Microsoft\MSSQLServer\MSSQLServer',N'NumErrorLogs',@num_logs OUTPUT;
 
@@ -28,7 +28,7 @@ SELECT    SERVERPROPERTY('MachineName') AS Machine_Name
 ,   CONNECTIONPROPERTY('local_tcp_port')                                                              AS local_tcp_port
 ,   (SELECT COUNT(memory_node_id) From sys.dm_os_memory_nodes where memory_node_id <> 64)             AS NUMA_Nodes
 ,   GETDATE()                                                                                         AS Collection_Date
-" | Out-GridView
+" | Export-Csv -Path ".\ServerInfo.csv" -Delimiter "," -Force -NoTypeInformation
 
 
 
