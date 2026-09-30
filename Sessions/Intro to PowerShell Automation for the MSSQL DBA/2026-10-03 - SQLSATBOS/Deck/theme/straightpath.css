@@ -1,0 +1,310 @@
+/* @theme straightpath */
+
+/*
+ * Straight Path IT Solutions — Marp theme
+ * Palette lifted from the branded 2025 PowerPoint template (theme1.xml):
+ *   CC0000 brand red · 790000 deep red · 222222 ink · 767676 muted
+ */
+
+@import 'default';
+
+:root {
+  --sp-red: #cc0000;
+  --sp-red-deep: #790000;
+  --sp-ink: #222222;
+  --sp-muted: #767676;
+  --sp-rule: #e4e4e4;
+  --sp-wash: #f7f7f7;
+  --sp-dark: #1a1a1a;
+
+  --sp-sans: "Segoe UI", Calibri, system-ui, -apple-system, sans-serif;
+  --sp-mono: "Cascadia Code", "JetBrains Mono", Consolas, monospace;
+}
+
+section {
+  font-family: var(--sp-sans);
+  background: #ffffff;
+  color: var(--sp-ink);
+  font-size: 26px;
+  line-height: 1.45;
+  padding: 62px 72px;
+  justify-content: flex-start;
+}
+
+/* ---------- headings ---------- */
+
+section h1 {
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: -0.6px;
+  color: var(--sp-ink);
+  margin: 0 0 30px;
+}
+
+section h2 {
+  font-size: 34px;
+  font-weight: 600;
+  color: var(--sp-ink);
+  margin: 0 0 20px;
+}
+
+section h3 {
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--sp-ink);
+  margin: 26px 0 10px;
+}
+
+/* h6 is repurposed as the red eyebrow/kicker label — the deck's one motif */
+section h6 {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2.6px;
+  text-transform: uppercase;
+  color: var(--sp-red);
+  margin: 0 0 16px;
+}
+
+/* ---------- lists: square red markers ---------- */
+
+section ul,
+section ol {
+  padding-left: 0;
+  margin: 0;
+}
+
+section ul {
+  list-style: none;
+}
+
+section ul > li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 17px;
+}
+
+section ul > li::before {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 0.54em;
+  width: 9px;
+  height: 9px;
+  border-radius: 2px;
+  background: var(--sp-red);
+}
+
+section ul ul {
+  margin-top: 12px;
+}
+
+section ul ul > li {
+  font-size: 0.82em;
+  color: var(--sp-muted);
+  margin-bottom: 8px;
+}
+
+section ul ul > li::before {
+  background: var(--sp-muted);
+  width: 7px;
+  height: 7px;
+  top: 0.58em;
+}
+
+section strong {
+  font-weight: 600;
+  color: var(--sp-ink);
+}
+
+section em {
+  color: var(--sp-muted);
+  font-style: italic;
+}
+
+section a {
+  color: var(--sp-red);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(204, 0, 0, 0.35);
+}
+
+/* ---------- two-column bullet flow (no inline HTML needed) ---------- */
+
+section.two-col > ul {
+  columns: 2;
+  column-gap: 52px;
+}
+
+section.two-col > ul > li {
+  break-inside: avoid;
+}
+
+/* ---------- title / closing slides ---------- */
+
+section.lead {
+  background: var(--sp-dark);
+  color: #ffffff;
+  justify-content: center;
+  padding: 62px 84px;
+}
+
+section.lead h1 {
+  color: #ffffff;
+  font-size: 58px;
+  line-height: 1.12;
+  margin-bottom: 22px;
+  max-width: 19ch;
+}
+
+section.lead h6 {
+  color: #ff5a5a;
+}
+
+section.lead p {
+  font-size: 25px;
+  color: #c9c9c9;
+  margin: 6px 0;
+}
+
+section.lead strong {
+  color: #ffffff;
+}
+
+section.lead a {
+  color: #ff8a8a;
+  border-bottom-color: rgba(255, 138, 138, 0.4);
+}
+
+section.lead ul > li::before {
+  background: #ff5a5a;
+}
+
+/* ---------- code ---------- */
+
+section pre {
+  background: #1e1e1e;
+  border: none;
+  border-radius: 8px;
+  padding: 22px 26px;
+  font-size: 20px;
+  line-height: 1.52;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.14);
+}
+
+section pre code {
+  font-family: var(--sp-mono);
+  color: #d4d4d4;
+  background: transparent;
+}
+
+section :not(pre) > code {
+  font-family: var(--sp-mono);
+  font-size: 0.86em;
+  background: var(--sp-wash);
+  color: var(--sp-red-deep);
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+
+/* VS Code Dark+ token colours, so PowerShell reads the way it does in the editor */
+section pre code .hljs-comment    { color: #6a9955; font-style: italic; }
+section pre code .hljs-keyword    { color: #569cd6; }
+section pre code .hljs-literal    { color: #569cd6; }
+section pre code .hljs-built_in   { color: #dcdcaa; }
+section pre code .hljs-title      { color: #dcdcaa; }
+section pre code .hljs-function   { color: #dcdcaa; }
+section pre code .hljs-string     { color: #ce9178; }
+section pre code .hljs-number     { color: #b5cea8; }
+section pre code .hljs-variable   { color: #9cdcfe; }
+section pre code .hljs-attr       { color: #9cdcfe; }
+section pre code .hljs-params     { color: #9cdcfe; }
+section pre code .hljs-selector-tag { color: #569cd6; }
+section pre code .hljs-type       { color: #4ec9b0; }
+section pre code .hljs-symbol     { color: #d7ba7d; }
+section pre code .hljs-meta       { color: #9cdcfe; }
+
+/* ---------- tables ---------- */
+
+section table {
+  /* Marp Core ships a GitHub-style base rule (display:block; width:max-content)
+     under a higher-specificity selector, so these two need !important. */
+  display: table !important;
+  width: 100% !important;
+  border-collapse: collapse;
+  font-size: 21px;
+  margin: 8px 0;
+}
+
+section table th {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: var(--sp-muted);
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--sp-ink);
+  padding: 0 16px 9px 0;
+}
+
+section table td {
+  border: none;
+  border-bottom: 1px solid var(--sp-rule);
+  padding: 11px 16px 11px 0;
+  vertical-align: top;
+}
+
+section table tr:last-child td {
+  border-bottom: none;
+}
+
+/* ---------- blockquote as a pull-callout ---------- */
+
+section blockquote {
+  border: none;
+  background: var(--sp-wash);
+  border-radius: 8px;
+  padding: 22px 28px;
+  margin: 18px 0;
+  font-size: 24px;
+  color: var(--sp-ink);
+}
+
+section blockquote::before,
+section blockquote::after {
+  content: none;
+}
+
+/* ---------- big stat ---------- */
+
+section .stat {
+  font-size: 72px;
+  font-weight: 700;
+  color: var(--sp-red);
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+/* ---------- chrome ---------- */
+
+section::after {
+  color: var(--sp-muted);
+  font-size: 15px;
+  right: 40px;
+  bottom: 26px;
+}
+
+section.lead::after {
+  color: #6f6f6f;
+}
+
+section footer {
+  color: var(--sp-muted);
+  font-size: 15px;
+  left: 72px;
+  bottom: 24px;
+}
+
+section.lead footer {
+  color: #6f6f6f;
+}

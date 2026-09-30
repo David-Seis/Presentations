@@ -1,0 +1,19 @@
+{
+  "name": "powershell-automation-deck",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Intro to PowerShell Automation for the SQL Server DBA - SQL Saturday Boston 2026-10-03",
+  "scripts": {
+    "dev": "marp --watch --preview slides.md",
+    "serve": "marp --server .",
+    "html": "marp slides.md --output deck.html",
+    "pdf": "marp slides.md --pdf --allow-local-files --output dist/deck.pdf",
+    "notes": "marp slides.md --pdf --pdf-notes --allow-local-files --output dist/deck-with-notes.pdf",
+    "pptx": "marp slides.md --pptx --allow-local-files --output dist/deck.pptx",
+    "png": "marp slides.md --images png --allow-local-files --output dist/slide.png",
+    "build": "npm run html && npm run pdf && npm run notes && npm run pptx"
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "^4.2.4"
+  }
+}

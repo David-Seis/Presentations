@@ -1,0 +1,7 @@
+# Marp CLI configuration.
+# themeSet points at the local theme folder so `theme: straightpath` in the
+# slide front-matter resolves without passing --theme on every command.
+themeSet:
+  - ./theme
+# Required for PDF / PPTX / image export to embed local files (the QR code).
+allowLocalFiles: true
