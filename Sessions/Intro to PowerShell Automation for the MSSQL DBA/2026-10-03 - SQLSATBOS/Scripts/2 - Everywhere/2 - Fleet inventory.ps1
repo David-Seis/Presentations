@@ -75,6 +75,9 @@ $CsvPath  = Join-Path $OutputPath "FleetInventory_$Stamp.csv"
 
 <# ---------- Now ask it a question ---------- #>
 
+    # In the lab the first two come back empty -- which is the answer you want.
+    # On a real estate they rarely do.
+
     # Anything on an unsupported compatibility level?
     $databases | Where-Object Compatibility -lt 'Version140' |
         Select-Object SqlInstance, Name, Compatibility
@@ -84,8 +87,9 @@ $CsvPath  = Join-Path $OutputPath "FleetInventory_$Stamp.csv"
     $databases | Where-Object Owner -ne 'sa' |
         Select-Object SqlInstance, Name, Owner
 
-    # FULL recovery with no log backup -- the log will grow until the disk fills
-    $databases | Where-Object { $_.RecoveryModel -eq 'Full' -and -not $_.LastLogBackup } |
+    # FULL recovery with no log backup -- the log will grow until the disk fills.
+    # ("Never" is 1 January 0001, not $null -- see 1 - Once\4 - Piping.ps1.)
+    $databases | Where-Object { $_.RecoveryModel -eq 'Full' -and $_.LastLogBackup -lt [datetime]'1900-01-01' } |
         Select-Object SqlInstance, Name, RecoveryModel, LastFullBackup
 
 

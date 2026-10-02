@@ -21,6 +21,17 @@
     $DestinationDb = 'Sales_Dev'
     $BackupFile    = "$LabContainerBackupPath/sqlsat2022_Sales_FULL.bak"
 
+    # Dry run by default. Every step below only SAYS what it would do -- including
+    # step 3, which copies EVERY non-system login and, with -Force, drops and
+    # recreates any that already exist on the destination. Read the list, then set
+    # this to $false and run it again.
+    $DryRun        = $true
+
+    if ($DryRun) {
+        Write-Host "DRY RUN -- nothing below will change. Set `$DryRun = `$false to do it for real." -ForegroundColor Yellow
+        Write-Host "(Steps 2, 4 and 5 will warn that $DestinationDb does not exist -- in a dry run it does not, yet.)" -ForegroundColor Yellow
+    }
+
 
 <# ---------- 1. Restore ---------- #>
 
@@ -31,7 +42,7 @@
         -DatabaseName                     $DestinationDb `
         -ReplaceDbNameInFile `
         -UseDestinationDefaultDirectories `
-        -WithReplace | Out-Null
+        -WithReplace -WhatIf:$DryRun | Out-Null
 
 
 <# ---------- 2. Recovery model ---------- #>
@@ -44,7 +55,7 @@
 
     Write-Host "2/6  Setting SIMPLE recovery..." -ForegroundColor Green
     Set-DbaDbRecoveryModel -SqlInstance $Destination @Lab `
-        -Database $DestinationDb -RecoveryModel Simple -Confirm:$false | Out-Null
+        -Database $DestinationDb -RecoveryModel Simple -Confirm:$false -WhatIf:$DryRun | Out-Null
 
 
 <# ---------- 3. Logins ---------- #>
@@ -57,7 +68,7 @@
     Write-Host "3/6  Copying logins..." -ForegroundColor Green
     Copy-DbaLogin -Source $Source -Destination $Destination `
         -SourceSqlCredential $LabCredential -DestinationSqlCredential $LabCredential `
-        -ExcludeSystemLogins -Force | Out-Null
+        -ExcludeSystemLogins -Force -WhatIf:$DryRun | Out-Null
 
 
 <# ---------- 4. Orphaned users ---------- #>
@@ -69,13 +80,13 @@
 #>
 
     Write-Host "4/6  Repairing orphaned users..." -ForegroundColor Green
-    Repair-DbaDbOrphanUser -SqlInstance $Destination @Lab -Database $DestinationDb | Out-Null
+    Repair-DbaDbOrphanUser -SqlInstance $Destination @Lab -Database $DestinationDb -WhatIf:$DryRun | Out-Null
 
 
 <# ---------- 5. Ownership ---------- #>
 
     Write-Host "5/6  Setting database owner..." -ForegroundColor Green
-    Set-DbaDbOwner -SqlInstance $Destination @Lab -Database $DestinationDb -TargetLogin sa | Out-Null
+    Set-DbaDbOwner -SqlInstance $Destination @Lab -Database $DestinationDb -TargetLogin sa -WhatIf:$DryRun | Out-Null
 
 
 <# ---------- 6. Make it obviously not production ---------- #>
@@ -88,7 +99,8 @@
 
     Write-Host "6/6  Post-refresh cleanup..." -ForegroundColor Green
 
-    Invoke-DbaQuery -SqlInstance $Destination @Lab -Database $DestinationDb -Query "
+    # Invoke-DbaQuery has no -WhatIf, so the dry run simply skips it.
+    if (-not $DryRun) { Invoke-DbaQuery -SqlInstance $Destination @Lab -Database $DestinationDb -Query "
         -- Break anything that could contact the outside world from a dev copy.
         -- Adapt this to your schema; the principle is what matters.
         IF OBJECT_ID('dbo.EmailQueue') IS NOT NULL
@@ -98,7 +110,7 @@
             UPDATE dbo.AppConfig
             SET    ConfigValue = 'DEV'
             WHERE  ConfigKey = 'Environment';
-    "
+    " }
 
 
 <# ---------- Sensitive data ---------- #>

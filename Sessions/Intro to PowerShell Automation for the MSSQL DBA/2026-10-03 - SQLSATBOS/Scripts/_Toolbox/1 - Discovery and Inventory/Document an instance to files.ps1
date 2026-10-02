@@ -27,6 +27,7 @@
 
 <# ---------- Everything ---------- #>
 
+    # Slow by nature: about four and a half minutes for the four lab servers.
     Export-DbaInstance -SqlInstance $Targets @Lab -Path $ExportRoot
 
     Write-Host "`nExported to $ExportRoot" -ForegroundColor Green

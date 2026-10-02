@@ -1,25 +1,23 @@
 <#
     BONUS  --  a real automation that did not fit the session's argument.
 
-    Runs against the demo lab. Build it first with _Setup\1 - Deploy lab.ps1,
-    or edit $Targets in _Setup\Environment.ps1 to point at your own servers
-    (and delete the @Lab from each command -- Windows auth needs no credential).
+    Plain T-SQL, run through dbatools: the "I already have a script" case.
+
+    Written for a default SQL Server 2022 instance on Windows (MSSQL16 paths) and
+    the AdventureWorks2022 sample. It does NOT run against the container lab as-is:
+    point $Targets at that server, check the path, and delete the @Lab (Windows
+    auth needs no credential).
 #>
 
 . "$PSScriptRoot\..\_Setup\Environment.ps1"
-
-
-Set-DbatoolsConfig -FullName sql.connection.trustcert -Value $true -register  
-
-<# Credentials and Targets#>
 
 
 # Restore a database via DBAtools
     Invoke-DBAQuery -sqlinstance $Targets @Lab -query  "
 
     USE [master]
-    RESTORE DATABASE [AdventureWorks2022] 
-    FROM  DISK = N'C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\Backup\AdventureWorks2022.bak' 
+    RESTORE DATABASE [AdventureWorks2022]
+    FROM  DISK = N'C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\Backup\AdventureWorks2022.bak'
     WITH  FILE = 1,  NOUNLOAD,  STATS = 5
 
     GO

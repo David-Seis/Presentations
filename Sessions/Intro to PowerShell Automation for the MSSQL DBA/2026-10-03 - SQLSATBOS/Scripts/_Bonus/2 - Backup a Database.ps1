@@ -1,15 +1,16 @@
 <#
     BONUS  --  a real automation that did not fit the session's argument.
 
-    Runs against the demo lab. Build it first with _Setup\1 - Deploy lab.ps1,
-    or edit $Targets in _Setup\Environment.ps1 to point at your own servers
-    (and delete the @Lab from each command -- Windows auth needs no credential).
+    Plain T-SQL, run through dbatools: the "I already have a script" case.
+
+    Written for a default SQL Server 2022 instance on Windows (MSSQL16 paths). It
+    does NOT run against the container lab as-is: point $Targets at that server,
+    check the path, and delete the @Lab (Windows auth needs no credential).
+    DB_Administration is the admin database the Act 2 rollout creates.
 #>
 
 . "$PSScriptRoot\..\_Setup\Environment.ps1"
 
-
-Set-DbatoolsConfig -FullName sql.connection.trustcert -Value $true -register  
 
 # Targets and other variables
 
@@ -20,8 +21,8 @@ Set-DbatoolsConfig -FullName sql.connection.trustcert -Value $true -register
     $database = "DB_Administration"
 #backup a database via DBAtools
     Invoke-DBAQuery -sqlinstance $Targets @Lab   -query  "
-    BACKUP DATABASE [$database] 
-    TO  DISK = N'$($backuppath+$database)`_$($date).bak' 
+    BACKUP DATABASE [$database]
+    TO  DISK = N'$($backuppath+$database)`_$($date).bak'
     WITH    NOFORMAT
         ,   NOINIT
         ,   NAME = N'$database-Full Database Backup - $date'

@@ -136,7 +136,12 @@ Write-Output "Report written to $OutFile"
     approach, and they are built in -- no module required.
 #>
 
-    $action    = New-ScheduledTaskAction -Execute 'powershell.exe' `
+    # Run it with PowerShell 7 if it is installed -- it loads dbatools far faster
+    # than Windows PowerShell 5.1 does. Fall back to 5.1 if it is not.
+    $shell     = (Get-Command pwsh.exe -ErrorAction SilentlyContinue).Source
+    if (-not $shell) { $shell = 'powershell.exe' }
+
+    $action    = New-ScheduledTaskAction -Execute $shell `
                      -Argument "-NoProfile -ExecutionPolicy Bypass -File `"$ScriptPath`""
 
     $trigger   = New-ScheduledTaskTrigger -Daily -At $RunAt
@@ -145,10 +150,12 @@ Write-Output "Report written to $OutFile"
                      -DontStopIfGoingOnBatteries -AllowStartIfOnBatteries `
                      -ExecutionTimeLimit (New-TimeSpan -Hours 2)
 
+    # Registered for YOU, so no admin rights needed. (-RunLevel Highest would need an
+    # elevated terminal, and a read-only report has no use for it.)
     Register-ScheduledTask -TaskName "_REPORT_$ReportName" `
         -Action $action -Trigger $trigger -Settings $settings `
         -Description 'Daily SQL Server job failure and backup report' `
-        -RunLevel Highest -Force | Out-Null
+        -Force | Out-Null
 
     Write-Host "Scheduled task '_REPORT_$ReportName' registered for $RunAt daily." -ForegroundColor Green
 
@@ -156,18 +163,28 @@ Write-Output "Report written to $OutFile"
 <# ---------- 4. Check it ---------- #>
 
     Get-ScheduledTask -TaskName "_REPORT_$ReportName" |
-        Select-Object TaskName, State, @{ n = 'NextRun'; e = { ($_ | Get-ScheduledTaskInfo).NextRunTime } }
+        Select-Object TaskName, State, @{ n = 'NextRun'; e = { ($_ | Get-ScheduledTaskInfo).NextRunTime } } |
+        Format-Table -AutoSize
 
-    # Run it right now rather than waiting until 6am
+    # Run it right now rather than waiting until 6am, and wait for it to finish --
+    # a brand-new PowerShell has to load dbatools before it does anything.
     Start-ScheduledTask -TaskName "_REPORT_$ReportName"
 
-    Start-Sleep -Seconds 5
-    Get-ScheduledTaskInfo -TaskName "_REPORT_$ReportName" |
-        Select-Object TaskName, LastRunTime, LastTaskResult, NextRunTime
+    $deadline = (Get-Date).AddSeconds(120)
+    do { Start-Sleep -Seconds 2 }
+    while ((Get-ScheduledTask -TaskName "_REPORT_$ReportName").State -eq 'Running' -and (Get-Date) -lt $deadline)
 
-    # LastTaskResult of 0 means success. Anything else is a problem.
+    Get-ScheduledTaskInfo -TaskName "_REPORT_$ReportName" |
+        Select-Object TaskName, LastRunTime, LastTaskResult, NextRunTime |
+        Format-Table -AutoSize
+
+    # LastTaskResult of 0 means success. 267009 means it is still running.
+    # Anything else is a problem.
 
     Get-ChildItem $ReportRoot -Filter *.html | Sort-Object LastWriteTime -Descending | Select-Object -First 3
+
+    # And open it:
+    # Invoke-Item (Get-ChildItem $ReportRoot -Filter *.html | Sort-Object LastWriteTime -Descending | Select-Object -First 1).FullName
 
 
 <# ---------- Running as a service account ---------- #>
@@ -181,7 +198,9 @@ Write-Output "Report written to $OutFile"
         Register-ScheduledTask -TaskName "_REPORT_$ReportName" `
             -Action $action -Trigger $trigger -Settings $settings `
             -User $cred.UserName -Password $cred.GetNetworkCredential().Password `
-            -RunLevel Highest -Force
+            -Force
+
+    (Registering a task under another account needs an elevated terminal.)
 
     Or use a Group Managed Service Account (gMSA) and have no password at all.
 #>

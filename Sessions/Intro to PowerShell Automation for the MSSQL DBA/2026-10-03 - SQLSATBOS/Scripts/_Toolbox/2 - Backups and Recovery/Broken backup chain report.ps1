@@ -99,7 +99,7 @@
 <# ---------- FULL recovery, no log backups at all ---------- #>
 
     Get-DbaDatabase -SqlInstance $Targets -ExcludeSystem @Lab |
-        Where-Object { $_.RecoveryModel -eq 'Full' -and -not $_.LastLogBackup } |
+        Where-Object { $_.RecoveryModel -eq 'Full' -and $_.LastLogBackup -lt [datetime]'1900-01-01' } |   # "never" is 1 Jan 0001, not $null
         Select-Object SqlInstance, Name, RecoveryModel, LastFullBackup,
                       @{ n = 'Problem'; e = { 'FULL recovery with no log backups -- log will grow forever' } } |
         Format-Table -AutoSize

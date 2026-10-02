@@ -54,9 +54,11 @@
     "
 
     # -File runs a .sql file you already have in source control.
-    # $PSScriptRoot is the folder this script lives in, so the path works on any
-    # machine -- never hard-code C:\Users\YourName\... in a demo you have to travel with.
-    Invoke-DbaQuery -SqlInstance $OneTarget @Lab -File (Join-Path $PSScriptRoot 'basics.sql')
+    # Build the path from where the scripts live, so it works on any machine --
+    # never hard-code C:\Users\YourName\... in a demo you have to travel with.
+    # ($SessionScripts comes from Environment.ps1. $PSScriptRoot would do the same
+    #  job, but only when the whole file runs -- it is empty when you F8 a line.)
+    Invoke-DbaQuery -SqlInstance $OneTarget @Lab -File (Join-Path $SessionScripts '1 - Once\basics.sql')
 
 
 <# ---------- Splatting: the argument trick worth stealing today ---------- #>
@@ -71,10 +73,12 @@
     instead of on forty lines.
 #>
 
+    # 2022 on purpose, not $OneTarget: 2017 is the server with no backups at all,
+    # and Act 2 needs it to still have none when we get there.
     $BackupArgs = @{
-        SqlInstance  = $OneTarget
-        Database     = 'Sales'
-        Type         = 'Full'
+        SqlInstance    = 'localhost,14322'
+        Database       = 'Sales'
+        Type           = 'Full'
         CompressBackup = $true
     }
 

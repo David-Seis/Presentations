@@ -31,18 +31,28 @@ Everything else about the lab works offline.
 cd "_Setup"
 
 .\1 - Deploy lab.ps1      # build the fleet          (2-4 min)
-.\2 - Test lab.ps1        # verify it                (~15 sec)
-.\3 - Reset lab.ps1       # undo the demos           (~20 sec)
+.\2 - Test lab.ps1        # verify it                (~30 sec)
+.\3 - Reset lab.ps1       # undo the demos, re-seed  (~1 min)
 .\3 - Reset lab.ps1 -Destroy   # remove the containers
 ```
 
-`1 - Deploy lab.ps1` is safe to re-run — it leaves existing containers alone. Add
-`-Force` to tear down and rebuild.
+`1 - Deploy lab.ps1` is safe to re-run — it leaves existing containers alone and
+re-takes the seeded backups, which freshens their dates. Add `-Force` to tear down
+and rebuild.
 
-Always run `2 - Test lab.ps1` before presenting. It runs 31 checks — Docker, memory,
+Always run `2 - Test lab.ps1` before presenting. It runs 36 checks — Docker, memory,
 images, containers, SQL connectivity, SQL Agent, the sample databases, whether every
-version can write to the shared volume, and whether the containers can read each other's
-backups — then tells you exactly what is broken. It leaves the demo data alone.
+version can write to the shared volume, whether the containers can read each other's
+backups, and whether the **story** is still intact: each server still has exactly the
+backups and CHECKDB history it was seeded with, and the seeded backups are less than
+20 hours old (the Act 2 sweep flags anything older than a day). It tells you exactly
+what is broken and leaves the demo data alone.
+
+Between rehearsals, `3 - Reset lab.ps1` removes everything the demos create — jobs,
+alerts, the admin and repository databases, the scheduled task, generated files —
+then re-seeds. The one thing it cannot undo is a CHECKDB on 2017 or 2019 (SQL Server
+keeps that date inside the database); the test will tell you, and
+`1 - Deploy lab.ps1 -Force` is the cure.
 
 ## What you get
 
@@ -109,13 +119,21 @@ though the containers genuinely do share it. On real servers with a UNC backup s
 
 ### The servers disagree on purpose
 
-Backup coverage is seeded unevenly so the fleet health sweep finds real problems:
+Backup coverage is seeded unevenly so the fleet health sweep finds real problems
+(the plan is `$LabSeedPlan` in `Environment.ps1`):
 
-- **2017** — no backups at all
-- **2019** — `Sales` only
+- **2017** — no backups at all, never CHECKDB'd
+- **2019** — `Sales` only, never CHECKDB'd
 - **2022** — everything, healthy
 - **2025** — everything, but `Sales` is `COPY_ONLY`, which looks like a real full
   backup until you check the `LastFullBackupIsCopyOnly` column
+
+### The clocks are in UTC
+
+The containers run on UTC, so backup and job times in the output are UTC too — on
+an Eastern laptop, four hours ahead of the clock on the wall. Nothing depends on it;
+it is just worth knowing before someone in the room asks why a backup finished in
+the future.
 
 ## Changing things
 

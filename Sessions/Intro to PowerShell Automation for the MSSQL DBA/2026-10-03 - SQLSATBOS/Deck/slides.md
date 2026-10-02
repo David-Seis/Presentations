@@ -18,8 +18,12 @@ Straight Path IT Solutions, LLC.
 
 <!--
 60 minutes. Most of it is in the terminal, not on these slides.
-Before the room fills: run "_Setup\2 - Test lab.ps1" and leave the green output up.
-All four containers must answer before you start.
+Saturday morning: start Docker, run "_Setup\3 - Reset lab.ps1" (undoes any rehearsal and
+re-seeds fresh backups), then "_Setup\2 - Test lab.ps1". All 36 checks green - leave it up.
+If a Story check is red, run "_Setup\1 - Deploy lab.ps1 -Force" (about 3 minutes).
+Test lab also loads the lab variables into the terminal, so F8 works from then on -
+just do not F8 the first line of a script; $PSScriptRoot is empty for a selection.
+Budget: intro 5, Act 1 12, Act 2 18, Act 3 6, Act 4 12, Q&A 7.
 -->
 
 ---
@@ -37,6 +41,26 @@ All four containers must answer before you start.
 <!--
 Two minutes, maximum. Do not sell PowerShell yet - just land the arithmetic.
 Show of hands: who looks after more than 10 instances? More than 50?
+-->
+
+---
+
+###### The idea
+
+# PowerShell does not make one task faster. It multiplies.
+
+```text
+total time  =  minutes per server  ×  servers  ×  times per year  +  cost of errors
+```
+
+- **Once** — get the minutes down, on one server
+- **Everywhere** — take the *servers* term out
+- **Forever** — take the *times per year* term out
+- **Proven** — go after the *cost of errors*
+
+<!--
+One minute. This is the whole talk in one line - each act removes one term.
+Come back to it at the scoreboard.
 -->
 
 ---
@@ -60,6 +84,7 @@ Show of hands: who looks after more than 10 instances? More than 50?
 These are the four Scripts folders, in order. Say that out loud - people will be
 looking at the repo later and the mapping should be obvious.
 If you run short, Act 3 compresses. Act 4 does not - it is the whole argument.
+Running total to aim for: Act 1 done by 0:17, Act 2 by 0:35, Act 3 by 0:41, Act 4 by 0:53.
 -->
 
 ---
@@ -100,9 +125,10 @@ Reset undoes every demo, so nothing here is one-way.
 - Modules — where `Get-DbaDatabase` actually came from
 
 <!--
-Demo: Scripts\1 - Once\, files 1 to 5 in order.
+Demo: Scripts\1 - Once\, files 1 to 5 in order. Budget 12 minutes.
 Piping is the one that has to land. Teach the verbs on the actor list first -
 nobody has to think about strings - then run the identical shape against SQL.
+Modules: show the command count and one Get-Command search, then move on.
 -->
 
 ---
@@ -114,7 +140,8 @@ nobody has to think about strings - then run the identical shape against SQL.
 ```powershell
 # "Which databases are in FULL recovery but have never had a log backup?"
 Get-DbaDatabase -SqlInstance $Target -ExcludeSystem @Lab |
-    Where-Object { $_.RecoveryModel -eq 'Full' -and -not $_.LastLogBackup } |
+    Where-Object { $_.RecoveryModel -eq 'Full' -and
+                   $_.LastLogBackup -lt [datetime]'1900-01-01' } |
     Select-Object Name, RecoveryModel, LastFullBackup, LastLogBackup
 ```
 
@@ -124,7 +151,10 @@ Get-DbaDatabase -SqlInstance $Target -ExcludeSystem @Lab |
 <!--
 That output is a production incident waiting to happen, and it is one line.
 Pause here. This is the slide the rest of the hour rests on.
+Say the gotcha out loud: SQL Server says "never" with 1 January 0001, not with null -
+so "-not $_.LastLogBackup" looks right and silently returns nothing. Ask about the date.
 -->
+
 
 ---
 
@@ -137,14 +167,18 @@ Pause here. This is the slide the rest of the hour rests on.
 - One line, four servers — the whole session in one script
 - Fleet inventory — what do we actually have?
 - Fleet backup gap sweep — is everything backed up?
-- Fleet job audit — four servers, four different answers
-- Fleet job fix — the same correction, everywhere at once
 - Fleet maintenance rollout — the half-day-per-server one
+- Fleet job audit — six months later, four different answers
+- Fleet job fix — the same correction, everywhere at once
 
 <!--
-Demo: Scripts\2 - Everywhere\, files 1 to 6.
-5 and 6 CHANGE things. 3 - Reset lab.ps1 undoes both - say so before you run them,
-it visibly relaxes the room.
+Demo: Scripts\2 - Everywhere\, files 1 to 6. Budget 18 minutes.
+4, 5 and 6 CHANGE things. 3 - Reset lab.ps1 undoes all of it - say so before you run
+them, it visibly relaxes the room.
+The rollout takes about 3 minutes. Start it, then talk over it: what Ola is, why the
+jobs get renamed, why the alerts matter. Do not stand in silence watching green text.
+The audit opens with a LAB ONLY block that fakes six months of drift - say so.
+If you are behind, run 1, 3, 4 and 5, and talk through 2 and 6.
 -->
 
 ---
@@ -155,7 +189,7 @@ it visibly relaxes the room.
 
 ```powershell
 # Act 1 ended here
-$Target  = 'localhost,14322'
+$Target  = 'localhost,14317'
 
 # Change one line
 $Targets = 'localhost,14317','localhost,14319','localhost,14322','localhost,14325'
@@ -204,13 +238,15 @@ SSMS signs off on, every time.
 # Forever
 
 - Load data to a database — keep what you collected
-- Scheduled report — Task Scheduler, and the email nobody has to remember to send
+- Scheduled report — Task Scheduler, and the report nobody has to remember to run
 
 <!--
-Demo: Scripts\3 - Forever\.
+Demo: Scripts\3 - Forever\. Budget 6 minutes.
 Fan-out multiplies by servers. Scheduling multiplies by time. That is the framing.
-The scheduled report needs SendGrid + a service account - if the room is cold on
-time, talk it through instead of running it.
+The scheduled report runs against the lab and needs no admin rights. Registering and
+running it takes about 30 seconds - if time is short, show the generated script and
+the task in Task Scheduler and skip the run. Email is in the generated script,
+commented out: say "one more line and it lands in your inbox".
 -->
 
 ---
@@ -245,9 +281,10 @@ Nobody trends a folder of CSVs. Everybody means to.
 - The scoreboard — measured live, on the servers you just built
 
 <!--
-Demo: Scripts\4 - Proven\.
+Demo: Scripts\4 - Proven\. Budget 12 minutes.
 Everything before this made you faster. This act is different in kind - it is work
 most shops are not doing at all, at any speed.
+The restore test takes about a minute across the fleet - talk over it.
 -->
 
 ---
@@ -264,6 +301,11 @@ most shops are not doing at all, at any speed.
 > This closes the loop.
 
 <!--
+The reveal: count the 2025 rows. Sales is not there - not failed, MISSING. Its only full
+backup is COPY_ONLY, so the restore test silently leaves it out. The script's "just the
+failures" table adds it back as NOT TESTED. That is the 2025 row from Act 2, closed.
+Then "Prove maintenance ran": if a quarter-hour has passed since the rollout, the log
+backup job shows Failed on every server (it points at a share that does not exist).
 Run it WITHOUT -Destination in this lab. dbatools requires a UNC share for
 -Destination and a container path does not qualify - it silently skips every
 database. On real servers with a UNC backup share, -Destination is the better pattern.
@@ -290,7 +332,8 @@ Do NOT read the numbers off this slide - run the script and read them off the
 terminal. The point is that they are measured, not asserted.
 Then point at the last row and land the close: the first rows are about doing your
 job faster. The last one is about doing a part of your job that, without this, was
-never going to happen at all.
+never going to happen at all. (Last rehearsal: about 40 seconds of script against
+roughly 2 hours of hand work.)
 -->
 
 ---
@@ -334,10 +377,13 @@ This is the slide people photograph. Leave it up while you take the first questi
 [linkedin.com/in/davidseis](https://www.linkedin.com/in/davidseis)
 
 Slides, scripts, demos and resources:
-**https://bit.ly/sp-powershell** ← *(repoint this before the 3rd)*
+**https://bit.ly/4m05kBy**
 
-Everything here is free: `Install-Module dbatools -Scope CurrentUser`
+Everything here is free:
+`Install-Module dbatools -Scope CurrentUser`
 
 <!--
 Leave this up for the whole Q&A. Read the short URL out loud twice.
+The QR code and the short URL are the same link: it opens the session's ResourceList,
+which links to this event's folder.
 -->

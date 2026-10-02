@@ -65,6 +65,20 @@
     # Sample databases created on every server so the demos have something to chew on.
     $Global:LabDatabases = 'Sales','Inventory','Reporting'
 
+    # The story the demos tell depends on the servers disagreeing. 1 - Deploy lab.ps1
+    # seeds exactly this, and 2 - Test lab.ps1 checks it is still true before you present:
+    #
+    #     2017  no backups at all, never CHECKDB'd
+    #     2019  Sales only,        never CHECKDB'd
+    #     2022  everything, healthy
+    #     2025  everything, but Sales is COPY_ONLY
+    $Global:LabSeedPlan = @{
+        'sqlsat2017' = @{ Backups = @();            CopyOnly = @();        CheckDb = $false }
+        'sqlsat2019' = @{ Backups = @('Sales');     CopyOnly = @();        CheckDb = $false }
+        'sqlsat2022' = @{ Backups = $LabDatabases;  CopyOnly = @();        CheckDb = $true  }
+        'sqlsat2025' = @{ Backups = $LabDatabases;  CopyOnly = @('Sales'); CheckDb = $true  }
+    }
+
 
 <# ---------- Connection shortcuts used by the demos ---------- #>
 
@@ -86,6 +100,11 @@
 
     # Every demo passes -SqlCredential $LabCredential. Splat this instead if you prefer:
     $Global:Lab = @{ SqlCredential = $LabCredential }
+
+    # The Scripts folder. $PSScriptRoot is only set when a whole FILE runs (F5) -- it is
+    # empty when you run a selection with F8 -- so demos that need a path to a file
+    # beside them use this instead. It survives as long as the terminal does.
+    $Global:SessionScripts = Split-Path $PSScriptRoot -Parent
 
 
 Write-Host "Lab environment loaded: $($LabServers.Count) servers, backup volume '$LabBackupVolume'" -ForegroundColor Green

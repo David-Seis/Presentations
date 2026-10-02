@@ -119,8 +119,11 @@ $Computers = 'localhost'
     opening it server by server.
 #>
 
+    # The second filter drops the good news: a clean CHECKDB logs "found 0 errors",
+    # which matches 'error' and would otherwise bury the lines you are looking for.
     Get-DbaErrorLog -SqlInstance $Targets @Lab -After (Get-Date).AddDays(-2) |
         Where-Object { $_.Text -match 'error|fail|corrupt|cannot|denied|severity' } |
+        Where-Object { $_.Text -notmatch 'found 0 errors|without errors|0 allocation errors and 0 consistency errors|informational message only' } |
         Select-Object SqlInstance, LogDate, Source, Text |
         Sort-Object LogDate -Descending |
         Select-Object -First 40 |

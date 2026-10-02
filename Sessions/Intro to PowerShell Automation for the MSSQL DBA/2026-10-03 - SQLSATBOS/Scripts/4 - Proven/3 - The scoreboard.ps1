@@ -19,7 +19,6 @@
     $ManualMinutes = @{
         'Inventory the estate'      = 6      # RDP in, open SSMS, read it off, type it up
         'Check every backup'        = 10     # per server, and you will not do it daily
-        'Roll out maintenance'      = 240    # half a day per server, done properly
         'Verify maintenance ran'    = 15
         'Restore-test the backups'  = 0      # see note below
     }
@@ -46,7 +45,7 @@
     Add-Score 'Inventory the estate'     { Get-DbaDatabase       -SqlInstance $Targets -ExcludeSystem @Lab }
     Add-Score 'Check every backup'       { Get-DbaLastBackup     -SqlInstance $Targets @Lab }
     Add-Score 'Verify maintenance ran'   { Get-DbaLastGoodCheckDb -SqlInstance $Targets @Lab }
-    Add-Score 'Restore-test the backups' { Test-DbaLastBackup    -SqlInstance $Targets @Lab -MaxSize 1024 -Prefix 'score_' }
+    Add-Score 'Restore-test the backups' { Test-DbaLastBackup    -SqlInstance $Targets @Lab -Database $LabDatabases -MaxSize 1024 -Prefix 'score_' }
 
 
 <# ---------- The slide ---------- #>
@@ -78,7 +77,7 @@
     week is not a thing anyone sustains -- so it does not get done, and nobody
     finds out until the day they need the backup.
 
-    That is the real argument. The first four rows are about doing your job
+    That is the real argument. The first three rows are about doing your job
     faster. The last one is about doing a part of your job that, without this,
     you were never going to do at all.
 

@@ -53,6 +53,8 @@ $Stamp = Get-Date -Format 'yyyy-MM-dd_HHmm'
         Format-Table -AutoSize
 
     # Logins nobody has used. Candidates for removal -- verify before you disable.
+    # LastLogin comes from current sessions, so it only reaches back to the last
+    # restart: on a server rebooted on Sunday, "unused" means "not since Sunday".
     Get-DbaLogin -SqlInstance $Targets @Lab |
         Where-Object { $_.LastLogin -lt (Get-Date).AddDays(-90) -and -not $_.IsDisabled } |
         Select-Object SqlInstance, Name, LoginType, LastLogin |

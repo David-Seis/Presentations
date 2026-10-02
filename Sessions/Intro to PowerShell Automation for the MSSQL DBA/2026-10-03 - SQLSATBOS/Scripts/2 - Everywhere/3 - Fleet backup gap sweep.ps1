@@ -37,8 +37,10 @@
     $backups | Where-Object { -not $_.LastFullBackup } |
         Select-Object SqlInstance, Database | Format-Table -AutoSize
 
+    # Get-DbaLastBackup hands back dbatools' own date type. It prints like a date but
+    # will not compare with one, so cast it to [datetime] first.
     Write-Host "Full backup older than $FullBackupMaxAgeDays day(s):" -ForegroundColor Yellow
-    $backups | Where-Object { $_.LastFullBackup -and $_.LastFullBackup -lt (Get-Date).AddDays(-$FullBackupMaxAgeDays) } |
+    $backups | Where-Object { $_.LastFullBackup -and [datetime]$_.LastFullBackup -lt (Get-Date).AddDays(-$FullBackupMaxAgeDays) } |
         Select-Object SqlInstance, Database, LastFullBackup | Format-Table -AutoSize
 
 
@@ -76,7 +78,7 @@
         $issue = switch ($true) {
             { -not $b.LastFullBackup }                                                   { 'NO FULL BACKUP'; break }
             { $b.LastFullBackupIsCopyOnly }                                              { 'Last full is COPY_ONLY'; break }
-            { $b.LastFullBackup -lt (Get-Date).AddDays(-$FullBackupMaxAgeDays) }          { 'Full backup is stale'; break }
+            { [datetime]$b.LastFullBackup -lt (Get-Date).AddDays(-$FullBackupMaxAgeDays) }  { 'Full backup is stale'; break }
             default                                                                      { $null }
         }
         if ($issue) {

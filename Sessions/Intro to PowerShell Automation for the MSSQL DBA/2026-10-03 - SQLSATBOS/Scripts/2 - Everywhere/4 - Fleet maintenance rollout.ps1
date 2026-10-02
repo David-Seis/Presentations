@@ -1,7 +1,7 @@
 <#
     ACT 2: EVERYWHERE
 
-    6 - Fleet maintenance rollout.
+    4 - Fleet maintenance rollout.
 
     The payoff. A complete maintenance standard -- admin database, Ola Hallengren's
     solution, renamed and scheduled jobs, alerts, First Responder Kit, sp_WhoIsActive
@@ -10,13 +10,14 @@
     This is the script that used to be a half-day per server, per engineer.
 
     It CHANGES things. Everything it does is undone by _Setup\3 - Reset lab.ps1.
+
+    In the lab, the backup jobs point at \\labshare\SQLBackups, which does not exist
+    -- so when one fires (the log backup runs every 15 minutes) it fails. That is
+    deliberate: Act 4 is where we find out that deploying is not the same as working.
 #>
 
 . "$PSScriptRoot\..\_Setup\Environment.ps1"
 
-
-
-#>
 
 #Change the test targets to the servers you want to prep for.
 
@@ -103,7 +104,7 @@ IF($DefaultDBlocation -eq 1 -AND $CustomDBlocation -eq 1) {
 } ELSEIF ($DefaultDBlocation -eq 1) {
     Write-Host "Admin Database: Create $databasename using the Server default data and log locations..." -ForegroundColor Green
     Invoke-DbaQuery -sqlinstance $Targets @Lab  -Query "
-    CREATE DATABASE [$databasename];
+    IF DB_ID(N'$databasename') IS NULL CREATE DATABASE [$databasename];
     GO
     ALTER DATABASE [$databasename] MODIFY FILE (NAME = N'$databasename' , SIZE = 512 MB , FILEGROWTH = 128 MB , MAXSIZE = 10240 MB );
     GO
@@ -210,7 +211,9 @@ EXEC msdb.dbo.sp_update_job @job_name=N'DatabaseIntegrityCheck - USER_DATABASES'
 EXEC msdb.dbo.sp_update_job @job_name=N'IndexOptimize - USER_DATABASES', @new_name=N'_MAINT_IndexOptimize - USER_DATABASES'
 EXEC msdb.dbo.sp_update_job @job_name=N'sp_delete_backuphistory', @new_name=N'_MAINT_sp_delete_backuphistory'
 EXEC msdb.dbo.sp_update_job @job_name=N'sp_purge_jobhistory', @new_name=N'_MAINT_sp_purge_jobhistory'
-EXEC msdb.dbo.sp_update_job @job_name=N'Output File Cleanup', @new_name=N'_MAINT_Output File Cleanup'
+-- Output File Cleanup is a CmdExec job, so Ola only creates it on Windows. Rename it if it is there.
+IF EXISTS (SELECT 1 FROM msdb.dbo.sysjobs WHERE name = N'Output File Cleanup')
+    EXEC msdb.dbo.sp_update_job @job_name=N'Output File Cleanup', @new_name=N'_MAINT_Output File Cleanup'
 GO
 " | Out-Null
 
@@ -281,14 +284,13 @@ EXEC msdb.dbo.sp_update_job @job_name=N'_MAINT_CycleErrorLog',
 		@notify_page_operator_name=N''
 GO
 
-USE [master]
-GO
-EXEC xp_instance_regwrite N'HKEY_LOCAL_MACHINE', N'Software\Microsoft\MSSQLServer\MSSQLServer', N'NumErrorLogs', REG_DWORD, 52
-GO
-
-USE [msdb]
-GO
-EXEC msdb.dbo.sp_set_sqlagent_properties @jobhistory_max_rows=10000
+-- Both of these live in the Windows registry. On SQL Server on Linux they fail with
+-- 'A severe error occurred', so only run them where there is a registry to write to.
+IF @@VERSION NOT LIKE '%Linux%'
+BEGIN
+    EXEC master.dbo.xp_instance_regwrite N'HKEY_LOCAL_MACHINE', N'Software\Microsoft\MSSQLServer\MSSQLServer', N'NumErrorLogs', REG_DWORD, 52;
+    EXEC msdb.dbo.sp_set_sqlagent_properties @jobhistory_max_rows=10000;
+END
 GO
 " | Out-Null
 Start-Sleep -Seconds 1.5
@@ -451,7 +453,8 @@ GO
 USE [msdb]
 GO
 DECLARE @schedule_id int
-EXEC msdb.dbo.sp_add_jobschedule @job_name=N'_MAINT_Output File Cleanup', @name=N'Weekly Output File Cleanup', 
+IF EXISTS (SELECT 1 FROM msdb.dbo.sysjobs WHERE name = N'_MAINT_Output File Cleanup')   -- Windows only, see the rename above
+EXEC msdb.dbo.sp_add_jobschedule @job_name=N'_MAINT_Output File Cleanup', @name=N'Weekly Output File Cleanup',
 		@enabled=1, 
 		@freq_type=8, 
 		@freq_interval=32, 
@@ -523,6 +526,7 @@ Start-Sleep -Seconds 1.5
 
 Write-Host "Ola Maintenance: Add Alerts..." -ForegroundColor Green
 Invoke-DbaQuery -sqlinstance $Targets @Lab  -Query "
+IF NOT EXISTS (SELECT 1 FROM msdb.dbo.sysalerts WHERE name = N'Severity 16 Error')
 EXEC msdb.dbo.sp_add_alert @name=N'Severity 16 Error', 
 		@message_id=0, 
 		@severity=16, 
@@ -531,6 +535,7 @@ EXEC msdb.dbo.sp_add_alert @name=N'Severity 16 Error',
 		@include_event_description_in=1, 
 		@job_id=N'00000000-0000-0000-0000-000000000000';
 
+IF NOT EXISTS (SELECT 1 FROM msdb.dbo.sysalerts WHERE name = N'Severity 17 Error')
 EXEC msdb.dbo.sp_add_alert @name=N'Severity 17 Error', 
 		@message_id=0, 
 		@severity=17, 
@@ -539,6 +544,7 @@ EXEC msdb.dbo.sp_add_alert @name=N'Severity 17 Error',
 		@include_event_description_in=1, 
 		@job_id=N'00000000-0000-0000-0000-000000000000';
 
+IF NOT EXISTS (SELECT 1 FROM msdb.dbo.sysalerts WHERE name = N'Severity 18 Error')
 EXEC msdb.dbo.sp_add_alert @name=N'Severity 18 Error', 
 		@message_id=0, 
 		@severity=18, 
@@ -547,6 +553,7 @@ EXEC msdb.dbo.sp_add_alert @name=N'Severity 18 Error',
 		@include_event_description_in=1, 
 		@job_id=N'00000000-0000-0000-0000-000000000000';
 
+IF NOT EXISTS (SELECT 1 FROM msdb.dbo.sysalerts WHERE name = N'Severity 19 Error')
 EXEC msdb.dbo.sp_add_alert @name=N'Severity 19 Error', 
 		@message_id=0, 
 		@severity=19, 
@@ -555,6 +562,7 @@ EXEC msdb.dbo.sp_add_alert @name=N'Severity 19 Error',
 		@include_event_description_in=1, 
 		@job_id=N'00000000-0000-0000-0000-000000000000';
 
+IF NOT EXISTS (SELECT 1 FROM msdb.dbo.sysalerts WHERE name = N'Severity 20 Error')
 EXEC msdb.dbo.sp_add_alert @name=N'Severity 20 Error', 
 		@message_id=0, 
 		@severity=20, 
@@ -563,6 +571,7 @@ EXEC msdb.dbo.sp_add_alert @name=N'Severity 20 Error',
 		@include_event_description_in=1, 
 		@job_id=N'00000000-0000-0000-0000-000000000000';
 
+IF NOT EXISTS (SELECT 1 FROM msdb.dbo.sysalerts WHERE name = N'Severity 21 Error')
 EXEC msdb.dbo.sp_add_alert @name=N'Severity 21 Error', 
 		@message_id=0, 
 
@@ -572,6 +581,7 @@ EXEC msdb.dbo.sp_add_alert @name=N'Severity 21 Error',
 		@include_event_description_in=1, 
 		@job_id=N'00000000-0000-0000-0000-000000000000';
 
+IF NOT EXISTS (SELECT 1 FROM msdb.dbo.sysalerts WHERE name = N'Severity 22 Error')
 EXEC msdb.dbo.sp_add_alert @name=N'Severity 22 Error', 
 		@message_id=0, 
 		@severity=22, 
@@ -580,6 +590,7 @@ EXEC msdb.dbo.sp_add_alert @name=N'Severity 22 Error',
 		@include_event_description_in=1, 
 		@job_id=N'00000000-0000-0000-0000-000000000000';
 
+IF NOT EXISTS (SELECT 1 FROM msdb.dbo.sysalerts WHERE name = N'Severity 23 Error')
 EXEC msdb.dbo.sp_add_alert @name=N'Severity 23 Error', 
 		@message_id=0, 
 		@severity=23, 
@@ -588,6 +599,7 @@ EXEC msdb.dbo.sp_add_alert @name=N'Severity 23 Error',
 		@include_event_description_in=1, 
 		@job_id=N'00000000-0000-0000-0000-000000000000';
 
+IF NOT EXISTS (SELECT 1 FROM msdb.dbo.sysalerts WHERE name = N'Severity 24 Error')
 EXEC msdb.dbo.sp_add_alert @name=N'Severity 24 Error', 
 		@message_id=0, 
 		@severity=24, 
@@ -596,6 +608,7 @@ EXEC msdb.dbo.sp_add_alert @name=N'Severity 24 Error',
 		@include_event_description_in=1, 
 		@job_id=N'00000000-0000-0000-0000-000000000000';
 
+IF NOT EXISTS (SELECT 1 FROM msdb.dbo.sysalerts WHERE name = N'Severity 25 Error')
 EXEC msdb.dbo.sp_add_alert @name=N'Severity 25 Error', 
 		@message_id=0, 
 		@severity=25, 
@@ -604,6 +617,7 @@ EXEC msdb.dbo.sp_add_alert @name=N'Severity 25 Error',
 		@include_event_description_in=1, 
 		@job_id=N'00000000-0000-0000-0000-000000000000';
 
+IF NOT EXISTS (SELECT 1 FROM msdb.dbo.sysalerts WHERE name = N'Error 823')
 EXEC msdb.dbo.sp_add_alert @name=N'Error 823', 
 		@message_id=823, 
 		@severity=0, 
@@ -613,6 +627,7 @@ EXEC msdb.dbo.sp_add_alert @name=N'Error 823',
 		@category_name=N'[Uncategorized]', 
 		@job_id=N'00000000-0000-0000-0000-000000000000';
 
+IF NOT EXISTS (SELECT 1 FROM msdb.dbo.sysalerts WHERE name = N'Error 824')
 EXEC msdb.dbo.sp_add_alert @name=N'Error 824', 
 		@message_id=824, 
 		@severity=0, 
@@ -622,6 +637,7 @@ EXEC msdb.dbo.sp_add_alert @name=N'Error 824',
 		@category_name=N'[Uncategorized]', 
 		@job_id=N'00000000-0000-0000-0000-000000000000';
 
+IF NOT EXISTS (SELECT 1 FROM msdb.dbo.sysalerts WHERE name = N'Error 825')
 EXEC msdb.dbo.sp_add_alert @name=N'Error 825', 
 		@message_id=825, 
 		@severity=0, 
@@ -636,7 +652,7 @@ Start-Sleep -Seconds 1.5
 
 Write-Host "Community Tools: Installing First Responder..." -ForegroundColor Green
 Install-DbaFirstResponderKit -sqlinstance $Targets @Lab  -Database $FirstResponderDB | Out-Null
-Write-Host "Community Tools: Installing WhoIsActive (with $databasename as host DB unless you changed this above)..." -ForegroundColor Green
+Write-Host "Community Tools: Installing WhoIsActive (into $SPWhoisactiveDB unless you changed this above)..." -ForegroundColor Green
 Install-DbaWhoIsActive -SqlInstance $Targets @Lab  -Database $SPWhoisactiveDB | Out-Null
 
 Invoke-DbaQuery -sqlinstance $Targets @Lab  -query "
@@ -782,7 +798,10 @@ Invoke-DbaQuery -sqlinstance $Targets @Lab  -database msdb -Query sp_update_job 
 Invoke-DbaQuery -sqlinstance $Targets @Lab  -database msdb -Query sp_update_job -SqlParameter @{ job_name = "_MAINT_IndexOptimize - USER_DATABASES"; enabled = $indexOptimize} -CommandType StoredProcedure
 Invoke-DbaQuery -sqlinstance $Targets @Lab  -database msdb -Query sp_update_job -SqlParameter @{ job_name = "_MAINT_CommandLog Cleanup"; enabled = $CommandLogCleanup} -CommandType StoredProcedure
 Invoke-DbaQuery -sqlinstance $Targets @Lab  -database msdb -Query sp_update_job -SqlParameter @{ job_name = "_MAINT_CycleErrorLog"; enabled = $CycleErrorLog} -CommandType StoredProcedure
-Invoke-DbaQuery -sqlinstance $Targets @Lab  -database msdb -Query sp_update_job -SqlParameter @{ job_name = "_MAINT_Output File Cleanup"; enabled = $OutputFileCleanup} -CommandType StoredProcedure
+Invoke-DbaQuery -sqlinstance $Targets @Lab  -database msdb -Query "
+IF EXISTS (SELECT 1 FROM dbo.sysjobs WHERE name = N'_MAINT_Output File Cleanup')   -- Windows only, see the rename above
+    EXEC dbo.sp_update_job @job_name = N'_MAINT_Output File Cleanup', @enabled = $OutputFileCleanup;
+"
 Invoke-DbaQuery -sqlinstance $Targets @Lab  -database msdb -Query sp_update_job -SqlParameter @{ job_name = "_MAINT_sp_delete_backuphistory"; enabled = $DeleteBackupHistory} -CommandType StoredProcedure
 Invoke-DbaQuery -sqlinstance $Targets @Lab  -database msdb -Query sp_update_job -SqlParameter @{ job_name = "_MAINT_sp_purge_jobhistory"; enabled = $PurgeJobHistory} -CommandType StoredProcedure
 Invoke-DbaQuery -sqlinstance $Targets @Lab  -database msdb -Query sp_update_job -SqlParameter @{ job_name = "_MAINT_sp_whoisactive data collection monitoring"; enabled = $Whoisactive} -CommandType StoredProcedure

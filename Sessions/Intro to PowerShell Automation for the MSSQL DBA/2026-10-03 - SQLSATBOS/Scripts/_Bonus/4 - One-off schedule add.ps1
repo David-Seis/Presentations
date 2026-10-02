@@ -1,9 +1,14 @@
 <#
     BONUS  --  a real automation that did not fit the session's argument.
 
-    Runs against the demo lab. Build it first with _Setup\1 - Deploy lab.ps1,
-    or edit $Targets in _Setup\Environment.ps1 to point at your own servers
-    (and delete the @Lab from each command -- Windows auth needs no credential).
+    Runs against the demo lab AFTER the Act 2 rollout (it adds a schedule to one
+    of the _MAINT_ jobs the rollout creates), or edit $Targets in
+    _Setup\Environment.ps1 to point at your own servers (and delete the @Lab from
+    each command -- Windows auth needs no credential).
+
+    It schedules a REAL run of the user-database integrity check at 23:00 tonight.
+    In the lab that CHECKDBs 2017 and 2019, which are seeded as never-checked --
+    _Setup\3 - Reset lab.ps1 removes the job before then if you run it.
 #>
 
 . "$PSScriptRoot\..\_Setup\Environment.ps1"
@@ -13,8 +18,6 @@
 
 
 $OneOffSQLJob = '_MAINT_DatabaseIntegrityCheck - USER_DATABASES'
-
-Set-DbatoolsConfig -FullName sql.connection.trustcert -Value $true
 
 $getdate = Get-Date -UFormat "%m/%d/%Y"
 $ActiveStartDate = Get-Date -UFormat "%Y%m%d" #or you can entered the desired future date using the YYYYMMDD format

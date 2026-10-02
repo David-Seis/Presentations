@@ -33,11 +33,19 @@ Get-DbaDatabase -SqlInstance $Targets @Lab
 Get-DbaDatabase -SqlInstance 'SQLPROD01','SQLPROD02'
 ```
 
+Three scripts work between two servers and have their own settings at the top:
+`Restore a database`, `Refresh a non-production environment` and `Migrate an
+instance` use `$Source` / `$Destination` (set to lab ports), and the backup scripts
+use the lab's Linux backup path. Point those at a UNC share and your own servers too.
+
 ## Safety
 
-Scripts are **read-only by default**. Anything that changes state is either
-commented out or carries `-WhatIf`. Read before you run, and take `-WhatIf` off
-only when you have seen the list of what it intends to do.
+Scripts are **read-only by default**. Anything that changes state is commented out,
+carries `-WhatIf`, or — in `Back up everything now`, `Restore a database` and
+`Refresh a non-production environment` — runs as a **dry run** until you set
+`$DryRun = $false` at the top. Read the dry run first: it lists everything the
+script would do, and the refresh in particular copies every non-system login and
+replaces any that already exist on the destination.
 
 A few scripts reach the **Windows** side rather than the SQL side —
 `Get-DbaDiskSpace`, `Test-DbaPowerPlan`, `Get-DbaService`,
@@ -54,7 +62,7 @@ it is included and does work.
 | **3 · Integrity and Corruption** | When CHECKDB last passed; suspect pages; whether the alerts that would tell you are even configured |
 | **4 · Security and Access** | Who has sysadmin; login and role audit; orphaned users; unused logins; weak passwords |
 | **5 · Configuration and Drift** | Best-practice sweep across the estate; patch level and end-of-support dates; deprecated features still in use |
-| **6 · Agent Jobs** | Failure report; jobs that exist here but not there; jobs enabled with no schedule; jobs getting slower |
+| **6 · Agent Jobs** | Failure report; jobs that never ran or were quietly disabled; jobs enabled with no schedule; jobs getting slower |
 | **7 · Capacity and Growth** | File space and free space; autogrowth settings that will hurt; growth events; TempDB usage |
 | **8 · Performance** | What is running right now; blocking; wait statistics; expensive queries; IO latency |
 | **9 · Migration and Refresh** | Refresh dev from prod including the steps people forget; migrate a whole instance |
@@ -90,6 +98,6 @@ one.
 Install-Module dbatools -Scope CurrentUser
 ```
 
-Written and tested against **dbatools 2.8.3**. Command and property names do
+Tested against the lab with **dbatools 2.7.6** in October 2026. Command and property names do
 change between major versions — if something returns nothing, check with
 `Get-Command <name>` and `Get-Member`.

@@ -1,50 +1,68 @@
-<# SSMS update script #>
-    
-$uninstallold = 1
+#Requires -RunAsAdministrator
+<#
+    BONUS  --  silent SSMS install, on the machine you run this on.
 
-<# Current install audit #>    
-Get-WmiObject Win32_product | Where-Object {$_.name -eq "SQL Server Management Studio"} | ForEach-object {
-    Write-Host "SSMS: Currently Installed Versions of SSMS [Version: $($_.Version)]`..." -ForegroundColor Green
+    Nothing to do with the lab: this installs software here, so read it first.
+
+    aka.ms/ssmsfullsetup now serves the SSMS 21+ installer, vs_SSMS.exe, which is a
+    Visual Studio-style bootstrapper and takes Visual Studio installer switches
+    (--quiet --norestart --wait). SSMS 18-20 used SSMS-Setup-ENU.exe with
+    /Install /Passive -- if you need one of those, download it explicitly and use
+    those switches instead.
+
+    $UninstallOld removes SSMS 18-20 (MSI installs) AFTER the new one is in, so you
+    are never left without one. SSMS 21+ installs side by side and is updated
+    through the Visual Studio Installer.
+#>
+
+$UninstallOld = $true
+
+$ssmsUrl     = 'https://aka.ms/ssmsfullsetup'
+$downloadDir = Join-Path $env:TEMP 'ssms-install'
+$destination = Join-Path $downloadDir 'vs_SSMS.exe'
+
+# SSMS 18-20 register as an MSI product with this name. (Win32_Product is slow --
+# it enumerates every MSI on the box -- so this runs once per question.)
+function Get-OldSsms { Get-CimInstance -ClassName Win32_Product -Filter "Name = 'SQL Server Management Studio'" }
+
+
+<# Current install audit #>
+Get-OldSsms | ForEach-Object {
+    Write-Host "SSMS: Currently installed (MSI) [Version: $($_.Version)]" -ForegroundColor Green
 }
 
 
-<# New Installer download #>
-$ssmsUrl = "https://aka.ms/ssmsfullsetup"
-$destination = "C:\Temp\ssms_installer.exe"
-
-$version = ((get-item "C:\Temp\ssms_installer.exe").VersionInfo.FileVersion).Substring(0, 2)
-
+<# New installer download #>
 try {
-    Write-Host "SSMS: Downloading newest SSMS Installer..." -ForegroundColor Green
-    $WebClient = New-Object System.Net.WebClient
-    $webclient.DownloadFile($ssmsUrl, $destination)
+    New-Item -ItemType Directory -Path $downloadDir -Force | Out-Null
+    Write-Host "SSMS: Downloading the current SSMS installer..." -ForegroundColor Green
+    Invoke-WebRequest -Uri $ssmsUrl -OutFile $destination -UseBasicParsing
 }
 catch {
-    Write-Host "Unable to download the latest SSMS installer, please download and install manually." -ForegroundColor Red -BackgroundColor White
+    Write-Host "Unable to download the SSMS installer, please download and install manually." -ForegroundColor Red -BackgroundColor White
     return
 }
 
-IF($uninstallold -eq 1) {
-<# Installer was successfully downloaded, uninstall old ssms versions #>
-Write-Host "SSMS: SSMS Update flag was on, enumerating SSMS installs..." -ForegroundColor Green
-    Invoke-Command -ScriptBlock {
-        Get-WmiObject Win32_product | Where-Object {$_.name -eq "SQL Server Management Studio"} | ForEach-object {
-            Write-Host "SSMS: Uninstalling SSMS [Version: $($_.Version)]`..." -ForegroundColor Green
-            $_.Uninstall() | Out-null
-        }
+
+<# Install silently #>
+Write-Host "SSMS: Installing SSMS (this takes several minutes)..." -ForegroundColor Green
+$install = Start-Process -FilePath $destination -ArgumentList '--quiet', '--norestart', '--wait' -Wait -PassThru
+Remove-Item $destination -ErrorAction SilentlyContinue
+
+# 0 = success, 3010 = success but a restart is needed
+if ($install.ExitCode -notin 0, 3010) {
+    Write-Host "SSMS: Installer exited with code $($install.ExitCode) -- old versions left in place." -ForegroundColor Red
+    return
+}
+if ($install.ExitCode -eq 3010) { Write-Host "SSMS: Installed. A restart is required to finish." -ForegroundColor Yellow }
+
+
+<# Remove the old MSI-based versions, now that the new one is in #>
+if ($UninstallOld) {
+    Get-OldSsms | ForEach-Object {
+        Write-Host "SSMS: Uninstalling SSMS [Version: $($_.Version)]..." -ForegroundColor Green
+        Invoke-CimMethod -InputObject $_ -MethodName Uninstall | Out-Null
     }
 }
 
-# Install SSMS silently
-$install_path = "`"C:\Program Files (x86)\Microsoft SQL Server Management Studio $version`""
-$params = " /Install /Passive SSMSInstallRoot=$install_path /quiet"
-        
-Write-Host "SSMS: Installing SSMS..." -ForegroundColor Green
-Start-Process -FilePath $destination -ArgumentList $params -Wait
-Remove-Item $destination
-#Write-Host "SSMS: Server restart is required to implement changes fully" -ForegroundColor DarkRed
-Invoke-Command -ScriptBlock {
-    Get-WmiObject Win32_product | Where-Object {$_.name -eq "SQL Server Management Studio"} | ForEach-object {
-        Write-Host "SSMS: Currently Installed Versions of SSMS [Version: $($_.Version)]`..." -ForegroundColor Green
-    }
-}
+Write-Host "SSMS: Done. SSMS 21+ shows up under 'SQL Server Management Studio' in the Start menu." -ForegroundColor Green

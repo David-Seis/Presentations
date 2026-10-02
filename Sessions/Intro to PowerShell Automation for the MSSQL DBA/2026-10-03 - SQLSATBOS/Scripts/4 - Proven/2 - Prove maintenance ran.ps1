@@ -48,17 +48,23 @@
 
 <# ---------- Did the jobs we deployed actually succeed? ---------- #>
 
-    Get-DbaAgentJob -SqlInstance $Targets @Lab |
-        Where-Object Name -like '_MAINT_*' |
+    # In the lab, look for the log backup job. It fires every quarter-hour at a share
+    # that does not exist -- so if one has passed since the rollout it shows Failed
+    # here (deployed fine, never worked), and if not, it is in the never-run list below.
+    $maintJobs = Get-DbaAgentJob -SqlInstance $Targets @Lab | Where-Object Name -like '_MAINT_*'
+
+    $maintJobs |
         Select-Object SqlInstance, Name, IsEnabled, LastRunDate, LastRunOutcome |
         Sort-Object SqlInstance, Name |
         Format-Table -AutoSize
 
     # Deployed but never run is its own failure mode -- a job with no schedule,
     # or one whose schedule is disabled, looks perfectly healthy in a job list.
-    Get-DbaAgentJob -SqlInstance $Targets @Lab |
-        Where-Object { $_.Name -like '_MAINT_*' -and -not $_.LastRunDate } |
+    # ("Never" is 1 January 0001 here, not $null -- so ask about the date.)
+    $maintJobs |
+        Where-Object { $_.LastRunDate -lt [datetime]'1900-01-01' } |
         Select-Object SqlInstance, Name, IsEnabled |
+        Sort-Object SqlInstance, Name |
         Format-Table -AutoSize
 
 
@@ -100,14 +106,21 @@
 
 
 <# ---------- One verdict per server ---------- #>
+<#
+    Group by the name each server reports, not by $Targets. You connected to
+    'localhost,14317', but the server answers as 'sqlsat2017' -- compare the two and
+    nothing ever matches, and every server comes out green.
+#>
 
-    foreach ($t in $Targets) {
-        $bad = @($checks | Where-Object {
-            $_.SqlInstance -eq $t -and (-not $_.LastGoodCheckDb -or $_.DaysSinceLastGoodCheckDb -gt $CheckDbMaxAgeDays)
+    $checks | Group-Object SqlInstance | Sort-Object Name | ForEach-Object {
+        $server = $_.Name
+
+        $bad = @($_.Group | Where-Object {
+            -not $_.LastGoodCheckDb -or $_.DaysSinceLastGoodCheckDb -gt $CheckDbMaxAgeDays
         }).Count
 
-        $jobs = @(Get-DbaAgentJob -SqlInstance $t @Lab | Where-Object Name -like '_MAINT_*').Count
+        $jobs = @($maintJobs | Where-Object SqlInstance -eq $server).Count
 
         $colour = if ($bad -eq 0 -and $jobs -gt 0) { 'Green' } else { 'Red' }
-        Write-Host ("{0,-20} maintenance jobs: {1,-3} databases needing CHECKDB: {2}" -f $t, $jobs, $bad) -ForegroundColor $colour
+        Write-Host ("{0,-20} maintenance jobs: {1,-3} databases needing CHECKDB: {2}" -f $server, $jobs, $bad) -ForegroundColor $colour
     }

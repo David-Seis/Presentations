@@ -31,20 +31,24 @@
 
 <# ---------- One server first ---------- #>
 
-    Test-DbaLastBackup -SqlInstance 'localhost,14322' @Lab -Prefix 'resttest_' |
-        Select-Object SourceServer, Database, BackupDate, RestoreResult, DbccResult |
+    # -Database keeps it to the demo databases. Without it, master, model and msdb
+    # are tested too, and their "Skipped" rows bury the result we care about.
+    $backupTaken = @{ n = 'BackupTaken'; e = { @($_.BackupDates)[0] } }
+
+    Test-DbaLastBackup -SqlInstance 'localhost,14322' @Lab -Database $LabDatabases -Prefix 'resttest_' |
+        Select-Object SourceServer, Database, $backupTaken, RestoreResult, DbccResult |
         Format-Table -AutoSize
 
 
 <# ---------- Then the whole estate, same command ---------- #>
 
     $elapsed = Measure-Command {
-        $script:results = Test-DbaLastBackup -SqlInstance $Targets @Lab -Prefix 'resttest_'
+        $script:results = Test-DbaLastBackup -SqlInstance $Targets @Lab -Database $LabDatabases -Prefix 'resttest_'
     }
 
     $results |
         Select-Object @{ n = 'Server'; e = { $_.SourceServer } },
-                      Database, BackupDate, RestoreResult, DbccResult |
+                      Database, $backupTaken, RestoreResult, DbccResult |
         Sort-Object Server, Database |
         Format-Table -AutoSize
 
@@ -61,22 +65,32 @@
 
       2022   all three restore and pass CHECKDB. This is what healthy looks like.
 
-      2025   Inventory and Reporting pass. Sales is SKIPPED -- and that is the
-             interesting one.
+      2025   Inventory and Reporting pass. Count the rows: Sales is not there.
 
     Sales on 2025 has a recent full backup. Every inventory query you own will
-    show it as backed up. But it is COPY_ONLY, so it is not part of the chain,
-    and the restore test is what tells you.
+    show it as backed up. But it is COPY_ONLY, so it is not part of the chain --
+    and the restore test does not report it as failed. It leaves it out. No row,
+    no warning.
 
     That is the argument for this whole act: the only way to know a backup works
-    is to restore it. Everything else is a checkbox.
+    is to restore it -- and to notice what you did not restore.
 #>
 
 
-<# ---------- Just the failures ---------- #>
+<# ---------- Just the failures -- including the one that never showed up ---------- #>
+<#
+    So check for what is MISSING, not only for what failed. SourceServer is the
+    name you connected with, so it matches $Targets directly.
+#>
 
-    $results |
-        Where-Object { $_.RestoreResult -ne 'Success' -or $_.DbccResult -ne 'Success' } |
+    $notTested = foreach ($t in $Targets) {
+        $seen = @($results | Where-Object SourceServer -eq $t | ForEach-Object Database)
+        $LabDatabases | Where-Object { $_ -notin $seen } | ForEach-Object {
+            [PSCustomObject]@{ SourceServer = $t; Database = $_; RestoreResult = 'NOT TESTED'; DbccResult = 'no restorable backup' }
+        }
+    }
+
+    @($results | Where-Object { $_.RestoreResult -ne 'Success' -or $_.DbccResult -ne 'Success' }) + @($notTested) |
         Select-Object @{ n = 'Server'; e = { $_.SourceServer } }, Database, RestoreResult, DbccResult |
         Format-Table -AutoSize
 
@@ -102,9 +116,10 @@
     -IgnoreLogBackup        test the full only, do not roll the log chain forward.
 #>
 
-    # Bounded version, the one you would actually schedule:
-    Test-DbaLastBackup -SqlInstance $Targets @Lab -MaxSize 1024 -Prefix 'resttest_' |
-        Select-Object SourceServer, Database, RestoreResult, DbccResult
+    # Bounded version, the one you would actually schedule. Not run live -- it is the
+    # same pass again, and the clock is better spent on the next script.
+    # Test-DbaLastBackup -SqlInstance $Targets @Lab -MaxSize 1024 -Prefix 'resttest_' |
+    #     Select-Object SourceServer, Database, RestoreResult, DbccResult
 
 
 <# ---------- Scoreboard ---------- #>

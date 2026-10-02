@@ -7,7 +7,8 @@
 
         .\2 - Test lab.ps1
 
-    Nothing here changes state except one temporary backup file, which is removed.
+    Nothing here changes state except one COPY_ONLY probe backup of master per
+    server, and the probe files are removed at the end.
 #>
 
 [CmdletBinding()]
@@ -192,6 +193,76 @@ Write-Host "`nChecking the lab..." -ForegroundColor Cyan
 
     # Tidy up the probe files.
     docker exec $($LabServers[0].Name) sh -c "rm -f $LabContainerBackupPath/_probe_*.bak" 2>&1 | Out-Null
+
+
+<# ---------- 6. The story the demos tell ---------- #>
+<#
+    Everything above can pass and the demos can still fall flat. The Act 2 sweep and
+    the Act 4 restore test only land if the servers still disagree the way
+    1 - Deploy lab.ps1 seeded them -- and a rehearsal, or a toolbox script run against
+    the lab, can quietly undo that. This compares the live state to $LabSeedPlan.
+#>
+
+    function Join-Sorted {
+        param($Items)
+        $list = @($Items | Where-Object { $_ })      # @($null) has a Count of 1
+        if ($list.Count) { ($list | Sort-Object) -join ', ' } else { 'none' }
+    }
+
+    $seedAgesHours = @()
+
+    foreach ($srv in $LabServers) {
+        $instance = "localhost,$($srv.Port)"
+        $plan     = $LabSeedPlan[$srv.Name]
+
+        try {
+            $last   = Get-DbaLastBackup      -SqlInstance $instance -SqlCredential $LabCredential -Database $LabDatabases -EnableException
+            $checks = Get-DbaLastGoodCheckDb -SqlInstance $instance -SqlCredential $LabCredential -Database $LabDatabases -EnableException
+
+            $backedUp = $last   | Where-Object LastFullBackup           | ForEach-Object Database
+            $copyOnly = $last   | Where-Object LastFullBackupIsCopyOnly | ForEach-Object Database
+            $checked  = $checks | Where-Object LastGoodCheckDb          | ForEach-Object Database
+            $expectChecked = if ($plan.CheckDb) { $LabDatabases } else { @() }
+
+            $problems = @()
+            if ((Join-Sorted $backedUp) -ne (Join-Sorted $plan.Backups)) {
+                $problems += "full backups: $(Join-Sorted $backedUp) (seeded: $(Join-Sorted $plan.Backups))"
+            }
+            if ((Join-Sorted $copyOnly) -ne (Join-Sorted $plan.CopyOnly)) {
+                $problems += "copy-only: $(Join-Sorted $copyOnly) (seeded: $(Join-Sorted $plan.CopyOnly))"
+            }
+            if ((Join-Sorted $checked) -ne (Join-Sorted $expectChecked)) {
+                $problems += "CHECKDB: $(Join-Sorted $checked) (seeded: $(Join-Sorted $expectChecked))"
+            }
+
+            if ($problems) {
+                Add-Check 'Story' "$($srv.Name) as seeded" 'FAIL' (($problems -join '; ') + " -- run '1 - Deploy lab.ps1 -Force'")
+            } else {
+                Add-Check 'Story' "$($srv.Name) as seeded" 'PASS' "backups: $(Join-Sorted $backedUp); CHECKDB: $(Join-Sorted $checked)"
+            }
+
+            # Backup dates are in the SERVER's clock (UTC in a container), so measure
+            # their age against the server's clock too, not this laptop's.
+            $serverNow = (Invoke-DbaQuery -SqlInstance $instance -SqlCredential $LabCredential -EnableException -Query 'SELECT Now = SYSDATETIME()').Now
+            $seedAgesHours += $last | Where-Object { $_.Database -in $plan.Backups -and $_.LastFullBackup } |
+                                      ForEach-Object { ($serverNow - [datetime]$_.LastFullBackup).TotalHours }
+        } catch {
+            Add-Check 'Story' "$($srv.Name) as seeded" 'FAIL' $_.Exception.Message.Split("`n")[0]
+        }
+    }
+
+    # The Act 2 sweep flags any full backup older than a day. Seed the lab on Friday
+    # afternoon and by Saturday afternoon the "healthy" 2022 server is a finding.
+    if ($seedAgesHours) {
+        $hours = ($seedAgesHours | Measure-Object -Maximum).Maximum
+        if ($hours -lt 20) {
+            Add-Check 'Story' 'Seeded backups are fresh' 'PASS' ("oldest is {0:n1} hours old" -f $hours)
+        } else {
+            Add-Check 'Story' 'Seeded backups are fresh' 'WARN' ("oldest is {0:n0} hours old -- re-run '1 - Deploy lab.ps1' to re-seed them" -f $hours)
+        }
+    } else {
+        Add-Check 'Story' 'Seeded backups are fresh' 'FAIL' "no seeded backups found -- run '1 - Deploy lab.ps1'"
+    }
 
 
 <# ---------- Report ---------- #>

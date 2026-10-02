@@ -15,7 +15,7 @@
 
 <# ---------- Act 1 ended here ---------- #>
 
-    $Target = 'localhost,14322'
+    $Target = 'localhost,14317'
 
     Get-DbaDatabase -SqlInstance $Target -ExcludeSystem @Lab |
         Select-Object SqlInstance, Name, RecoveryModel, SizeMB, LastFullBackup

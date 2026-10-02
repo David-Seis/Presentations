@@ -193,25 +193,23 @@ param(
         2022 -> everything          (healthy)
         2025 -> everything, but Sales is COPY_ONLY, which reads as a real full
                 backup until you look at the LastFullBackupIsCopyOnly column
+
+    The plan itself lives in Environment.ps1 ($LabSeedPlan) so that 2 - Test lab.ps1
+    can check it is still true. Re-running this script (no -Force) re-seeds the
+    backups, which is how you freshen them: the Act 2 sweep flags any full older
+    than a day.
 #>
 
     Write-Host "`nSeeding backup history (deliberately uneven)..." -ForegroundColor Cyan
-
-    $plan = @{
-        'sqlsat2017' = @{ Databases = @();           CopyOnly = @() }
-        'sqlsat2019' = @{ Databases = @('Sales');    CopyOnly = @() }
-        'sqlsat2022' = @{ Databases = $LabDatabases; CopyOnly = @() }
-        'sqlsat2025' = @{ Databases = $LabDatabases; CopyOnly = @('Sales') }
-    }
 
     $seedFailed = $false
 
     foreach ($srv in $LabServers) {
         $instance = "localhost,$($srv.Port)"
-        $spec     = $plan[$srv.Name]
+        $spec     = $LabSeedPlan[$srv.Name]
         $done     = @()
 
-        foreach ($db in $spec.Databases) {
+        foreach ($db in $spec.Backups) {
             $file     = "$LabContainerBackupPath/$($srv.Name)_$($db)_FULL.bak"
             $withCopy = ''
             if ($db -in $spec.CopyOnly) { $withCopy = ', COPY_ONLY' }
@@ -235,8 +233,6 @@ param(
     }
 
 
-<# ---------- Done ---------- #>
-
 <# ---------- Seed integrity-check history, also unevenly ---------- #>
 <#
     Act 4 asks "did the maintenance actually run?". That question is only
@@ -249,7 +245,7 @@ param(
     Write-Host "`nSeeding integrity check history..." -ForegroundColor Cyan
 
     foreach ($srv in $LabServers) {
-        if ($srv.Version -in '2017', '2019') {
+        if (-not $LabSeedPlan[$srv.Name].CheckDb) {
             Write-Host "  $($srv.Name): no CHECKDB (intentional gap)" -ForegroundColor Green
             continue
         }
@@ -262,6 +258,8 @@ param(
         Write-Host "  $($srv.Name): CHECKDB run on $($LabDatabases -join ', ')" -ForegroundColor Green
     }
 
+
+<# ---------- Done ---------- #>
 
     if ($seedFailed) {
         Write-Host "`nLab is up, but some seed backups failed (see red lines above)." -ForegroundColor Yellow

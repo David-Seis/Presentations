@@ -24,6 +24,8 @@
 <#
     The cleanest method where it works: SQL Server registers a Service Principal
     Name in AD, so the domain already knows where they are. No scanning, no noise.
+    On a machine that is not joined to Active Directory (a laptop signed in with
+    Entra ID, say) this warns that the domain cannot be contacted and returns nothing.
 #>
 
     Find-DbaInstance -DiscoveryType Domain |
@@ -34,7 +36,9 @@
 
 <# ---------- Ask the network ---------- #>
 
-    # SQL Browser broadcast -- finds things on the local subnet that answer
+    # SQL Browser broadcast -- finds things on the local subnet that answer.
+    # Windows PowerShell 5.1 only: the .NET class behind it does not exist in
+    # PowerShell 7, where this warns and returns nothing.
     Find-DbaInstance -DiscoveryType DataSourceEnumeration |
         Select-Object ComputerName, InstanceName, SqlInstance, Availability
 

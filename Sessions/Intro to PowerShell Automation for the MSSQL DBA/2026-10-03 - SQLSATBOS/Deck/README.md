@@ -41,7 +41,7 @@ npm run png      # dist/slide.NNN.png — one image per slide
 ```
 
 `npm run notes` attaches each slide's speaker note as a PDF **comment annotation**
-(one sticky note per page, same 10 pages) — not as printed text under the slide. Open
+(one sticky note per page, same 17 pages) — not as printed text under the slide. Open
 the comments pane in Acrobat or Edge to read them. For notes while presenting, use
 presenter view in `deck.html` instead.
 
@@ -56,8 +56,16 @@ that is what you open.
 
 `npm run pptx` produces one PNG per slide with **zero editable text**. It opens in
 PowerPoint and projects fine, but nobody can edit it and screen readers get nothing.
-It is a delivery format, not a way back to PowerPoint. If an organiser needs a
-genuinely editable `.pptx`, the old deck is still in this folder.
+It is a delivery format, not a way back to PowerPoint. If an organiser wants the
+slides, send the PDF in the session folder. The last editable PowerPoint version of
+this talk (a different, older agenda) is in `../../1 - History/2025-05-20 - TFAB/`.
+
+### The PDF beside the Scripts folder
+
+`Intro to PowerShell Automation for the SQL Server DBA - SQLSATBOS.pdf`, one level
+up, is `dist/deck.pdf` copied out so it is committed — `dist/` is gitignored, and
+attendees browsing GitHub need the slides. Rebuild and re-copy it if `slides.md`
+changes.
 
 ## Layout
 
@@ -105,20 +113,16 @@ Each act slide lists exactly what is in the matching `Scripts` folder, in order:
 
 If you add or rename a demo, update the matching act slide in `slides.md`.
 
+## Where the QR code goes
+
+`assets/qr-code.png` encodes `https://bit.ly/4m05kBy?r=qr`, which redirects to the
+session's `ResourceList.md` on GitHub — the same link printed on the closing slide.
+ResourceList links to this event's folder, so the QR never needs repointing; update
+ResourceList for each new event instead. (Checked 2 October 2026.)
+
 ## Open items
 
-- **`1 - Once` has two superseded files.** `1 - Commands.ps1` and
-  `2 - Arguments - Parameters.ps1` are the old versions of
-  `1 - Your first command.ps1` and `2 - Arguments.ps1`. Opening the wrong one live
-  would be awkward — delete them or move them to `_Bonus`.
-- **`3 - Forever\2 - Scheduled report.ps1` is not lab-ready.** It still has
-  `$jobserver = 'Seis-Work'` hardcoded and needs a SendGrid account plus a token at
-  `C:\temp\Demo\Sendgrid.txt`. It is the one demo that does not run against the
-  containers. The Act 3 speaker note says to talk it through if time is short.
-- **The Bitly behind `assets/qr-code.png` still points at the May 2025 destination.**
-  Repoint it before the 3rd.
-- **The Boston folder is untracked in git** and `ResourceList.md` already links to its
-  GitHub URL, so that link 404s until it is committed and pushed.
 - **The title slide's right half is empty** — that is where the Straight Path logo
-  belongs, but the only brand logo in the repo is `image3.emf` inside the 2025 deck,
-  and EMF will not render in a browser. It needs converting to SVG or PNG first.
+  belongs, but there is no usable logo file in the repo: the older decks in
+  `1 - History` only carry background textures. Drop a PNG or SVG of the logo into
+  `assets/` and add `![bg right:35% contain](assets/logo.png)` to the title slide.

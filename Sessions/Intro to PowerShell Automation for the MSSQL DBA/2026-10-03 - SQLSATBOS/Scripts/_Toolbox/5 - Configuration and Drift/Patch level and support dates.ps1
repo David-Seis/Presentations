@@ -24,17 +24,28 @@ $Stamp = Get-Date -Format 'yyyy-MM-dd_HHmm'
     support end date. It goes stale between module updates, and a stale index
     means wrong answers to "are we patched" and "when does support end".
 
-    It needs internet access, so do this BEFORE you travel -- not on venue wifi.
+    It needs internet access. Without it the script carries on with the index you
+    have -- which is fine until your servers are patched past it, and then
+    Test-DbaBuild cannot place them at all.
 #>
 
-    # Update-DbaBuildReference
-
-    Write-Host "If you see a 'build reference index is stale' warning below, run Update-DbaBuildReference." -ForegroundColor DarkGray
+    try {
+        Update-DbaBuildReference -EnableException
+        Write-Host "Build index refreshed." -ForegroundColor DarkGray
+    } catch {
+        Write-Host "Could not refresh the build index (no internet?) -- using the one you have." -ForegroundColor Yellow
+    }
 
 
 <# ---------- Where is everything? ---------- #>
 
-    $builds = Test-DbaBuild -SqlInstance $Targets @Lab -Latest
+    try {
+        $builds = Test-DbaBuild -SqlInstance $Targets @Lab -Latest -EnableException
+    } catch {
+        Write-Host "Test-DbaBuild could not place these builds: $($_.Exception.Message.Split("`n")[0])" -ForegroundColor Red
+        Write-Host "The build index is probably older than your patches. Run Update-DbaBuildReference with internet access and try again." -ForegroundColor Red
+        return
+    }
 
     $builds |
         Select-Object SqlInstance, Build, NameLevel, SPLevel, CULevel, BuildLevel,

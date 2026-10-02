@@ -19,16 +19,22 @@
     $BackupPath  = $LabContainerBackupPath
     $Database    = 'Sales'
 
+    # Dry run by default: the restore below only SAYS what it would do. Read it,
+    # then set this to $false and run it again.
+    $DryRun      = $true
+
 
 <# ---------- What is in the backup folder? ---------- #>
 
 <#
     Point Restore-DbaDatabase at a FOLDER, not a file, and it reads the headers,
     works out what belongs to what, and puts the chain in order for you.
-    -OutputScriptOnly shows you the T-SQL without running anything.
+    -OutputScriptOnly shows you the T-SQL without running anything. (-WithReplace is
+    there because those databases already exist on the destination; without it you
+    get warnings instead of a script. Nothing runs either way.)
 #>
 
-    Restore-DbaDatabase -SqlInstance $Destination @Lab -Path $BackupPath -OutputScriptOnly
+    Restore-DbaDatabase -SqlInstance $Destination @Lab -Path $BackupPath -OutputScriptOnly -WithReplace
 
 
 <# ---------- Restore, renamed, to a different server ---------- #>
@@ -38,7 +44,8 @@
         -DatabaseName                    "${Database}_Restored" `
         -ReplaceDbNameInFile `
         -UseDestinationDefaultDirectories `
-        -WithReplace
+        -WithReplace `
+        -WhatIf:$DryRun
 
 <#
     The two arguments people miss:

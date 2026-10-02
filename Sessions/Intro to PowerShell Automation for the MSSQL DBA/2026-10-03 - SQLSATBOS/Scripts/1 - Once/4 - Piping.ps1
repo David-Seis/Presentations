@@ -38,17 +38,25 @@
 
     $Target = $OneTarget
 
-    # "Which user databases are over 50 MB, biggest first?"
+    # Format-Table at the end of each one: run them together (F5) and PowerShell
+    # otherwise prints all three under the FIRST query's column headings.
+
+    # "Which user databases are over 10 MB, biggest first?"
     Get-DbaDatabase -SqlInstance $Target -ExcludeSystem @Lab |
-        Where-Object SizeMB -gt 50 |
+        Where-Object SizeMB -gt 10 |
         Sort-Object SizeMB -Descending |
-        Select-Object Name, RecoveryModel, SizeMB, LastFullBackup
+        Select-Object Name, RecoveryModel, SizeMB, LastFullBackup |
+        Format-Table
 
     # "Which databases are in FULL recovery but have never had a log backup?"
     # That is a production incident waiting to happen, and it is one line.
+    #
+    # The gotcha worth saying out loud: SQL Server says "never" with the date
+    # 1 January 0001, not with $null -- so ask about the date, not "is it empty".
     Get-DbaDatabase -SqlInstance $Target -ExcludeSystem @Lab |
-        Where-Object { $_.RecoveryModel -eq 'Full' -and -not $_.LastLogBackup } |
-        Select-Object Name, RecoveryModel, LastFullBackup, LastLogBackup
+        Where-Object { $_.RecoveryModel -eq 'Full' -and $_.LastLogBackup -lt [datetime]'1900-01-01' } |
+        Select-Object Name, RecoveryModel, LastFullBackup, LastLogBackup |
+        Format-Table
 
 
 <# ---------- Shaping the output: build the columns you want ---------- #>
@@ -58,8 +66,9 @@
         Select-Object Name,
                       RecoveryModel,
                       @{ n = 'SizeGB';      e = { [math]::Round($_.SizeMB / 1024, 2) } },
-                      @{ n = 'DaysSinceFull'; e = { if ($_.LastFullBackup) { (New-TimeSpan -Start $_.LastFullBackup).Days } } } |
-        Sort-Object DaysSinceFull -Descending
+                      @{ n = 'DaysSinceFull'; e = { if ($_.LastFullBackup -gt [datetime]'1900-01-01') { (New-TimeSpan -Start $_.LastFullBackup).Days } } } |
+        Sort-Object DaysSinceFull -Descending |
+        Format-Table
 
 
 <# ---------- The pipe is also how results leave PowerShell ---------- #>

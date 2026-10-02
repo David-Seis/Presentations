@@ -79,10 +79,13 @@
     you get backup testing and integrity checking from the same operation.
 #>
 
+    # Commented out so the report stays read-only: CHECKDB is heavy on a busy server.
+    # (In the lab it would also stamp 2017 -- seeded as never-checked -- as checked.)
+
     # Everything, on one database
-    Invoke-DbaQuery -SqlInstance $OneTarget @Lab -Database Sales -Query "
-        DBCC CHECKDB([Sales]) WITH NO_INFOMSGS, ALL_ERRORMSGS;
-    "
+    # Invoke-DbaQuery -SqlInstance $OneTarget @Lab -Database Sales -Query "
+    #     DBCC CHECKDB([Sales]) WITH NO_INFOMSGS, ALL_ERRORMSGS;
+    # "
 
     # PHYSICAL_ONLY: much faster, catches the storage-level corruption that is by
     # far the most common kind. A reasonable daily compromise on a big database,

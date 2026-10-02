@@ -19,6 +19,10 @@
     $BackupRoot = $LabContainerBackupPath     # a UNC share on real servers
     $Stamp      = Get-Date -Format 'yyyyMMdd_HHmm'
 
+    # Dry run by default: every backup below only SAYS what it would do. Read that
+    # list, then set this to $false and run it again.
+    $DryRun     = $true
+
 
 <# ---------- The important flag ---------- #>
 
@@ -40,7 +44,8 @@
         -CompressBackup `
         -Checksum `
         -Path        $BackupRoot `
-        -FilePath    "Sales_${Reason}_$Stamp.bak" |
+        -FilePath    "Sales_${Reason}_$Stamp.bak" `
+        -WhatIf:$DryRun |
         Select-Object SqlInstance, Database, Type, TotalSize, Duration, BackupComplete
 
 
@@ -53,7 +58,7 @@
 #>
 
     Get-DbaDatabase -SqlInstance $OneTarget -ExcludeSystem @Lab |
-        Backup-DbaDatabase -CopyOnly -CompressBackup -Checksum -Path $BackupRoot |
+        Backup-DbaDatabase -CopyOnly -CompressBackup -Checksum -Path $BackupRoot -WhatIf:$DryRun |
         Select-Object SqlInstance, Database, TotalSize, Duration, BackupComplete |
         Format-Table -AutoSize
 
@@ -63,7 +68,7 @@
     foreach ($t in $Targets) {
         Write-Host "Backing up $t..." -ForegroundColor Green
         Get-DbaDatabase -SqlInstance $t -ExcludeSystem @Lab |
-            Backup-DbaDatabase -CopyOnly -CompressBackup -Checksum -Path $BackupRoot |
+            Backup-DbaDatabase -CopyOnly -CompressBackup -Checksum -Path $BackupRoot -WhatIf:$DryRun |
             Select-Object SqlInstance, Database, TotalSize, Duration, BackupComplete
     }
 
