@@ -83,6 +83,10 @@ and it will find something.
 Real automations that did not fit the session's argument — silent SSMS installs,
 one-off job schedules, plain backup and restore examples.
 
+Unlike the toolbox, **these change things as soon as they run**, against every server
+in `$Targets`: no dry run, no `-WhatIf`. Read each one before you press F5. (Against
+the lab, `_Setup\3 - Reset lab.ps1` puts it back.)
+
 ---
 
 ## How the scripts are wired

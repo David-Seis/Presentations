@@ -85,5 +85,5 @@
 #>
 
     # Get-DbaComputerSystem  -ComputerName $Targets | Select-Object ComputerName, NumberLogicalProcessors, TotalPhysicalMemory
-    # Get-DbaOperatingSystem -ComputerName $Targets | Select-Object ComputerName, OSVersion, LastBootUpTime
+    # Get-DbaOperatingSystem -ComputerName $Targets | Select-Object ComputerName, OSVersion, LastBootTime
     # Get-DbaProductKey      -ComputerName $Targets

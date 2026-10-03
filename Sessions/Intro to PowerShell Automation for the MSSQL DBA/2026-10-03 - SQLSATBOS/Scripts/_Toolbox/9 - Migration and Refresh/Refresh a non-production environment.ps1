@@ -136,7 +136,11 @@
     Get-DbaDbOrphanUser -SqlInstance $Destination @Lab -Database $DestinationDb |
         Select-Object SqlInstance, DatabaseName, User
 
-    Write-Host "`nRefresh complete." -ForegroundColor Green
+    if ($DryRun) {
+        Write-Host "`nDry run complete -- nothing was changed." -ForegroundColor Yellow
+    } else {
+        Write-Host "`nRefresh complete." -ForegroundColor Green
+    }
 
 
 <# ---------- Worth saying out loud ---------- #>

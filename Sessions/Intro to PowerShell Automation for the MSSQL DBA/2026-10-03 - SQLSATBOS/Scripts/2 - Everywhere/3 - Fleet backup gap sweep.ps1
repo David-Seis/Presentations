@@ -65,9 +65,10 @@
 <# ---------- FULL recovery without log backups ---------- #>
 
     # This is the one that pages you at 3am when the log drive fills.
+    # "Never" is 1 January 0001 (the Act 1 gotcha), so one date test catches both.
     Get-DbaDatabase -SqlInstance $Targets -ExcludeSystem @Lab |
         Where-Object RecoveryModel -eq 'Full' |
-        Where-Object { -not $_.LastLogBackup -or $_.LastLogBackup -lt (Get-Date).AddHours(-$LogBackupMaxAgeHours) } |
+        Where-Object { $_.LastLogBackup -lt (Get-Date).AddHours(-$LogBackupMaxAgeHours) } |
         Select-Object SqlInstance, Name, RecoveryModel, LastFullBackup, LastLogBackup |
         Format-Table -AutoSize
 

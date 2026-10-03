@@ -135,6 +135,12 @@ an Eastern laptop, four hours ahead of the clock on the wall. Nothing depends on
 it is just worth knowing before someone in the room asks why a backup finished in
 the future.
 
+Agent schedules run on that clock too, and one of them matters on a Saturday: the
+rollout schedules the user-database integrity check **weekly, Saturday 20:00 UTC** --
+4 PM Eastern. If the rollout's jobs are still in place at that moment, it CHECKDBs
+2017 and 2019, and Act 4 no longer finds them unchecked. Reset before then, and if it
+has already fired, `1 - Deploy lab.ps1 -Force` is the cure.
+
 ## Changing things
 
 `Environment.ps1` is the only machine-specific file. Every demo script dot-sources it:

@@ -86,11 +86,12 @@ function Add-Finding {
     will not run against the container lab.
 #>
 
-    # Test-DbaInstantFileInitialization -ComputerName 'SQLPROD01', 'SQLPROD02' | ForEach-Object {
-    #     if (-not $_.IsEnabled) {
+    # Get-DbaPrivilege lists every account holding these rights. '*MSSQL*' matches the
+    # default NT SERVICE\MSSQLSERVER account -- swap in your own service account name.
+    # Get-DbaPrivilege -ComputerName 'SQLPROD01', 'SQLPROD02' |
+    #     Where-Object { $_.User -like '*MSSQL*' -and -not $_.InstantFileInitialization } | ForEach-Object {
     #         Add-Finding $_.ComputerName 'Instant File Initialization' 'Disabled' 'Enabled' 'Grant "Perform volume maintenance tasks" to the SQL service account'
     #     }
-    # }
 
     # SQL-side equivalent that DOES work anywhere you can connect:
     Invoke-DbaQuery -SqlInstance $Targets @Lab -Query "
@@ -111,7 +112,8 @@ function Add-Finding {
     }
 
     Test-DbaAgentJobOwner -SqlInstance $Targets @Lab | Where-Object { -not $_.OwnerMatch } | ForEach-Object {
-        Add-Finding $_.SqlInstance "Job owner: $($_.Job)" $_.OwnerName $_.TargetOwner
+        # This one reports the server as Server, and the owner as CurrentOwner
+        Add-Finding $_.Server "Job owner: $($_.Job)" $_.CurrentOwner $_.TargetOwner
     }
 
 

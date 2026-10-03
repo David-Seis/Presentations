@@ -33,7 +33,7 @@ Budget: intro 5, Act 1 12, Act 2 18, Act 3 6, Act 4 12, Q&A 7.
 # Our data estates are growing. Our teams are not.
 
 - More instances, more versions, more places they live
-- The same finite number of DBAs looking after them
+- The same (or less) finite number of DBAs looking after them
 - Clicking through SSMS four times does not scale to forty
 
 > If you only do a thing once, do it by hand. If you will do it again, script it.

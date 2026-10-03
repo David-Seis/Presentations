@@ -84,7 +84,7 @@ $Stamp = Get-Date -Format 'yyyy-MM-dd_HHmm'
     # "What is 15.0.4470.1?"
     Get-DbaBuildReference -Build '15.0.4470.1'
 
-    # "What is the newest 2019 build?"
+    # "What is each of my servers on, in words?"
     Get-DbaBuildReference -SqlInstance $Targets @Lab | Select-Object SqlInstance, NameLevel, SPLevel, CULevel
 
 
@@ -109,7 +109,7 @@ $Stamp = Get-Date -Format 'yyyy-MM-dd_HHmm'
 
     # Real servers only -- reaches the Windows side.
     # Get-DbaFeature -ComputerName $Targets |
-    #     Select-Object ComputerName, Feature, Version, InstanceName
+    #     Select-Object ComputerName, Feature, Version, Instance
 
 
 <# ---------- A report you can hand over ---------- #>

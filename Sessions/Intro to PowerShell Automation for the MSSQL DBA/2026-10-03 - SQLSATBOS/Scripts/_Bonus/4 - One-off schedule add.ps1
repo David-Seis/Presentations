@@ -20,7 +20,7 @@
 $OneOffSQLJob = '_MAINT_DatabaseIntegrityCheck - USER_DATABASES'
 
 $getdate = Get-Date -UFormat "%m/%d/%Y"
-$ActiveStartDate = Get-Date -UFormat "%Y%m%d" #or you can entered the desired future date using the YYYYMMDD format
+$ActiveStartDate = Get-Date -UFormat "%Y%m%d" #or you can enter the desired future date using the YYYYMMDD format
 Invoke-DbaQuery -SQLInstance $Targets @Lab -Query "
 USE [msdb]
 GO

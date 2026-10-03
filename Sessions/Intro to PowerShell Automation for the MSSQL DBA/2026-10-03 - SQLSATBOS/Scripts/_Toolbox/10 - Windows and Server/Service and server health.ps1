@@ -28,7 +28,7 @@ $Computers = 'localhost'
     # The finding that bites after an unplanned reboot: running now, but set to
     # Manual, so it will not come back on its own.
     # Get-DbaService -ComputerName $Computers |
-    #     Where-Object { $_.State -eq 'Running' -and $_.StartMode -ne 'Auto' } |
+    #     Where-Object { $_.State -eq 'Running' -and $_.StartMode -ne 'Automatic' } |
     #     Select-Object ComputerName, ServiceName, State, StartMode
 
     # SQL-side version -- works anywhere you can connect, including the lab.
@@ -98,7 +98,7 @@ $Computers = 'localhost'
 #>
 
     # Test-DbaPowerPlan -ComputerName $Computers |
-    #     Select-Object ComputerName, PowerPlan, RecommendedPowerPlan, IsBestPractice
+    #     Select-Object ComputerName, ActivePowerPlan, RecommendedPowerPlan, IsBestPractice
     # Set-DbaPowerPlan -ComputerName $Computers -WhatIf
 
 

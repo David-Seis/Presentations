@@ -52,13 +52,15 @@ $Stamp = Get-Date -Format 'yyyy-MM-dd_HHmm'
         Select-Object SqlInstance, Name, CreateDate, LastLogin |
         Format-Table -AutoSize
 
-    # Logins nobody has used. Candidates for removal -- verify before you disable.
-    # LastLogin comes from current sessions, so it only reaches back to the last
-    # restart: on a server rebooted on Sunday, "unused" means "not since Sunday".
+    # Enabled logins with no session open right now. A starting list, not a verdict:
+    # LastLogin is read from sys.dm_exec_sessions, so it only sees CURRENT sessions --
+    # a login that connected an hour ago and disconnected has no LastLogin at all.
+    # For real "unused for 90 days" you need a login audit or trigger collecting
+    # over time -- which is Act 3's point about keeping history.
     Get-DbaLogin -SqlInstance $Targets @Lab |
-        Where-Object { $_.LastLogin -lt (Get-Date).AddDays(-90) -and -not $_.IsDisabled } |
-        Select-Object SqlInstance, Name, LoginType, LastLogin |
-        Sort-Object LastLogin |
+        Where-Object { -not $_.LastLogin -and -not $_.IsDisabled } |
+        Select-Object SqlInstance, Name, LoginType, CreateDate |
+        Sort-Object SqlInstance, Name |
         Format-Table -AutoSize
 
 
@@ -85,7 +87,7 @@ $Stamp = Get-Date -Format 'yyyy-MM-dd_HHmm'
 
     $perms = Get-DbaUserPermission -SqlInstance $OneTarget @Lab -Database $LabDatabases
 
-    $perms | Select-Object SqlInstance, Object, Type, Member, Permission, SecurableType, Securable |
+    $perms | Select-Object SqlInstance, Object, Type, Member, Permission, RoleSecurableClass, Securable |
         Out-GridView -Title 'Full permission map'
 
     $perms | Export-Csv (Join-Path $OutputPath "Permissions_$Stamp.csv") -NoTypeInformation
@@ -101,7 +103,7 @@ $Stamp = Get-Date -Format 'yyyy-MM-dd_HHmm'
 #>
 
     # Find-DbaLoginInGroup -SqlInstance $Targets |
-    #     Select-Object SqlInstance, Login, DisplayName, Group, ParentADGroup |
+    #     Select-Object SqlInstance, Login, DisplayName, MemberOf, ParentADGroupLogin |
     #     Out-GridView -Title 'People behind the groups'
 
 

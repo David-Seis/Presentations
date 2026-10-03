@@ -49,7 +49,7 @@ replaces any that already exist on the destination.
 
 A few scripts reach the **Windows** side rather than the SQL side —
 `Get-DbaDiskSpace`, `Test-DbaPowerPlan`, `Get-DbaService`,
-`Test-DbaInstantFileInitialization`. These need remote admin rights and do **not**
+`Get-DbaPrivilege`. These need remote admin rights and do **not**
 work against containers. They are marked, and where a SQL-side equivalent exists
 it is included and does work.
 

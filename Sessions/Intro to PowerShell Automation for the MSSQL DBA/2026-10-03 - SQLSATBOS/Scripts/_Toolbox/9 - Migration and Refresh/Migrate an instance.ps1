@@ -30,7 +30,7 @@
 <# ---------- Can it even be migrated? ---------- #>
 
     Test-DbaMigrationConstraint -Source $Source -Destination $Destination @Cred |
-        Select-Object SqlInstance, Database, FeatureName, Notes |
+        Select-Object SourceInstance, DestinationInstance, Database, FeaturesInUse, IsMigratable, Notes |
         Format-Table -AutoSize -Wrap
 
 <#

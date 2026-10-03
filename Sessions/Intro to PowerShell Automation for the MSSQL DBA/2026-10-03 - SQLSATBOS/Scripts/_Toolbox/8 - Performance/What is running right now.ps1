@@ -79,9 +79,9 @@
 <# ---------- The expensive queries ---------- #>
 
     Get-DbaTopResourceUsage -SqlInstance $OneTarget @Lab -Type Duration |
-        Select-Object SqlInstance, Database, ObjectName, executioncount,
-                      totalduration_s, avgduration_s, querytext |
-        Sort-Object totalduration_s -Descending |
+        Select-Object SqlInstance, Database, ObjectName, ExecutionCount,
+                      TotalElapsedTimeMs, AverageDurationMs, QueryText |
+        Sort-Object TotalElapsedTimeMs -Descending |
         Select-Object -First 10 |
         Format-Table -AutoSize -Wrap
 
@@ -97,8 +97,9 @@
 #>
 
     Get-DbaIoLatency -SqlInstance $OneTarget @Lab |
-        Select-Object SqlInstance, Database, FileName,
-                      ReadLatency, WriteLatency, Latency, SizeGB |
+        Select-Object SqlInstance, DatabaseName, PhysicalName,
+                      ReadLatency, WriteLatency, Latency,
+                      @{ n = 'SizeGB'; e = { [math]::Round($_.SizeOnDiskBytes / 1GB, 2) } } |
         Sort-Object Latency -Descending |
         Select-Object -First 15 |
         Format-Table -AutoSize
@@ -107,7 +108,7 @@
 <# ---------- Memory ---------- #>
 
     Get-DbaMemoryUsage -ComputerName 'localhost' -ErrorAction SilentlyContinue |
-        Select-Object ComputerName, CounterName, Memory |
+        Select-Object ComputerName, Counter, Memory |
         Format-Table -AutoSize
 
     Invoke-DbaQuery -SqlInstance $Targets @Lab -Query "

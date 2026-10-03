@@ -125,8 +125,9 @@ Import-Module dbatools
 
 <# ---------- Clear generated output, keep the seeded backups ---------- #>
 
-    if (Test-Path $OutputPath) {
-        Get-ChildItem $OutputPath -File | Remove-Item -Force
+    # Subfolders too -- the toolbox "Document an instance" script writes one per server.
+    if ($OutputPath -and (Test-Path $OutputPath)) {
+        Get-ChildItem $OutputPath | Remove-Item -Recurse -Force
         Write-Host "  Cleared $OutputPath" -ForegroundColor Green
     }
 

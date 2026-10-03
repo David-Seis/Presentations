@@ -99,7 +99,8 @@
 
 <# ---------- Confirm ---------- #>
 
-    Get-DbaDbBackupHistory -SqlInstance $Targets @Lab -Since (Get-Date).AddMinutes(-30) |
+    # -IncludeCopyOnly, or the history leaves out the copy-only backups this just took.
+    Get-DbaDbBackupHistory -SqlInstance $Targets @Lab -Since (Get-Date).AddMinutes(-30) -IncludeCopyOnly |
         Select-Object SqlInstance, Database, Type, Start, Duration, IsCopyOnly,
                       @{ n = 'SizeMB'; e = { [math]::Round($_.TotalSize.Megabyte, 1) } },
                       Path |

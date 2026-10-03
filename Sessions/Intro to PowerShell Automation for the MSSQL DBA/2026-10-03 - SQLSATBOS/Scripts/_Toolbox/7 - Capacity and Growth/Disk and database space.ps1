@@ -98,7 +98,7 @@
 #>
 
     Find-DbaDbGrowthEvent -SqlInstance $Targets @Lab |
-        Select-Object SqlInstance, Database, LogicalFileName, StartTime, Duration_ms,
+        Select-Object SqlInstance, DatabaseName, Filename, StartTime, Duration,
                       @{ n = 'GrowthMB'; e = { [math]::Round($_.ChangeInSize, 1) } } |
         Sort-Object StartTime -Descending |
         Select-Object -First 30 |
@@ -108,8 +108,8 @@
 <# ---------- TempDB ---------- #>
 
     Get-DbaTempdbUsage -SqlInstance $OneTarget @Lab |
-        Select-Object SqlInstance, Spid, LoginName, DatabaseName, CurrentDbName,
-                      UserObjectAllocated, InternalObjectAllocated |
-        Sort-Object UserObjectAllocated -Descending |
+        Select-Object SqlInstance, Spid, LoginName, Database,
+                      CurrentUserAllocatedKB, InternalAllocatedKB |
+        Sort-Object CurrentUserAllocatedKB -Descending |
         Select-Object -First 15 |
         Format-Table -AutoSize
